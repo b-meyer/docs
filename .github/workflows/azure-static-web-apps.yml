@@ -8,6 +8,9 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     name: Build and deploy
+    # Runs from the repo root (the pnpm-workspace root). `vp check` lints the whole
+    # workspace via the root vite.config.ts; `vp run tcm#build` builds just the TCM
+    # app. Only apps/tcm is deployed today; app_location is repo-root-relative.
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,15 +27,18 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Test
-        run: pnpm exec vp test
+      # Lint/format/type-check the whole workspace (one canonical root config),
+      # then unit tests, then build only the TCM app. `vp run <app>#build` invokes
+      # that app's `build` task (`vite-ssg build`); `vp build` directly would run
+      # Vite+'s SPA build and bypass vite-ssg.
+      - name: Check
+        run: pnpm exec vp check
 
-      # `vp run build` invokes the `build` task defined in vite.config.ts
-      # (`vite-ssg build`), which has `dependsOn: ['check']` so format/lint/types
-      # run automatically before the build. Using `vp build` directly would run
-      # Vite+'s built-in SPA build and bypass vite-ssg + the dependsOn graph.
+      - name: Test
+        run: pnpm exec vp run -r test
+
       - name: Build
-        run: pnpm exec vp run build
+        run: pnpm exec vp run tcm#build
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
@@ -46,6 +52,6 @@ jobs:
           # default examples elsewhere set both, which uploads the whole repo
           # (and blows past the SWA Free 250 MB limit via node_modules).
           # https://learn.microsoft.com/azure/static-web-apps/build-configuration#skip-building-front-end-app
-          app_location: 'dist'
+          app_location: 'apps/tcm/dist'
           output_location: ''
           skip_app_build: true

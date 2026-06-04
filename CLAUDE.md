@@ -18,81 +18,108 @@ Docs are local at `node_modules/vite-plus/docs` or online at https://viteplus.de
 
 <!--VITE PLUS END-->
 
-## Project — TCM Primer (markdown reader on Vite+ / Vue 3)
+## Project — a documentation meta-framework + two consumer sites
 
-A static-style reader for a Traditional Chinese Medicine primer: cross-linked markdown topic pages (foundation theory, organ deep-dives, treatment branches) rendered as a SPA with VitePress-style chrome. The sidebar manifest in `src/scripts/router.ts` is the canonical list of which pages exist. Built directly on Vite + Vue 3 — **NOT VitePress** — with `unplugin-vue-markdown` transforming `.md` into Vue SFCs at build time.
+A **pnpm workspace**: a reusable VitePress-style documentation meta-framework in `packages/core/` (placeholder name `@framework/core`) consumed by two static sites — `apps/tcm/` (the Traditional Chinese Medicine Primer) and `apps/8fold/` (a Noble Eightfold Path primer; a deliberately minimal stub). Pages are cross-linked markdown, pre-rendered per route at build time via **vite-ssg** and hydrated as a SPA. Built directly on Vite + Vue 3 — **NOT VitePress** — with `unplugin-vue-markdown` turning `.md` into Vue SFCs at build time. Remaining / future work is tracked in [TODO.md](TODO.md).
 
-### This is NOT the `/poc` data-driven scaffold
-
-Older `/poc` conventions explicitly do not apply here:
-
-- No Pinia + `localStorage` data layer — content is read-only markdown. Cmd+K search state (index + UI) lives in `src/scripts/search.ts` as module-scoped refs (a module-level singleton, returned directly from `useSearch()`); nothing is persisted.
-- No `data.vue` inspector or "two-layer IA" — there is no mutable data.
-- No file-based routing — `unplugin-vue-router` was removed. Dropping a `.md` into `src/pages/` does NOT route it automatically.
-- No `<!-- nav-start --> / <!-- nav-end -->` markers in `Header.vue`. Don't reintroduce them — `/poc` would overwrite the nav on its next run.
-- The Vue components directory is `src/components/`. There is no `src/layouts/` or `src/layout/`.
-
-## Architecture
-
-- **Single nav manifest.** `src/scripts/router.ts` owns the `sidebar` groups, `flatOrder`, `allItems`, the slug/path helpers, and the route definitions. `allItems` (core + extra) drives route generation via `import.meta.glob('../pages/*.md')` and the search title lookup. `flatOrder` excludes groups marked `extra: true` and drives prev/next only — extras are routable and searchable but sit outside the linear sequence. Adding a topic = adding a `.md` file _and_ adding to the sidebar array. A `.md` file without a sidebar entry won't route.
-- **Markdown transform pipeline.** `unplugin-vue-markdown/vite` (in `vite.config.ts`) converts `.md` into Vue SFCs at build time. It is configured to:
-  - Auto-wrap every page body in `PageLayout` (`wrapperComponent: 'PageLayout'`, registered globally in `main.ts`).
-  - Add kebab-case heading IDs via `markdown-it-anchor` + the shared `slugify` helper in `src/scripts/utils.ts` (also used by the search index to compute matching anchor IDs).
-  - Rewrite `[X](File.md)` cross-links to `/File` SPA routes via `mdLinkRewriter` in `src/scripts/markdown.ts`. Hashes are preserved.
-  - Convert ` ```mermaid ` fences to `<pre class="mermaid not-prose">…</pre>` via `mdMermaid` in `src/scripts/markdown.ts`. Other fences fall through to the default renderer.
-- **Mermaid rendering.** Two-stage. Build-time fence override emits `<pre class="mermaid">`; runtime (`src/scripts/mermaid.ts`) lazy-imports `mermaid`, initializes with `theme: 'base'` and `themeVariables` resolved from the TCM `--color-*` tokens via a hidden probe `<div>` (so nested `var()` chains resolve to `rgb(...)` strings mermaid can bake into SVG attributes). `PageLayout.vue` calls `runMermaid(articleEl)` on mount and on every route change. `App.vue` installs `watchColorScheme()` once — a `MutationObserver` on `<html>` `class` that re-resolves theme vars and re-renders every processed `pre.mermaid` (originals stashed in a module-scoped `WeakMap`) when `.dark` toggles.
-- **Layout.** `App.vue` is the outer shell — sticky header + `<main>` + `RouterView`. Footer-less by design (don't add one back). `PageLayout` (auto-injected by the markdown plugin) is the three-column doc chrome: `AppNav` left, prose `<article>` + inlined prev/next nav middle, `PageNav` right. `PageLayout` exposes the `<article>` element to descendants via `provide('article-el', ...)`; `PageNav` injects it and reads `h2`/`h3` nodes from there (no global DOM query) and uses `IntersectionObserver` for scroll-spy. Prev/next is computed inline in `PageLayout` from `neighbors(slugFromPath(route.path))`.
-- **Routing.** Manual `routes` array in `src/scripts/router.ts`. `scrollBehavior` is configured so `/Page#anchor` URLs scroll to the heading on navigation — don't break this.
-- **Styling.** Tailwind 4 + `@tailwindcss/typography`. The `prose prose-gray mx-auto max-w-[88ch]` class wraps the rendered markdown body. The inline prev/next nav and `PageNav` deliberately live _outside_ `.prose` so Typography doesn't restyle their links.
-- **Theme.** `src/scripts/theme.ts` exposes a `useTheme()` composable returning module-scoped refs (`theme`, `hue`, `intensity`) plus setters. State persists to `localStorage` (`theme`, `brand-hue`, `brand-intensity`). The inline script in `index.html` reads those keys before Vue boots so `.dark` and the brand custom properties are applied pre-paint. `ThemeToggle.vue` in the header drives the same composable.
-- **Search.** `src/scripts/search.ts` is the single search file — it builds an in-memory fuzzysort index from raw md (one entry per H1/H2/H3 section) at module load, exposes the `fuzzysort.go` wrapper with its heading/body scoring, and owns the open/query/selection state. The `useSearch()` export returns a plain object of module-scoped refs so each consumer destructures what it needs; templates rely on Vue's top-level ref auto-unwrap for reads and writes (e.g. `selectedIndex = idx`). The search UI is an inline bar in `AppHeader.vue` (desktop ≥sm) plus a magnifier-icon-triggered full-width overlay (mobile <sm); both reuse the same `useSearch()` state and a shared `SearchResults.vue` results pane (handles highlight rendering, list/empty/hints states, and selection scroll-into-view). The Cmd/Ctrl+K shortcut is bound in `AppHeader.vue` and focuses the appropriate input. Heading IDs come from the shared slugifier so result links land on the right anchor.
-- **CI / deploy.** GitHub Actions workflow at `.github/workflows/azure-static-web-apps.yml` runs `vp check`/`vp test`/`vp build`, then `Azure/static-web-apps-deploy@v1` with `skip_app_build: true`. SPA fallback + headers in `public/staticwebapp.config.json`. Azure-side setup steps live in `deploy.md` at the repo root.
-
-## File layout
+### Workspace layout
 
 ```
-src/
-  components/   Vue components — outer shell, sticky chrome, auto-injected
-                PageLayout (3-col doc grid), right-side outline, inline search,
-                theme controls. `PageLayout` is the only architecturally
-                load-bearing name (auto-injected by unplugin-vue-markdown).
-  pages/        Markdown content. Source of truth for which exist + how they're
-                grouped is `src/scripts/router.ts` (sidebar manifest). Pinyin/
-                English PascalCase filenames; filename is the URL slug.
-  scripts/      main.ts (entry), router.ts (routes+sidebar manifest), search.ts
-                (fuzzysort index + useSearch composable), markdown.ts
-                (mdLinkRewriter, mdTableWrapper, mdMermaid), mermaid.ts
-                (runMermaid + watchColorScheme), theme.ts + reading.ts (small
-                composables for persisted UI prefs), utils.ts (slugify,
-                prefersReducedMotion), *.test.ts.
-  styles/       main.css imports tailwind + typography + theme.css (@theme
-                color tokens, .dark variant) + components.css (@layer
-                components) + utilities.css (@utility nav-link / outline-link
-                / eyebrow / …).
+docs/  (repo root → pnpm workspace)
+├── package.json            workspace root: orchestration scripts only (dev/build/check/ready)
+├── vite.config.ts          ONE canonical lint + format standard for the whole workspace
+├── tsconfig.json           minimal root TS config (for the root vite.config.ts)
+├── pnpm-workspace.yaml      workspace globs (packages/* + apps/*) + the dependency catalog
+├── packages/core/          @framework/core — the meta-framework
+│   ├── package.json        exports: ./config ./vite ./ssg ./sitemap ./App.vue ./styles/framework.css
+│   ├── tsconfig.json       no @/* alias; allowImportingTsExtensions
+│   └── src/
+│       ├── config.ts       FrameworkConfig type, defineConfig, CONFIG_KEY, sidebar types
+│       ├── plugin.ts       frameworkPlugin() — define-flags + vue + unplugin-vue-markdown + tailwind
+│       ├── ssg.ts          createSSGApp() — wraps ViteSSG
+│       ├── routerFactory.ts glob-driven routes + slug/neighbor helpers + scrollBehavior
+│       ├── sitemap.ts      filterPublicRoutes + buildSitemap (Node)
+│       ├── App.vue         root shell (overridable)
+│       ├── components/     AppHeader (slotted), AppNav, PageLayout, PageNav,
+│       │                   SearchResults, ThemeToggle, LayoutResolver, HomeLayout
+│       ├── composables/    useConfig, useTheme, useReadingMode, useFrontmatter, useSearch
+│       ├── runtime/        slugify, reducedMotion, mermaid, headFromFrontmatter
+│       ├── markdown/       linkRewriter, tableWrapper, mermaid, containers, alerts (+ barrel)
+│       ├── styles/         tokens.css, components.css, utilities.css, framework.css (barrel)
+│       └── (tests/)        markdown plugin tests (run `vp test` from packages/core)
+└── apps/
+    ├── tcm/    framework.config.ts + src/{scripts/main.ts, Logo.vue, pages/*.md, styles/main.css}
+    │           + vite.config.ts + index.html + public/ + tsconfig.json + shims.d.ts
+    └── 8fold/  same shape; markdown.mermaid: false, distinct brand hue, stock prose only
 ```
 
-## Conventions
+### `vp` command map — run from the repo ROOT
 
-- **Adding a topic:** create `src/pages/NewTopic.md` starting with `# H1`, then add `{ slug: 'NewTopic', title: '...' }` to the appropriate group in `src/scripts/router.ts`. Filename is the URL slug verbatim. Add the group with `extra: true` to keep a page off the prev/next chain while staying routable and searchable (renders under "Additional Reading" in the sidebar).
-- **Cross-linking between pages:** always `[Display](OtherFile.md)`. Never hardcode `/OtherFile` in source markdown — the rewriter is what keeps refactors safe.
-- **Filenames:** Pinyin PascalCase for theory pages (e.g. `YinYang.md`, `ZangFu.md`); English PascalCase for the 12 Zang-Fu organ pages (`Liver.md`, `SmallIntestine.md`, `SanJiao.md`). Case is preserved into the URL.
-- **`ZangFu.md` is the synthesis pivot.** It sits in the core chain (Synthesis & Practice group, between [JinYe.md](src/pages/JinYe.md) and [Jingmai.md](src/pages/Jingmai.md)) and is the launch point for the 12 organ deep-dives that live under "Additional Reading". When adding cross-organ content (axes, combined patterns), put it in `ZangFu.md`; organ-internal patterns belong on the specific organ page. Stub organ pages use `<!-- TODO: patterns to be written -->` markers in `Common patterns` — search for those to find what still needs writing.
-- **No frontmatter wired up.** Don't rely on it; the sidebar manifest provides titles.
-- **Don't enable `permalink` on `markdown-it-anchor`.** Typography would style the ¶ glyphs loudly. The right-side outline is the affordance.
-- **Sidebar order (core groups only) is the canonical reading order.** It mirrors `src/pages/index.md`'s "How to read" numbered list. If you reorder one, reorder the other. Groups marked `extra: true` are listed separately under "Additional reading" in `index.md` and don't participate in prev/next.
+**`vp` is the sole entry point — never raw `pnpm` / `npm` / `yarn`.** All of these run from the root:
+
+| Command                               | Does                                                                                                                                               |
+| ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `vp install`                          | Install the whole workspace (the pnpm **catalog** in `pnpm-workspace.yaml` is the version source of truth — every package references `catalog:`).  |
+| `vp run dev:tcm` / `vp run dev:8fold` | Dev server for TCM / 8fold (= `vp run tcm#dev` / `vp run 8fold#dev`).                                                                              |
+| `vp check` / `vp run fix`             | Lint + format + type-check the whole workspace / autofix. **One canonical config: the root `vite.config.ts`** — no per-package lint/fmt overrides. |
+| `vp run build`                        | `vp run -r build` — builds every app (each app's `build` task = `vite-ssg build`). `packages/core` has no build (consumed as source).              |
+| `vp run test`                         | `vp run -r test` — framework unit tests live in `packages/core`.                                                                                   |
+| `vp run ready`                        | `vp check && vp run -r build` — the pre-push gate.                                                                                                 |
+| `vp run <app>#<task>`                 | One app's task, e.g. `vp run tcm#build`.                                                                                                           |
+
+`check` is a **separate root step** (not a build dependency) — the apps' `build` tasks do NOT
+`dependsOn: ['check']`; `vp run ready` (and CI) run check first. CI deploys only `apps/tcm/dist`
+(8fold has no deploy yet).
+
+## Architecture (framework)
+
+- **Config via provide/inject.** `config.ts` defines `FrameworkConfig` (title, sidebar, branding, markdown, sitemap, themeDefaults), `defineConfig` (identity fn for TS completion), `CONFIG_KEY`, and the `SidebarItem`/`SidebarGroup` types. The consumer's `framework.config.ts` is the single source of truth; `createSSGApp` does `app.provide(CONFIG_KEY, config)`, components read it via `useConfig()`.
+- **Glob-driven routing.** `routerFactory.ts` `createRoutes(config, pages)` builds a route per `.md` in the consumer's `pages` glob — **every** file routes (`index`→`/`, `NotFound`→catch-all). `config.sidebar` drives nav grouping/order and prev/next ONLY, not route existence. `extra: true` groups render under "Additional reading" and sit outside prev/next. A page absent from the sidebar still routes (e.g. a `hidden: true` dev page). `slugFromPath`, `neighborsOf`, and `scrollBehavior` (the `/Page#anchor` header-offset scroll — don't break it) live here.
+- **Single plugin entry.** `plugin.ts` `frameworkPlugin({ markdown })` returns the `[define-flags, vue, unplugin-vue-markdown, tailwindcss]` array (Vite flattens it). It takes ONLY the markdown options, not the full config. markdown-it plugin order is load-bearing: anchor → linkRewriter → tableWrapper → (mermaid, gated) → containers → alerts. `wrapperComponent: 'LayoutResolver'`.
+- **Layouts.** `LayoutResolver` is the markdown `wrapperComponent`: it receives `frontmatter` as a prop and dispatches `<component :is>` to `HomeLayout` (`layout: home` — hero + features grid) or `PageLayout` (default — 3-col doc chrome: `AppNav` left, prose `<article>` + inline prev/next middle, `PageNav` right). `PageLayout` provides `article-el`; `PageNav` injects it for `IntersectionObserver` scroll-spy. `App.vue` is the outer shell (sticky header + `<main>` + `RouterView`); footer-less by design.
+- **SSG wrapper.** `ssg.ts` `createSSGApp(App, config, { pages, rawPages })` builds routes, seeds the search index, registers global components (`LayoutResolver`/`PageLayout`/`HomeLayout`), provides the config, and returns the `ViteSSG` factory. The literal `import.meta.glob('../pages/*.md')` (+ a `?raw` eager glob, SSR-guarded) lives in the **consumer's** `main.ts` and is passed in — globs must be literal and local to the importer. Don't `await router.isReady()` in the setup fn (hangs during SSR).
+- **Markdown pipeline.** `markdown-it-anchor` adds kebab heading IDs via the shared `slugify` (`runtime/slugify.ts`, also used by the search index so anchors match). `mdLinkRewriter` rewrites `[X](File.md)` → `/File` (hashes preserved). `mdTableWrapper`; `mdContainers` (`:::tip|info|warning|danger|details`); `mdAlerts` (`> [!NOTE]` …). `mdMermaid` (` ```mermaid ` → `<pre class="mermaid not-prose">`) is added only when `config.markdown.mermaid`.
+- **Mermaid (config-gated, two-stage).** Build: the fence transform above. Runtime: `runtime/mermaid.ts` lazy-imports `mermaid`, themes it from the `--color-*` tokens via a hidden probe div, and re-renders on `.dark` toggle (`watchColorScheme`). Both `App.vue` (watchColorScheme) and `PageLayout` (runMermaid) load `runtime/mermaid.ts` via a dynamic import gated on the **build-time literal `__FRAMEWORK_MERMAID__`** (injected by `frameworkPlugin` via Vite `define`). When a consumer disables mermaid the dead branch + the whole mermaid chunk (+ cytoscape/katex) are tree-shaken out — 8fold's `dist` is ~424K vs TCM's ~5.7M.
+- **Theme.** `composables/useTheme.ts` — module refs (`theme`, `hue`, `intensity`) + setters, persisted to `localStorage` (`theme`, `brand-hue`, `brand-intensity`). Defaults are read from the resolved CSS custom properties (so a consumer's `--brand-hue` override sets the slider start), with hardcoded fallbacks. The consumer's `index.html` pre-paint inline script applies `.dark` + brand vars before Vue boots (no flash). `ThemeToggle.vue` drives it. SSR-safe — no top-level `window`/`document`.
+- **Search.** `composables/useSearch.ts` — `createSearchIndex(rawPages, config)` builds a fuzzysort index (one entry per H1/H2/H3) into a module singleton; SSR-inert (skipped server-side, kept out of rendered HTML). `useSearch()` exposes open/query/selection state + results. UI: inline bar in `AppHeader` (≥sm) + a magnifier overlay (<sm), both reusing `SearchResults.vue`; Cmd/Ctrl+K bound in `AppHeader`.
+- **Styling.** Tailwind 4 + `@tailwindcss/typography`. `framework.css` (= tokens + components + utilities) carries NO `@import 'tailwindcss'` — the **consumer's** `main.css` owns that import plus an `@source` at the framework package (Tailwind ignores node_modules, so framework-only classes would otherwise be purged in prod). `tokens.css` holds the `@theme` color scale (driven by `--brand-hue`/`--brand-intensity`) + the `.dark` variant. Prose body is `.prose prose-gray max-w-[88ch]`; the prev/next nav and `PageNav` sit OUTSIDE `.prose` so Typography doesn't restyle their links.
+- **CI / deploy.** `.github/workflows/azure-static-web-apps.yml` (push to `release`) runs from the repo root: `pnpm install` → `vp check` (lints the whole workspace via the root config) → `vp run tcm#build` (`vite-ssg build` → per-route HTML + `sitemap.xml`), then `Azure/static-web-apps-deploy@v1` with `skip_app_build: true` uploads `apps/tcm/dist`. Wiring an 8fold deploy (its own SWA resource + job) is tracked in `TODO.md`.
+
+## Consumer model (how to make/maintain a site)
+
+A consumer is **config + content**:
+
+- **`framework.config.ts`** — `defineConfig({ title, description, sidebar, branding: { siteTitle, logoComponent }, markdown: { mermaid }, sitemap: { hostname }, themeDefaults })`. The `sidebar` array is the nav manifest (groups, `extra: true`, reading order).
+- **`src/scripts/main.ts`** (the vite-ssg entry referenced by `index.html`) — the two `import.meta.glob('../pages/*.md')` calls (one lazy for routes, one `?raw` eager + SSR-guarded for search) + `createSSGApp(App, config, { pages, rawPages })`.
+- **`src/pages/*.md`** — content. Filename = URL slug verbatim (PascalCase). `NotFound.md` is required (backs the catch-all).
+- **`src/Logo.vue`** — brand mark, wired via `branding.logoComponent: () => import('./src/Logo.vue')` (async, browser-only — never reaches the Node config loader).
+- **`src/styles/main.css`** — `@import 'tailwindcss'` + `@plugin '@tailwindcss/typography'` + `@source '../../../../packages/core/src'` + `@import '@framework/core/styles/framework.css'` + any `:root { --brand-hue: … }` brand override.
+- **`vite.config.ts`** — **build settings only**: `frameworkPlugin({ markdown: { mermaid } })`, the `@` alias, `run.tasks.build = { command: 'vite-ssg build' }`, and `ssgOptions` (`dirStyle: 'nested'`, `includedRoutes` → `filterPublicRoutes`, `onFinished` → `buildSitemap`). **No `lint`/`fmt`** — those live in the root `vite.config.ts`.
+- **`index.html`** — title/OG/favicon + the pre-paint theme bootstrap inline script; `shims.d.ts`, `tsconfig.json` (consumer-local `@/*`), `public/staticwebapp.config.json`.
+
+**Adding a topic:** create `src/pages/NewTopic.md` (start with `# H1`), add `{ slug: 'NewTopic', title: '…' }` to a sidebar group in `framework.config.ts`. Cross-link with `[Display](Other.md)` — never hardcode `/Other`. `extra: true` keeps a page off prev/next but in nav/search. `hidden: true` frontmatter drops a page from SSG output + search + nav (still routable in dev). `layout: home` selects `HomeLayout`.
+
+(TCM-specific: `ZangFu.md` is the synthesis pivot launching the 12 organ deep-dives under "Additional Reading"; organ stub pages mark unwritten sections with `<!-- TODO: patterns to be written -->`.)
 
 ## Gotchas
 
-- **`vite.config.ts` defines `IGNORE_PATTERNS` as a top-level `const`.** Don't delete it — the expanded `lint:` and `fmt:` blocks (auto-injected by `vp check --fix`) reference it. Without that const, config loading fails with `ReferenceError`.
-- **Regex literals need the `u` flag.** Oxlint's `unicorn/require-unicode-regexp` rule. Examples: `/\.vue$/u`, `/\.md$/u` in `vite.config.ts`; the `MD_LINK` regex in `src/scripts/markdown.ts`.
-- **`import.meta.glob` patterns must be literal strings.** Vite's static analyzer can't follow variables. Hardcoded `'../pages/*.md'` (relative to `src/scripts/router.ts`) is correct.
-- **Root-level `shims.d.ts` declares `*.vue` and `*.md` modules.** Don't delete — Oxlint's type-aware checks need them or imports like `@/components/App.vue` fail with TS2307. It lives at the repo root and is picked up by `tsconfig.json`'s `include`.
-- **Imports use `@/` (= `src/`) regardless of which subdirectory the importing file lives in.** Don't write `../../` chains.
-- **`vite.config.ts` imports its own helpers with an explicit `.ts` extension** (e.g. `from './src/scripts/markdown.ts'`). Node's ESM resolver doesn't strip extensions when loading the config file; without `.ts`, `vp dev`/`vp build` fail with `ERR_MODULE_NOT_FOUND`.
-- **`vue-router@^5` is intentional.** Stable for Vue 3 is v4; this project pulls the in-development next major from `vuejs/router` to align with Vite+'s preview-grade ecosystem. Don't "fix" the version unless you're deliberately migrating.
+- **Framework source uses relative imports, never `@/`.** `@/` (= `src/`) is consumer-local — declared per-app (`apps/*/tsconfig.json` paths + the `@` alias in that app's `vite.config.ts`). `packages/core/` declares no `@/`. Consumers reach framework code via `@framework/core/…`.
+- **Each consumer's `main.css` needs `@source` at the framework package** (`../../../../packages/core/src`) or framework-only Tailwind utility classes are purged in production (dev often still looks fine).
+- **`plugin.ts` (and anything reachable from `vite.config.ts`) must use Node-ESM-safe specifiers** — explicit `.ts` extensions, no directory/barrel imports. Vite's config loader loads these as native ESM (a `.ts` transpile hook, but Node-style resolution); directory imports throw `ERR_UNSUPPORTED_DIR_IMPORT`. Hence `plugin.ts` imports the markdown plugins from individual `./markdown/*.ts` files, and `frameworkPlugin` takes only `{ markdown }` so `vite.config.ts` need not import the full `framework.config.ts` (which references a `.vue` logo the config loader can't process). `packages/core/tsconfig.json` sets `allowImportingTsExtensions`.
+- **Mermaid gating is build-time, not runtime.** A runtime `if (config.markdown.mermaid)` would NOT exclude the chunk — a statically-present dynamic `import()` is always emitted. The gate is the `__FRAMEWORK_MERMAID__` literal (Vite `define`); the dead branch is tree-shaken. It's declared in each `shims.d.ts` (with a `no-underscore-dangle` disable for the Vite dunder convention).
+- **`hasHiddenFrontmatter` scans the full leading `---…---` block** (in `sitemap.ts` and `useSearch.ts`) — a `layout: home` page's hero/features frontmatter exceeds any small line cap, so don't reintroduce one.
+- **`import.meta.glob` patterns must be literal strings, local to the importer** — they live in each consumer's `main.ts` (`'../pages/*.md'`), never in the framework.
+- **Regex literals need the `u` flag** (Oxlint `unicorn/require-unicode-regexp`): `/\.vue$/u`, `/\.md$/u`, the `MD_LINK` regex, etc.
+- **Lint + format are workspace-global** — configured ONCE in the root `vite.config.ts` (`lint`, `fmt`, `IGNORE_PATTERNS`). App configs carry no lint/fmt. `vp check`/`vp run fix` run from the root and cover every package. (`.vscode/settings.json` points the oxc formatter at this root config.)
+- **Each package has its own `shims.d.ts`** (`*.vue` + `*.md` modules + the `__FRAMEWORK_MERMAID__` global). Don't delete — type-aware lint/TS need them.
+- **Don't enable `permalink` on `markdown-it-anchor`** — Typography would loudly style the ¶ glyphs; the right-side outline is the affordance.
+- **`vue-router@~5.0.7` is intentional** (in-development next major, aligned with Vite+'s preview ecosystem). Don't "fix" it to v4.
+- **Don't run `vp build` directly** — use `vp run build` (root, recursive) or `vp run <app>#build`, so each app's `build` task routes through `vite-ssg build`. `vp build` would run Vite+'s SPA build and bypass vite-ssg. Run `vp check` separately (or `vp run ready` = check + build).
+- **`vp` is the sole entry point** — never raw `pnpm`/`npm`/`yarn` scripts. Dependency versions come from the pnpm **catalog** in `pnpm-workspace.yaml` (packages reference `catalog:`); bump a version there, not in individual `package.json` files.
 
 ## Deliberately absent
 
-- Code highlighting (Shiki etc.) — markdown content has no code blocks. Mermaid fences are handled separately (see Architecture).
-- Backend, persistence beyond a handful of UI prefs — content is static markdown shipped in the bundle. Only small UI prefs persist (`localStorage`); `grep -n 'localStorage.setItem' src/scripts` enumerates the current keys.
-- Application Insights / monitoring / analytics — not wired up yet; see `deploy.md` follow-ups. CSP is configured in `public/staticwebapp.config.json` with `'unsafe-inline'` for scripts (theme bootstrap inline) and styles (mermaid SVG inline `<style>`).
+- **Shiki syntax highlighting + `::: code-group`** (planned F4, deferred to v1.1) — neither consumer ships code blocks. The markdown pipeline leaves a seam for it.
+- Backend / persistence beyond UI prefs — content is static markdown in the bundle. Only `localStorage` prefs persist (`theme`, `brand-hue`, `brand-intensity`, `show-additional`).
+- 8fold CI deploy — needs its own Azure SWA resource + token; the workflow deploys only `apps/tcm`.
+- Monitoring / analytics — not wired (tracked in `TODO.md`). CSP in each consumer's `public/staticwebapp.config.json` uses `'unsafe-inline'` for the theme bootstrap script + mermaid's inline `<style>`.
