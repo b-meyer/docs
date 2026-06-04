@@ -1,0 +1,106 @@
+.prose .table-wrap {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+pre.mermaid,
+.prose pre.mermaid {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  margin: 1.5em 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+pre.mermaid > svg {
+  display: block;
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.prose .callout,
+.prose .alert {
+  margin: 1.5em 0;
+  padding: 1em 1.25em;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--callout-accent, var(--color-primary-500));
+  background: var(--callout-bg, var(--color-primary-50));
+}
+
+.prose .callout > :first-child,
+.prose .alert > :first-child {
+  margin-top: 0;
+}
+
+.prose .callout > :last-child,
+.prose .alert > :last-child {
+  margin-bottom: 0;
+}
+
+.prose .callout-title,
+.prose .alert-title {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5em 0;
+  color: var(--callout-accent, var(--color-primary-600));
+}
+
+.prose .callout-details > summary {
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+.prose .callout-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.prose .callout-details[open] > summary {
+  margin-bottom: 0.5em;
+}
+
+.prose .callout-tip,
+.prose .alert-tip,
+.prose .alert-note {
+  --callout-accent: var(--color-primary-500);
+  --callout-bg: var(--color-primary-50);
+}
+
+.prose .callout-info,
+.prose .alert-important {
+  --callout-accent: var(--color-primary-400);
+  --callout-bg: var(--color-gray-50);
+}
+
+.prose .callout-warning,
+.prose .alert-warning {
+  --callout-accent: hsl(38 92% 50%);
+  --callout-bg: hsl(48 96% 95%);
+}
+
+.dark .prose .callout-warning,
+.dark .prose .alert-warning {
+  --callout-accent: hsl(45 93% 58%);
+  --callout-bg: hsl(38 50% 12%);
+}
+
+.prose .callout-danger,
+.prose .alert-caution {
+  --callout-accent: hsl(0 84% 60%);
+  --callout-bg: hsl(0 86% 97%);
+}
+
+.dark .prose .callout-danger,
+.dark .prose .alert-caution {
+  --callout-accent: hsl(0 84% 65%);
+  --callout-bg: hsl(0 60% 12%);
+}
+
+.prose .callout-details {
+  --callout-accent: var(--color-gray-500);
+  --callout-bg: var(--color-gray-50);
+}

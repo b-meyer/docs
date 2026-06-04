@@ -1,0 +1,30 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "explicit"
+  },
+  "npm.scriptRunner": "vp",
+  "oxc.fmt.configPath": "./vite.config.ts",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    ".env": ".env*",
+    "package.json": "package-lock.json, pnpm*.yaml",
+    ".gitignore": ".gitattributes",
+    "vite.config.*": "*.d.ts, index.html, tsconfig*, *.md, *.yml",
+    "*.vue": "${capture}.*.ts",
+    "*.ts": "${capture}.*.ts"
+  },
+  "explorer.sortOrder": "type",
+  "files.associations": { "*.css": "tailwindcss" },
+  "tailwindCSS.lint.cssConflict": "ignore",
+  "[tailwindcss]": { "editor.defaultFormatter": "bradlc.vscode-tailwindcss" },
+  "[javascript]": { "editor.defaultFormatter": "oxc.oxc-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "oxc.oxc-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "oxc.oxc-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "oxc.oxc-vscode" }
+}
