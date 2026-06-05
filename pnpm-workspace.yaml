@@ -22,10 +22,10 @@ catalog:
   tailwindcss: ^4.2.2
   typescript: ~6.0.2
   unplugin-vue-markdown: ^28.3.1
-  vite: 'npm:@voidzero-dev/vite-plus-core@latest'
-  vite-plus: latest
+  vite: 'npm:@voidzero-dev/vite-plus-core@0.1.24'
+  vite-plus: 0.1.24
   vite-ssg: ^28.3.0
-  vitest: 'npm:@voidzero-dev/vite-plus-test@latest'
+  vitest: 'npm:@voidzero-dev/vite-plus-test@0.1.24'
   vue: ^3.5.32
   vue-router: ~5.0.7
   vue-tsc: ^3.2.6

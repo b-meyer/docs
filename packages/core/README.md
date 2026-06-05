@@ -1,5 +1,7 @@
 # @framework/core
 
+Layered on root [CLAUDE.md](../../CLAUDE.md) + [docs/](../../docs/).
+
 A VitePress-style **documentation meta-framework** built directly on Vite + Vue 3
 (not VitePress). Cross-linked markdown pages are pre-rendered per route at build
 time via [vite-ssg](https://github.com/antfu/vite-ssg) and hydrated as a SPA, with

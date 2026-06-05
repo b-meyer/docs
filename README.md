@@ -9,6 +9,16 @@ pre-rendered per route and hydrated as a SPA). Each site is **config + content**
 
 > Agents: see [`CLAUDE.md`](CLAUDE.md) for the architecture and hard rules.
 
+## Stack
+
+| Property        | Value                            |
+| --------------- | -------------------------------- |
+| Host            | Azure Static Web Apps            |
+| Runtime         | Node ≥ 22                        |
+| Package manager | pnpm (catalog-pinned versions)   |
+| Framework       | Vite + Vue 3 + vite-ssg          |
+| Apps            | `tcm` (deployed), `8fold` (stub) |
+
 ## Workspace
 
 | Path                                       | Name              | What                                                                                                  |
@@ -63,6 +73,29 @@ docs-workspace/
 Each app/package owns its own `vite.config.ts` (build settings), `tsconfig.json`,
 and `CLAUDE.md`. Lint/format are **not** configured per-package — the root
 `vite.config.ts` is the single source.
+
+## Documentation
+
+| Doc                                                  | Summary                                                    |
+| ---------------------------------------------------- | ---------------------------------------------------------- |
+| [`CLAUDE.md`](CLAUDE.md)                             | Agents-first operating rules, stack links, review gate     |
+| [`docs/ACCESSIBILITY.md`](docs/ACCESSIBILITY.md)     | POUR surface coverage for the doc-site view layer          |
+| [`docs/AI.md`](docs/AI.md)                           | AI-assisted authoring posture and agent contribution rules |
+| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)       | Framework design, component contracts, Azure deployment    |
+| [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md)       | Onboarding, branch/PR conventions, pre-PR gate             |
+| [`docs/CONVENTIONS.md`](docs/CONVENTIONS.md)         | Import paths, naming, CSS, lint, and dependency-pin rules  |
+| [`docs/DEPENDENCIES.md`](docs/DEPENDENCIES.md)       | pnpm catalog, top-of-graph deps, update policy             |
+| [`docs/DICTIONARY.md`](docs/DICTIONARY.md)           | Project-specific terminology and deprecated synonyms       |
+| [`docs/DOCUMENTATION.md`](docs/DOCUMENTATION.md)     | Doc tree map, Branch inventory, opted-out topics           |
+| [`docs/PIPELINE.md`](docs/PIPELINE.md)               | GitHub Actions → Azure SWA deploy workflow                 |
+| [`docs/PROVISION.md`](docs/PROVISION.md)             | Azure SWA resource provisioning and token setup            |
+| [`docs/RUNTIME.md`](docs/RUNTIME.md)                 | Azure SWA hosting model, route config, local dev           |
+| [`docs/SECURITY.md`](docs/SECURITY.md)               | CSP posture, content trust boundary, dependency graph      |
+| [`docs/STRUCTURE.md`](docs/STRUCTURE.md)             | Workspace topology, file placement, import model           |
+| [`docs/SUPPORT.md`](docs/SUPPORT.md)                 | Issue tracker, contact channels, escalation path           |
+| [`docs/TESTING.md`](docs/TESTING.md)                 | Test layers, runner, placement conventions                 |
+| [`docs/TOOLCHAIN.md`](docs/TOOLCHAIN.md)             | `vp` commands, entry-point contract, pre-push gate         |
+| [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md) | Project-specific failure modes and build gotchas           |
 
 ## Deployment
 

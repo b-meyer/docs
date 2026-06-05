@@ -1,5 +1,7 @@
 # apps/8fold — Noble Eightfold Path primer (framework consumer)
 
+Layered on root [CLAUDE.md](../../CLAUDE.md) + [docs/](../../docs/).
+
 The second consumer of the `@framework/core` docs meta-framework (workspace root:
 `../../`), and a deliberately **minimal stub**: it ships only `framework.config.ts`
 plus `src/pages/*.md`. See the root [`CLAUDE.md`](../../CLAUDE.md) for the

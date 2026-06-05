@@ -23,7 +23,7 @@ onUnmounted(() => disposeColorScheme?.());
       Skip to content
     </a>
     <AppHeader />
-    <main id="main-content" class="w-full flex-auto">
+    <main id="main-content" tabindex="-1" class="w-full flex-auto focus:outline-none">
       <RouterView />
     </main>
   </div>

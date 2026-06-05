@@ -77,45 +77,40 @@ watch(query, () => {
 </script>
 
 <template>
-  <div ref="listRef">
+  <div ref="listRef" role="listbox" class="p-2">
     <template v-if="results.length > 0">
-      <ul class="p-2" role="listbox">
-        <li
-          v-for="(r, idx) in results"
-          :key="`${r.obj.slug}#${r.obj.headingId}-${idx}`"
-          :data-result-idx="idx"
-        >
-          <RouterLink
-            :id="`${idPrefix}-${idx}`"
-            :to="targetFor(r.obj)"
-            role="option"
-            :aria-selected="idx === selectedIndex"
-            :class="[
-              'block rounded-md px-3 py-2.5 transition-colors',
-              idx === selectedIndex ? 'bg-primary-50 text-gray-900' : 'hover:bg-primary-50/60',
-            ]"
-            @click="onClickResult"
-            @mouseenter="selectedIndex = idx"
-          >
-            <div class="text-xs text-gray-600">
-              {{ r.obj.pageTitle }}
-              <span v-if="r.obj.level > 1" class="text-gray-400"> › </span>
-            </div>
-            <div class="text-sm font-medium text-gray-900">
-              <template v-for="(p, i) in headingParts(r)" :key="i">
-                <mark v-if="p.matched" class="bg-primary-100 text-primary-900">{{ p.text }}</mark>
-                <template v-else>{{ p.text }}</template>
-              </template>
-            </div>
-            <div class="mt-0.5 text-xs leading-relaxed text-gray-600">
-              <template v-for="(p, i) in excerptParts(r)" :key="i">
-                <mark v-if="p.matched" class="bg-primary-100 text-primary-900">{{ p.text }}</mark>
-                <template v-else>{{ p.text }}</template>
-              </template>
-            </div>
-          </RouterLink>
-        </li>
-      </ul>
+      <RouterLink
+        v-for="(r, idx) in results"
+        :key="`${r.obj.slug}#${r.obj.headingId}-${idx}`"
+        :id="`${idPrefix}-${idx}`"
+        :to="targetFor(r.obj)"
+        role="option"
+        :aria-selected="idx === selectedIndex"
+        :data-result-idx="idx"
+        :class="[
+          'block rounded-md px-3 py-2.5 transition-colors',
+          idx === selectedIndex ? 'bg-primary-50 text-gray-900' : 'hover:bg-primary-50/60',
+        ]"
+        @click="onClickResult"
+        @mouseenter="selectedIndex = idx"
+      >
+        <div class="text-xs text-gray-600">
+          {{ r.obj.pageTitle }}
+          <span v-if="r.obj.level > 1" class="text-gray-400"> › </span>
+        </div>
+        <div class="text-sm font-medium text-gray-900">
+          <template v-for="(p, i) in headingParts(r)" :key="i">
+            <mark v-if="p.matched" class="bg-primary-100 text-primary-900">{{ p.text }}</mark>
+            <template v-else>{{ p.text }}</template>
+          </template>
+        </div>
+        <div class="mt-0.5 text-xs leading-relaxed text-gray-600">
+          <template v-for="(p, i) in excerptParts(r)" :key="i">
+            <mark v-if="p.matched" class="bg-primary-100 text-primary-900">{{ p.text }}</mark>
+            <template v-else>{{ p.text }}</template>
+          </template>
+        </div>
+      </RouterLink>
     </template>
     <div v-else-if="query.trim()" class="p-6 text-center text-sm text-gray-600">
       No matches for

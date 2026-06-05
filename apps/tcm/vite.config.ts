@@ -1,5 +1,10 @@
 import { fileURLToPath, URL } from 'node:url';
-import { buildSitemap, filterPublicRoutes } from '@framework/core/sitemap';
+import {
+  buildSearchIndex,
+  buildSitemap,
+  filterPublicRoutes,
+  patchCspScriptHash,
+} from '@framework/core/sitemap';
 import { frameworkPlugin } from '@framework/core/vite';
 import { defineConfig } from 'vite-plus';
 
@@ -9,10 +14,14 @@ import { defineConfig } from 'vite-plus';
 // `dependsOn` it.
 const PAGES_DIR = fileURLToPath(new URL('./src/pages', import.meta.url));
 const DIST_DIR = fileURLToPath(new URL('./dist', import.meta.url));
+// Mirrors framework.config.ts sitemap.hostname. vite.config.ts cannot import
+// framework.config.ts (the logoComponent .vue reference would break the Node
+// config loader), so the hostname is duplicated here as an intentional tradeoff.
+const SITE_HOSTNAME = 'https://tcm-primer.example.com';
 let renderedPaths: string[] = [];
 
 export default defineConfig({
-  plugins: [frameworkPlugin({ markdown: { mermaid: true } })],
+  plugins: [frameworkPlugin({ markdown: { mermaid: true }, pagesDir: PAGES_DIR })],
   // Distinct dev/preview port per app so TCM and 8fold can run side by side.
   server: { port: 48455 },
   preview: { port: 48455 },
@@ -37,6 +46,12 @@ export default defineConfig({
       renderedPaths = kept;
       return kept;
     },
-    onFinished: () => buildSitemap(DIST_DIR, renderedPaths),
+    onFinished() {
+      buildSearchIndex(PAGES_DIR, DIST_DIR);
+      buildSitemap(DIST_DIR, renderedPaths, {
+        hostname: process.env.PUBLIC_SITE_URL ?? SITE_HOSTNAME,
+      });
+      patchCspScriptHash(DIST_DIR);
+    },
   },
 });

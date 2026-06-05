@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 import vue from '@vitejs/plugin-vue';
 import anchor from 'markdown-it-anchor';
 import Markdown from 'unplugin-vue-markdown/vite';
-import type { PluginOption } from 'vite';
+import type { PluginOption, ViteDevServer } from 'vite';
 import type { FrameworkConfig } from './config';
 // NOTE: explicit `.ts` extensions and no barrel import here, deliberately.
 // `plugin.ts` is loaded by Vite's Node config loader (a `.ts`-transpiling but
@@ -19,13 +19,21 @@ import { mdLinkRewriter } from './markdown/linkRewriter.ts';
 import { mdMermaid } from './markdown/mermaid.ts';
 import { mdTableWrapper } from './markdown/tableWrapper.ts';
 import { slugify } from './runtime/slugify.ts';
+import { buildSearchIndexEntries } from './sitemap.ts';
 
 // The build plugin only needs the markdown options — deliberately NOT the whole
 // FrameworkConfig. That keeps `vite.config.ts` (loaded by a Node bundler that
 // can't process `.vue`) from having to import the full runtime config, which
 // references a `logoComponent: () => import('./Logo.vue')`. The runtime config
 // (sidebar, branding, logo) goes to `createSSGApp` in the browser entry instead.
-export type FrameworkPluginOptions = Pick<FrameworkConfig, 'markdown'>;
+export type FrameworkPluginOptions = Pick<FrameworkConfig, 'markdown'> & {
+  /**
+   * Absolute path to the consumer's pages directory. When provided, the dev
+   * server serves `GET /search-index.json` on demand so that the lazy-fetch
+   * search works in dev without a prior build step.
+   */
+  pagesDir?: string;
+};
 
 /**
  * The framework's single Vite-plugin entry. Consumers do:
@@ -34,8 +42,32 @@ export type FrameworkPluginOptions = Pick<FrameworkConfig, 'markdown'>;
  * anchor → linkRewriter → tableWrapper → mermaid → containers → alerts. `mdMermaid`
  * is gated on `markdown.mermaid` so non-diagram consumers don't ship mermaid.
  */
+function devSearchIndexPlugin(pagesDir: string) {
+  return {
+    name: 'framework:dev-search-index',
+    configureServer(server: ViteDevServer) {
+      // Serve search-index.json on demand so the lazy-fetch search works in dev
+      // without a prior build step. The production artifact is written by buildSearchIndex.
+      server.middlewares.use('/search-index.json', (req, res, next) => {
+        if (req.method !== 'GET') {
+          next();
+          return;
+        }
+        try {
+          const entries = buildSearchIndexEntries(pagesDir);
+          res.setHeader('Content-Type', 'application/json');
+          res.end(JSON.stringify(entries));
+        } catch {
+          next();
+        }
+      });
+    },
+  };
+}
+
 export function frameworkPlugin(options: FrameworkPluginOptions = {}): PluginOption[] {
   const mermaidEnabled = Boolean(options.markdown?.mermaid);
+  const { pagesDir } = options;
   return [
     {
       // Build-time flag. Components gate their `import('./runtime/mermaid')` on
@@ -48,10 +80,13 @@ export function frameworkPlugin(options: FrameworkPluginOptions = {}): PluginOpt
         return { define: { __FRAMEWORK_MERMAID__: JSON.stringify(mermaidEnabled) } };
       },
     },
+    ...(pagesDir ? [devSearchIndexPlugin(pagesDir)] : []),
     vue({ include: [/\.vue$/u, /\.md$/u] }),
     Markdown({
       wrapperComponent: 'LayoutResolver',
-      markdownItOptions: { html: true, linkify: true, typographer: true },
+      // html: false — raw HTML is disabled. All <br/> in TCM content are inside
+      // mermaid fences (graph syntax), not markdown prose, so this is safe.
+      markdownItOptions: { html: false, linkify: true, typographer: true },
       markdownItSetup(md) {
         md.use(anchor, { permalink: false, slugify });
         md.use(mdLinkRewriter);

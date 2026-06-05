@@ -1,5 +1,7 @@
 # apps/tcm — TCM Primer (framework consumer)
 
+Layered on root [CLAUDE.md](../../CLAUDE.md) + [docs/](../../docs/).
+
 The Traditional Chinese Medicine primer — the **rich** consumer of `@framework/core`
 (mermaid diagrams + theme controls). Workspace root: `../../`. See the root
 [`CLAUDE.md`](../../CLAUDE.md) for architecture + the `vp` command map, and

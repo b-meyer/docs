@@ -1,6 +1,39 @@
 import MarkdownIt from 'markdown-it';
 import { describe, expect, it } from 'vite-plus/test';
-import { mdAlerts, mdContainers, mdMermaid } from '../src/markdown';
+import { mdAlerts, mdContainers, mdLinkRewriter, mdMermaid } from '../src/markdown';
+
+function buildLinkRewriter(): MarkdownIt {
+  const md = new MarkdownIt();
+  md.use(mdLinkRewriter);
+  return md;
+}
+
+describe('mdLinkRewriter', () => {
+  it('rewrites .md extension to SPA route', () => {
+    const out = buildLinkRewriter().render('[Page](./page.md)');
+    expect(out).toContain('href="/page"');
+  });
+
+  it('maps index.md to the root route /', () => {
+    const out = buildLinkRewriter().render('[Home](./index.md)');
+    expect(out).toContain('href="/"');
+  });
+
+  it('preserves query string and hash fragment', () => {
+    const out = buildLinkRewriter().render('[Page](./page.md?tab=2#section)');
+    expect(out).toContain('href="/page?tab=2#section"');
+  });
+
+  it('leaves absolute URLs unchanged', () => {
+    const out = buildLinkRewriter().render('[External](https://example.com)');
+    expect(out).toContain('href="https://example.com"');
+  });
+
+  it('leaves non-.md relative links unchanged', () => {
+    const out = buildLinkRewriter().render('[Asset](./image.png)');
+    expect(out).toContain('href="./image.png"');
+  });
+});
 
 describe('mdMermaid', () => {
   it('emits a pre.mermaid.not-prose block for ```mermaid fences', () => {
