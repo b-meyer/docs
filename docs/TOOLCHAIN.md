@@ -7,6 +7,33 @@ summary: 'vp is the sole entry point wrapping pnpm + Vite + Vitest + lint/format
 
 # Toolchain
 
+## Tooling inventory
+
+| Purpose          | Tool                                                 | Version floor                               | Config location                              |
+| ---------------- | ---------------------------------------------------- | ------------------------------------------- | -------------------------------------------- |
+| Package manager  | pnpm                                                 | see `packageManager` in root `package.json` | `pnpm-workspace.yaml` (catalog)              |
+| Build — apps     | Vite + framework-ssg (custom CLI in `packages/core`) | paired to `vite-plus`                       | `apps/<app>/vite.config.ts`                  |
+| Build — packages | tsdown (via `vp pack`)                               | paired to `vite-plus`                       | `packages/core/package.json` scripts         |
+| Lint             | Oxlint                                               | paired to `vite-plus`                       | root `vite.config.ts`                        |
+| Format           | Oxfmt                                                | paired to `vite-plus`                       | root `vite.config.ts`                        |
+| Type-check       | TypeScript                                           | `~6.0.2`                                    | root `tsconfig.json`                         |
+| Test runner      | Vitest (via `vite-plus/test`)                        | paired to `vite-plus`                       | `packages/core/vite.config.ts` `test:` block |
+| Dev server       | Vite (via `vp run dev:*`)                            | paired to `vite-plus`                       | `apps/<app>/vite.config.ts`                  |
+| Node runtime     | Node.js                                              | ≥ 22.12.0                                   | root `package.json` `engines`                |
+
+All tools are pinned via the pnpm catalog in `pnpm-workspace.yaml`. See
+[DEPENDENCIES.md](DEPENDENCIES.md) for the full version table.
+
+## Bundlers
+
+`vp run build` uses **Vite + framework-ssg** for app workspaces — it pre-renders every
+route to static HTML. `packages/core` uses **tsdown** (`vp run core#pack`, or
+transitively via the `-t` flag in CI) for library bundling — it emits `dist/build.mjs`
+(the framework-ssg CLI). **esbuild** is the transform engine both Vite and tsdown rely
+on; it is never invoked directly. Antipattern: bundling a library workspace through
+Vite's app path, or running `vp build` (SPA path) instead of `vp run build`
+(framework-ssg path).
+
 ## Entry-point contract
 
 **`vp` is the sole entry point for all workspace operations** — development, builds, checks, tests, and dependency management. Bare `pnpm`/`npm`/`yarn` invocations bypass the `vp` contract: workspace catalog pinning, run cache, and hook routing all require `vp`. The few legitimate escape hatches (ad-hoc operations `vp` doesn't cover) are noted inline when used. CI uses `pnpm install --frozen-lockfile` directly — the `--frozen-lockfile` flag is not exposed via `vp install` and is necessary for reproducible CI installs.
@@ -17,18 +44,20 @@ All commands run from the **repo root**, not from individual app or package dire
 
 ## Commands
 
-| Command                               | Does                                                                                                         |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `vp install`                          | Install / refresh all workspace deps (pnpm catalog in `pnpm-workspace.yaml` is the version source of truth). |
-| `vp run dev:tcm` / `vp run dev:8fold` | Dev server for TCM / 8fold (HMR on `.md` changes). Equivalent: `vp run tcm#dev` / `vp run 8fold#dev`.        |
-| `vp check`                            | Format + lint + type-check the whole workspace. One canonical config in root `vite.config.ts`.               |
-| `vp run fix`                          | Autofix format + lint issues workspace-wide (`vp check --fix`). Type-check errors require manual resolution. |
-| `vp run build`                        | `vp run -r build` — builds every app (`vite-ssg build` → static HTML per route + `sitemap.xml`).             |
-| `vp run test`                         | `vp run -r test` — runs each package's tests (framework unit tests live in `packages/core/`).                |
-| `vp run ready`                        | `vp check && vp run -r build` — the pre-push gate.                                                           |
-| `vp run <app>#<task>`                 | Run one app's task, e.g. `vp run tcm#build`, `vp run 8fold#preview`.                                         |
+| Command                                                       | Does                                                                                                                                     |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `vp install`                                                  | Install / refresh all workspace deps (pnpm catalog in `pnpm-workspace.yaml` is the version source of truth).                             |
+| `vp run dev:tcm` / `vp run dev:8fold` / `vp run dev:showcase` | Dev server for TCM / 8fold / Showcase (HMR on `.md` changes). Equivalent: `vp run tcm#dev` / `vp run 8fold#dev` / `vp run showcase#dev`. |
+| `vp check`                                                    | Format + lint + type-check the whole workspace. One canonical config in root `vite.config.ts`.                                           |
+| `vp run fix`                                                  | Autofix format + lint issues workspace-wide (`vp check --fix`). Type-check errors require manual resolution.                             |
+| `vp run build`                                                | `vp run -r build` — builds every app (`framework-ssg` → static HTML per route + `sitemap.xml`).                                          |
+| `vp run test`                                                 | `vp run -r test` — runs each package's tests (framework unit tests live in `packages/core/`).                                            |
+| `vp run ready`                                                | `vp check && vp run -r build` — the pre-push gate.                                                                                       |
+| `vp run <app>#<task>`                                         | Run one app's task, e.g. `vp run tcm#build`, `vp run 8fold#preview`.                                                                     |
+| `vp cache clean`                                              | Clear the run-task cache. Use when `vp run test` (or any task) reports "cache hit" but you need a guaranteed fresh execution.            |
+| `vp run test --no-cache`                                      | Run tests once without reading from or writing to cache — useful for a one-off fresh run without permanently clearing the cache.         |
 
-**`vp build` ≠ `vp run build`.** `vp build` invokes Vite+'s SPA build path, bypassing `vite-ssg`. Always use `vp run build` (or `vp run <app>#build`) so each app's build task routes through `vite-ssg build`. See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) if a build produces a SPA bundle instead of static HTML.
+**`vp build` ≠ `vp run build`.** `vp build` invokes Vite+'s SPA build path, bypassing `framework-ssg`. Always use `vp run build` (or `vp run <app>#build`) so each app's build task routes through `framework-ssg`. See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) if a build produces a SPA bundle instead of static HTML.
 
 **`vp test` ≠ `vp run test`.** `vp test` invokes Vite+'s built-in Vitest on the current package only; always use `vp run test` (or `vp run -r test`) to run tests across all workspace packages.
 
@@ -55,6 +84,14 @@ Dependency versions are declared once in the `catalog:` block of `pnpm-workspace
 3. Run `vp check` to catch any type or lint regressions
 
 Do not edit individual `package.json` versions directly — the catalog is the preferred source of truth (`catalogMode: prefer`; individual version specs are accepted but discouraged).
+
+## Pre-commit hooks
+
+`vp install` generates pre-commit hooks (via `vp`'s prepare step). Hooks run lint +
+format on staged files only — fast author-time feedback on every commit. CI runs the
+full check ladder independently. Half-wired hooks (some contributors run them, others
+bypass) are a defect. Do not skip hooks with `--no-verify`; if a hook fails, fix the
+underlying issue. See [CONTRIBUTING.md](CONTRIBUTING.md) for the pre-PR gate.
 
 ## Industry References
 

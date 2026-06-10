@@ -1,48 +1,53 @@
-import { ViteSSG } from 'vite-ssg';
-import { nextTick, type Component } from 'vue';
-import HomeLayout from './components/HomeLayout.vue';
-import LayoutResolver from './components/LayoutResolver.vue';
-import PageLayout from './components/PageLayout.vue';
-import { CONFIG_KEY, type FrameworkConfig } from './config';
-import { createRoutes, scrollBehavior, type PagesGlob } from './routerFactory';
-
-export type CreateSSGAppPages = {
-  /** `import.meta.glob('./pages/*.md')` — lazy module loaders, one per page. */
-  pages: PagesGlob;
-};
+import './styles/entry.css';
+import { createUnhead, headSymbol } from '@unhead/vue';
+import config from 'virtual:@framework/config';
+import { createSSRApp, nextTick } from 'vue';
+import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router';
+import { routes } from 'vue-router/auto-routes';
+import App from './App.vue';
+import { HomeLayout, LayoutResolver, NotFoundPage, PageLayout } from './components';
+import { CONFIG_KEY } from './config';
+import { scrollBehavior } from './routerFactory';
 
 /**
- * Framework wrapper around `ViteSSG`. Builds routes from the pages glob,
- * registers global components, and provides the config so descendants can
- * `useConfig()`. The search index is built at SSG time (`buildSearchIndex` in
- * `onFinished`) and lazy-fetched by the client when search first opens.
- *
- * Consumers call this from their entry (e.g. `src/scripts/main.ts`):
- *   `export const createApp = createSSGApp(App, config, { pages })`
+ * Creates the Vue app instance. Called once by the browser entry (no routePath —
+ * mounts to #app after the router is ready) and once per route by the SSG build
+ * script (with routePath — navigates then returns for renderToString).
  */
-export function createSSGApp(RootApp: Component, config: FrameworkConfig, opts: CreateSSGAppPages) {
-  const routes = createRoutes(config, opts.pages);
-
-  return ViteSSG(RootApp, { routes, scrollBehavior }, ({ app, router, head, isClient }) => {
-    // LayoutResolver is the markdown wrapperComponent (referenced by name).
-    // PageLayout/HomeLayout are imported by it directly, but are also registered
-    // so consumer pages/overrides can reference them by name.
-    app.component('LayoutResolver', LayoutResolver);
-    app.component('PageLayout', PageLayout);
-    app.component('HomeLayout', HomeLayout);
-    app.provide(CONFIG_KEY, config);
-    // Set a global title template so routes without frontmatter `title` still
-    // produce a distinct <title> (WCAG SC 2.4.2). Falls back to the site title
-    // alone when the page has no title of its own.
-    head?.push({ titleTemplate: (title) => (title ? `${title} — ${config.title}` : config.title) });
-    // Move focus to #main-content on every client-side route change so keyboard
-    // and screen-reader users don't need to re-navigate past the header on each
-    // page. Gated on isClient — document is unavailable during SSG rendering.
-    if (isClient) {
-      router.afterEach(async () => {
-        await nextTick();
-        document.querySelector<HTMLElement>('#main-content')?.focus();
-      });
-    }
+export async function createApp(routePath?: string) {
+  // createSSRApp on both sides: server rendering works either way, but the client
+  // side requires it to trigger hydration against the pre-rendered HTML.
+  const app = createSSRApp(App);
+  const head = createUnhead();
+  const router = createRouter({
+    history: import.meta.env.SSR
+      ? createMemoryHistory(import.meta.env.BASE_URL)
+      : createWebHistory(import.meta.env.BASE_URL),
+    routes: [...routes, { path: '/:pathMatch(.*)*', component: NotFoundPage }],
+    scrollBehavior,
   });
+
+  app.use(router);
+  app.provide(headSymbol, head);
+  app.component('LayoutResolver', LayoutResolver);
+  app.component('PageLayout', PageLayout);
+  app.component('HomeLayout', HomeLayout);
+  app.provide(CONFIG_KEY, config);
+  head.push({ titleTemplate: (title) => (title ? `${title} — ${config.title}` : config.title) });
+
+  if (!import.meta.env.SSR) {
+    // Move focus to #main-content on every client-side route change so keyboard
+    // and screen-reader users don't need to re-navigate past the header on each page.
+    router.afterEach(async () => {
+      await nextTick();
+      document.querySelector<HTMLElement>('#main-content')?.focus();
+    });
+    await router.isReady();
+    app.mount('#app');
+  } else if (routePath !== undefined) {
+    await router.push(routePath);
+    await router.isReady();
+  }
+
+  return { app, router, head };
 }

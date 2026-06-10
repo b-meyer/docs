@@ -9,16 +9,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from 'reka-ui';
-import {
-  computed,
-  defineAsyncComponent,
-  nextTick,
-  onBeforeUnmount,
-  onMounted,
-  ref,
-  useTemplateRef,
-  watch,
-} from 'vue';
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, useTemplateRef, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useConfig } from '../composables/useConfig';
 import { targetFor, useSearch } from '../composables/useSearch';
@@ -28,9 +19,6 @@ import ThemeToggle from './ThemeToggle.vue';
 
 const config = useConfig();
 const siteTitle = computed(() => config.branding?.siteTitle ?? config.title);
-const LogoComponent = config.branding?.logoComponent
-  ? defineAsyncComponent(config.branding.logoComponent)
-  : null;
 
 const {
   open,
@@ -175,9 +163,6 @@ onBeforeUnmount(() => {
       </DialogRoot>
 
       <RouterLink to="/" class="flex items-center gap-2 text-lg font-semibold text-gray-900">
-        <slot name="logo">
-          <component :is="LogoComponent" v-if="LogoComponent" />
-        </slot>
         <slot name="site-title">{{ siteTitle }}</slot>
       </RouterLink>
 

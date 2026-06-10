@@ -25,7 +25,6 @@ All dependency versions are declared once in the `catalog:` block of `pnpm-works
 | Host               | Azure SWA Free         | Static hosting + CDN     | Zero-cost tier; route config via `staticwebapp.config.json`                                  |
 | Runtime (consumer) | `vue` `^3.5.32`        | SPA framework            | Composition API + `<script setup>` SFC model                                                 |
 | Runtime (consumer) | `vue-router` `~5.0.7`  | SPA routing              | In-development next major aligned with Vite+; `~` pin is **intentional** — do not bump to v4 |
-| Runtime (consumer) | `vite-ssg` `^28.3.0`   | SSG pre-rendering        | Per-route static HTML + SPA hydration                                                        |
 | Runtime (consumer) | `reka-ui` `^2.9.0`     | Accessible UI primitives | Unstyled headless components for `AppHeader`                                                 |
 | Runtime (consumer) | `mermaid` `^11.15.0`   | Diagram rendering        | Build-time tree-shaken when `markdown.mermaid: false`                                        |
 | Build-only         | `vite-plus` `0.1.24`   | Toolchain CLI            | Exact pin; `vp` API surface in active development                                            |
@@ -43,7 +42,7 @@ All dependency versions are declared once in the `catalog:` block of `pnpm-works
 3. Run `vp check` to catch type or lint regressions.
 4. Run `vp run ready` to confirm all apps build.
 
-For major version bumps (`vue-router`, `vite-ssg`, `vite-plus`), review the upstream CHANGELOG for breaking changes before bumping.
+For major version bumps (`vue-router`, `vite-plus`), review the upstream CHANGELOG for breaking changes before bumping.
 
 **Dep scanning:** CI runs `pnpm audit --audit-level=high` on every push to `release`. Run it locally after any dependency bump to catch CVEs before pushing.
 
@@ -55,6 +54,21 @@ For major version bumps (`vue-router`, `vite-ssg`, `vite-plus`), review the upst
 - **Rejected:** GPL, AGPL, LGPL, SSPL, BUSL, and other copyleft or source-available families.
 - **Audit cadence:** `pnpm licenses list` run manually before each release; no automated license scanner wired (trigger: a copyleft dep discovered in PR review).
 - **Enforcement:** PR review.
+
+## Lockfile
+
+`pnpm-lock.yaml` is committed to the repository. CI restores via
+`pnpm install --frozen-lockfile`. Manual lockfile edits and out-of-band
+`pnpm install` (without `--frozen-lockfile`) are defects — they regenerate the
+lockfile silently and diverge from the manifest. Always use `vp install` locally;
+CI always uses `pnpm install --frozen-lockfile`.
+
+## Vendoring
+
+None. No third-party code is vendored. Trigger to revisit: an upstream dep becomes
+unmaintained but functional, or supply-chain risk outweighs the cost of an external
+dep. If vendored, the artifact must carry upstream attribution (`LICENSE` + `NOTICE`)
+and a re-vendor procedure.
 
 ## Industry References
 

@@ -15,7 +15,6 @@ export {
 } from './composables/useFrontmatter';
 export {
   useSearch,
-  createSearchIndex,
   targetFor,
   type SearchEntry,
   type IndexedEntry,
@@ -25,5 +24,3 @@ export { slugify } from './runtime/slugify';
 export { prefersReducedMotion } from './runtime/reducedMotion';
 export { runMermaid, watchColorScheme } from './runtime/mermaid';
 export { headFromFrontmatter } from './runtime/headFromFrontmatter';
-export { createSSGApp, type CreateSSGAppPages } from './ssg';
-export { frameworkPlugin } from './plugin';

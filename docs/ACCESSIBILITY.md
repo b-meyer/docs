@@ -13,7 +13,7 @@ The framework targets **WCAG 2.2 Level AA** for the doc-site view layer. The tar
 
 **Heading hierarchy** — every page must have exactly one `<h1>` (the markdown title). Section headings follow `h2 → h3` order without skipping levels. The outline panel (`PageNav`) reflects heading structure, so hierarchy breaks degrade the outline as well.
 
-**Page title (SC 2.4.2)** — `createSSGApp` installs a global `titleTemplate` (e.g., `Page title — Site name`) so every route produces a distinct `<title>` even when frontmatter omits a `title` field. Consumers must set a meaningful `title` in `FrameworkConfig`. The `<html lang>` attribute on each app's `index.html` must also carry the correct language tag (SC 3.1.1) — this is a consumer responsibility.
+**Page title (SC 2.4.2)** — `createApp` installs a global `titleTemplate` (e.g., `Page title — Site name`) so every route produces a distinct `<title>` even when frontmatter omits a `title` field. Consumers must set a meaningful `title` in `FrameworkConfig`. The `<html lang>` attribute on each app's `index.html` must also carry the correct language tag (SC 3.1.1) — this is a consumer responsibility.
 
 **SVG and icon alt text** — `AppHeader` uses Heroicons via Reka UI. Every interactive icon must have an `aria-label` or a paired visible label. Decorative SVGs use `aria-hidden="true"`.
 
@@ -31,13 +31,13 @@ The framework targets **WCAG 2.2 Level AA** for the doc-site view layer. The tar
 
 **Prose structure** — markdown pages use clear headings and avoid ambiguous link text (no bare "click here"). The link rewriter resolves `[Display](Other.md)` cross-links; display text must be descriptive.
 
-**Consistent navigation** — sidebar grouping and ordering follow `framework.config.ts`. Consumers should not reorder groups in ways that break spatial memory for returning users.
+**Consistent navigation** — sidebar grouping and ordering follow each app's `vite.config.ts`. Consumers should not reorder groups in ways that break spatial memory for returning users.
 
 ## Robust
 
 **Reka UI ARIA roles** — `AppHeader` wraps Reka UI primitives that ship with appropriate ARIA roles and keyboard interaction. Unwrapping Reka UI components into bare HTML elements removes the accessibility contract.
 
-**Pre-rendered HTML** — vite-ssg pre-renders every route to static HTML. Screen readers receive meaningful content before JavaScript hydrates. No content should be gated behind a JavaScript `onMounted` that has no server-side equivalent.
+**Pre-rendered HTML** — framework-ssg pre-renders every route to static HTML. Screen readers receive meaningful content before JavaScript hydrates. No content should be gated behind a JavaScript `onMounted` that has no server-side equivalent.
 
 ## Known Gaps
 

@@ -20,6 +20,7 @@ summary: 'Clone → vp install → vp check green onboarding; short-lived featur
 
 - **Branch from `main`.** Short-lived feature branches; no long-running forks.
 - **Branch naming:** `<type>/<short-description>` — e.g., `fix/search-missing-pages`, `feat/new-layout`.
+- **PR title:** `<type>(<scope>): <description>` following [Conventional Commits](https://www.conventionalcommits.org). Scope is optional. Type set matches branch types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`. PRs are squash-merged, so the PR title becomes the final commit message — keep it precise.
 - **PR target:** `main`. The `release` branch is CI-only (deploy trigger); do not PR against it.
 - **PR size:** keep PRs focused on one concern. A refactor and a feature fix in the same PR are harder to review.
 
@@ -41,6 +42,10 @@ Follow [CONVENTIONS.md](CONVENTIONS.md) for import paths, naming (`App*`, `use*`
 - Import cross-workspace modules via `@framework/core/…`, never relative paths across package boundaries.
 - Bump versions in `pnpm-workspace.yaml` catalog, not individual `package.json` files.
 - All regex literals require the `/u` flag (Oxlint enforces this).
+
+## Commit messages
+
+This project follows [Conventional Commits](https://www.conventionalcommits.org). Because PRs are squash-merged, the PR title becomes the final commit message — that's the commit that matters. Local commits on a feature branch are informal; the squash cleans them up. Type set: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`. Breaking changes use a `!` suffix: `feat!: ...`.
 
 ## First PR
 

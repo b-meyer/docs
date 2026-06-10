@@ -9,11 +9,11 @@ summary: 'Import path rules (@/ alias scope, relative imports in framework, cros
 
 ## Import paths
 
-**`@/` is consumer-local, not workspace-wide.** Each consumer app declares an `@/` alias pointing to its own `src/`. `packages/core/` uses relative imports exclusively (e.g., `./components/AppHeader.vue`). Consumer code reaches framework modules via the package name: `@framework/core/config`, etc.
+**`@/` is consumer-local, not workspace-wide.** Each consumer app declares an `@/` alias pointing to its own `src/`. `packages/core/` uses relative imports exclusively (e.g., `./components/AppHeader.vue`). Consumer code reaches framework modules via the package name: `@framework/core/config`, etc. _Enforcement: TypeScript path alias config — an `@/` import inside `packages/core/` resolves to nothing and fails `vp check` type-check._
 
-**Cross-workspace imports use the package name, never relative paths.** `@framework/core/…` is stable; `../../../../packages/core/src/…` is not.
+**Cross-workspace imports use the package name, never relative paths.** `@framework/core/…` is stable; `../../../../packages/core/src/…` is not. _Enforcement: TypeScript module resolution — relative paths crossing workspace boundaries produce resolution errors._
 
-**Imports reachable from `vite.config.ts` entry points require explicit `.ts` file extensions.** Vite's config loader runs as native Node ESM, which rejects directory imports and requires explicit extensions. This applies to `plugin.ts`, `vite.config.ts` itself, and any file they directly import. The TypeScript bundler resolves extension-less relative imports in the rest of the framework source. See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for the `ERR_UNSUPPORTED_DIR_IMPORT` failure mode.
+**Imports reachable from `vite.config.ts` entry points require explicit `.ts` file extensions.** Vite's config loader runs as native Node ESM, which rejects directory imports and requires explicit extensions. This applies to `plugin.ts`, `vite.config.ts` itself, and any file they directly import. The TypeScript bundler resolves extension-less relative imports in the rest of the framework source. _Enforcement: Node ESM runtime throws `ERR_UNSUPPORTED_DIR_IMPORT` on first load._ See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for the failure mode.
 
 ## Lint and format
 
@@ -43,7 +43,7 @@ summary: 'Import path rules (@/ alias scope, relative imports in framework, cros
 
 ## Shims and type declarations
 
-**Each package has its own `shims.d.ts` — do not delete.** Every workspace has a `shims.d.ts` declaring module types for `*.vue`, `*.md`, and `__FRAMEWORK_MERMAID__`. Deleting one causes silent type errors or lint false-positives.
+**`packages/core` provides type shims via `@framework/core/client` — do not delete `packages/core/shims.d.ts`.** The shim file declares module types for `*.vue`, `*.md`, and `__FRAMEWORK_MERMAID__`. Consumer apps reference these types through the `@framework/core/client` export — they no longer carry their own `shims.d.ts`.
 
 ## Dependency pinning
 

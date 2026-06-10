@@ -31,8 +31,8 @@ jobs:
 
       # Lint/format/type-check the whole workspace (one canonical root config),
       # then unit tests, then build only the TCM app. `vp run <app>#build` invokes
-      # that app's `build` task (`vite-ssg build`); `vp build` directly would run
-      # Vite+'s SPA build and bypass vite-ssg.
+      # that app's `build` task (`framework-ssg`); `vp build` directly would run
+      # Vite+'s SPA build and bypass framework-ssg.
       - name: Check
         run: pnpm exec vp check
 
@@ -43,7 +43,7 @@ jobs:
         run: pnpm audit --audit-level=high
 
       - name: Build
-        run: pnpm exec vp run tcm#build
+        run: pnpm exec vp run -t tcm#build
 
       - name: Generate SBOM
         run: pnpm sbom --sbom-format cyclonedx > sbom.json

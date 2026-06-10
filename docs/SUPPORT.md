@@ -14,7 +14,7 @@ summary: 'GitHub Issues as the primary channel; private disclosure path for secu
 | GitHub Issues       | Bug reports, feature requests, questions           | Best effort; no SLA — typically within 14 days (internal project) |
 | Security disclosure | Vulnerabilities — use private advisory (see below) | Acknowledged within 5 business days                               |
 
-**Security reporting:** Do not open a public GitHub Issue for vulnerabilities. Use GitHub's private security advisory feature (Security → Advisories → New draft advisory) or contact the maintainer directly. See [SECURITY.md](SECURITY.md) for the project's security posture. If no acknowledgment arrives within 5 business days, the reporter may escalate to the maintainer directly via their GitHub profile, or — as a last resort — open a public GitHub issue, noting that doing so waives confidentiality for the disclosure.
+**Security reporting:** Do not open a public GitHub Issue for vulnerabilities. Use GitHub's private security advisory feature (Security → Advisories → New draft advisory) or contact the maintainer directly. See [SECURITY.md](SECURITY.md) for the project's security posture. If no acknowledgment arrives within 5 business days, the reporter may escalate to the repo owner directly via their GitHub profile (linked from the repository), or — as a last resort — open a public GitHub issue, noting that doing so waives confidentiality for the disclosure.
 
 ## Roles
 
@@ -28,7 +28,7 @@ summary: 'GitHub Issues as the primary channel; private disclosure path for secu
 
 1. Search existing GitHub Issues for prior reports.
 2. Open a new Issue with symptom, reproduction steps, and expected behavior.
-3. For blockers: tag the maintainer in the Issue body.
+3. For blockers: tag the repo owner in the Issue body (GitHub profile linked from the repository).
 
 There is no paid support tier. This is an internal project with no public SLA.
 

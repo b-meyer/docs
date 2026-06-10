@@ -39,7 +39,7 @@ async function fetchSearchIndex(): Promise<void> {
   if (index.value.length > 0 || indexLoading) return;
   indexLoading = true;
   try {
-    const res = await fetch('/search-index.json');
+    const res = await fetch(`${import.meta.env.BASE_URL}search-index.json`);
     if (!res.ok) return;
     const entries = (await res.json()) as SearchEntry[];
     index.value = entries.map((e) => prepare(e));

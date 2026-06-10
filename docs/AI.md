@@ -38,7 +38,7 @@ This project is authored with **Claude Code** using the **cit-developer** skill 
 
 **Require human review before merging:**
 
-- Any change to `createSSGApp` or `frameworkPlugin` signatures (consumer-facing API)
+- Any change to `createApp` or `frameworkPlugin` signatures (consumer-facing API)
 - New markdown-it plugin additions (plugin order is load-bearing)
 - Changes to the `__FRAMEWORK_MERMAID__` define gate or `shims.d.ts` declarations
 

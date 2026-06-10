@@ -15,20 +15,37 @@ File: `.github/workflows/azure-static-web-apps.yml`
 
 ## Stages
 
-| Stage            | Command                                                 | Purpose                                                                |
-| ---------------- | ------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Install          | `pnpm install --frozen-lockfile`                        | Reproducible install; `--frozen-lockfile` not exposed via `vp install` |
-| Check            | `pnpm exec vp check`                                    | Format + lint + type-check (whole workspace, root `vite.config.ts`)    |
-| Test             | `pnpm exec vp run -r test`                              | Unit tests (`packages/core/tests/`)                                    |
-| Dependency audit | `pnpm audit --audit-level=high`                         | Blocks on high-severity CVEs before building                           |
-| Build            | `pnpm exec vp run tcm#build`                            | vite-ssg build → static HTML per route + `sitemap.xml`                 |
-| Generate SBOM    | `pnpm sbom --sbom-format cyclonedx > sbom.json`         | Produces CycloneDX SBOM of the workspace                               |
-| Upload SBOM      | `actions/upload-artifact` pinned SHA (artifact: `sbom`) | Retains SBOM for 90 days                                               |
-| Deploy           | `Azure/static-web-apps-deploy`                          | Upload `apps/tcm/dist` to Azure SWA                                    |
+| Stage            | Command                                                 | Purpose                                                                                                      |
+| ---------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Install          | `pnpm install --frozen-lockfile`                        | Reproducible install; `--frozen-lockfile` not exposed via `vp install`                                       |
+| Check            | `pnpm exec vp check`                                    | Format + lint + type-check (whole workspace, root `vite.config.ts`)                                          |
+| Test             | `pnpm exec vp run -r test`                              | Unit tests colocated in `packages/core/src/`                                                                 |
+| Dependency audit | `pnpm audit --audit-level=high`                         | Blocks on high-severity CVEs before building                                                                 |
+| Build            | `pnpm exec vp run -t tcm#build`                         | packs `@framework/core` first (transitive), then framework-ssg build → static HTML per route + `sitemap.xml` |
+| Generate SBOM    | `pnpm sbom --sbom-format cyclonedx > sbom.json`         | Produces CycloneDX SBOM of the workspace                                                                     |
+| Upload SBOM      | `actions/upload-artifact` pinned SHA (artifact: `sbom`) | Retains SBOM for 90 days                                                                                     |
+| Deploy           | `Azure/static-web-apps-deploy`                          | Upload `apps/tcm/dist` to Azure SWA                                                                          |
 
 **Why `pnpm exec vp …` not bare `vp`:** CI does not have `vp` in PATH globally; `pnpm exec` resolves it from `node_modules/.bin`.
 
-**Why `vp run tcm#build` not `vp build`:** `vp build` runs Vite+'s SPA build path, bypassing `vite-ssg`. Only the per-app task invokes `vite-ssg build` and produces static HTML. See [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
+**Why `vp run -t tcm#build` not `vp build`:** `vp build` runs Vite+'s SPA build path, bypassing `framework-ssg`. Only the per-app task invokes `framework-ssg` and produces static HTML. See [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
+
+**Why `-t` (transitive):** `@framework/core` ships a compiled bin (`dist/build.mjs`) produced by `vp pack`. That file is not committed — it must be built before the app build runs. `-t` walks workspace `package.json` dependencies and runs each package's `build` task in order, so `@framework/core#build` (vp pack) runs before `tcm#build` automatically on every fresh CI run.
+
+## Gates
+
+Each stage is a blocking gate — a failure exits the workflow and downstream stages do not run.
+
+| Stage            | Blocks on                                                            | On failure                           |
+| ---------------- | -------------------------------------------------------------------- | ------------------------------------ |
+| Install          | `pnpm install --frozen-lockfile` failure (lockfile drift or network) | Workflow exits; nothing runs         |
+| Check            | Format, lint, or type-check error                                    | Workflow exits; nothing deploys      |
+| Test             | Any failing unit / composable / component test                       | Workflow exits                       |
+| Dependency audit | High-severity CVE (`--audit-level=high`)                             | Workflow exits before build          |
+| Build            | Build error for `apps/tcm`                                           | Workflow exits; no artifact produced |
+| Deploy           | SWA deploy action failure                                            | Prior SWA revision stays live        |
+
+No advisory (non-blocking) checks exist today — every CI step is blocking.
 
 ## Deployment
 

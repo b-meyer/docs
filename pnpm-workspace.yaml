@@ -8,10 +8,14 @@ catalog:
   '@heroicons/vue': ^2.2.0
   '@tailwindcss/typography': ^0.5.16
   '@tailwindcss/vite': ^4.2.2
+  '@types/jsdom': ^21
   '@types/markdown-it': ^14.1.2
   '@types/node': ^22
+  '@unhead/dom': ^2.1.15
   '@unhead/vue': ^2.1.15
+  '@vue/server-renderer': ^3.5
   '@vitejs/plugin-vue': ^6.0.3
+  '@vue/test-utils': ^2.4
   '@vue/tsconfig': ^0.9.1
   fuzzysort: ^3.1.0
   markdown-it: ^14.1.0
@@ -24,7 +28,7 @@ catalog:
   unplugin-vue-markdown: ^28.3.1
   vite: 'npm:@voidzero-dev/vite-plus-core@0.1.24'
   vite-plus: 0.1.24
-  vite-ssg: ^28.3.0
+  jsdom: ^28.1.0
   vitest: 'npm:@voidzero-dev/vite-plus-test@0.1.24'
   vue: ^3.5.32
   vue-router: ~5.0.7

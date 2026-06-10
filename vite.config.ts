@@ -7,7 +7,7 @@ const IGNORE_PATTERNS: string[] = [
   '**/dist/**',
   '**/dist-baseline/**',
   '**/node_modules/**',
-  '**/.vite-ssg-temp/**',
+  '**/.framework-ssg-temp/**',
   'pnpm-lock.yaml',
 ];
 

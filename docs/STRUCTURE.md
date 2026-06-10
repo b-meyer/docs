@@ -13,7 +13,8 @@ summary: 'vp-mono layout with apps/ (deployable surfaces) and packages/ (shared 
 docs/                     ← repo root (pnpm workspace)
 ├── apps/
 │   ├── tcm/              TCM Primer — deployed to Azure SWA
-│   └── 8fold/            Eightfold Path — not yet deployed
+│   ├── 8fold/            Eightfold Path — not yet deployed
+│   └── showcase/         Framework feature showcase — not yet deployed
 ├── packages/
 │   └── core/             @framework/core — shared framework library
 ├── docs/                 Branches (topical docs/<TOPIC>.md files)
@@ -28,17 +29,18 @@ docs/                     ← repo root (pnpm workspace)
 
 ```
 apps/<name>/
-├── framework.config.ts   site config (title, sidebar, branding, markdown options)
-├── vite.config.ts        build settings only — no lint/fmt
-├── index.html            entry HTML + pre-paint theme bootstrap inline script
+├── vite.config.ts        full site config — title, sidebar, branding, markdown options, build settings
 ├── src/
-│   ├── scripts/main.ts   vite-ssg entry (the two import.meta.glob calls)
-│   ├── pages/            content files (filename = URL slug)
-│   ├── styles/main.css   Tailwind import + @source + brand override
-│   └── Logo.vue          brand mark (optional)
+│   ├── pages/            content files (.md or .vue; filename = URL slug) ← preferred
+│   └── [assets/]         optional: static assets referenced by pages (SVGs, images)
 └── public/
-    └── staticwebapp.config.json   Azure SWA route + CSP config
+    ├── staticwebapp.config.json   Azure SWA route + CSP config
+    └── favicon.svg                site icon served at /favicon.svg
 ```
+
+All site configuration (title, sidebar, branding, markdown options) is expressed through `defineConfig` from `@framework/core/vite` in `vite.config.ts` — there is no separate `framework.config.ts`. The framework generates `index.html`, the app entry module, and all Tailwind CSS internally; consumer apps contain only content and static assets.
+
+The framework auto-detects the content root: `src/pages/` is used when it exists; otherwise `src/` is the fallback. New apps should use `src/pages/`.
 
 ## Framework package layout (`packages/core/`)
 
@@ -49,15 +51,16 @@ packages/core/
 │   ├── composables/      useConfig, useTheme, useSearch, …
 │   ├── markdown/         markdown-it plugins
 │   ├── runtime/          slugify, mermaid, reducedMotion, headFromFrontmatter
-│   ├── styles/           framework.css + tokens + components + utilities
+│   ├── styles/           entry.css + framework.css + tokens + components + utilities
+│   ├── test-utils/       mountWithConfig helper for component tests
 │   ├── plugin.ts         frameworkPlugin() — Vite plugin array
-│   └── ssg.ts            createSSGApp() wrapper
-├── tests/
-│   └── markdown.test.ts  markdown plugin unit tests
+│   ├── defineConfig.ts   consumer entry point (replaces framework.config.ts)
+│   ├── build.ts          framework-ssg CLI — two-pass SSG build
+│   └── ssg.ts            createApp() — shared browser + SSR entry
 └── README.md             public API reference (export map)
 ```
 
-**Note on test placement:** The viteplus blueprint convention co-locates unit tests next to source files. The current framework tests live in `tests/` — a divergence tracked for future alignment.
+All tests colocate next to their source file (`useFoo.ts` + `useFoo.test.ts`).
 
 ## Import model
 
@@ -69,16 +72,36 @@ packages/core/
 
 ## New-file placement
 
-| What you're adding              | Where it goes                                                             |
-| ------------------------------- | ------------------------------------------------------------------------- |
-| A new page in an existing app   | `apps/<app>/src/pages/<Slug>.md` + entry in `framework.config.ts` sidebar |
-| A new framework component       | `packages/core/src/components/<Name>.vue`                                 |
-| A new composable                | `packages/core/src/composables/use<Name>.ts`                              |
-| A new markdown-it plugin        | `packages/core/src/markdown/<name>.ts`                                    |
-| A new framework runtime utility | `packages/core/src/runtime/<name>.ts`                                     |
-| A new app-level style override  | `apps/<app>/src/styles/main.css`                                          |
-| A new framework export          | Named subpath in `packages/core/package.json` `exports`                   |
-| A new docs Branch               | `docs/<TOPIC>.md` + entry in `docs/DOCUMENTATION.md` Branch inventory     |
+| What you're adding              | Where it goes                                                         |
+| ------------------------------- | --------------------------------------------------------------------- |
+| A new page in an existing app   | `apps/<app>/src/pages/<Slug>.md` + entry in `vite.config.ts` sidebar  |
+| A new framework component       | `packages/core/src/components/<Name>.vue`                             |
+| A new composable                | `packages/core/src/composables/use<Name>.ts`                          |
+| A new markdown-it plugin        | `packages/core/src/markdown/<name>.ts`                                |
+| A new framework runtime utility | `packages/core/src/runtime/<name>.ts`                                 |
+| A new framework export          | Named subpath in `packages/core/package.json` `exports`               |
+| A new docs Branch               | `docs/<TOPIC>.md` + entry in `docs/DOCUMENTATION.md` Branch inventory |
+
+## Gated artifacts
+
+Files whose path is fixed by an external consumer — moving them breaks the contract.
+
+| File                       | Location             | Gate                                                                                        |
+| -------------------------- | -------------------- | ------------------------------------------------------------------------------------------- |
+| `README.md`                | Repo root            | GitHub surfaces it as the project README                                                    |
+| `CLAUDE.md`                | Repo root            | Claude Code loads it as the agents-first Trunk                                              |
+| `AGENTS.md`                | Repo root            | `@AGENTS.md` import from `CLAUDE.md`                                                        |
+| `staticwebapp.config.json` | `apps/<app>/public/` | Azure SWA deploy task requires it at the `output_location` root when `skip_app_build: true` |
+| `favicon.svg`              | `apps/<app>/public/` | Served at `/favicon.svg` by SWA; path is a platform convention                              |
+
+## Excluded paths
+
+| Path                   | Reason                                               | `.gitignore` pattern   |
+| ---------------------- | ---------------------------------------------------- | ---------------------- |
+| `node_modules/`        | Installed deps — regenerated by `vp install`         | `node_modules/`        |
+| `apps/*/dist/`         | Build output — regenerated by `vp run build`         | `dist/`                |
+| `.framework-ssg-temp/` | SSG intermediate render output — deleted after build | `.framework-ssg-temp/` |
+| `packages/core/dist/`  | Compiled library output (`vp pack`) — regenerated    | `packages/*/dist/`     |
 
 ## Industry References
 

@@ -10,7 +10,7 @@ summary: 'Describes the Roots / Trunk / Branches tree shape, inventories all 17 
 This project's docs follow the **Roots / Trunk / Branches** tree shape:
 
 - **Trunk** — `README.md` (humans-first quickstart) + `CLAUDE.md` (agents-first operating rules).
-- **Roots** — subtree files for packages and apps whose conventions diverge (`apps/tcm/CLAUDE.md`, `apps/8fold/CLAUDE.md`, `packages/core/README.md`). Each Root opens with `Layered on root CLAUDE.md + docs/`.
+- **Roots** — subtree files for packages whose conventions diverge (`packages/core/README.md`). Each Root opens with `Layered on root CLAUDE.md + docs/`.
 - **Branches** — topical `docs/<TOPIC>.md` files. Every applicable canon topic either has a Branch or appears in the opted-out table below.
 
 ## Branch inventory

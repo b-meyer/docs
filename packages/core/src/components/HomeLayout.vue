@@ -55,13 +55,13 @@ const features = (props.frontmatter?.features ?? []) as Feature[];
     </section>
 
     <!-- Features -->
-    <section v-if="features.length" class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 md:mt-20">
+    <section v-if="features.length" class="mt-14 flex flex-wrap justify-center gap-4 md:mt-20">
       <component
         :is="feature.link ? 'RouterLink' : 'div'"
         v-for="(feature, i) in features"
         :key="feature.title ?? i"
         :to="feature.link"
-        class="block rounded-xl border border-gray-200 bg-gray-25 p-6 transition-colors"
+        class="block w-full rounded-xl border border-gray-200 bg-gray-25 p-6 transition-colors sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)]"
         :class="feature.link ? 'hover:border-primary-400' : ''"
       >
         <div

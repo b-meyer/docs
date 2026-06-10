@@ -11,11 +11,22 @@ summary: 'Azure SWA delivers pre-rendered HTML from CDN edge; Vue hydrates as SP
 
 Each app is served as a fully static site from Azure Static Web Apps:
 
-1. **Build time** — `vite-ssg` pre-renders every route to a static HTML file (`apps/<app>/dist/`). One HTML file per URL path.
+1. **Build time** — `framework-ssg` pre-renders every route to a static HTML file (`apps/<app>/dist/`). One HTML file per URL path.
 2. **CDN edge delivery** — SWA distributes the static files globally. No server process runs at request time.
 3. **SPA hydration** — the browser receives pre-rendered HTML (immediately readable by search engines and screen readers), then Vue hydrates the page into a SPA for client-side navigation.
 
 There is no server-side rendering at request time. Every `dist/` file is a complete, standalone HTML page.
+
+## Health checks
+
+No health endpoint. Azure SWA serves pre-built static files from CDN — liveness is
+CDN availability, not a probed application route. No explicit health check is wired
+or needed.
+
+## Shutdown
+
+No shutdown contract. The site has no server process; SWA serves static files without
+drain semantics. There is nothing to drain or signal on shutdown.
 
 ## Route config (`staticwebapp.config.json`)
 
@@ -49,7 +60,7 @@ The SWA CLI is only needed when testing SWA-specific features locally (edge auth
 
 - [Azure Static Web Apps](https://learn.microsoft.com/azure/static-web-apps/) — hosting model and CDN delivery.
 - [Azure Static Web Apps — Configuration](https://learn.microsoft.com/azure/static-web-apps/configuration) — `staticwebapp.config.json` route and header contract.
-- [vite-ssg](https://github.com/antfu/vite-ssg) — SSG build lifecycle.
+- framework-ssg — custom two-pass SSG CLI in `packages/core/src/build.ts`; wraps Vite's `build()` API directly.
 
 _External URLs verified 2026-06-04._
 

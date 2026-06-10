@@ -3,7 +3,7 @@ import { computed, nextTick, onMounted, provide, useTemplateRef, watch } from 'v
 import { useRoute } from 'vue-router';
 import { useConfig } from '../composables/useConfig';
 import { FRONTMATTER_KEY, type PageFrontmatter } from '../composables/useFrontmatter';
-import { neighborsOf, slugFromPath } from '../routerFactory';
+import { neighborsOf, pathFromRoute } from '../routerFactory';
 import { headFromFrontmatter } from '../runtime/headFromFrontmatter';
 import AppNav from './AppNav.vue';
 import PageNav from './PageNav.vue';
@@ -15,7 +15,7 @@ const config = useConfig();
 headFromFrontmatter(props.frontmatter);
 
 const route = useRoute();
-const pair = computed(() => neighborsOf(config, slugFromPath(route.path)));
+const pair = computed(() => neighborsOf(config, pathFromRoute(route.path)));
 
 const articleEl = useTemplateRef<HTMLElement>('articleEl');
 provide('article-el', articleEl);
@@ -58,7 +58,7 @@ watch(() => route.path, renderDiagrams);
       >
         <RouterLink
           v-if="pair.prev"
-          :to="pair.prev.slug === 'index' ? '/' : `/${pair.prev.slug}`"
+          :to="pair.prev.path === 'index' ? '/' : `/${pair.prev.path}`"
           class="group rounded-lg border border-gray-200 p-4 hover:border-primary-400"
         >
           <div class="text-xs text-gray-500">Previous</div>
@@ -69,7 +69,7 @@ watch(() => route.path, renderDiagrams);
         <span v-else />
         <RouterLink
           v-if="pair.next"
-          :to="pair.next.slug === 'index' ? '/' : `/${pair.next.slug}`"
+          :to="pair.next.path === 'index' ? '/' : `/${pair.next.path}`"
           class="group rounded-lg border border-gray-200 p-4 text-right hover:border-primary-400 md:col-start-2"
         >
           <div class="text-xs text-gray-500">Next</div>

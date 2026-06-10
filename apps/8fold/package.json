@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vp dev",
+    "build": "framework-ssg",
     "preview": "vp preview"
   },
   "dependencies": {
     "@framework/core": "workspace:*",
     "@unhead/vue": "catalog:",
-    "vite-ssg": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:"
   },

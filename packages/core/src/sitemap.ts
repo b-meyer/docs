@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { basename, join } from 'node:path';
 import { slugify } from './runtime/slugify.ts';
 import {
   hasHiddenFrontmatter,
@@ -20,23 +20,34 @@ const DEFAULT_HOSTNAME = 'http://localhost:5173';
 // `/foo/:id`) can't be prerendered. Match any path vue-router would parameterize.
 const DYNAMIC_PATH_RE = /[:*]/u;
 
-function pathToMd(path: string, pagesDir: string): string {
+function pageFilePath(path: string, pagesDir: string): string | null {
   const slug = path === '/' ? 'index' : path.replace(/^\//u, '').replace(/\/$/u, '');
-  return join(pagesDir, `${slug}.md`);
+  for (const candidate of [
+    join(pagesDir, `${slug}.md`),
+    join(pagesDir, `${slug}.vue`),
+    join(pagesDir, slug, 'index.md'),
+    join(pagesDir, slug, 'index.vue'),
+  ]) {
+    if (existsSync(candidate)) return candidate;
+  }
+  return null;
 }
 
 /**
- * Applied to `vite-ssg`'s candidate route paths to skip routes that should not
- * land in the SSG output: dynamic/wildcard routes (catch-all 404, param
- * segments), and any page whose frontmatter sets `hidden: true`.
+ * Applied to candidate route paths to skip routes that should not land in the
+ * SSG output: dynamic/wildcard routes (catch-all 404, param segments), and any
+ * page whose frontmatter sets `hidden: true`.
+ * Vue pages (.vue) have no frontmatter mechanism and are always included.
  */
 export function filterPublicRoutes(paths: string[], pagesDir: string): string[] {
   return paths.filter((p) => {
     if (DYNAMIC_PATH_RE.test(p)) return false;
-    const mdPath = pathToMd(p, pagesDir);
+    const filePath = pageFilePath(p, pagesDir);
+    if (!filePath) return false;
+    if (filePath.endsWith('.vue')) return true;
     let source = '';
     try {
-      source = readFileSync(mdPath, 'utf8');
+      source = readFileSync(filePath, 'utf8');
     } catch {
       return false;
     }
@@ -54,7 +65,7 @@ function escapeXml(s: string): string {
 }
 
 /**
- * After vite-ssg's `onFinished`, call this to replace `'unsafe-inline'` in
+ * After the SSG build, call this to replace `'unsafe-inline'` in
  * `script-src` with a SHA-256 hash of each inline script in the built
  * `index.html`. The hash is computed from the *built* output (after any
  * minification), so it matches what the browser actually receives.
@@ -104,17 +115,20 @@ export function patchCspScriptHash(distDir: string): void {
   writeFileSync(configPath, JSON.stringify(config, null, 2) + '\n', 'utf8');
 }
 
-export type SitemapOptions = { hostname?: string };
+// PUBLIC_SITE_URL (and options.hostname) should be the origin only (e.g. 'https://host.com')
+// without a subpath — the resolved Vite base is appended automatically via options.base.
+export type SitemapOptions = { hostname?: string; base?: string };
 
 export function buildSitemap(outDir: string, paths: string[], options: SitemapOptions = {}): void {
   const hostname = (process.env.PUBLIC_SITE_URL ?? options.hostname ?? DEFAULT_HOSTNAME).replace(
     /\/$/u,
     '',
   );
+  const base = (options.base ?? '/').replace(/\/$/u, '');
   const lastmod = new Date().toISOString().slice(0, 10);
   const urls = paths.map(
     (p) =>
-      `  <url>\n    <loc>${escapeXml(`${hostname}${p}`)}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`,
+      `  <url>\n    <loc>${escapeXml(`${hostname}${base}${p}`)}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`,
   );
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;
   writeFileSync(join(outDir, 'sitemap.xml'), xml, 'utf8');
@@ -127,11 +141,29 @@ export function buildSitemap(outDir: string, paths: string[], options: SitemapOp
  * middleware (on-demand serve).
  */
 export function buildSearchIndexEntries(pagesDir: string): SearchEntry[] {
-  const files = readdirSync(pagesDir).filter((f) => f.endsWith('.md'));
+  // Recurse only for dedicated 'pages' dirs; shallow scan prevents non-page src/ files from indexing.
+  const useRecursive = basename(pagesDir) === 'pages';
+  const rawFiles = useRecursive
+    ? (readdirSync(pagesDir, { recursive: true }) as string[])
+    : (readdirSync(pagesDir) as string[]);
+  const files = rawFiles
+    .map((f) => f.replaceAll('\\', '/'))
+    .filter((f) => f.endsWith('.md') || f.endsWith('.vue'));
   const entries: SearchEntry[] = [];
   for (const file of files) {
-    const slug = file.slice(0, -3);
-    if (slug === 'NotFound') continue;
+    const isMd = file.endsWith('.md');
+    // Strip ext, then normalise 'guide/index' → 'guide' (dir index → parent route).
+    const slug = file.slice(0, isMd ? -3 : -4).replace(/\/index$/u, '') || 'index';
+    // Skip catch-all and dynamic-segment pages (vue-router conventions: [, *, :).
+    if (/[[*:]/u.test(slug)) continue;
+
+    if (!isMd) {
+      // Vue pages have no markdown to parse; index as a single title-only entry
+      // so they appear in search results.
+      entries.push({ slug, pageTitle: slug, heading: slug, headingId: '', level: 1, body: '' });
+      continue;
+    }
+
     let source: string;
     try {
       source = readFileSync(join(pagesDir, file), 'utf8');

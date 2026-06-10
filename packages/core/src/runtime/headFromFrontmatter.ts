@@ -6,6 +6,10 @@ export function headFromFrontmatter(fm: PageFrontmatter | undefined | null): voi
   const description = typeof fm?.description === 'string' ? fm.description : undefined;
   useHead({
     title,
-    meta: description ? [{ name: 'description', content: description }] : [],
+    meta: [
+      ...(description ? [{ name: 'description', content: description }] : []),
+      ...(title ? [{ property: 'og:title', content: title }] : []),
+      ...(description ? [{ property: 'og:description', content: description }] : []),
+    ],
   });
 }

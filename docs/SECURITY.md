@@ -16,7 +16,7 @@ script-src 'self' 'unsafe-inline';
 style-src  'self' 'unsafe-inline';
 ```
 
-**`script-src`:** The theme bootstrap `<script>` in each app's `index.html` runs inline before Vue boots to prevent a flash of wrong theme on paint. A SHA-256 hash of this script is computed at build time — `patchCspScriptHash` (called from each app's `ssgOptions.onFinished`) reads the built `index.html`, computes the hash, and rewrites `'unsafe-inline'` to `'sha256-...'` in `dist/staticwebapp.config.json`. The source `public/staticwebapp.config.json` retains `'unsafe-inline'` as a build-time placeholder; only the deployed artifact carries the hash.
+**`script-src`:** The theme bootstrap `<script>` in each app's `index.html` runs inline before Vue boots to prevent a flash of wrong theme on paint. A SHA-256 hash of this script is computed at build time — `patchCspScriptHash` (called directly by the framework-ssg build script (`packages/core/src/build.ts`) after the render loop completes) reads the built `index.html`, computes the hash, and rewrites `'unsafe-inline'` to `'sha256-...'` in `dist/staticwebapp.config.json`. The source `public/staticwebapp.config.json` retains `'unsafe-inline'` as a build-time placeholder; only the deployed artifact carries the hash.
 
 **`style-src` (`apps/tcm` only):** Mermaid (enabled in `apps/tcm`) injects inline styles at runtime for diagram rendering. Mermaid does not support CSP nonces for its inline style injection, so `'unsafe-inline'` remains for `apps/tcm`. `apps/8fold` disables Mermaid and does not carry `'unsafe-inline'` in `style-src`.
 
