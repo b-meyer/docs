@@ -1,7 +1,7 @@
-/* eslint-disable import/max-dependencies -- this is the plugin-wiring module: it
-   intentionally pulls in the Vite plugins + every markdown-it plugin, and the
-   markdown plugins are imported individually (not via a barrel) for config-loader
-   ESM safety (see the note below). */
+/* eslint-disable import/max-dependencies, eslint/max-lines, eslint/max-lines-per-function --
+   this is the plugin-wiring module: it intentionally centralises Vite plugins, markdown-it
+   plugins, and feature-gate logic in one place. markdown plugins are imported individually
+   (not via a barrel) for config-loader ESM safety (see the note below). */
 import { existsSync } from 'node:fs';
 import { join, resolve as pathResolve } from 'node:path';
 import tailwindcss from '@tailwindcss/vite';
@@ -17,9 +17,12 @@ import type { FrameworkConfig } from './config';
 // extensionless specifiers. This file is never in the browser/app import graph,
 // so the unusual extensions stay isolated to the config-load path.
 import { mdAlerts } from './markdown/alerts.ts';
+import { mdCodeGroup } from './markdown/codeGroup.ts';
 import { mdContainers } from './markdown/containers.ts';
 import { mdLinkRewriter } from './markdown/linkRewriter.ts';
 import { mdMermaid } from './markdown/mermaid.ts';
+import { mdShiki } from './markdown/shiki.ts';
+import { processSnippets } from './markdown/snippets.ts';
 import { mdTableWrapper } from './markdown/tableWrapper.ts';
 import { slugify } from './runtime/slugify.ts';
 import { buildSearchIndexEntries } from './sitemap.ts';
@@ -254,6 +257,7 @@ function devHtmlPlugin(): Plugin {
  */
 export function frameworkPlugin(options: FrameworkPluginOptions = {}): PluginOption[] {
   const mermaidEnabled = Boolean(options.markdown?.mermaid);
+  const shikiEnabled = Boolean(options.markdown?.shiki);
   // routesFolder must be computed here: VueRouter calls resolveOptions() immediately at
   // construction, before any config()/configResolved() hooks run. detectedRoutesFolder
   // (used by makeSearchIndexPlugin) is updated in the config() hook with the resolved root.
@@ -282,11 +286,39 @@ export function frameworkPlugin(options: FrameworkPluginOptions = {}): PluginOpt
         linkify: true,
         typographer: true,
       },
-      markdownItSetup(md) {
+      transforms: {
+        before: (code, id) => processSnippets(code, id),
+      },
+      async markdownItSetup(md) {
         md.use(anchor, { permalink: false, slugify });
         md.use(mdLinkRewriter, () => resolvedBase);
         md.use(mdTableWrapper);
         if (options.markdown?.mermaid) md.use(mdMermaid);
+        if (shikiEnabled) {
+          const [
+            { createHighlighter, bundledLanguages },
+            {
+              transformerNotationDiff,
+              transformerNotationFocus,
+              transformerNotationErrorLevel,
+              transformerNotationHighlight,
+              transformerMetaHighlight,
+            },
+          ] = await Promise.all([import('shiki'), import('@shikijs/transformers')]);
+          const hl = await createHighlighter({
+            themes: ['github-light', 'github-dark-dimmed'],
+            langs: Object.keys(bundledLanguages),
+          });
+          const shikiTransformers = [
+            transformerNotationDiff(),
+            transformerNotationFocus(),
+            transformerNotationErrorLevel(),
+            transformerNotationHighlight(),
+            transformerMetaHighlight(),
+          ];
+          md.use(mdShiki, hl, shikiTransformers);
+          md.use(mdCodeGroup, hl, shikiTransformers);
+        }
         md.use(mdContainers);
         md.use(mdAlerts);
       },

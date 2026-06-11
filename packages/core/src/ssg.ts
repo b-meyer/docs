@@ -5,7 +5,7 @@ import { createSSRApp, nextTick } from 'vue';
 import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router';
 import { routes } from 'vue-router/auto-routes';
 import App from './App.vue';
-import { HomeLayout, LayoutResolver, NotFoundPage, PageLayout } from './components';
+import { CodeGroup, HomeLayout, LayoutResolver, NotFoundPage, PageLayout } from './components';
 import { CONFIG_KEY } from './config';
 import { scrollBehavior } from './routerFactory';
 
@@ -29,6 +29,7 @@ export async function createApp(routePath?: string) {
 
   app.use(router);
   app.provide(headSymbol, head);
+  app.component('CodeGroup', CodeGroup);
   app.component('LayoutResolver', LayoutResolver);
   app.component('PageLayout', PageLayout);
   app.component('HomeLayout', HomeLayout);

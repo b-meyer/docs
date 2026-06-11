@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import { Bars3Icon, MagnifyingGlassIcon, XMarkIcon } from '@heroicons/vue/24/outline';
+import {
+  Bars3Icon,
+  ChevronDownIcon,
+  MagnifyingGlassIcon,
+  XMarkIcon,
+} from '@heroicons/vue/24/outline';
 import {
   DialogClose,
   DialogContent,
@@ -14,6 +19,8 @@ import { useRoute, useRouter } from 'vue-router';
 import { useConfig } from '../composables/useConfig';
 import { targetFor, useSearch } from '../composables/useSearch';
 import AppNav from './AppNav.vue';
+import AppSocialLinks from './AppSocialLinks.vue';
+import AppTopNav from './AppTopNav.vue';
 import SearchResults from './SearchResults.vue';
 import ThemeToggle from './ThemeToggle.vue';
 
@@ -48,6 +55,11 @@ watch(
     if (mobileSearchOpen.value) closeMobileSearch();
   },
 );
+
+function matchesNavActive(activeMatch: string | undefined): boolean {
+  if (!activeMatch) return false;
+  return new RegExp(activeMatch, 'u').test(route.path);
+}
 
 function navigateToSelected(): void {
   const r = results.value[selectedIndex.value];
@@ -129,7 +141,7 @@ onBeforeUnmount(() => {
     class="sticky top-0 z-30 border-b border-gray-200 bg-white/85 backdrop-blur dark:bg-gray-125/85"
   >
     <div
-      class="mx-auto flex max-w-[1440px] items-center gap-4 px-4 py-3 md:grid md:grid-cols-[220px_minmax(0,1fr)_auto] md:gap-8 md:px-8 xl:grid-cols-[220px_minmax(0,1fr)_200px]"
+      class="mx-auto flex max-w-[1440px] items-center gap-4 px-4 py-3 md:grid md:grid-cols-[220px_minmax(0,1fr)_auto_auto] md:gap-8 md:px-8 xl:grid-cols-[220px_minmax(0,1fr)_auto_auto]"
     >
       <DialogRoot v-model:open="navOpen">
         <DialogTrigger
@@ -157,7 +169,89 @@ onBeforeUnmount(() => {
                 <XMarkIcon class="size-4" aria-hidden="true" />
               </DialogClose>
             </div>
+
+            <!-- Top nav links in mobile drawer -->
+            <template v-if="config.nav?.length">
+              <nav class="mb-3 space-y-0.5 text-sm" aria-label="Site navigation">
+                <template v-for="item in config.nav" :key="item.text">
+                  <a
+                    v-if="item.link && /^https?:\/\//u.test(item.link)"
+                    :href="item.link"
+                    :target="item.target ?? '_blank'"
+                    rel="noopener noreferrer"
+                    class="nav-link"
+                  >
+                    {{ item.text }}
+                  </a>
+                  <RouterLink
+                    v-else-if="item.link"
+                    :to="item.link"
+                    custom
+                    v-slot="{ href, navigate, isActive }"
+                  >
+                    <a
+                      :href="href"
+                      class="nav-link"
+                      :class="{
+                        active:
+                          matchesNavActive(item.activeMatch) || (!item.activeMatch && isActive),
+                      }"
+                      @click="navigate"
+                    >
+                      {{ item.text }}
+                    </a>
+                  </RouterLink>
+                  <details v-else-if="item.items" class="group/details">
+                    <summary
+                      class="nav-link flex cursor-pointer list-none items-center justify-between"
+                    >
+                      {{ item.text }}
+                      <ChevronDownIcon
+                        class="size-3.5 text-gray-400 transition-transform group-open/details:rotate-180"
+                        aria-hidden="true"
+                      />
+                    </summary>
+                    <div class="ml-3 mt-0.5 space-y-0.5">
+                      <template v-for="group in item.items" :key="group.text">
+                        <p v-if="group.text" class="eyebrow mt-2 mb-0.5 px-3 text-gray-500">
+                          {{ group.text }}
+                        </p>
+                        <template v-for="child in group.items" :key="child.text">
+                          <a
+                            v-if="child.link && /^https?:\/\//u.test(child.link)"
+                            :href="child.link"
+                            :target="child.target ?? '_blank'"
+                            rel="noopener noreferrer"
+                            class="nav-link"
+                          >
+                            {{ child.text }}
+                          </a>
+                          <RouterLink
+                            v-else-if="child.link"
+                            :to="child.link"
+                            class="nav-link"
+                            active-class="active"
+                          >
+                            {{ child.text }}
+                          </RouterLink>
+                        </template>
+                      </template>
+                    </div>
+                  </details>
+                </template>
+              </nav>
+              <hr class="mb-4 border-gray-200 dark:border-gray-700" />
+            </template>
+
             <AppNav />
+
+            <!-- Social links at the bottom of the mobile drawer -->
+            <template v-if="config.socialLinks?.length">
+              <hr class="mt-4 border-gray-200 dark:border-gray-700" />
+              <div class="mt-3">
+                <AppSocialLinks />
+              </div>
+            </template>
           </DialogContent>
         </DialogPortal>
       </DialogRoot>
@@ -210,7 +304,10 @@ onBeforeUnmount(() => {
         />
       </div>
 
+      <AppTopNav />
+
       <div class="flex items-center justify-end">
+        <AppSocialLinks class="hidden md:flex" />
         <slot name="nav-actions" />
         <ThemeToggle class="justify-self-end" />
         <button

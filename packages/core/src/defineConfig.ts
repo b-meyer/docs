@@ -1,6 +1,6 @@
 import { join, resolve as pathResolve } from 'node:path';
 import { defineConfig as viteDefineConfig, type Alias, type UserConfig } from 'vite';
-import type { FrameworkConfig, SidebarGroup, SidebarItem } from './config.ts';
+import type { FrameworkConfig, NavItem, SidebarGroup, SidebarItem, SocialLink } from './config.ts';
 import { setFrameworkConfig, frameworkPlugin } from './plugin.ts';
 
 // The consumer's merged config type: all FrameworkConfig fields (except `base`,
@@ -11,6 +11,8 @@ export type FrameworkConsumerConfig = {
   favicon?: string;
   home?: SidebarItem;
   sidebar: SidebarGroup[] | Record<string, SidebarGroup[]>;
+  nav?: NavItem[];
+  socialLinks?: SocialLink[];
   branding?: { siteTitle?: string };
   markdown?: FrameworkConfig['markdown'];
   themeDefaults?: { brandHue?: number; brandIntensity?: number };
@@ -20,6 +22,23 @@ function normalizeUserAlias(alias: Alias[] | Record<string, string> | null | und
   if (alias == null) return [];
   if (Array.isArray(alias)) return alias;
   return Object.entries(alias).map(([find, replacement]): Alias => ({ find, replacement }));
+}
+
+function buildFrameworkConfig(opts: FrameworkConsumerConfig): FrameworkConfig {
+  const resolvedBase = typeof opts.base === 'string' ? opts.base : '/';
+  return {
+    title: opts.title,
+    description: opts.description,
+    favicon: opts.favicon,
+    home: opts.home,
+    sidebar: opts.sidebar,
+    nav: opts.nav,
+    socialLinks: opts.socialLinks,
+    branding: opts.branding,
+    markdown: opts.markdown,
+    themeDefaults: opts.themeDefaults,
+    base: resolvedBase,
+  };
 }
 
 /**
@@ -32,14 +51,6 @@ function normalizeUserAlias(alias: Alias[] | Record<string, string> | null | und
  */
 export function defineConfig(opts: FrameworkConsumerConfig): ReturnType<typeof viteDefineConfig> {
   const {
-    title,
-    description,
-    favicon,
-    home,
-    sidebar,
-    branding,
-    markdown,
-    themeDefaults,
     base,
     root,
     server,
@@ -48,18 +59,7 @@ export function defineConfig(opts: FrameworkConsumerConfig): ReturnType<typeof v
     resolve: userResolve,
     ...viteRest
   } = opts;
-
-  const frameworkConfig: FrameworkConfig = {
-    title,
-    description,
-    favicon,
-    home,
-    sidebar,
-    branding,
-    markdown,
-    themeDefaults,
-    base: typeof base === 'string' ? base : '/',
-  };
+  const frameworkConfig = buildFrameworkConfig(opts);
   setFrameworkConfig(frameworkConfig);
 
   const projectRoot = pathResolve(root ?? process.cwd());

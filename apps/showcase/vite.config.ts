@@ -9,14 +9,44 @@ export default defineConfig({
   },
   markdown: {
     mermaid: true,
+    shiki: true,
     html: true,
   },
   themeDefaults: {
-    brandHue: 120,
+    brandHue: 153,
     brandIntensity: 60,
   },
+  nav: [
+    { text: 'Features', link: '/', activeMatch: '^/(?!guide)' },
+    { text: 'Guide', link: '/guide/', activeMatch: '^/guide' },
+    {
+      text: 'Resources',
+      items: [
+        {
+          text: 'Community',
+          items: [
+            { text: 'GitHub', link: 'https://github.com/example/framework' },
+            { text: 'Discord', link: 'https://discord.gg/example' },
+          ],
+        },
+        {
+          text: 'Releases',
+          items: [{ text: 'Changelog', link: 'https://github.com/example/framework/releases' }],
+        },
+      ],
+    },
+  ],
+  socialLinks: [
+    { icon: 'github', link: 'https://github.com/example/framework', ariaLabel: 'GitHub' },
+    { icon: 'discord', link: 'https://discord.gg/example', ariaLabel: 'Discord' },
+    { icon: 'bluesky', link: 'https://bsky.app/profile/example.bsky.social', ariaLabel: 'Bluesky' },
+  ],
   sidebar: {
     '/': [
+      {
+        group: 'Framework Features',
+        items: [{ path: 'CodeBlocks', title: 'Code Blocks' }],
+      },
       {
         group: 'Vue Guide — Essentials',
         items: [

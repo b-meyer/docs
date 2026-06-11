@@ -55,6 +55,14 @@ export default defineConfig({
           'eslint/max-lines-per-function': 'off',
         },
       },
+      {
+        // AppHeader is the root shell component — it orchestrates the header, mobile drawer,
+        // search, nav, and social links; more imports than a leaf component is expected.
+        files: ['**/components/AppHeader.vue'],
+        rules: {
+          'import/max-dependencies': ['error', { max: 12 }],
+        },
+      },
     ],
   },
   fmt: {

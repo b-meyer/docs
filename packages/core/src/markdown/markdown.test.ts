@@ -1,6 +1,19 @@
+import { mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import MarkdownIt from 'markdown-it';
-import { describe, expect, it } from 'vite-plus/test';
-import { mdAlerts, mdContainers, mdLinkRewriter, mdMermaid, mdTableWrapper } from '.';
+import type { Highlighter } from 'shiki';
+import { beforeAll, describe, expect, it } from 'vite-plus/test';
+import {
+  mdAlerts,
+  mdCodeGroup,
+  mdContainers,
+  mdLinkRewriter,
+  mdMermaid,
+  mdShiki,
+  mdTableWrapper,
+} from '.';
+import { processSnippets } from './snippets';
 
 function buildLinkRewriter(): MarkdownIt {
   const md = new MarkdownIt();
@@ -164,5 +177,169 @@ describe('mdAlerts', () => {
     const out = buildAlerts().render('> Just a quote.');
     expect(out).toContain('<blockquote>');
     expect(out).not.toContain('alert-');
+  });
+});
+
+// ── processSnippets ──────────────────────────────────────────────────────────
+
+describe('processSnippets', () => {
+  let tmpDir: string;
+
+  beforeAll(() => {
+    tmpDir = mkdtempSync(join(tmpdir(), 'snippets-test-'));
+    writeFileSync(
+      join(tmpDir, 'example.ts'),
+      [
+        'export const PI = 3.14',
+        '// #region greet',
+        'export function greet(name: string): string {',
+        '  return `Hello, ${name}!`',
+        '}',
+        '// #endregion greet',
+        'export const E = 2.71',
+      ].join('\n'),
+    );
+  });
+
+  it('replaces a <<< line with a fenced code block', () => {
+    const out = processSnippets(`<<< ./example.ts`, join(tmpDir, 'doc.md'));
+    expect(out).toMatch(/^```ts\n/u);
+    expect(out).toContain('export const PI');
+    expect(out).toContain('export const E');
+  });
+
+  it('extracts only the named region', () => {
+    const out = processSnippets(`<<< ./example.ts#greet`, join(tmpDir, 'doc.md'));
+    expect(out).toContain('function greet');
+    expect(out).not.toContain('export const PI');
+    expect(out).not.toContain('// #region');
+  });
+
+  it('emits a comment fence for a missing file without throwing', () => {
+    const out = processSnippets(`<<< ./missing.ts`, join(tmpDir, 'doc.md'));
+    expect(out).toContain('Snippet not found');
+    expect(out).toMatch(/^```\n/u);
+  });
+
+  it('replaces multiple <<< lines in one document', () => {
+    const src = '<<< ./example.ts\n\n<<< ./example.ts#greet';
+    const out = processSnippets(src, join(tmpDir, 'doc.md'));
+    const matches = out.match(/^```/gmu) ?? [];
+    expect(matches.length).toBe(4); // two opening + two closing fences
+    expect(out).not.toContain('<<<');
+  });
+
+  it('leaves markdown without <<< unchanged', () => {
+    const md = '# Title\n\nSome prose.';
+    expect(processSnippets(md, join(tmpDir, 'doc.md'))).toBe(md);
+  });
+
+  it('cleans up temp dir after tests', () => {
+    rmSync(tmpDir, { recursive: true, force: true });
+  });
+});
+
+// ── mdShiki ──────────────────────────────────────────────────────────────────
+
+describe('mdShiki', () => {
+  let hl: Highlighter;
+
+  beforeAll(async () => {
+    const { createHighlighter } = await import('shiki');
+    hl = await createHighlighter({
+      themes: ['github-light', 'github-dark-dimmed'],
+      langs: ['typescript', 'javascript', 'text'],
+    });
+  });
+
+  it('wraps a ts fence in a shiki block with v-pre', () => {
+    const md = new MarkdownIt();
+    md.use(mdShiki, hl, []);
+    const out = md.render('```ts\nconst x: string = "hello";\n```');
+    expect(out).toContain('class="shiki');
+    expect(out).toContain('v-pre');
+  });
+
+  it('adds not-prose class', () => {
+    const md = new MarkdownIt();
+    md.use(mdShiki, hl, []);
+    const out = md.render('```ts\nconst x = 1;\n```');
+    expect(out).toContain('not-prose');
+  });
+
+  it('delegates mermaid fences to the default renderer', () => {
+    const md = new MarkdownIt();
+    md.use(mdMermaid);
+    md.use(mdShiki, hl, []);
+    const out = md.render('```mermaid\ngraph TD; A-->B;\n```');
+    expect(out).toContain('class="mermaid');
+    expect(out).not.toContain('class="shiki');
+  });
+
+  it('ts and mermaid fences coexist in one document', () => {
+    const md = new MarkdownIt();
+    md.use(mdMermaid);
+    md.use(mdShiki, hl, []);
+    const out = md.render('```ts\nconst x = 1;\n```\n\n```mermaid\ngraph TD;\n```');
+    expect(out).toContain('class="shiki');
+    expect(out).toContain('class="mermaid');
+  });
+
+  it('falls back gracefully for an unknown language', () => {
+    const md = new MarkdownIt();
+    md.use(mdShiki, hl, []);
+    expect(() => md.render('```unknownlang9999\nhello\n```')).not.toThrow();
+  });
+});
+
+// ── mdCodeGroup ──────────────────────────────────────────────────────────────
+
+describe('mdCodeGroup', () => {
+  let hl: Highlighter;
+
+  beforeAll(async () => {
+    const { createHighlighter } = await import('shiki');
+    hl = await createHighlighter({
+      themes: ['github-light', 'github-dark-dimmed'],
+      langs: ['typescript', 'javascript', 'text'],
+    });
+  });
+
+  function buildCodeGroup(): MarkdownIt {
+    const md = new MarkdownIt();
+    md.use(mdCodeGroup, hl, []);
+    return md;
+  }
+
+  it('renders :::code-group as a <CodeGroup> component', () => {
+    const src =
+      '::: code-group\n```ts [TypeScript]\nconst x = 1\n```\n```js [JavaScript]\nconst x = 1\n```\n:::';
+    const out = buildCodeGroup().render(src);
+    expect(out).toContain('<CodeGroup');
+    expect(out).toContain('TypeScript');
+    expect(out).toContain('JavaScript');
+  });
+
+  it('includes named template slots', () => {
+    const src = '::: code-group\n```ts [TS]\nconst x = 1\n```\n```js [JS]\nconst y = 2\n```\n:::';
+    const out = buildCodeGroup().render(src);
+    expect(out).toContain('#tab-0');
+    expect(out).toContain('#tab-1');
+  });
+
+  it('encodes labels in the :tabs prop', () => {
+    const src = '::: code-group\n```ts [Alpha]\nconst x = 1\n```\n:::';
+    const out = buildCodeGroup().render(src);
+    expect(out).toContain('"label":"Alpha"');
+  });
+
+  it('coexists with a plain ts fence in the same document', () => {
+    const md = new MarkdownIt();
+    md.use(mdShiki, hl, []);
+    md.use(mdCodeGroup, hl, []);
+    const src = '```ts\nconst x = 1;\n```\n\n::: code-group\n```ts [Tab]\nconst y = 2;\n```\n:::';
+    const out = md.render(src);
+    expect(out).toContain('class="shiki');
+    expect(out).toContain('<CodeGroup');
   });
 });

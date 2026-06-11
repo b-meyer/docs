@@ -16,6 +16,42 @@ export type SidebarGroup = {
   collapsed?: boolean;
 };
 
+export type NavItem = {
+  text: string;
+  /** Internal path ('/guide/') or full external URL. Mutually exclusive with items. */
+  link?: string;
+  /** Dropdown groups. Mutually exclusive with link. */
+  items?: NavDropdownGroup[];
+  /** Regex string for custom active-state matching, e.g. '^/$'. */
+  activeMatch?: string;
+  /** Link target. Defaults to '_blank' for external URLs. */
+  target?: '_blank' | '_self';
+};
+
+export type NavDropdownGroup = {
+  /** Optional section heading rendered inside the dropdown panel. */
+  text?: string;
+  items: NavItem[];
+};
+
+export type SocialLinkIcon =
+  | 'github'
+  | 'twitter'
+  | 'x'
+  | 'discord'
+  | 'bluesky'
+  | 'mastodon'
+  | 'linkedin'
+  | 'youtube'
+  | { svg: string };
+
+export type SocialLink = {
+  icon: SocialLinkIcon;
+  link: string;
+  /** Accessible label. Falls back to the capitalized icon name. */
+  ariaLabel?: string;
+};
+
 export type FrameworkConfig = {
   /** Document <title> default and OG/meta title base. */
   title: string;
@@ -36,6 +72,10 @@ export type FrameworkConfig = {
    * longest-prefix match on the current route path.
    */
   sidebar: SidebarGroup[] | Record<string, SidebarGroup[]>;
+  /** Top navbar links and dropdowns, rendered in the site header. */
+  nav?: NavItem[];
+  /** Social platform icon links, rendered in the site header. */
+  socialLinks?: SocialLink[];
   branding?: {
     /** Short site name shown in the header / mobile drawer. Falls back to `title`. */
     siteTitle?: string;
@@ -43,6 +83,8 @@ export type FrameworkConfig = {
   markdown?: {
     /** Enable the mermaid fence transform + runtime. Off by default. */
     mermaid?: boolean;
+    /** Enable Shiki syntax highlighting + code groups. Off by default. */
+    shiki?: boolean;
     /** Allow raw HTML tags in markdown prose. Off by default. */
     html?: boolean;
   };
