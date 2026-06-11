@@ -1,0 +1,63 @@
+name: Deploy TCM
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    name: Build and deploy TCM
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          submodules: false
+          lfs: false
+
+      - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4.4.0
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check
+        run: pnpm exec vp check
+
+      - name: Test
+        run: pnpm exec vp run -r test
+
+      - name: Dependency audit
+        run: pnpm audit --audit-level=high
+
+      - name: Build
+        run: pnpm exec vp run -t tcm#build
+
+      - name: Generate SBOM
+        run: pnpm sbom --sbom-format cyclonedx > sbom.json
+
+      - name: Upload SBOM
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: sbom
+          path: sbom.json
+
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@1a947af9992250f3bc2e68ad0754c0b0c11566c9 # v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_RIVER_0E1FD7A10 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: upload
+          # With skip_app_build=true, app_location IS the pre-built artifact
+          # to upload, and output_location must be empty. Confusingly, the
+          # Microsoft docs only mention this on the "Skip build" page; the
+          # default examples elsewhere set both, which uploads the whole repo
+          # (and blows past the SWA Free 250 MB limit via node_modules).
+          # https://learn.microsoft.com/azure/static-web-apps/build-configuration#skip-building-front-end-app
+          app_location: 'apps/tcm/dist'
+          output_location: ''
+          skip_app_build: true
