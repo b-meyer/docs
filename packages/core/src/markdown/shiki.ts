@@ -12,6 +12,7 @@ const frameworkTransformer: ShikiTransformer = {
     const cls = node.properties.class;
     node.properties.class = cls ? `${String(cls)} not-prose` : 'not-prose';
     node.properties['v-pre'] = '';
+    node.properties['data-language'] = this.options.lang;
   },
 };
 

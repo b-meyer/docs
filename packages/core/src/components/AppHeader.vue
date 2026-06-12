@@ -240,14 +240,14 @@ onBeforeUnmount(() => {
                   </details>
                 </template>
               </nav>
-              <hr class="mb-4 border-gray-200 dark:border-gray-700" />
+              <hr class="mb-4 border-gray-200" />
             </template>
 
             <AppNav />
 
             <!-- Social links at the bottom of the mobile drawer -->
             <template v-if="config.socialLinks?.length">
-              <hr class="mt-4 border-gray-200 dark:border-gray-700" />
+              <hr class="mt-4 border-gray-200" />
               <div class="mt-3">
                 <AppSocialLinks />
               </div>

@@ -9,9 +9,9 @@ summary: 'Two manual workflow_dispatch pipelines — deploy-tcm.yml and deploy-8
 
 ## Workflows
 
-| File | App | Trigger |
-| --- | --- | --- |
-| `.github/workflows/deploy-tcm.yml` | `apps/tcm` | Manual (`workflow_dispatch`) |
+| File                                 | App          | Trigger                      |
+| ------------------------------------ | ------------ | ---------------------------- |
+| `.github/workflows/deploy-tcm.yml`   | `apps/tcm`   | Manual (`workflow_dispatch`) |
 | `.github/workflows/deploy-8fold.yml` | `apps/8fold` | Manual (`workflow_dispatch`) |
 
 Both workflows are triggered manually from the GitHub Actions UI (Actions tab → select workflow → Run workflow). There is no automatic trigger on push.
@@ -58,9 +58,9 @@ No advisory (non-blocking) checks exist today — every CI step is blocking.
 
 **Token secrets:**
 
-| App | Secret name |
-| --- | --- |
-| `apps/tcm` | `AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_RIVER_0E1FD7A10` |
+| App          | Secret name                                                                                         |
+| ------------ | --------------------------------------------------------------------------------------------------- |
+| `apps/tcm`   | `AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_RIVER_0E1FD7A10`                                              |
 | `apps/8fold` | `AZURE_STATIC_WEB_APPS_API_TOKEN_8FOLD` (set after provisioning — see [PROVISION.md](PROVISION.md)) |
 
 Both secrets are stored as GitHub Actions repo secrets. See [PROVISION.md](PROVISION.md) for rotation procedure. Note: `Azure/static-web-apps-deploy` authenticates via deployment token only — no native OIDC flow exists for this action. An OIDC path would require switching to a different deployment mechanism (e.g., SWA CLI with `azure/login` federated identity).
@@ -79,11 +79,11 @@ To revert a deploy, re-run the workflow against a prior commit (checkout SHA). T
 
 ## Artifact retention
 
-| Artifact                       | Location                         | Retention                                             | Regenerable                                   |
-| ------------------------------ | -------------------------------- | ----------------------------------------------------- | --------------------------------------------- |
-| Static HTML + config + sitemap | Azure SWA deployment             | SWA revision history (last N deploys per environment) | Yes — re-run `vp run <app>#build` + deploy    |
-| SBOM JSON (`sbom.json`)        | GitHub Actions artifact (`sbom`) | 90-day GitHub default                                 | Yes — re-run CI                               |
-| CI logs                        | GitHub Actions                   | 90-day GitHub default                                 | N/A                                           |
+| Artifact                       | Location                         | Retention                                             | Regenerable                                |
+| ------------------------------ | -------------------------------- | ----------------------------------------------------- | ------------------------------------------ |
+| Static HTML + config + sitemap | Azure SWA deployment             | SWA revision history (last N deploys per environment) | Yes — re-run `vp run <app>#build` + deploy |
+| SBOM JSON (`sbom.json`)        | GitHub Actions artifact (`sbom`) | 90-day GitHub default                                 | Yes — re-run CI                            |
+| CI logs                        | GitHub Actions                   | 90-day GitHub default                                 | N/A                                        |
 
 ## Industry References
 

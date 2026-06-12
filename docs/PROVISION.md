@@ -19,10 +19,10 @@ Before running the provisioning runbook, confirm you have:
 
 Each app has its own Azure Static Web Apps resource. Resources are independent — no shared backends, no Functions, no databases.
 
-| App          | Status              | Notes                                                                         |
-| ------------ | ------------------- | ----------------------------------------------------------------------------- |
-| `apps/tcm`   | Deployed            | Token secret: `AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_RIVER_0E1FD7A10`          |
-| `apps/8fold` | Not yet provisioned | Token secret (after provisioning): `AZURE_STATIC_WEB_APPS_API_TOKEN_8FOLD`    |
+| App          | Status              | Notes                                                                      |
+| ------------ | ------------------- | -------------------------------------------------------------------------- |
+| `apps/tcm`   | Deployed            | Token secret: `AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_RIVER_0E1FD7A10`       |
+| `apps/8fold` | Not yet provisioned | Token secret (after provisioning): `AZURE_STATIC_WEB_APPS_API_TOKEN_8FOLD` |
 
 ## Resource group conventions
 

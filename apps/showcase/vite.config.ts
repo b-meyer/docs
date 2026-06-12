@@ -14,7 +14,7 @@ export default defineConfig({
   },
   themeDefaults: {
     brandHue: 153,
-    brandIntensity: 60,
+    brandIntensity: 30,
   },
   nav: [
     { text: 'Features', link: '/', activeMatch: '^/(?!guide)' },

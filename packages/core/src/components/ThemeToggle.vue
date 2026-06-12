@@ -48,7 +48,7 @@ const intensityTrackStyle = computed(
     </PopoverTrigger>
     <PopoverPortal>
       <PopoverContent
-        :side-offset="8"
+        :side-offset="16"
         align="end"
         class="z-50 w-72 rounded-lg border border-gray-200 bg-white p-4 shadow-lg dark:bg-gray-125"
       >

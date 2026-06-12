@@ -31,8 +31,8 @@ function isDropdownActive(groups: NavDropdownGroup[]): boolean {
 
 const NAV_LINK_BASE = 'px-3 py-2 text-sm font-medium rounded transition-colors';
 const NAV_LINK_INACTIVE =
-  'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100';
-const NAV_LINK_ACTIVE = 'text-primary-600';
+  'text-gray-700 hover:text-gray-900 dark:text-gray-600 dark:hover:text-gray-900';
+const NAV_LINK_ACTIVE = 'text-gray-900 dark:text-gray-900 underline underline-offset-4';
 </script>
 
 <template>
@@ -88,12 +88,12 @@ const NAV_LINK_ACTIVE = 'text-primary-600';
         </PopoverTrigger>
         <PopoverPortal>
           <PopoverContent
-            :side-offset="8"
+            :side-offset="18"
             align="start"
-            class="z-50 min-w-[180px] rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg dark:border-gray-700 dark:bg-gray-125"
+            class="z-50 min-w-[180px] rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg dark:bg-gray-125"
           >
             <template v-for="(group, gi) in item.items" :key="group.text ?? gi">
-              <hr v-if="gi > 0" class="my-1 border-gray-100 dark:border-gray-700" />
+              <hr v-if="gi > 0" class="my-1 border-gray-100" />
               <p v-if="group.text" class="eyebrow px-3 pt-1.5 pb-0.5 text-gray-500">
                 {{ group.text }}
               </p>
@@ -103,7 +103,7 @@ const NAV_LINK_ACTIVE = 'text-primary-600';
                   :href="child.link"
                   :target="child.target ?? '_blank'"
                   rel="noopener noreferrer"
-                  class="flex items-center justify-between px-3 py-1.5 text-sm text-gray-700 hover:bg-primary-50 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-175 dark:hover:text-gray-100"
+                  class="flex items-center justify-between px-3 py-1.5 text-sm text-gray-700 hover:bg-primary-50 hover:text-gray-900 dark:text-gray-700 dark:hover:bg-gray-175 dark:hover:text-gray-900"
                 >
                   {{ child.text }}
                   <svg
@@ -124,7 +124,7 @@ const NAV_LINK_ACTIVE = 'text-primary-600';
                 <RouterLink
                   v-else-if="child.link"
                   :to="child.link"
-                  class="block px-3 py-1.5 text-sm text-gray-700 hover:bg-primary-50 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-175 dark:hover:text-gray-100"
+                  class="block px-3 py-1.5 text-sm text-gray-700 hover:bg-primary-50 hover:text-gray-900 dark:text-gray-700 dark:hover:bg-gray-175 dark:hover:text-gray-900"
                 >
                   {{ child.text }}
                 </RouterLink>
