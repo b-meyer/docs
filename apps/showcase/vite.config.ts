@@ -6,6 +6,7 @@ export default defineConfig({
   base: '/',
   branding: {
     siteTitle: 'Showcase',
+    logo: 'logo.svg',
   },
   markdown: {
     mermaid: true,
@@ -16,6 +17,7 @@ export default defineConfig({
     brandHue: 153,
     brandIntensity: 30,
   },
+  themeControls: true,
   nav: [
     { text: 'Features', link: '/', activeMatch: '^/(?!guide)' },
     { text: 'Guide', link: '/guide/', activeMatch: '^/guide' },

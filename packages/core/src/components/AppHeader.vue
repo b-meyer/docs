@@ -26,6 +26,13 @@ import ThemeToggle from './ThemeToggle.vue';
 
 const config = useConfig();
 const siteTitle = computed(() => config.branding?.siteTitle ?? config.title);
+const base = computed(() => config.base ?? '/');
+const logoSrc = computed<string | undefined>(() => {
+  const logoOverride = config.branding?.logo;
+  const favicon = config.favicon ?? 'favicon.svg';
+  if (typeof logoOverride === 'string') return `${base.value}${logoOverride}`;
+  return logoOverride !== false && favicon.endsWith('.svg') ? `${base.value}${favicon}` : undefined;
+});
 
 const {
   open,
@@ -159,7 +166,14 @@ onBeforeUnmount(() => {
           >
             <DialogTitle class="sr-only">Navigation</DialogTitle>
             <div class="mb-4 flex items-center justify-between">
-              <span class="text-lg font-semibold text-gray-900">
+              <span class="flex items-center gap-2 text-lg font-semibold text-gray-900">
+                <img
+                  v-if="logoSrc"
+                  :src="logoSrc"
+                  :alt="siteTitle"
+                  class="h-7 w-7 shrink-0"
+                  aria-hidden="true"
+                />
                 <slot name="site-title">{{ siteTitle }}</slot>
               </span>
               <DialogClose
@@ -257,6 +271,13 @@ onBeforeUnmount(() => {
       </DialogRoot>
 
       <RouterLink to="/" class="flex items-center gap-2 text-lg font-semibold text-gray-900">
+        <img
+          v-if="logoSrc"
+          :src="logoSrc"
+          :alt="siteTitle"
+          class="h-7 w-7 shrink-0"
+          aria-hidden="true"
+        />
         <slot name="site-title">{{ siteTitle }}</slot>
       </RouterLink>
 
@@ -309,7 +330,7 @@ onBeforeUnmount(() => {
       <div class="flex items-center justify-end">
         <AppSocialLinks class="hidden md:flex" />
         <slot name="nav-actions" />
-        <ThemeToggle class="justify-self-end" />
+        <ThemeToggle class="justify-self-end" :color-controls="config.themeControls" />
         <button
           type="button"
           aria-label="Search"

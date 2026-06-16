@@ -15,6 +15,8 @@ import {
 import { computed } from 'vue';
 import { useTheme } from '../composables/useTheme';
 
+defineProps<{ colorControls?: boolean }>();
+
 const { theme, hue, intensity, setTheme, setHue, setIntensity } = useTheme();
 
 function onThemeUpdate(v: boolean): void {
@@ -39,7 +41,22 @@ const intensityTrackStyle = computed(
 </script>
 
 <template>
-  <PopoverRoot>
+  <SwitchRoot
+    v-if="!colorControls"
+    :model-value="theme === 'dark'"
+    aria-label="Toggle dark mode"
+    class="relative inline-flex h-7 w-12 shrink-0 cursor-pointer items-center rounded-full bg-gray-200 transition-colors hover:bg-gray-300"
+    @update:model-value="onThemeUpdate"
+  >
+    <SwitchThumb
+      class="flex size-5 translate-x-1 items-center justify-center rounded-full bg-white shadow ring-1 ring-gray-300 transition-transform will-change-transform data-[state=checked]:translate-x-6"
+    >
+      <SunIcon v-if="theme === 'light'" class="size-3 text-gray-400" aria-hidden="true" />
+      <MoonIcon v-else class="size-3 text-gray-700" aria-hidden="true" />
+    </SwitchThumb>
+  </SwitchRoot>
+
+  <PopoverRoot v-else>
     <PopoverTrigger
       aria-label="Theme settings"
       class="inline-flex size-10 ml-auto items-center justify-center rounded text-gray-700 hover:bg-primary-50"
@@ -60,18 +77,14 @@ const intensityTrackStyle = computed(
           <SwitchRoot
             :model-value="theme === 'dark'"
             aria-label="Toggle dark mode"
-            class="relative inline-flex h-7 w-12 shrink-0 cursor-pointer items-center rounded-full bg-gray-200 transition-colors hover:bg-gray-300 data-[state=checked]:bg-primary-500 data-[state=checked]:hover:bg-primary-600"
+            class="relative inline-flex h-7 w-12 shrink-0 cursor-pointer items-center rounded-full bg-gray-200 transition-colors hover:bg-gray-300"
             @update:model-value="onThemeUpdate"
           >
             <SwitchThumb
               class="flex size-5 translate-x-1 items-center justify-center rounded-full bg-white shadow ring-1 ring-gray-300 transition-transform will-change-transform data-[state=checked]:translate-x-6"
             >
-              <SunIcon
-                v-if="theme === 'light'"
-                class="size-3 text-primary-400"
-                aria-hidden="true"
-              />
-              <MoonIcon v-else class="size-3 text-primary-700" aria-hidden="true" />
+              <SunIcon v-if="theme === 'light'" class="size-3 text-gray-400" aria-hidden="true" />
+              <MoonIcon v-else class="size-3 text-gray-700" aria-hidden="true" />
             </SwitchThumb>
           </SwitchRoot>
         </div>

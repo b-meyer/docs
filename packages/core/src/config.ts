@@ -79,6 +79,12 @@ export type FrameworkConfig = {
   branding?: {
     /** Short site name shown in the header / mobile drawer. Falls back to `title`. */
     siteTitle?: string;
+    /**
+     * Logo image filename relative to the public directory (e.g. 'logo.svg', 'logo.png').
+     * If omitted and `favicon` is an SVG, the favicon is used automatically.
+     * Set to `false` to suppress the logo entirely and show text only.
+     */
+    logo?: string | false;
   };
   markdown?: {
     /** Enable the mermaid fence transform + runtime. Off by default. */
@@ -94,6 +100,11 @@ export type FrameworkConfig = {
     /** 0–100. */
     brandIntensity?: number;
   };
+  /**
+   * When true, renders the full theme menu (hue, intensity, dark/light toggle) in the header.
+   * Defaults to false — only a sun/moon toggle is shown.
+   */
+  themeControls?: boolean;
 };
 
 export const CONFIG_KEY: InjectionKey<FrameworkConfig> = Symbol('framework-config');
