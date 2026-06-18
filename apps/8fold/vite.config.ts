@@ -16,15 +16,36 @@ export default defineConfig({
   },
   sidebar: [
     {
-      group: 'Wisdom',
+      group: 'Foundation',
       items: [
-        { path: 'RightView', title: 'Right View' },
-        { path: 'RightIntention', title: 'Right Intention' },
+        { path: 'FourNobleTruths', title: 'Four Noble Truths' },
+        { path: 'EightFoldPath', title: 'Noble Eightfold Path' },
       ],
     },
     {
-      group: 'Ethical Conduct',
-      items: [{ path: 'RightSpeech', title: 'Right Speech' }],
+      group: 'Noble Eightfold Path',
+      items: [
+        { path: 'RightView', title: 'Right View' },
+        { path: 'RightIntention', title: 'Right Intention' },
+        { path: 'RightSpeech', title: 'Right Speech' },
+        { path: 'RightAction', title: 'Right Action' },
+        { path: 'RightLivelihood', title: 'Right Livelihood' },
+        { path: 'RightEffort', title: 'Right Effort' },
+        { path: 'RightMindfulness', title: 'Right Mindfulness' },
+        { path: 'RightConcentration', title: 'Right Concentration' },
+      ],
+    },
+    {
+      group: 'Three Trainings',
+      items: [
+        { path: 'Sila', title: 'Sīla' },
+        { path: 'Samadhi', title: 'Samādhi' },
+        { path: 'Panna', title: 'Paññā' },
+      ],
+    },
+    {
+      group: 'Additional Reading',
+      items: [{ path: 'ReadingGuide', title: 'Reading Guide' }],
     },
   ],
   // Distinct dev/preview port per app so TCM and 8fold can run side by side.
