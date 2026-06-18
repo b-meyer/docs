@@ -1,52 +1,18 @@
-import { fileURLToPath, URL } from 'node:url';
-import tailwindcss from '@tailwindcss/vite';
-import vue from '@vitejs/plugin-vue';
-import anchor from 'markdown-it-anchor';
-import Markdown from 'unplugin-vue-markdown/vite';
 import { defineConfig } from 'vite-plus';
-import {
-  mdAlerts,
-  mdContainers,
-  mdLinkRewriter,
-  mdMermaid,
-  mdTableWrapper,
-} from './src/scripts/markdown.ts';
-import { buildSitemap, filterPublicRoutes } from './src/scripts/sitemap.ts';
-import { slugify } from './src/scripts/utils.ts';
 
+// Single canonical lint + format standard for the whole workspace — there are no
+// per-package lint/fmt overrides. `vp check` (run from the repo root) applies this
+// to every package. Apps' own vite.config.ts files carry build settings only.
 const IGNORE_PATTERNS: string[] = [
-  '.vite-ssg-temp',
-  'dist',
-  'dist-baseline',
-  'docs',
-  'node_modules',
+  '**/dist/**',
+  '**/dist-baseline/**',
+  '**/node_modules/**',
+  '**/.framework-ssg-temp/**',
+  'pnpm-lock.yaml',
 ];
-const PAGES_DIR = fileURLToPath(new URL('./src/pages', import.meta.url));
-const DIST_DIR = fileURLToPath(new URL('./dist', import.meta.url));
-let renderedPaths: string[] = [];
 
 export default defineConfig({
-  plugins: [
-    vue({ include: [/\.vue$/u, /\.md$/u] }),
-    Markdown({
-      wrapperComponent: 'PageLayout',
-      markdownItOptions: { html: true, linkify: true, typographer: true },
-      markdownItSetup(md) {
-        md.use(anchor, { permalink: false, slugify });
-        md.use(mdLinkRewriter);
-        md.use(mdTableWrapper);
-        md.use(mdMermaid);
-        md.use(mdContainers);
-        md.use(mdAlerts);
-      },
-    }),
-    tailwindcss(),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    },
-  },
+  run: { cache: true },
   lint: {
     plugins: ['eslint', 'typescript', 'oxc', 'unicorn', 'import', 'vue', 'promise'],
     categories: {
@@ -79,6 +45,25 @@ export default defineConfig({
       'no-warning-comments': 'off',
       'import/no-unassigned-import': ['error', { allow: ['**/*.css', '**/*.scss'] }],
     },
+    overrides: [
+      {
+        // Cross-cutting (file-pattern-based), not package-specific.
+        files: ['**/*.test.ts', '**/*.spec.ts', '**/tests/**/*.ts'],
+        rules: {
+          'typescript/no-explicit-any': 'off',
+          'eslint/max-lines': 'off',
+          'eslint/max-lines-per-function': 'off',
+        },
+      },
+      {
+        // AppHeader is the root shell component — it orchestrates the header, mobile drawer,
+        // search, nav, and social links; more imports than a leaf component is expected.
+        files: ['**/components/AppHeader.vue'],
+        rules: {
+          'import/max-dependencies': ['error', { max: 12 }],
+        },
+      },
+    ],
   },
   fmt: {
     singleQuote: true,
@@ -87,24 +72,5 @@ export default defineConfig({
       newlinesBetween: false,
     },
     ignorePatterns: IGNORE_PATTERNS,
-  },
-  run: {
-    tasks: {
-      build: {
-        command: 'vite-ssg build',
-        dependsOn: ['check'],
-      },
-    },
-  },
-  // @ts-expect-error — ssgOptions is a vite-ssg extension not declared on Vite+'s UserConfig
-  ssgOptions: {
-    dirStyle: 'nested',
-    formatting: 'minify',
-    includedRoutes(paths: string[]) {
-      const kept = filterPublicRoutes(paths, PAGES_DIR);
-      renderedPaths = kept;
-      return kept;
-    },
-    onFinished: () => buildSitemap(DIST_DIR, renderedPaths),
   },
 });

@@ -1,39 +1,24 @@
 {
-  "name": "tcm-primer",
+  "name": "docs-workspace",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vp dev",
-    "preview": "vp preview",
-    "check": "vp check"
-  },
-  "dependencies": {
-    "@heroicons/vue": "^2.2.0",
-    "@unhead/vue": "^2.1.15",
-    "fuzzysort": "^3.1.0",
-    "markdown-it-container": "^4.0.0",
-    "mermaid": "^11.15.0",
-    "reka-ui": "^2.9.0",
-    "vite-ssg": "^28.3.0",
-    "vue": "^3.5.32",
-    "vue-router": "~5.0.7"
+    "dev:tcm": "vp run tcm#dev",
+    "dev:8fold": "vp run 8fold#dev",
+    "dev:showcase": "vp run showcase#dev",
+    "preview:tcm": "vp run tcm#preview",
+    "preview:8fold": "vp run 8fold#preview",
+    "preview:showcase": "vp run showcase#preview",
+    "build": "vp run -r build",
+    "check": "vp check",
+    "fix": "vp check --fix",
+    "test": "vp run -r test",
+    "ready": "vp check && vp run -r build"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.2.2",
-    "@types/markdown-it": "^14.1.2",
-    "@types/node": "^22",
-    "@vitejs/plugin-vue": "^6.0.3",
-    "@vue/tsconfig": "^0.9.1",
-    "markdown-it": "^14.1.0",
-    "markdown-it-anchor": "^9.2.0",
-    "tailwindcss": "^4.2.2",
-    "typescript": "~6.0.2",
-    "unplugin-vue-markdown": "^28.3.1",
-    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
-    "vite-plus": "latest",
-    "vue-tsc": "^3.2.6"
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
   },
   "engines": {
     "node": ">=22.12.0"

@@ -1,84 +1,113 @@
-# TCM Primer
+# docs-workspace
 
-A reader for a Traditional Chinese Medicine primer — a set of cross-linked markdown topic pages (foundation theory, organ deep-dives, treatment branches) plus a navigation home page, rendered as a single-page app. The canonical page list lives in [`src/scripts/router.ts`](src/scripts/router.ts).
+A **documentation meta-framework** and the sites built on it, as a pnpm workspace
+managed by [Vite+](https://viteplus.dev/) (`vp`). The framework
+([`packages/core`](packages/core/README.md)) packages VitePress-style chrome —
+sidebar, local search, theming, a markdown pipeline, and doc/home layouts — built
+directly on Vite + Vue 3 + a custom `framework-ssg` CLI (pages are pre-rendered per
+route and hydrated as a SPA). Each site is **config + content**.
 
-VitePress-style chrome (sidebar nav, scroll-spy outline, prev/next, Cmd+K search) built directly on Vite + Vue 3 — no VitePress, no static-site generator.
+> Agents: see [`CLAUDE.md`](CLAUDE.md) for the architecture and hard rules.
 
 ## Stack
 
-- **Build:** Vite+ (Vite, Rolldown, Vitest, tsdown, Oxlint, Oxfmt under the `vp` CLI)
-- **Framework:** Vue 3 + Vue Router (manual route map; no file-based routing plugin)
-- **Markdown:** `unplugin-vue-markdown` transforms `.md` files into Vue SFCs at build time
-- **Markdown extras:** `markdown-it-anchor` (heading IDs), a custom kebab-case slugifier (`src/scripts/utils.ts`), a cross-link rewriter for `.md` → `/Route` and a `<div class="table-wrap">` wrapper for prose tables (`src/scripts/markdown.ts`)
-- **Search:** `fuzzysort` + a Reka UI dialog, opened via the header button or `⌘K` / `Ctrl+K`
-- **Styles:** Tailwind 4 + `@tailwindcss/typography`. Theme tokens (primary + gray + black + white + transparent) live in `src/styles/main.css`
-- **Runtime:** TypeScript 6, Node 22.12+, pnpm 11
+| Property        | Value                            |
+| --------------- | -------------------------------- |
+| Host            | Azure Static Web Apps            |
+| Runtime         | Node ≥ 22                        |
+| Package manager | pnpm (catalog-pinned versions)   |
+| Framework       | Vite + Vue 3 + framework-ssg     |
+| Apps            | `tcm` (deployed), `8fold` (stub) |
+
+## Workspace
+
+| Path                                       | Name              | What                                                                                                  |
+| ------------------------------------------ | ----------------- | ----------------------------------------------------------------------------------------------------- |
+| [`packages/core`](packages/core/README.md) | `@framework/core` | The meta-framework (routing, layout, search, theme, markdown). Consumed by the apps.                  |
+| [`apps/tcm`](apps/tcm/)                    | `tcm`             | Traditional Chinese Medicine Primer — the rich consumer (mermaid diagrams, theme controls). Deployed. |
+| [`apps/8fold`](apps/8fold/)                | `8fold`           | Noble Eightfold Path primer — a minimal stock-prose consumer (no mermaid). Not deployed.              |
+| [`apps/showcase`](apps/showcase/)          | `showcase`        | Framework feature showcase — component and API demos. Not deployed.                                   |
+
+`@framework/core` is a placeholder name (rename with one find-and-replace when ready).
 
 ## Getting started
 
+`vp` (Vite+) is the **only** entry point — never run `pnpm`/`npm`/`yarn` scripts directly.
+
 ```bash
-vp install        # install dependencies
-vp dev            # dev server (HMR on .md changes)
-vp build          # production build (one chunk per route + lazy-loaded Mermaid)
-vp check          # format + lint + type check
-vp check --fix    # apply formatter fixes
+vp install        # install the whole workspace (run from the repo root)
+vp run dev:tcm    # dev server for the TCM site (HMR on .md changes)
+vp run dev:8fold  # dev server for the 8fold site
+vp check          # format + lint + type-check the whole workspace
+vp run build      # production build of every app (framework-ssg → static HTML per route)
+vp run ready      # check + build — the pre-push gate
 ```
 
-## Project layout
+All of these run from the **repo root**. To target one app's own tasks directly,
+use `vp run <app>#<task>`, e.g. `vp run tcm#dev`, `vp run 8fold#preview`.
+
+## Commands
+
+| Command                               | Does                                                                                                           |
+| ------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `vp install`                          | Install/refresh all workspace deps (pnpm catalog drives versions — see `pnpm-workspace.yaml`).                 |
+| `vp run dev:tcm` / `vp run dev:8fold` | Dev server for TCM / 8fold.                                                                                    |
+| `vp check` / `vp run fix`             | Lint + format (+ type-check) the whole workspace / autofix. One canonical config in the root `vite.config.ts`. |
+| `vp run build`                        | `vp run -r build` — builds every app (framework-ssg → static HTML per route).                                  |
+| `vp run test`                         | `vp run -r test` — runs each package's tests (framework unit tests live in `packages/core`).                   |
+| `vp run ready`                        | `vp check && vp run -r build`.                                                                                 |
+| `vp run <app>#<task>`                 | Run one app's task, e.g. `vp run tcm#build`.                                                                   |
+
+## Layout
 
 ```
-src/
-  components/   Vue components — outer shell, sticky chrome (header + sidebar nav),
-                auto-injected doc layout, right-side outline, inline search UI,
-                theme controls. Roles described in "How content is wired" below.
-  pages/        Markdown content, one file per route. The sidebar manifest in
-                src/scripts/router.ts is the canonical list of which pages exist
-                and how they're grouped (theory, organ deep-dives, treatment,
-                plus index.md and a NotFound catch-all).
-  scripts/      main.ts (Vite entry), router.ts (single source of truth for
-                routes + sidebar), search.ts (fuzzysort index + Cmd+K state),
-                markdown.ts (markdown-it plugins: SPA link rewriter, table
-                wrapper, mermaid fence), mermaid.ts (lazy runtime + theme-aware
-                re-render), theme.ts + reading.ts (small composables for
-                persisted UI prefs), utils.ts (slugify + reduced-motion).
-  styles/       main.css imports tailwind + typography + theme.css (tokens) +
-                components.css (.prose .table-wrap, pre.mermaid) +
-                utilities.css (@utility nav-link / outline-link / eyebrow / …).
-shims.d.ts      TS shims for *.vue and *.md modules (repo root, in tsconfig).
+docs-workspace/
+├── packages/core/   @framework/core — the meta-framework (see its README)
+├── apps/tcm/        TCM Primer (config + pages/*.md)
+├── apps/8fold/      8fold (config + pages/*.md)
+├── apps/showcase/   Framework feature showcase (component demos)
+├── vite.config.ts   ONE canonical lint + format standard for the whole workspace
+├── tsconfig.json    minimal root TS config (for the root vite.config.ts)
+├── pnpm-workspace.yaml  workspace globs + the dependency catalog
+└── package.json     workspace root: orchestration scripts only
 ```
 
-## How content is wired
+Each app/package owns its own `vite.config.ts` (build settings) and `tsconfig.json`.
+Lint/format are **not** configured per-package — the root `vite.config.ts` is the
+single source.
 
-1. **Markdown files** live in `src/pages/*.md` — one file per route. Filename (Pinyin PascalCase) is the URL slug: `YinYang.md` → `/YinYang`. The home page is `index.md` → `/`.
-2. **`src/scripts/router.ts`** is the single source of truth for which pages exist and how they're grouped. The exported `sidebar` array maps slug → title in canonical reading order. Routes are derived from `flatOrder` via `import.meta.glob('../pages/*.md')`.
-3. **Cross-links** between `.md` files use the natural form `[Display](OtherFile.md)`. At build time, `mdLinkRewriter` (in `src/scripts/markdown.ts`) rewrites them to SPA routes (`/OtherFile`). Hashes are preserved: `[Display](OtherFile.md#sub-heading)` → `/OtherFile#sub-heading`. As a special case, `index.md` rewrites to `/` (not `/index`) so links to home-page anchors work.
-4. **Every page** is auto-wrapped in `PageLayout` (configured in `vite.config.ts` via `Markdown({ wrapperComponent: 'PageLayout' })`). The layout supplies sidebar nav, the prose container, the right-side outline, and an inline prev/next nav below the article.
-5. **Heading IDs** are kebab-cased by the shared `slugify` helper in `src/scripts/utils.ts` so URL fragments are predictable: `## Reading the Taijitu` → `id="reading-the-taijitu"`. The search index uses the same function, guaranteeing that result links land on the right anchor.
-6. **Search.** All search logic lives in `src/scripts/search.ts`. On module load it parses every page's raw markdown into one entry per H1/H2/H3 section, strips to plaintext, and pre-prepares the heading + body strings for `fuzzysort`. The same file owns the open / query / selectedIndex state and exposes a `results` computed (body matches are penalized so heading hits rank first) via `useSearch()`. The search UI lives inline in the header (desktop bar at ≥sm, magnifier-triggered full-width overlay at <sm); both share a results pane and the `⌘K` / `Ctrl+K` shortcut. Heading IDs come from the same `slugify` as `markdown-it-anchor`, so result links land on the right anchor.
+## Documentation
 
-## Adding a new topic
-
-1. Create `src/pages/NewTopic.md` starting with `# Title` (the H1).
-2. Add an entry to the appropriate group in `src/scripts/router.ts`:
-   ```ts
-   { slug: 'NewTopic', title: 'Display Title' },
-   ```
-3. Cross-link to/from existing files with `[X](NewTopic.md)`.
-
-Route, sidebar entry, page outline, prev/next, and search index are picked up automatically. A `.md` file without a sidebar entry won't get a route.
-
-## Authoring conventions
-
-- **Filenames:** Pinyin PascalCase (`YinYang.md`, not `yin-yang.md`). The filename is the URL slug verbatim.
-- **Cross-links:** always use the `[Display](File.md)` form. Never hardcode `/File` in source markdown — the rewriter is what makes it refactor-safe. For links to the home page, use `[Display](index.md)` or `[Display](index.md#anchor)`.
-- **Headings:** first line is the page's `# H1`. The right-side outline shows `h2` and `h3` only.
-- **No frontmatter required.** Titles come from the sidebar manifest; the on-page H1 stands alone.
-- **No code highlighting wired up** (Shiki etc.) — the TCM content has none. Mermaid diagrams in ` ```mermaid ` fences are rendered separately via `src/scripts/mermaid.ts`.
-
-## AI-assisted origin
-
-The TCM text under `src/pages/` was generated with AI assistance as a synthesis of publicly available TCM material and edited for consistency. Treat it as a study aid, not a primary source.
+| Doc                                                  | Summary                                                    |
+| ---------------------------------------------------- | ---------------------------------------------------------- |
+| [`CLAUDE.md`](CLAUDE.md)                             | Agents-first operating rules, stack links, review gate     |
+| [`docs/ACCESSIBILITY.md`](docs/ACCESSIBILITY.md)     | POUR surface coverage for the doc-site view layer          |
+| [`docs/AI.md`](docs/AI.md)                           | AI-assisted authoring posture and agent contribution rules |
+| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)       | Framework design, component contracts, Azure deployment    |
+| [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md)       | Onboarding, branch/PR conventions, pre-PR gate             |
+| [`docs/CONVENTIONS.md`](docs/CONVENTIONS.md)         | Import paths, naming, CSS, lint, and dependency-pin rules  |
+| [`docs/DEPENDENCIES.md`](docs/DEPENDENCIES.md)       | pnpm catalog, top-of-graph deps, update policy             |
+| [`docs/DICTIONARY.md`](docs/DICTIONARY.md)           | Project-specific terminology and deprecated synonyms       |
+| [`docs/DOCUMENTATION.md`](docs/DOCUMENTATION.md)     | Doc tree map, Branch inventory, opted-out topics           |
+| [`docs/PIPELINE.md`](docs/PIPELINE.md)               | GitHub Actions → Azure SWA deploy workflow                 |
+| [`docs/PROVISION.md`](docs/PROVISION.md)             | Azure SWA resource provisioning and token setup            |
+| [`docs/RUNTIME.md`](docs/RUNTIME.md)                 | Azure SWA hosting model, route config, local dev           |
+| [`docs/SECURITY.md`](docs/SECURITY.md)               | CSP posture, content trust boundary, dependency graph      |
+| [`docs/STRUCTURE.md`](docs/STRUCTURE.md)             | Workspace topology, file placement, import model           |
+| [`docs/SUPPORT.md`](docs/SUPPORT.md)                 | Issue tracker, contact channels, escalation path           |
+| [`docs/TESTING.md`](docs/TESTING.md)                 | Test layers, runner, placement conventions                 |
+| [`docs/TOOLCHAIN.md`](docs/TOOLCHAIN.md)             | `vp` commands, entry-point contract, pre-push gate         |
+| [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md) | Project-specific failure modes and build gotchas           |
 
 ## Deployment
 
-Deployed to Azure Static Web Apps via the GitHub Actions workflow in `.github/workflows/azure-static-web-apps.yml`. SPA routing + headers live in `public/staticwebapp.config.json`. The one-time Azure-side setup (creating the resource, capturing the deployment token, first deploy) is in [`deploy.md`](./deploy.md).
+Only **`apps/tcm`** is deployed today, to Azure Static Web Apps via
+[`.github/workflows/azure-static-web-apps.yml`](.github/workflows/azure-static-web-apps.yml)
+on push to `release` (uploads `apps/tcm/dist`). `apps/8fold` has no deploy yet —
+see [`TODO.md`](TODO.md) for what wiring it up entails.
+
+## AI-assisted content
+
+The prose under `apps/tcm/src/pages/` and `apps/8fold/src/pages/` was generated with
+AI assistance and edited for consistency. Treat it as study material, not a primary
+source.

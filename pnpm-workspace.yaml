@@ -1,6 +1,47 @@
+packages:
+  - 'packages/*'
+  - 'apps/*'
+
+# Single source of truth for dependency versions. Every package references
+# `catalog:`; bump a version here once and it applies workspace-wide.
+catalog:
+  '@heroicons/vue': ^2.2.0
+  '@tailwindcss/typography': ^0.5.16
+  '@tailwindcss/vite': ^4.2.2
+  '@types/jsdom': ^21
+  '@types/markdown-it': ^14.1.2
+  '@types/node': ^22
+  '@unhead/dom': ^2.1.15
+  '@unhead/vue': ^2.1.15
+  '@vue/server-renderer': ^3.5
+  '@vitejs/plugin-vue': ^6.0.3
+  '@vue/test-utils': ^2.4
+  '@vue/tsconfig': ^0.9.1
+  fuzzysort: ^3.1.0
+  markdown-it: ^14.1.0
+  markdown-it-anchor: ^9.2.0
+  markdown-it-container: ^4.0.0
+  mermaid: ^11.15.0
+  reka-ui: ^2.9.0
+  shiki: ^1.0.0
+  '@shikijs/transformers': ^1.0.0
+  tailwindcss: ^4.2.2
+  typescript: ~6.0.2
+  unplugin-vue-markdown: ^28.3.1
+  vite: 'npm:@voidzero-dev/vite-plus-core@0.1.24'
+  vite-plus: 0.1.24
+  jsdom: ^28.1.0
+  vitest: 'npm:@voidzero-dev/vite-plus-test@0.1.24'
+  vue: ^3.5.32
+  vue-router: ~5.0.7
+  vue-tsc: ^3.2.6
+
+catalogMode: prefer
+
 overrides:
-  vite: 'npm:@voidzero-dev/vite-plus-core@latest'
-  vitest: 'npm:@voidzero-dev/vite-plus-test@latest'
+  vite: 'catalog:'
+  vitest: 'catalog:'
+  ws: '>=8.21.0'
 peerDependencyRules:
   allowAny:
     - vite
@@ -9,4 +50,16 @@ peerDependencyRules:
     vite: '*'
     vitest: '*'
 allowBuilds:
+  esbuild: false
   vue-demi: true
+minimumReleaseAgeExclude:
+  - '@voidzero-dev/vite-plus-core@0.2.1'
+  - '@voidzero-dev/vite-plus-darwin-arm64@0.2.1'
+  - '@voidzero-dev/vite-plus-darwin-x64@0.2.1'
+  - '@voidzero-dev/vite-plus-linux-arm64-gnu@0.2.1'
+  - '@voidzero-dev/vite-plus-linux-arm64-musl@0.2.1'
+  - '@voidzero-dev/vite-plus-linux-x64-gnu@0.2.1'
+  - '@voidzero-dev/vite-plus-linux-x64-musl@0.2.1'
+  - '@voidzero-dev/vite-plus-win32-arm64-msvc@0.2.1'
+  - '@voidzero-dev/vite-plus-win32-x64-msvc@0.2.1'
+  - vite-plus@0.2.1

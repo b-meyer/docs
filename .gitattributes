@@ -1,2 +1,2 @@
 * text=auto eol=lf
-package-lock.json -diff
+pnpm-lock.yaml -diff
