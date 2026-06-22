@@ -1,13 +1,13 @@
 ---
 title: 'Wu Xing (Five Phases)'
-description: "The Five Phases — Wood, Fire, Earth, Metal, Water — TCM's matrix of correspondences linking organs, seasons, emotions, flavors, and tissues."
+description: "The Five Phases - Wood, Fire, Earth, Metal, Water - TCM's matrix of correspondences linking organs, seasons, emotions, flavors, and tissues."
 ---
 
-# Wu Xing — The Five Phases
+# Wu Xing - The Five Phases
 
 ## Overview
 
-Wu Xing, often translated as the "Five Elements," is a foundation stone of Traditional Chinese Medicine. A more accurate translation, however, is **Five Phases** or **Five Movements**. In the West, "elements" usually means static building blocks of matter (the ancient Greek earth, air, fire, and water). In Chinese philosophy, _Xing_ means "to walk" or "to move." Wu Xing therefore represents five dynamic, shifting phases of Qi that describe how the universe — and the human body — functions, changes, and maintains balance.
+Wu Xing, often translated as the "Five Elements," is a foundation stone of Traditional Chinese Medicine. A more accurate translation, however, is **Five Phases** or **Five Movements**. In the West, "elements" usually means static building blocks of matter (the ancient Greek earth, air, fire, and water). In Chinese philosophy, _Xing_ means "to walk" or "to move." Wu Xing describes five dynamic, shifting phases of Qi that govern how the universe and the human body function, change, and maintain balance.
 
 ## Historical development
 
@@ -31,27 +31,27 @@ _Wu Xing uses **5 Zang organs**, one per phase. The 12-meridian system in [Jingm
 
 ### Wood
 
-Wood governs spring: _ascending and spreading_, the push of a young tree toward light. Its organs are the **Liver** and **Gallbladder** ([ZangFu.md](ZangFu.md)) — the Liver smooths Qi and Blood, the Gallbladder holds the capacity for decision. Wood is the planning faculty: creativity and ambition balanced; irritability and rib-side tension when blocked. Supportive practices favour dispersal — lateral stretching, sour foods in moderation, movement that releases constraint.
+Wood governs spring: _ascending and spreading_, the push of a young tree toward light. Its organs are the **Liver** and **Gallbladder** ([ZangFu.md](ZangFu.md)). The Liver smooths Qi and Blood; the Gallbladder holds the capacity for decision. Wood is the planning faculty: creativity and ambition balanced, irritability and rib-side tension when blocked. Supportive practices favour dispersal through lateral stretching, sour foods in moderation, and movement that releases constraint.
 
 ### Fire
 
-Fire governs summer: _rising and radiating_, maximum expansion. Its organs are the **Heart** and **Small Intestine** ([ZangFu.md](ZangFu.md)) — the Heart seats Shen ([Shen.md](Shen.md)) and presides over the pulse. Balanced Fire is warmth and relational ease; excess is anxiety, racing thought, insomnia, red tongue tip; deficiency is flat affect and withdrawal. Supportive practices: bitter foods to clear Heart heat, meditative stillness, limiting stimulation in peak summer.
+Fire governs summer: _rising and radiating_, maximum expansion. Its organs are the **Heart** and **Small Intestine** ([ZangFu.md](ZangFu.md)). The Heart seats Shen ([Shen.md](Shen.md)) and presides over the pulse. Balanced Fire is warmth and relational ease; excess is anxiety, racing thought, insomnia, red tongue tip; deficiency is flat affect and withdrawal. Supportive practices: bitter foods to clear Heart heat, meditative stillness, limiting stimulation in peak summer.
 
-The Heart holds special significance within Fire's domain: as the **Emperor** of the Zang-Fu system, it governs not only circulation but the Shen — consciousness itself. Where other Fire imbalances manifest as physical heat signs, Heart-Fire specifically disturbs the spirit: anxiety, agitation, inability to feel joy, and a red tongue tip are the warnings that the Emperor's court is overheating. Cooling the Heart is therefore often the first step in treating psychological distress — the root of mental calm is Fire in its proper place.
+The Heart stands apart in Fire's system. As the **Emperor** of the Zang-Fu organs, it governs circulation and the Shen (consciousness). Where other Fire imbalances manifest as physical heat, Heart-Fire disturbs the spirit directly: anxiety, agitation, inability to feel joy, and a red tongue tip all signal excess in the Heart. Restoring Heart balance is the foundation for treating psychological distress.
 
 ### Earth
 
-Earth governs late summer — the pivot at the cycle's center. Its movement is _stabilizing and transforming_, the composting quality of soil. Its organs are the **Spleen** and **Stomach** ([ZangFu.md](ZangFu.md)): Spleen extracts nutritive essence into Qi and Blood; Stomach receives and ripens intake.
+Earth governs late summer at the pivot of the cycle's center. Its movement is _stabilizing and transforming_: the composting quality of soil. Its organs are the **Spleen** and **Stomach** ([ZangFu.md](ZangFu.md)). Spleen extracts nutritive essence into Qi and Blood; Stomach receives and ripens intake.
 
-In many practical traditions, Earth functions not just as one of five sequential phases but as a **central axis** mediating transitions between all four other seasons — both framings are clinically valid and coexist. The Spleen and Stomach embody this dual character: they nourish all other organs continuously, not just in late summer, while being most vulnerable during seasonal transitions. This is why Spleen/Stomach health is treated as the "Root of Post-Natal Jing" — see [Jing.md](Jing.md) — and the first system a practitioner strengthens when any other organ fails to rebuild. Earth's emotion is _yi_ — pensiveness that in excess becomes worry, fatigue, and dampness (see [JinYe.md](JinYe.md) for the Phlegm/Damp pathology that follows). Supportive practices: warm cooked food, naturally sweet whole foods (root vegetables, millet, squash), gentle post-meal movement.
+In many practical traditions, Earth functions not just as one of five sequential phases but as a **central axis** that mediates transitions between all four other seasons. Both framings are clinically valid and coexist. The Spleen and Stomach embody this dual character: they nourish all other organs continuously, not just in late summer, while being most vulnerable during seasonal transitions. For this reason, Spleen/Stomach health is treated as the "Root of Post-Natal Jing" (see [Jing.md](Jing.md)) and the first system a practitioner strengthens when any other organ fails to rebuild. Earth's emotion is _yi_, pensiveness that in excess becomes worry, fatigue, and dampness. For the Phlegm/Damp pathology that follows, see [JinYe.md](JinYe.md). Supportive practices: warm cooked food, naturally sweet whole foods (root vegetables, millet, squash), gentle post-meal movement.
 
 ### Metal
 
-Metal governs autumn: _inward and descending_, contraction and harvest. Its organs are the **Lung** and **Large Intestine** ([ZangFu.md](ZangFu.md)) — Lung governs respiration and Wei Qi ([Qi.md](Qi.md)), Large Intestine completes release. Metal's emotion is grief and appropriate letting go: balanced gives discernment and clear boundaries; deficient gives chronic grief, respiratory susceptibility, dry skin, constipation. Supportive practices: diaphragmatic breathing, pungent foods (ginger, garlic, radish), intentional release.
+Metal governs autumn: _inward and descending_, contraction and harvest. Its organs are the **Lung** and **Large Intestine** ([ZangFu.md](ZangFu.md)). Lung governs respiration and Wei Qi ([Qi.md](Qi.md)); Large Intestine completes release. Metal's emotion is grief and appropriate letting go: balanced gives discernment and clear boundaries; deficient gives chronic grief, respiratory susceptibility, dry skin, constipation. Supportive practices: diaphragmatic breathing, pungent foods (ginger, garlic, radish), intentional release.
 
 ### Water
 
-Water governs winter: _sinking and consolidating_, the stillness of groundwater. Its organs are the **Kidney** and **Urinary Bladder** ([ZangFu.md](ZangFu.md)) — the Kidney is the root of Yin and Yang and the storehouse of Jing ([Jing.md](Jing.md)), governing bone, marrow, brain, and reproduction. Water's emotion spans fear to willpower: balanced is quiet courage and endurance; depleted is chronic fear and exhaustion unresolved by rest. Characteristic signs: lower-back weakness, hearing decline. Supportive practices: sleep before midnight, moderately salty foods (seaweed, miso, black beans), Kidney-tonifying Qigong at the lumbar.
+Water governs winter: _sinking and consolidating_, the stillness of groundwater. Its organs are the **Kidney** and **Urinary Bladder** ([ZangFu.md](ZangFu.md)). The Kidney is the root of Yin and Yang and the storehouse of Jing ([Jing.md](Jing.md)), governing bone, marrow, brain, and reproduction. Water's emotion spans fear to willpower: balanced is quiet courage and endurance; depleted is chronic fear and exhaustion unresolved by rest. Characteristic signs: lower-back weakness, hearing decline. Supportive practices: sleep before midnight, moderately salty foods (seaweed, miso, black beans), Kidney-tonifying Qigong at the lumbar.
 
 ## The dynamic cycles
 
@@ -72,7 +72,7 @@ flowchart LR
   Wood --> Fire --> Earth --> Metal --> Water --> Wood
 ```
 
-**Clinical application.** If a patient has weak Heart energy (Fire), a TCM practitioner might look to treat the Liver (Wood) — the "mother" organ — to help feed and strengthen the Heart.
+**Clinical application.** If a patient has weak Heart energy (Fire), a TCM practitioner might treat the Liver (Wood), the "mother" organ, to help feed and strengthen the Heart.
 
 ### The Controlling Cycle (Ke)
 
@@ -110,7 +110,7 @@ A TCM practitioner does not just look at an isolated symptom like a headache; th
 - **Treatment.** Acupuncture points are categorized by Wu Xing properties. If a patient has too much "Fire" (insomnia, racing thoughts, red tongue), a practitioner might needle a "Water" point on a specific meridian to help extinguish the excess heat.
 - **Herbalism and diet.** Herbal formulas are explicitly designed using the five flavors. A patient with chronic dampness and fatigue (Earth deficiency) is given herbs and foods that are warm and naturally sweet to tonify the Spleen.
 
-Wu Xing treats the body like a living ecosystem. The goal is not to eradicate a symptom with a blunt tool but to act as a master gardener — adjusting the water, clearing the weeds, regulating the heat — until the entire system balances itself.
+Wu Xing treats the body as a living ecosystem. Clinical work focuses on restoring balance across all five phases: adjusting one phase to dampen another, strengthening a weakened organ system, and clearing blocked Qi until the entire system regulates itself.
 
 ## Dietary application of the five flavors
 

@@ -63,6 +63,31 @@ All commands from the **repo root**.
 - `vue-router@~5.0.7` is intentional (in-dev next major). Do not upgrade to v4.
 - Cross-links in markdown: `[Display](Other.md)` — resolves to `/Other`. Never hardcode `/Other`.
 
+## Content writing
+
+SCOPE: these rules apply only to `apps/*/src/*.md` content files. Instruction files (AGENTS.md, CLAUDE.md, skill files, docs/) are exempt.
+
+When writing or generating markdown content for any app (TCM, 8fold, showcase, docs), write like a person describing a subject — not like a chatbot summarizing one.
+
+**State claims directly.** Never inflate the significance of what you're describing.
+
+- Wrong: "The Liver plays a vital role, underscoring its significance in TCM."
+- Right: "The Liver stores blood and regulates the free flow of Qi."
+
+**Skip promotional adjectives.** Avoid "remarkable," "sophisticated," "profound," "holistic," "vibrant" when describing subject matter. Just say what it does.
+
+**No inline-header bullet lists.** Don't write `**Term:** explanation of term` (colon after bold). For reference lists where a separator is needed, use `**Term** - explanation` (ASCII hyphen). Prefer plain prose or plain bullets where possible.
+
+**No "not merely X; it is Y" constructions.** Make the positive claim directly.
+
+**No diff-anchored docs.** Write to describe what currently exists, not what was recently changed. (Changelogs and migration guides are the exception.)
+
+**No em dashes.** The em dash character `—` is banned. Never substitute it with any other punctuation (`:`, `,`, `-`, `;`). Rewrite the sentence: identify the two ideas and connect them naturally as separate clauses or a subordinate construction. ASCII hyphens `-` are acceptable only in title/subtitle separators, annotation separators `(Pali - English)` or `Term - expansion`, and reference-list separators `**Term** - description`. Never use `-` as a parenthetical marker inside a prose sentence.
+
+**Title-case headings.** All headings at every level use title case. Applies equally to generated markdown content.
+
+If generated content picks up AI patterns anyway, run the `human-voice` skill on the affected files.
+
 ## New file placement
 
 | Adding               | Where                                                                |

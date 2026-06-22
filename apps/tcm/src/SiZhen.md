@@ -1,24 +1,24 @@
 ---
 title: 'Si Zhen (Four Examinations)'
-description: "The Four Examinations — TCM's canonical diagnostic method: Looking, Listening/Smelling, Asking, and Palpation. Includes tongue and pulse fundamentals."
+description: "The Four Examinations - TCM's canonical diagnostic method: Looking, Listening/Smelling, Asking, and Palpation. Includes tongue and pulse fundamentals."
 ---
 
-# Si Zhen — The Four Examinations
+# Si Zhen - The Four Examinations
 
 ## Overview
 
-**Si Zhen** — the Four Examinations — is the canonical diagnostic _method_ of TCM. Where the [Eight Principles](BaGang.md) provide the _framework_ into which a pattern is sorted, the Four Examinations describe _how the data is gathered_. The four methods are:
+**Si Zhen**, the Four Examinations, is the canonical diagnostic _method_ of TCM. Where the [Eight Principles](BaGang.md) provide the _framework_ into which a pattern is sorted, the Four Examinations describe _how the data is gathered_. The four methods are:
 
-1. **Wang Zhen** — Looking (observation)
-2. **Wen Zhen (listening)** — Listening and Smelling
-3. **Wen Zhen (asking)** — Asking
-4. **Qie Zhen** — Palpation
+1. **Wang Zhen** - Looking (observation)
+2. **Wen Zhen (listening)** - Listening and Smelling
+3. **Wen Zhen (asking)** - Asking
+4. **Qie Zhen** - Palpation
 
-The two _Wen Zhen_ methods share a romanization but use different Chinese characters — one meaning _to listen_ and one meaning _to ask_. The four together are sometimes called the _Si Zhen He Can_ — "the four examinations consulted together" — emphasizing that no single method is sufficient; the practitioner triangulates across all four.
+The two _Wen Zhen_ methods share a romanization but use different Chinese characters: one means _to listen_ and one means _to ask_. The four together are sometimes called the _Si Zhen He Can_ ("the four examinations consulted together"), emphasizing that no single method is sufficient; the practitioner triangulates across all four.
 
-The _Huangdi Neijing_ gives the classical hierarchy: a _superior_ practitioner can diagnose by Looking alone; a _good_ practitioner by Listening; an _average_ practitioner by Asking; and an _inferior_ practitioner needs Palpation. The hierarchy is poetic — in practice, modern TCM weights pulse and tongue most heavily, because they synthesize information from multiple body systems simultaneously.
+The _Huangdi Neijing_ gives the classical hierarchy: a _superior_ practitioner can diagnose by Looking alone; a _good_ practitioner by Listening; an _average_ practitioner by Asking; and an _inferior_ practitioner needs Palpation. The hierarchy is poetic. In practice, modern TCM weights pulse and tongue most heavily because they synthesize information from multiple body systems simultaneously.
 
-## Wang Zhen — Looking
+## Wang Zhen - Looking
 
 ### General appearance and Shen
 
@@ -29,7 +29,7 @@ A practitioner reads the patient's overall state in the first few seconds. The *
 
 Posture, gait, and the quality of movement add detail: vigorous and restless suggests Excess; slow and reluctant suggests Deficiency or Yang depletion. (For the Excess/Deficiency framework, see [BaGang.md](BaGang.md).)
 
-### Complexion — the five colors
+### Complexion - the five colors
 
 TCM reads five facial colors as pointers to the Five Phases (see [WuXing.md](WuXing.md)):
 
@@ -49,35 +49,35 @@ The tongue is one of two anchors of TCM diagnosis (the other being pulse). Its s
 
 **Tongue body color** (the muscle underneath):
 
-- **Pale** — Qi or Blood deficiency, or internal Cold.
-- **Pink/red** — normal range or mild Heat.
-- **Red** — Heat (full or empty).
-- **Deep red / crimson** — Heat at the Ying or Xue level (see [LiuYin.md](LiuYin.md)).
-- **Purple / dusky** — Xue Stasis or severe Cold.
+- **Pale** - Qi or Blood deficiency, or internal Cold.
+- **Pink/red** - normal range or mild Heat.
+- **Red** - Heat (full or empty).
+- **Deep red / crimson** - Heat at the Ying or Xue level (see [LiuYin.md](LiuYin.md)).
+- **Purple / dusky** - Xue Stasis or severe Cold.
 
 **Tongue coating** (the film on the surface):
 
-- **Thin white** — normal.
-- **Thick white** — Cold or Damp.
-- **Yellow** — Heat.
-- **Greasy / sticky** — Damp or Phlegm.
-- **Absent / peeled** — depleted Yin or fluids.
+- **Thin white** - normal.
+- **Thick white** - Cold or Damp.
+- **Yellow** - Heat.
+- **Greasy / sticky** - Damp or Phlegm.
+- **Absent / peeled** - depleted Yin or fluids.
 
 **Tongue shape:**
 
-- **Swollen with scalloped (tooth-marked) edges** — Spleen Qi deficiency or Damp.
-- **Thin and dry** — Yin or fluid deficiency.
-- **Cracks** — Yin deficiency; pattern of cracks suggests which organ.
-- **Petechiae or red spots** — Xue Stasis or Heat in the Blood.
+- **Swollen with scalloped (tooth-marked) edges** - Spleen Qi deficiency or Damp.
+- **Thin and dry** - Yin or fluid deficiency.
+- **Cracks** - Yin deficiency; pattern of cracks suggests which organ.
+- **Petechiae or red spots** - Xue Stasis or Heat in the Blood.
 
 **Tongue moisture:**
 
-- **Excessive saliva / wet** — Yang deficiency, Cold, or fluid accumulation.
-- **Dry** — Yin or fluid deficiency, Heat.
+- **Excessive saliva / wet** - Yang deficiency, Cold, or fluid accumulation.
+- **Dry** - Yin or fluid deficiency, Heat.
 
 This is the consolidated version of tongue diagnostic content; specific patterns also appear in [Xue.md](Xue.md) and [JinYe.md](JinYe.md).
 
-## Wen Zhen — Listening and Smelling
+## Wen Zhen - Listening and Smelling
 
 The second method splits naturally:
 
@@ -98,7 +98,7 @@ The second method splits naturally:
 - Sweet (acetone) = severe Yin or Jin deficiency (consistent with diabetic ketoacidosis).
 - Largely absent or neutral = Deficiency without significant pathogen.
 
-## Wen Zhen — Asking: the Ten Questions
+## Wen Zhen - Asking: the Ten Questions
 
 The Ming-dynasty physician Zhang Jingyue codified the diagnostic interview into the _Ten Questions_ (with later editors adjusting the list slightly). They cover the full clinical territory:
 
@@ -117,7 +117,7 @@ The Ming-dynasty physician Zhang Jingyue codified the diagnostic interview into 
 
 A skilled interviewer follows the patient's narrative while ensuring each domain is touched. The classical advice: _ask what the patient does not volunteer_. People report what hurts, not what is missing.
 
-## Qie Zhen — Palpation
+## Qie Zhen - Palpation
 
 The fourth method is hands-on, and the most technically demanding to learn.
 
@@ -125,17 +125,17 @@ The fourth method is hands-on, and the most technically demanding to learn.
 
 Pulse is taken at the radial artery in **three positions** corresponding to body height:
 
-- **Cun (distal)** — closer to the wrist crease; reads Upper Burner (Heart left, Lung right) and head.
-- **Guan (middle)** — middle; reads Middle Burner (Liver left, Spleen right).
-- **Chi (proximal)** — farther from the wrist; reads Lower Burner (Kidney both sides) and lower body.
+- **Cun (distal)** - closer to the wrist crease; reads Upper Burner (Heart left, Lung right) and head.
+- **Guan (middle)** - middle; reads Middle Burner (Liver left, Spleen right).
+- **Chi (proximal)** - farther from the wrist; reads Lower Burner (Kidney both sides) and lower body.
 
 Each position is felt at **three depths**:
 
-- **Floating (Fu)** — light pressure; reads exterior/Wei level.
-- **Middle (Zhong)** — moderate pressure; reads Qi and organ function.
-- **Sinking (Chen)** — firm pressure; reads Yin and deeper substance.
+- **Floating (Fu)** - light pressure; reads exterior/Wei level.
+- **Middle (Zhong)** - moderate pressure; reads Qi and organ function.
+- **Sinking (Chen)** - firm pressure; reads Yin and deeper substance.
 
-Beyond position and depth, classical pulse diagnosis recognizes **28 qualities** — combinations of rate, rhythm, strength, shape, and tension. The high-yield ones in practice:
+Beyond position and depth, classical pulse diagnosis recognizes 28 qualities based on combinations of rate, rhythm, strength, shape, and tension. The high-yield ones in practice:
 
 | Quality            | Description                            | Pattern indicated                   |
 | ------------------ | -------------------------------------- | ----------------------------------- |
@@ -167,9 +167,9 @@ Abdominal patterns are particularly developed in the Japanese kanpo tradition.
 
 The four methods sometimes converge cleanly; often they don't. When they conflict, the practitioner applies a hierarchy of trust:
 
-- **Pulse and tongue override patient self-report** in most cases — the body's signs are less prone to performance and self-narrative.
-- **Pulse overrides tongue in acute illness** — the tongue changes more slowly; the pulse responds in real time.
-- **Tongue overrides pulse in chronic illness** — the tongue records the deeper, slower depletion the pulse may have already adapted to.
-- **Looking-Shen overrides everything** for prognosis — a patient with strong Shen recovers regardless of severity; lost Shen is the worst sign in the system.
+- **Pulse and tongue override patient self-report** in most cases - the body's signs are less prone to performance and self-narrative.
+- **Pulse overrides tongue in acute illness** - the tongue changes more slowly; the pulse responds in real time.
+- **Tongue overrides pulse in chronic illness** - the tongue records the deeper, slower depletion the pulse may have already adapted to.
+- **Looking-Shen overrides everything** for prognosis - a patient with strong Shen recovers regardless of severity; lost Shen is the worst sign in the system.
 
 The diagnostic destination is a complete pattern in the [Eight Principles](BaGang.md) language plus the specific organ, substance, and external/internal evil. With that in hand, treatment principles and the formula or acupoint prescription follow.
