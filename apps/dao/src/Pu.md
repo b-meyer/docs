@@ -5,7 +5,7 @@ description: 'The uncarved block as a Daodejing image for undifferentiated simpl
 
 # Pu
 
-Pu (樸) is the word for unworked timber — wood that has not yet been shaped into anything. The [Daodejing](Daodejing.md) uses this image to describe the state of things before categories, names, and distinctions are applied. When the block is carved, it becomes a specific vessel. When the undifferentiated is named, it becomes a particular thing. Pu names the condition that precedes that cut.
+Pu (樸) is the word for unworked timber, wood that has not yet been shaped into anything. The [Daodejing](Daodejing.md) uses this image to describe the state of things before categories, names, and distinctions are applied. When the block is carved, it becomes a specific vessel. When the undifferentiated is named, it becomes a particular thing. Pu names the condition that precedes that cut.
 
 ## The Carving Metaphor
 
@@ -21,7 +21,7 @@ The major pu passages fall into two uses: personal cultivation and governance.
 
 | Chapter | Key phrase     | What it says                                                                                                          |
 | ------- | -------------- | --------------------------------------------------------------------------------------------------------------------- |
-| 19      | 見素抱樸       | "Manifest plainness, embrace the uncarved block" — paired with _su_ (raw silk), reduction of self-interest and desire |
+| 19      | 見素抱樸       | "Manifest plainness, embrace the uncarved block," paired with _su_ (raw silk), linked to reduced self-interest and desire |
 | 28      | 復歸於樸       | Return to the uncarved block; great carving does not cut                                                              |
 | 32      | 樸雖小         | The nameless block none can subjugate; carving introduces names                                                       |
 | 37      | 無名之樸       | Quieting with the nameless block; desire stilled, the world settles                                                   |
@@ -31,7 +31,7 @@ Chapter 19's pairing of pu with reduced desire connects the image directly to th
 
 ## Pu and the Conceptual Web
 
-Pu is not identical to [Dao](Dao.md) but is the form that the Dao's undifferentiated potential takes when observed as a feature of particular things. [De](De.md) — the power latent in something — is pu's dynamic counterpart: de is what pu makes possible, the capacity that remains undiminished because it has not been carved away in one direction.
+Pu is not identical to [Dao](Dao.md) but is the form that the Dao's undifferentiated potential takes when observed as a feature of particular things. [De](De.md), the power latent in something, is pu's dynamic counterpart. De is what pu makes possible, the capacity that remains undiminished because it has not been carved away in one direction.
 
 [Ziran](Ziran.md), the self-so nature of things, describes how pu operates: without external compulsion, each thing unfolds from its own uncarved nature. [Wu Wei](WuWei.md) is the corresponding practice for a person or ruler, acting without imposing the kind of distinction-making that would carve away possibilities.
 

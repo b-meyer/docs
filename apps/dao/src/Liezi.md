@@ -5,7 +5,7 @@ description: 'The text attributed to Lie Yukou, its likely Han or later composit
 
 # The Liezi
 
-The Liezi is a Daoist text attributed to Lie Yukou, a figure said to have lived before the 4th century BCE with the ability to ride the wind. Whether that person existed is uncertain, and the text itself shows signs of composition across several centuries, extending well into or after the Han dynasty. It stands alongside the [Daodejing](Daodejing.md) and the [Zhuangzi](Zhuangzi.md) as one of the three foundational philosophical texts of the [Daoist](DaojiaDaojiao.md) tradition.
+The Liezi is a Daoist text attributed to Lie Yukou, a figure said to have lived before the 4th century BCE with the ability to ride the wind. Whether that person existed is uncertain, and the text itself shows signs of composition across several centuries, extending well into or after the Han dynasty. Along with the [Daodejing](Daodejing.md) and the [Zhuangzi](Zhuangzi.md), it counts as one of the three foundational philosophical texts of the [Daoist](DaojiaDaojiao.md) tradition.
 
 ## Authorship and Composition
 

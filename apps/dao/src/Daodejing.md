@@ -5,13 +5,13 @@ description: 'The 81-chapter classic attributed to Laozi, examining how it is st
 
 # The Daodejing
 
-The Daodejing is the foundational text of the Daoist tradition, consisting of 81 short chapters attributed to [Laozi](Laozi.md). It addresses the nature of [Dao](Dao.md), the virtue called [De](De.md), and the art of governing without force. No other text in the tradition has been translated more often or commented on more extensively, and it remains the primary reference point for understanding classical Daoist philosophy.
+The Daodejing is the foundational text of the Daoist tradition, consisting of 81 short chapters attributed to [Laozi](Laozi.md). It addresses the nature of [Dao](Dao.md), the virtue called [De](De.md), and the art of governing without force. No other text in the tradition receives more translations or commentary, and it remains the primary reference point for understanding classical Daoist philosophy.
 
 ## Two Parts, One Text
 
 The received text divides into two sections. The first 37 chapters form the Dao jing - the Classic of the Way. Chapters 38 through 81 form the De jing - the Classic of Virtue. This ordering gives the text its full name, and Dao and De each open their respective section.
 
-The division is partly conventional. Thematic overlap runs throughout, and the same ideas appear in both halves. Scholars at the Internet Encyclopedia of Philosophy note that the split probably rests on little more than the fact that the word "dao" opens chapter 1. What the division does accomplish is a loose structural emphasis: the first half addresses the nature and operation of the Dao at a cosmic level, while the second half turns more directly toward the human domain, including political rule, [ethics](Ethics.md), and the cultivated person.
+The division is partly conventional. Thematic overlap runs throughout, and the same ideas appear in both halves. The split probably rests on little more than the fact that the word "dao" opens chapter 1. What the division does accomplish is a loose structural emphasis: the first half addresses the nature and operation of the Dao at a cosmic level, while the second half turns more directly toward the human domain, including political rule, [ethics](Ethics.md), and the cultivated person.
 
 ## Manuscript Traditions
 

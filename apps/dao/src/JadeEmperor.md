@@ -5,7 +5,7 @@ description: 'Yu Huang, supreme ruler of the celestial bureaucracy, his origins 
 
 # The Jade Emperor
 
-Yu Huang, the Jade Emperor, rules the celestial bureaucracy that governs gods, spirits, and humans alike. He is the administrative head of heaven, not a transcendent embodiment of the [Dao](Dao.md) — that role belongs to the [Three Pure Ones](SanQing.md), who stand above the bureaucratic apparatus altogether. Yu Huang coordinates the offices beneath them and answers prayers routed through the heavenly system.
+Yu Huang, the Jade Emperor, rules the celestial bureaucracy that governs gods, spirits, and humans alike. He is the administrative head of heaven, not a transcendent embodiment of the [Dao](Dao.md). That role belongs to the [Three Pure Ones](SanQing.md), who stand above the bureaucratic apparatus altogether. Yu Huang coordinates the offices beneath them and answers prayers routed through the heavenly system.
 
 ## The Celestial Bureaucracy
 
@@ -30,6 +30,6 @@ The Song-period merger did not flatten the difference between the two systems. D
 
 ## His Cult
 
-Worship of the Jade Emperor is concentrated on the ninth day of the first lunar month, observed as his birthday. Temples dedicated to him are found across China, Taiwan, and Southeast Asian Chinese communities. Offerings at this festival include incense, fruit, and sugar cane — the sugar cane carrying a folk explanation that it once sheltered ancestors hiding from a massacre, binding the plant to protection and gratitude.
+Worship of the Jade Emperor is concentrated on the ninth day of the first lunar month, observed as his birthday. Temples dedicated to him are found across China, Taiwan, and Southeast Asian Chinese communities. Offerings at this festival include incense, fruit, and sugar cane. Folk tradition holds that sugar cane once sheltered ancestors hiding from a massacre, which tied the plant to protection and gratitude.
 
 Within the [ritual](Ritual.md) calendar, Yu Huang also receives reports at the new year when the Kitchen God ascends to heaven, completing the household-to-celestial-court reporting cycle that ties domestic life into the bureaucratic structure of the cosmos. The birthday festival on the ninth falls during the same general period, making the first lunar month the densest moment in the Jade Emperor's annual cult.

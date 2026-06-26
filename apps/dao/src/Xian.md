@@ -1,6 +1,6 @@
 ---
 title: 'Immortals (Xian)'
-description: 'How Daoist tradition conceives of xian — transcendents who exceed ordinary human limits — through both popular physical immortality and the inner-embryo path of religious practice.'
+description: 'How Daoist tradition conceives of xian - transcendents who exceed ordinary human limits - through both popular physical immortality and the inner-embryo path of religious practice.'
 ---
 
 # Immortals (Xian)
@@ -9,9 +9,9 @@ Xian are persons who have transcended the limits of ordinary human existence. Hi
 
 ## Physical and Spiritual Interpretations
 
-The hagiographic tradition, represented by works like the _Liexian zhuan_ (Biographies of Exemplary Immortals), treats immortality as the survival of the physical body. In this reading, the adept's flesh becomes genuinely indestructible — the xian does not die but departs, often ascending to a heavenly realm or retreating to a remote mountain. This is the layer most visible in popular religion and iconography.
+The hagiographic tradition, represented by works like the _Liexian zhuan_ (Biographies of Exemplary Immortals), treats immortality as the survival of the physical body. In this reading, the adept's flesh becomes genuinely indestructible, so the xian does not die but departs, often ascending to a heavenly realm or retreating to a remote mountain. This is the layer most visible in popular religion and iconography.
 
-Daoist scriptural sources aim at something different. Rather than expecting the body to persist indefinitely, practitioners sought to generate a new inner being — a self, _shen_, that is not subject to death — using the physical body as the medium in which that being is formed. The goal was not to stop the body from decaying but to produce something within it that would survive its decay. The body matters as instrument, not as the thing being saved.
+Daoist scriptural sources aim at something different. Rather than expecting the body to persist indefinitely, practitioners sought to generate a new inner being, a self called _shen_ that is not subject to death. The physical body serves as the medium in which that being forms. The goal was not to stop the body from decaying but to produce something within it that would survive its decay. The body is the instrument, not the object being saved.
 
 The [Shangqing](ShangqingLingbao.md) scriptures gave this inner logic its most developed early form, framing the practitioner's [meditation](Meditation.md) work as recapitulating embryonic development: an immortal embryo is conceived, gestated, and eventually delivered from within the adept's own body. Later [internal alchemy](Neidan.md) inherited and elaborated this model, describing the [refinement of jing, qi, and shen](JingQiShen.md) as stages in that same generative process.
 
@@ -19,7 +19,7 @@ The [Shangqing](ShangqingLingbao.md) scriptures gave this inner logic its most d
 
 ### Release from the Corpse
 
-The [Celestial Masters](CelestialMasters.md) tradition describes a process called _shijie_ - release from the corpse, also called _tuoshi_ - feigned death. The adept appears to die — passing through what looks like an ordinary death — but has actually moved to a heavenly region for further refinement. After this intermediate stage, a second birth occurs in a perfected body. Part of the function is bureaucratic: the adept's name drops off the registers of the underworld, freeing them from the ordinary posthumous fate.
+The [Celestial Masters](CelestialMasters.md) tradition describes a process called _shijie_ - release from the corpse, also called _tuoshi_ - feigned death. The adept appears to die, passing through what looks like an ordinary death, but has actually moved to a heavenly region for further refinement. After this intermediate stage, a second birth occurs in a perfected body. Part of the function is bureaucratic: the adept's name drops off the registers of the underworld, freeing them from the ordinary posthumous fate.
 
 ### Inner Embryo Cultivation
 
@@ -29,7 +29,7 @@ Shangqing practice centered on generating an immortal self through sustained [me
 
 ## The Eight Immortals (Baxian)
 
-The Baxian are the most recognized group of xian in Chinese popular religion, appearing together across painting, sculpture, folk drama, and festival decoration. They represent different conditions of life — male and female, young and old, noble and common, wealthy and poor — and each carries a signature emblem.
+The Baxian are the most recognized group of xian in Chinese popular religion, appearing together across painting, sculpture, folk drama, and festival decoration. They represent different conditions of life, including male and female, young and old, noble and common, wealthy and poor. Each carries a signature emblem.
 
 | Immortal     | Emblem                                      | Association                                    |
 | ------------ | ------------------------------------------- | ---------------------------------------------- |

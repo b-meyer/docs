@@ -11,7 +11,7 @@ Daoist alchemy runs in two streams. Waidan - external alchemy - compounds minera
 
 The earliest waidan recipes appear by the 2nd century BCE. The practice crystallized into a recognizable tradition with the Taiqing (Great Clarity) lineage in the 3rd century CE, which framed laboratory work as an elaborate ritual sequence of transmission ceremonies, purifications, workspace construction, fire-kindling rites, compounding, consecration, and ingestion.
 
-The crucible is hermetically sealed to prevent the dispersal of [qi](Qi.md). This containment was understood to replicate the primordial, undifferentiated state of the cosmos before differentiation began - the same condition the ingredients must revert to before they can yield the elixir. The refined matter was said to embody the Essence concealed within the Dao at the origin of existence. Ingesting it was supposed to produce transcendence, union with the celestial bureaucracy, and protection against malignant forces.
+The crucible is hermetically sealed to prevent the dispersal of [qi](Qi.md). This containment was understood to replicate the primordial, undifferentiated state of the cosmos before differentiation began - the same condition the ingredients must revert to before they can yield the elixir. The refined matter embodied the Essence concealed within the Dao at the origin of existence. Ingesting it was supposed to produce transcendence, union with the celestial bureaucracy, and protection against malignant forces.
 
 Waidan reached its peak during the Tang dynasty (618-907 CE) before declining as internal alchemy drew practitioners away.
 
@@ -30,8 +30,6 @@ The first clearly identifiable neidan lineage is the Zhong-Lu lineage, named for
 Neidan follows two main doctrinal models. The first works with the three fundamental constituents of the human being - [jing, qi, and shen](JingQiShen.md) - and refines them through successive stages back toward their precosmic states. The second focuses on purifying the mind until the practitioner "sees their nature" (jianxing), treating that recognition itself as the elixir.
 
 ## Refining Jing, Qi, and Shen
-
-The three constituents have both precosmic and postcelestial forms.
 
 | Constituent        | Precosmic Form           | Postcelestial Form (men / women) |
 | ------------------ | ------------------------ | -------------------------------- |

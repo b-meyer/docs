@@ -5,15 +5,15 @@ description: 'The three main Daoist meditation forms: zuowang (sitting and forge
 
 # Daoist Meditation
 
-Daoist meditation developed across roughly fifteen centuries into several distinct forms, each grounded in a different understanding of what the practitioner is trying to achieve. Three traditions stand out: zuowang - sitting and forgetting, as described in the [Zhuangzi](Zhuangzi.md); the visualization methods of the [Shangqing](ShangqingLingbao.md) lineage; and neiguan - inner observation, which became prominent in the Tang dynasty. All three take the quieting of ordinary mental activity as their starting point, but they differ substantially in method and aim.
+Daoist meditation developed across roughly fifteen centuries into several distinct forms, each grounded in a different understanding of what the practitioner is trying to achieve. Three major traditions include zuowang (sitting and forgetting, as described in the [Zhuangzi](Zhuangzi.md)), the visualization methods of the [Shangqing](ShangqingLingbao.md) lineage, and neiguan (inner observation), which became prominent in the Tang dynasty. All three take the quieting of ordinary mental activity as their starting point, but they differ substantially in method and aim.
 
 ## Zuowang - Sitting and Forgetting
 
 The term zuowang appears in chapter six of the [Zhuangzi](Zhuangzi.md), where Yan Hui describes his progress in self-cultivation to Confucius. He says he has learned to "sit and forget," dropping the awareness of his own body, dismissing perception and cognition, and merging with what pervades everything. Confucius, in the text's characteristic irony, expresses admiration and asks to become Yan Hui's student.
 
-The passage does not prescribe a technique. It describes an inner state: the dissolution of the boundary between self and [Dao](Dao.md) through progressive release of all fixed mental content. Whether the [Zhuangzi](Zhuangzi.md) intends a literal practice or a philosophical stance has been debated by scholars, but later Daoist traditions treated it as the name for a real method.
+The passage does not prescribe a technique. It describes an inner state, the dissolution of the boundary between self and [Dao](Dao.md) through progressive release of all fixed mental content. The [Zhuangzi](Zhuangzi.md) may intend either a literal practice or a philosophical stance. Later Daoist traditions treated it as the name for a real method.
 
-The Tang-dynasty text _Zuowanglun_ - Discourse on Sitting and Forgetting, attributed to Sima Chengzhen (647-735 CE), formalized zuowang into a graduated path. Sima outlined seven stages moving from the cultivation of trust and respect, through the regulation of outward behavior and the calming of the mind, to what he called "the verification of the ultimate" - a state in which the meditator no longer maintains even the effort of quieting the mind. The body is described as fading from awareness, and [qi](Qi.md) and spirit merge without remainder.
+The Tang-dynasty text _Zuowanglun_ - Discourse on Sitting and Forgetting, attributed to Sima Chengzhen (647-735 CE), formalized zuowang into a graduated path. Sima outlined seven stages moving from the cultivation of trust and respect, through the regulation of outward behavior and the calming of the mind, to what he called "the verification of the ultimate." At this stage, the meditator no longer maintains even the effort of quieting the mind. The body is described as fading from awareness, while [qi](Qi.md) and spirit merge without remainder.
 
 ## Shangqing Visualization
 

@@ -11,11 +11,11 @@ Ziran (自然) is formed from two characters meaning "self" and "so" or "thus," 
 
 The compound 自然 does not mean "nature" in the sense of the natural world, though it overlaps with that meaning in later Chinese usage. In early Daoist texts it describes a mode of being: something is ziran when it comes to be or acts from its own internal tendency rather than by external command or instruction. A flame burns ziranly; it does not need to be told to do so. A child learning to walk proceeds ziranly even though no one has issued orders about locomotion.
 
-The contrast is with coercion, artifice, and the distorting effects of imposed norms. When social instruction overrides what would otherwise unfold, the result is not ziran. This is why the concept carries normative weight in Daoist texts: the departure from ziran is what political and ethical intervention typically produces.
+The contrast is with coercion, artifice, and the distorting effects of imposed norms. When social instruction overrides what would otherwise unfold, the result is not ziran. In Daoist texts, the departure from ziran is what political and ethical intervention produces, establishing ziran as a critical measure of legitimacy in governance and ethics.
 
 ## Dao and the Chapter 25 Ladder
 
-The [Daodejing](Daodejing.md) chapter 25 states the relationship between [Dao](Dao.md) and ziran directly. The passage works as a graded sequence:
+The [Daodejing](Daodejing.md) chapter 25 presents the relationship between [Dao](Dao.md) and ziran as a graded sequence:
 
 | Follower | Follows |
 | -------- | ------- |
@@ -24,7 +24,7 @@ The [Daodejing](Daodejing.md) chapter 25 states the relationship between [Dao](D
 | Heaven   | Dao     |
 | Dao      | Ziran   |
 
-Each level takes its standard from what is below it or deeper than it. Dao follows ziran, meaning Dao does not obey some further authority above itself; it follows its own being-so. This reading resolves an apparent puzzle: ziran here is not a thing or entity that Dao copies. It describes Dao's mode of being. Dao is ziran because nothing external commands it; it is simply what it is.
+Each level takes its standard from what is below it or deeper than it. Dao follows ziran, meaning Dao does not obey some further authority above itself; it follows its own being-so. Ziran here is not a thing or entity that Dao copies. It describes Dao's mode of being. Dao is ziran because nothing external commands it; it is simply what it is.
 
 The political implication follows directly. A ruler who models the Dao governs the way Dao operates: without imposing, without commanding, without substituting personal preference for the self-so tendencies of the people.
 
@@ -36,6 +36,6 @@ Zhuangzi also reads ziran in social and political life. Communities and individu
 
 ## Ziran and De
 
-In the Daodejing, [De](De.md) is the power or potency that things receive from Dao. Ziran describes how that potency expresses itself: a thing with unimpeded De acts ziranly. The two concepts converge on the same condition from different angles. De is what a thing has; ziran is how it acts when nothing blocks that having. In chapter 51, Dao gives rise and De nourishes, and this nurture happens "without possessing, without acting for effect, without ruling" — a description of ziran operating through De.
+In the Daodejing, [De](De.md) is the power or potency that things receive from Dao. Ziran describes how that potency expresses itself: a thing with unimpeded De acts ziranly. The two concepts converge on the same condition from different angles. De is what a thing has; ziran is how it acts when nothing blocks that having. In chapter 51, Dao gives rise and De nourishes. This nurture exemplifies ziran operating through De: it happens "without possessing, without acting for effect, without ruling".
 
 The Daodejing's image of the valley spirit, the uncarved block ([pu](Pu.md)), and the infant all point toward ziran as a prior state that human cultivation typically erodes rather than develops.

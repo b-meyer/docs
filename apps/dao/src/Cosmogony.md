@@ -39,16 +39,16 @@ These two terms are not in the Daodejing but became essential to later cosmologi
 
 ## Qi as the Medium of Unfolding
 
-The sequence is not purely abstract. [Qi](Qi.md) is the substance through which each stage generates the next. The One is undifferentiated Qi. When Qi separates by weight and movement, it becomes the Two. Lighter Qi rises and becomes Heaven (Yang); heavier Qi settles and becomes Earth (Yin). The interaction of Heaven and Earth produces the generative conditions for life, and from that generativity come the ten thousand things.
+The sequence is not purely abstract. [Qi](Qi.md) is the substance through which each stage generates the next. The One is undifferentiated Qi. When Qi separates by weight and movement, it becomes the Two. Lighter Qi rises and becomes Heaven (Yang); heavier Qi settles and becomes Earth (Yin). The interaction of Heaven and Earth produces the generative conditions for life that enable the ten thousand things.
 
-This means creation is continuous, not a one-time event. Qi is always condensing into forms and dispersing back. The [Zhuangzi](Zhuangzi.md) describes a sage contemplating this flux without anxiety: "When Qi condenses, there is life. When it disperses, there is death." The sequence in ch. 42 is a cross-section of a process that never stops.
+This means creation is continuous, not a one-time event. Qi is always condensing into forms and dispersing back. The [Zhuangzi](Zhuangzi.md) describes a sage contemplating this change without anxiety: "When Qi condenses, there is life. When it disperses, there is death." The sequence in ch. 42 is a cross-section of a process that never stops.
 
 ## Cosmology or Metaphysics?
 
-Scholars disagree about whether ch. 42 is meant literally or structurally. Roger Ames and David Hall argue that the Daodejing describes a field of immanent relations rather than a temporal origin story; the numbers name degrees of complexity, not moments in time. On this reading, the sequence is closer to a grammar of existence than a Genesis account.
+Scholars disagree about whether ch. 42 is meant literally or structurally. Roger Ames and David Hall argue that the numbers in the sequence name degrees of complexity rather than moments in time, describing a field of immanent relations rather than a temporal origin story. On this reading, the sequence is closer to a grammar of existence than a Genesis account.
 
 Other scholars, including those emphasizing the religious Daoist tradition, read the sequence as genuinely cosmogonic. In the Celestial Masters and [Shangqing](ShangqingLingbao.md) traditions, the emanation of Qi from the Dao is the basis for liturgical cosmology: the Three Pure Ones ([San Qing](SanQing.md)) are the first three personified emanations of the Dao, corresponding to the three stages before multiplicity.
 
-Both readings are consistent with the text. Chapter 42's numbers work equally well as a metaphysical hierarchy and as a cosmogonic sequence. The tradition used them both ways, often simultaneously. Zhou Dunyi's synthesis grafted the abstract structure onto a quasi-temporal unfolding that served Neo-Confucian ethics as much as Daoist cosmology.
+Chapter 42's numbers work equally well as a metaphysical hierarchy and as a cosmogonic sequence. The tradition used them both ways, often simultaneously. Zhou Dunyi's synthesis grafted the abstract structure onto a quasi-temporal unfolding that served Neo-Confucian ethics as much as Daoist cosmology.
 
 The sequence ends at "ten thousand things," but chapter 25 of the Daodejing names four great things in the cosmos: the Dao, Heaven, Earth, and humanity. Humanity models itself on Earth, Earth on Heaven, Heaven on the Dao, and the Dao on its own nature (ziran). The cosmogonic sequence and the ethical sequence run in opposite directions through the same ontology.

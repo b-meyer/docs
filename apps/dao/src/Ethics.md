@@ -15,9 +15,9 @@ This matters ethically because it shifts the question. Confucian cultivation ask
 
 ## Wu Wei and Ziran
 
-[Wu wei - effortless action](WuWei.md) is the behavioral expression of this alignment. It does not mean passivity. The [Daodejing](Daodejing.md) presents sages who act constantly, but without willful imposition, working with the grain of circumstances rather than against them. The Stanford Encyclopedia notes that wu wei's normative mode permits and invites rather than commands or obligates, which sets it apart from Western duty-based frameworks.
+[Wu wei - effortless action](WuWei.md) is the behavioral expression of this alignment. It does not mean passivity. The [Daodejing](Daodejing.md) presents sages who act constantly, but without willful imposition, working with the grain of circumstances rather than against them. Wu wei's normative mode permits and invites rather than commands or obligates, setting it apart from Western duty-based frameworks.
 
-[Ziran - naturalness](Ziran.md) names the quality of action that has this character. Behavior arising from inner coherence with the actual structure of a situation counts as ziran. Behavior arising from role-scripts or utility calculations does not. Daoist moral development involves meditative stillness and the emptying of conventional discriminations, positioning it as transformative rather than prescriptive.
+[Ziran - naturalness](Ziran.md) names the quality of action that has this character. Action arising from inner coherence with the actual structure of a situation counts as ziran. Action arising from role-scripts or utility calculations does not. Daoist moral development involves meditative stillness and the emptying of conventional discriminations to enable transformative rather than prescriptive practice.
 
 ## Against Confucian Role Ethics
 
@@ -33,6 +33,6 @@ Where a Mohist asks what produces the most benefit, a Daoist asks whether the qu
 
 ## Cultivation Without Rules
 
-Because Daoist ethics locates the problem in accumulated distortion rather than ignorance of principles, its path forward involves practices that reduce interference. These include stillness, emptying, and returning to [pu - uncarved simplicity](Pu.md). The Daodejing describes the sage ruler as one who governs without the subjects noticing, not through clever policy but through a quality of non-imposition that leaves the natural tendencies of people intact.
+Because Daoist ethics locates the problem in accumulated distortion rather than ignorance of principles, its path involves stillness, emptying, and return to [pu - uncarved simplicity](Pu.md). The Daodejing describes the sage ruler as one who governs without the subjects noticing, not through clever policy but through a quality of non-imposition that leaves the natural tendencies of people intact.
 
 The Zhuangzi's Cook does not arrive at skill through instruction in correct cuts. He practices until the distinctions between himself and the animal dissolve, and what remains is action that follows natural structure without friction.

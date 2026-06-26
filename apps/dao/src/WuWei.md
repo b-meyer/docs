@@ -17,7 +17,7 @@ What wu wei opposes is the effort that fights the grain, that imposes human cate
 
 [Ziran](Ziran.md), meaning self-so or spontaneous, describes the mode in which the Dao generates and sustains the world. Nothing commands the seasons to turn. They turn of themselves. Wu wei is action that arises from that same self-so quality rather than calculated will.
 
-The Stanford Encyclopedia's treatment of Daoism notes that natural dao "comes to have its structure of itself (自然 zìrán)." Wu wei aligns human action with that structure. This is why the [Daodejing](Daodejing.md) holds up the infant as an image of the sage, not because infants are passive, but because they act without the overlay of social conditioning and strategic calculation that pulls adult action away from its natural grain.
+Natural dao "comes to have its structure of itself (自然 zìrán)." Wu wei aligns human action with that structure. This is why the [Daodejing](Daodejing.md) holds up the infant as an image of the sage, not because infants are passive, but because they act without the overlay of social conditioning and strategic calculation that pulls adult action away from its natural grain.
 
 ## Classical Texts
 
@@ -29,9 +29,9 @@ The governing image is water, soft and yielding, always finding the lowest point
 
 ### The Zhuangzi
 
-The [Zhuangzi](Zhuangzi.md) approaches wu wei through craft. The most discussed example is Cook Ding in the Inner Chapters, who butchers an ox by following its natural structure, the spaces between joints and cavities, rather than hacking through bone. His knife never dulls because it never meets resistance. The IEP frames his achievement as attunement with the Dao rather than technical mastery alone. He follows the thing's own structure rather than imposing his plan on it.
+The [Zhuangzi](Zhuangzi.md) approaches wu wei through craft. The most discussed example is Cook Ding in the Inner Chapters, who butchers an ox by following its natural structure, the spaces between joints and cavities, rather than hacking through bone. His knife never dulls because it never meets resistance. His achievement is attunement with the Dao rather than technical mastery alone. He follows the thing's own structure rather than imposing his plan on it.
 
-Where early Laozian thought tended toward rejection of social convention, the Stanford Encyclopedia's reading of Zhuangzi finds a different emphasis. Human dao, including language, practice, and community, is part of natural dao. Wu wei in Zhuangzi does not require withdrawal from the social world but a different quality of engagement with it.
+Where early Laozian thought tended toward rejection of social convention, Zhuangzi's philosophy takes a different approach. Human dao, including language, practice, and community, is part of natural dao. Wu wei in Zhuangzi does not require withdrawal from the social world but a different quality of engagement with it.
 
 ## Governance and Non-Interference
 

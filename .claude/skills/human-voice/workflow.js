@@ -18,6 +18,7 @@ const results = await pipeline(
     agent(
       `You are a writing editor. Clean AI writing patterns from "${filePath}".
 Do not call the advisor tool.
+Complete all three passes in sequence without pausing. Do not ask for confirmation, describe a plan without executing it, or wait for permission between passes.
 
 If the Rules section below is empty, respond with "ERROR: no rules provided" and stop.
 
@@ -34,8 +35,8 @@ ${rules}
 ## Voice
 Scholarly educational: clear declarative sentences about what things are and how they work. Varied sentence length. No performing enthusiasm.
 
-## Pass 1 — Audit (no edits yet)
-Read the file. Write a numbered list of every violation you find. For each item: rule ID, exact original text, what it should become. Check every rule in the table above. Do not edit during this pass.
+## Pass 1 — Audit
+Read the file. Write a numbered list of every violation you find. For each item: rule ID, exact original text, what it should become. Check every rule in the table above. Do not edit during this pass — save edits for Pass 2, which you will begin immediately after.
 
 ## Pass 2 — Fix
 Work through your numbered list one item at a time. Apply each fix before moving to the next.

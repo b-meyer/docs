@@ -19,7 +19,7 @@ The Chinese word _xing_ means to walk or move, so "phases" or "agents" is more a
 | Metal | West      | Autumn      | Dryness  | White  |
 | Water | North     | Winter      | Cold     | Black  |
 
-Correlative thinking extends the table further into sound, flavor, smell, and human affairs. The aim is coherence: any phenomenon in one column should harmonize with others in the same row. A practitioner reading climate, season, and direction together can anticipate which phase governs a given moment.
+Correlative thinking extends the table further into sound, flavor, smell, and human affairs. Any phenomenon in one column should harmonize with others in the same row. A practitioner reading climate, season, and direction together can anticipate which phase governs a given moment.
 
 ## The Generating Cycle (Sheng)
 

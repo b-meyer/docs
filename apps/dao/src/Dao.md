@@ -5,7 +5,7 @@ description: 'The Way: the ineffable source and pattern underlying all reality, 
 
 # The Dao
 
-The Dao - Way - is the central concept in Daoist thought. It names the unnamable source from which everything arises and the pattern by which everything moves. Classical Daoist texts return to it again and again not to define it but to approach it from different angles, each time noting that direct description fails.
+The Dao (the Way) is the central concept in Daoist thought. It names the unnamable source from which everything arises and the pattern by which everything moves. Classical Daoist texts return to it again and again not to define it but to approach it from different angles, each time noting that direct description fails.
 
 ## The Named and the Unnamed
 
@@ -13,7 +13,7 @@ The [Daodejing](Daodejing.md) opens with a warning that "The Dao that can be spo
 
 Yet the Daodejing does not stop speaking. It describes the Dao through negation and paradox because those forms gesture toward what positive description cannot capture. The Dao is empty and yet inexhaustible. It has no shape but gives shape to all things. It does nothing and yet nothing is left undone.
 
-[Zhuangzi](Zhuangzi.md) approaches the same limit differently. He is less interested in cosmological claims than in the way the Dao shows up in skilled activity - in the cook whose knife never dulls because he follows the natural structure of the ox. For Zhuangzi, the Dao is the grain of things, the way things actually go when nothing forces them otherwise.
+[Zhuangzi](Zhuangzi.md) approaches the same limit differently. He is less interested in cosmological claims than in the way the Dao shows up in skilled activity. The cook whose knife never dulls because he follows the natural structure of the ox exemplifies this. For Zhuangzi, the Dao is the grain of things, the way things actually go when nothing forces them otherwise.
 
 ## Source of the Ten Thousand Things
 
@@ -23,20 +23,20 @@ The Daodejing gives a compressed account of how reality arises from the Dao. The
 
 ## The Pattern of Nature
 
-The Dao is also a pattern - the way things move when left to themselves. This is where the concept of [Ziran](Ziran.md) - naturalness, literally "self-so" - connects to the Dao. Things that follow the Dao behave according to their own nature without external compulsion. The Dao itself is ziran. It is simply what it is, without striving.
+The Dao is also a pattern, describing the way things move when left to themselves. This connects to the concept of [Ziran](Ziran.md), which means naturalness or literally "self-so." Things that follow the Dao behave according to their own nature without external compulsion. The Dao itself is ziran. It is simply what it is, without striving.
 
 Water is the Daodejing's preferred image. Water flows to the lowest place, yields to obstacles, takes any shape, and yet wears down stone. It does what it does without effort. The Dao moves through the world the same way.
 
 ## The Dao and De
 
-Each thing that arises from the Dao carries a portion of it as [De](De.md) - virtue or power, the Dao's presence in a particular thing. De is how the Dao shows up in a person's character, an animal's instinct, a tree's way of growing. The two characters appear together in the title of the Daodejing, and they belong together conceptually. The Dao is universal while de is its particular expression in each thing.
+Each thing that arises from the Dao carries a portion of it as [De](De.md), virtue or power present in each particular thing. De is how the Dao shows up in a person's character, an animal's instinct, a tree's way of growing. The two characters appear together in the title of the Daodejing, and they belong together conceptually. The Dao is universal while de is its particular expression in each thing.
 
 A person with strong de acts in alignment with the Dao without having to calculate or force. Political leaders in Daoist thought govern best when their de is sufficient that the people barely notice them.
 
 ## According with the Dao
 
-[Wu Wei](WuWei.md) - non-forced action - is the practical implication of the Dao for human conduct. Acting in accord with the Dao means moving with the grain of things rather than against it. The sage does what the situation calls for, without adding unnecessary effort, resistance, or imposition.
+[Wu Wei](WuWei.md) (non-forced action) is the practical implication of the Dao for human conduct. Acting in accord with the Dao means moving with the grain of things rather than against it. The sage does what the situation calls for, without adding unnecessary effort, resistance, or imposition.
 
-The Daodejing frames this as the highest form of effectiveness. Forcing a situation produces exhaustion and backlash. Attending to the natural structure of things and moving with it produces results without expenditure. The Dao "does nothing, yet leaves nothing undone" - this is the model for sage action.
+The Daodejing frames this as the highest form of effectiveness. Forcing a situation produces exhaustion and backlash. Attending to the natural structure of things and moving with it produces results without expenditure. The principle that the Dao "does nothing, yet leaves nothing undone" models sage action.
 
 The uncarved block, [Pu](Pu.md), holds a related meaning. It names the state of undifferentiated potential before preferences and habits narrow a person's range. The sage returns to this openness, making possible the full range of response that the Dao offers.

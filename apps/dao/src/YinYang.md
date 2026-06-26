@@ -25,11 +25,11 @@ Classic correspondences group along the same relational axis:
 
 No item in the yang column is superior to its counterpart. The table describes poles of a cycle, not a hierarchy. Day gives way to night, summer to winter, activity to rest. The cycle itself is the point.
 
-The taijitu diagram makes this explicit. Inside each half of the divided circle sits a small dot of the opposite color, showing that full yang contains the seed of yin, and full yin contains the seed of yang. Transformation is always already underway.
+The taijitu diagram makes this explicit. Inside each half of the divided circle sits a small dot of the opposite color, showing that full yang contains the seed of yin, and full yin contains the seed of yang.
 
 ## Taiji - The Supreme Ultimate
 
-Taiji - the Supreme Ultimate - names the undifferentiated whole from which yin and yang arise. The _Xici_ (Great Treatise) of the _Yijing_ states: "In change there is the Supreme Ultimate, which generates the two modes." The two modes are yin and yang. The Supreme Ultimate is the moment before they split.
+Taiji, the Supreme Ultimate, is the undifferentiated whole from which yin and yang arise. The _Xici_ (Great Treatise) of the _Yijing_ states: "In change there is the Supreme Ultimate, which generates the two modes." The two modes are yin and yang. The Supreme Ultimate is the moment before they split.
 
 [Daodejing](Daodejing.md) chapter 42 maps the same sequence in Daoist terms: "The Dao gives birth to one; one gives birth to two; two give birth to three; three give birth to the ten thousand things." Commentators across traditions read "one" as primordial [Qi](Qi.md), "two" as yin and yang, and "three" as their combined productive capacity. The cosmological scheme is consistent with what appears elsewhere in the text as the nameless origin differentiating into the named world.
 

@@ -11,7 +11,7 @@ The [Daodejing](Daodejing.md) treats governance as a problem of restraint rather
 
 Chapter 37 states the governing logic plainly. Dao does nothing, yet nothing is left undone. The parallel claim about rulership appears in chapter 57. If the ruler could rid himself of desire, the world would be at peace of its own accord. Both passages depend on [ziran](Ziran.md), the principle that things follow their own nature when nothing interferes. The ruler's role is to stop generating interference, not to replace bad policies with better ones.
 
-This casts the ruler as someone whose inner state determines political outcomes. The Wang Bi commentary treats it as an ontological matter. The ruler who is genuinely free of desire cannot help but express that emptiness outward through governance. Self-cultivation and statecraft are the same process, not sequential steps. The [Ethics](Ethics.md) page develops the personal dimension of this.
+This casts the ruler as someone whose inner state determines political outcomes. The Wang Bi commentary grounded this in ontology. The ruler who is genuinely free of desire cannot help but express that emptiness outward through governance. Self-cultivation and statecraft are the same process, not sequential steps. The [Ethics](Ethics.md) page develops the personal dimension of this.
 
 ## What the Ruler Avoids
 
@@ -26,7 +26,7 @@ The Daodejing specifies what violates wu wei in governance through a set of dire
 
 Chapter 3's prohibition on elevating the worthy is a direct counter to the Confucian model, which held that displaying virtue at the top inspires virtue below. The Daodejing argues the opposite. Making worthiness a prize creates competition, and competition creates disorder. Visible rewards shape desire, and shaped desire produces the very striving that governance then tries to manage.
 
-The prohibitions on war, punishment, and taxation share the same structure. Each represents the ruler acting on the people rather than allowing the people to act on themselves. Chapter 57 puts it directly. A ruler who does nothing allows the people to transform themselves. A ruler who imposes restrictions impoverishes them, and a ruler who multiplies prohibitions finds the people working around every one.
+The prohibitions on war, punishment, and taxation all represent the ruler acting on the people rather than allowing the people to act on themselves. Chapter 57 puts it directly. A ruler who does nothing allows the people to transform themselves. A ruler who imposes restrictions impoverishes them, and a ruler who multiplies prohibitions finds the people working around every one.
 
 ## The [De](De.md) of the Ruler
 
