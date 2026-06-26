@@ -1,7 +1,0 @@
-{
-  "extends": "@framework/core/tsconfig.base.json",
-  "compilerOptions": {
-    "paths": { "@/*": ["./src/*"] }
-  },
-  "include": ["src/**/*", "src/**/*.vue"]
-}
