@@ -5,7 +5,7 @@ import {
   type ConfigEnv,
   type UserConfig,
 } from 'vite';
-import type { QDocsConfig, NavItem, SidebarGroup, SidebarItem, SocialLink } from './config.ts';
+import type { QDocsConfig, NavItem, SidebarEntry, SidebarItem, SocialLink } from './config.ts';
 import { setQDocsConfig, qdocsPlugin } from './plugin.ts';
 
 // The consumer's merged config type: all QDocsConfig fields (except `base`,
@@ -15,7 +15,7 @@ export type QDocsConsumerConfig = {
   description?: string;
   favicon?: string;
   home?: SidebarItem;
-  sidebar: SidebarGroup[] | Record<string, SidebarGroup[]>;
+  sidebar: SidebarEntry[] | Record<string, SidebarEntry[]>;
   nav?: NavItem[];
   socialLinks?: SocialLink[];
   branding?: { siteTitle?: string };

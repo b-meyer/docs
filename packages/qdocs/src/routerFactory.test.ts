@@ -106,6 +106,17 @@ describe('resolveSidebar', () => {
     };
     expect(resolveSidebar(config, '/api/ref')).toEqual([]);
   });
+
+  it('returns the array as-is when it contains ungrouped items', () => {
+    const config: QDocsConfig = {
+      title: 'Test',
+      sidebar: [
+        { title: 'Home', path: 'index' },
+        { group: 'Main', items: [{ path: 'intro', title: 'Intro' }] },
+      ],
+    };
+    expect(resolveSidebar(config, '/intro')).toBe(config.sidebar);
+  });
 });
 
 describe('buildFlatOrder', () => {
@@ -150,6 +161,31 @@ describe('buildFlatOrder', () => {
     const config: QDocsConfig = { title: 'Test', sidebar: [] };
     expect(buildFlatOrder(config, '/')).toEqual([{ path: 'index', title: 'Home' }]);
   });
+
+  it('includes ungrouped items with a path', () => {
+    const config: QDocsConfig = {
+      title: 'Test',
+      sidebar: [
+        { title: 'About', path: 'about' },
+        { group: 'Main', items: [{ path: 'intro', title: 'Intro' }] },
+      ],
+    };
+    const flat = buildFlatOrder(config, '/intro');
+    expect(flat.map((i) => i.path)).toContain('about');
+    expect(flat.map((i) => i.path)).toContain('intro');
+  });
+
+  it('excludes href-only ungrouped items', () => {
+    const config: QDocsConfig = {
+      title: 'Test',
+      sidebar: [
+        { title: 'External', href: 'https://example.com' },
+        { group: 'Main', items: [{ path: 'intro', title: 'Intro' }] },
+      ],
+    };
+    const flat = buildFlatOrder(config, '/intro');
+    expect(flat.every((i) => i.path !== undefined)).toBe(true);
+  });
 });
 
 describe('buildAllItems', () => {
@@ -177,6 +213,19 @@ describe('buildAllItems', () => {
     const all = buildAllItems(config);
     expect(all.map((i) => i.path)).toContain('guide/intro');
     expect(all.map((i) => i.path)).toContain('api/ref');
+  });
+
+  it('includes ungrouped items alongside group items', () => {
+    const config: QDocsConfig = {
+      title: 'Test',
+      sidebar: [
+        { title: 'About', path: 'about' },
+        { group: 'Main', items: [{ path: 'intro', title: 'Intro' }] },
+      ],
+    };
+    const all = buildAllItems(config);
+    expect(all.map((i) => i.path)).toContain('about');
+    expect(all.map((i) => i.path)).toContain('intro');
   });
 });
 

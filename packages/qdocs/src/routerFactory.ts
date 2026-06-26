@@ -1,5 +1,6 @@
 import type { RouterScrollBehavior } from 'vue-router';
-import type { QDocsConfig, SidebarGroup, SidebarItem } from './config';
+import type { QDocsConfig, SidebarEntry, SidebarItem } from './config';
+import { isSidebarGroup } from './config';
 import { prefersReducedMotion } from './runtime/reducedMotion';
 
 const DEFAULT_HOME: SidebarItem = { path: 'index', title: 'Home' };
@@ -15,7 +16,7 @@ export function homeItem(config: QDocsConfig): SidebarItem {
  * - Record config: longest-prefix match on `routePath` (e.g. '/guide/intro' matches '/guide/' before
  *   '/'). Falls back to an empty array if no prefix matches.
  */
-export function resolveSidebar(config: QDocsConfig, routePath: string): SidebarGroup[] {
+export function resolveSidebar(config: QDocsConfig, routePath: string): SidebarEntry[] {
   const { sidebar } = config;
   if (Array.isArray(sidebar)) return sidebar;
   const keys = Object.keys(sidebar);
@@ -45,10 +46,18 @@ export function pathFromRoute(path: string): string {
  * Linear reading order for prev/next — excludes `extra: true` groups and href-only items.
  */
 export function buildFlatOrder(config: QDocsConfig, routePath: string): SidebarItem[] {
-  const groups = resolveSidebar(config, routePath);
+  const entries = resolveSidebar(config, routePath);
   return [
     homeItem(config),
-    ...groups.filter((g) => !g.extra).flatMap((g) => g.items.filter((i) => i.path !== undefined)),
+    ...entries
+      .filter((e) => !isSidebarGroup(e) || !e.extra)
+      .flatMap((e) =>
+        isSidebarGroup(e)
+          ? e.items.filter((i) => i.path !== undefined)
+          : e.path === undefined
+            ? []
+            : [e],
+      ),
   ];
 }
 
@@ -56,10 +65,10 @@ export function buildFlatOrder(config: QDocsConfig, routePath: string): SidebarI
  * Every nav item across all trees. Used for search title lookup and validation.
  */
 export function buildAllItems(config: QDocsConfig): SidebarItem[] {
-  const allGroups: SidebarGroup[] = Array.isArray(config.sidebar)
+  const allEntries: SidebarEntry[] = Array.isArray(config.sidebar)
     ? config.sidebar
     : Object.values(config.sidebar).flat();
-  return [homeItem(config), ...allGroups.flatMap((g) => g.items)];
+  return [homeItem(config), ...allEntries.flatMap((e) => (isSidebarGroup(e) ? e.items : [e]))];
 }
 
 export function neighborsOf(

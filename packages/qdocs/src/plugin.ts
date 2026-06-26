@@ -11,6 +11,7 @@ import Markdown from 'unplugin-vue-markdown/vite';
 import type { HtmlTagDescriptor, Plugin, PluginOption, ViteDevServer } from 'vite';
 import VueRouter from 'vue-router/vite';
 import type { QDocsConfig } from './config';
+import { isSidebarGroup } from './config.ts';
 // NOTE: explicit `.ts` extensions and no barrel import here, deliberately.
 // `plugin.ts` is loaded by Vite's Node config loader (a `.ts`-transpiling but
 // Node-style ES resolver), which rejects directory imports (`./markdown`) and
@@ -314,10 +315,10 @@ export function qdocsPlugin(options: QDocsPluginOptions = {}): PluginOption[] {
         md.use(mdLinkTitles, () => {
           if (!qdocsConfigStore) return new Map<string, string>();
           const { sidebar, home } = qdocsConfigStore;
-          const allGroups = Array.isArray(sidebar) ? sidebar : Object.values(sidebar).flat();
+          const allEntries = Array.isArray(sidebar) ? sidebar : Object.values(sidebar).flat();
           const items = [
             home ?? { path: 'index', title: 'Home' },
-            ...allGroups.flatMap((g) => g.items),
+            ...allEntries.flatMap((e) => (isSidebarGroup(e) ? e.items : [e])),
           ];
           const map = new Map<string, string>();
           for (const item of items) {

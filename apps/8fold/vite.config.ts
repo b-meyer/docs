@@ -15,6 +15,7 @@ export default defineConfig({
     brandIntensity: 55,
   },
   sidebar: [
+    { path: 'index', title: 'Home' },
     {
       group: 'Foundation',
       items: [

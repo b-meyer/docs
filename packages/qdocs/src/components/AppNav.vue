@@ -5,7 +5,8 @@ import { computed, onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { useConfig } from '../composables/useConfig';
 import { useReadingMode } from '../composables/useReadingMode';
-import type { SidebarItem } from '../config';
+import type { SidebarEntry, SidebarGroup, SidebarItem } from '../config';
+import { isSidebarGroup } from '../config';
 import { homeItem, pathFromRoute, resolveSidebar } from '../routerFactory';
 
 const config = useConfig();
@@ -13,18 +14,30 @@ const home = homeItem(config);
 
 const route = useRoute();
 const activeSidebar = computed(() => resolveSidebar(config, route.path));
-const coreGroups = computed(() => activeSidebar.value.filter((g) => !g.extra));
-const extraGroups = computed(() => activeSidebar.value.filter((g) => g.extra));
+const coreEntries = computed(() =>
+  activeSidebar.value.filter((e) => !isSidebarGroup(e) || !e.extra),
+);
+const extraGroups = computed(() =>
+  activeSidebar.value.filter((e): e is SidebarGroup => isSidebarGroup(e) && !!e.extra),
+);
 const extraPaths = computed(
   () => new Set(extraGroups.value.flatMap((g) => g.items.map((i) => i.path))),
 );
 
+function asItem(e: SidebarEntry): SidebarItem {
+  return e as SidebarItem;
+}
+
 const { showAdditional, setShowAdditional, syncFromStorage } = useReadingMode();
 
 // Collapsible group state — config-driven initial state, component-local (no persistence).
-// Initialised from coreGroups at setup time; safe for SSR because it derives from config.
+// Initialised from coreEntries at setup time; safe for SSR because it derives from config.
 const collapsedGroups = ref<Set<string>>(
-  new Set(coreGroups.value.filter((g) => g.collapsed).map((g) => g.group)),
+  new Set(
+    coreEntries.value
+      .filter((e): e is SidebarGroup => isSidebarGroup(e) && !!e.collapsed)
+      .map((e) => e.group),
+  ),
 );
 function toggleGroup(name: string): void {
   if (collapsedGroups.value.has(name)) {
@@ -55,40 +68,63 @@ function itemLink(item: SidebarItem): string {
 <template>
   <nav class="text-sm" aria-label="Sidebar">
     <div v-if="!showAdditional" class="contents space-y-5">
-      <div v-for="group in coreGroups" :key="group.group">
-        <button
-          type="button"
-          class="eyebrow mb-2 flex w-full items-center justify-between px-1"
-          :aria-expanded="!collapsedGroups.has(group.group)"
-          @click="toggleGroup(group.group)"
-        >
-          {{ group.group }}
-          <ChevronDownIcon
-            class="size-3.5 shrink-0 text-gray-400 transition-transform"
-            :class="{ '-rotate-90': collapsedGroups.has(group.group) }"
-            aria-hidden="true"
-          />
-        </button>
-        <ul v-if="!collapsedGroups.has(group.group)" class="space-y-1">
-          <li v-for="item in group.items" :key="item.path ?? item.href">
-            <a
-              v-if="item.href"
-              :href="item.href"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="nav-link"
-              >{{ item.title }}</a
-            >
-            <RouterLink
-              v-else-if="item.path"
-              :to="itemLink(item)"
-              class="nav-link"
-              active-class="active"
-            >
-              {{ item.title }}
-            </RouterLink>
-          </li>
-        </ul>
+      <div
+        v-for="entry in coreEntries"
+        :key="isSidebarGroup(entry) ? entry.group : (entry.path ?? entry.href)"
+      >
+        <template v-if="isSidebarGroup(entry)">
+          <button
+            type="button"
+            class="eyebrow mb-2 flex w-full items-center justify-between px-1"
+            :aria-expanded="!collapsedGroups.has(entry.group)"
+            @click="toggleGroup(entry.group)"
+          >
+            {{ entry.group }}
+            <ChevronDownIcon
+              class="size-3.5 shrink-0 text-gray-400 transition-transform"
+              :class="{ '-rotate-90': collapsedGroups.has(entry.group) }"
+              aria-hidden="true"
+            />
+          </button>
+          <ul v-if="!collapsedGroups.has(entry.group)" class="space-y-1">
+            <li v-for="item in entry.items" :key="item.path ?? item.href">
+              <a
+                v-if="item.href"
+                :href="item.href"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-link"
+                >{{ item.title }}</a
+              >
+              <RouterLink
+                v-else-if="item.path"
+                :to="itemLink(item)"
+                class="nav-link"
+                active-class="active"
+              >
+                {{ item.title }}
+              </RouterLink>
+            </li>
+          </ul>
+        </template>
+        <template v-else>
+          <a
+            v-if="asItem(entry).href"
+            :href="asItem(entry).href"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-link"
+            >{{ entry.title }}</a
+          >
+          <RouterLink
+            v-else-if="asItem(entry).path !== undefined"
+            :to="itemLink(asItem(entry))"
+            class="nav-link"
+            active-class="active"
+          >
+            {{ entry.title }}
+          </RouterLink>
+        </template>
       </div>
       <button
         v-if="extraGroups.length > 0"

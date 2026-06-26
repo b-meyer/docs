@@ -25,6 +25,18 @@ export type SidebarGroup = {
   collapsed?: boolean;
 };
 
+/**
+ * A sidebar entry is either a grouped set of links or a standalone ungrouped link.
+ */
+export type SidebarEntry = SidebarItem | SidebarGroup;
+
+/**
+ * Type guard — true when the entry is a `SidebarGroup` (has a `group` property).
+ */
+export function isSidebarGroup(entry: SidebarEntry): entry is SidebarGroup {
+  return 'group' in entry;
+}
+
 export type NavItem = {
   text: string;
   /**
@@ -93,15 +105,18 @@ export type QDocsConfig = {
    */
   home?: SidebarItem;
   /**
-   * Nav manifest — drives the sidebar groups, reading order, and prev/next.
+   * Nav manifest — drives the sidebar, reading order, and prev/next.
    *
-   * **Single tree**: pass a `SidebarGroup[]` array directly.
+   * Each entry is either a `SidebarGroup` (grouped links under a heading) or a bare `SidebarItem`
+   * (an ungrouped link rendered directly, e.g. a Home entry at the top).
    *
-   * **Multi-tree**: pass a `Record<string, SidebarGroup[]>` keyed by URL prefix (e.g. `{ '/guide/':
+   * **Single tree**: pass a `SidebarEntry[]` array directly.
+   *
+   * **Multi-tree**: pass a `Record<string, SidebarEntry[]>` keyed by URL prefix (e.g. `{ '/guide/':
    * [...], '/api/': [...] }`). The active tree is selected by longest-prefix match on the current
    * route path.
    */
-  sidebar: SidebarGroup[] | Record<string, SidebarGroup[]>;
+  sidebar: SidebarEntry[] | Record<string, SidebarEntry[]>;
   /**
    * Top navbar links and dropdowns, rendered in the site header.
    */
