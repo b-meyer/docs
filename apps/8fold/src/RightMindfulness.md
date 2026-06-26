@@ -77,7 +77,7 @@ The practitioner cultivates the **Seven Factors of Enlightenment**, a progressiv
 
 | #   | Factor                         | Pali           | Role                                                                                         |
 | :-- | :----------------------------- | :------------- | :------------------------------------------------------------------------------------------- |
-| 1   | **Mindfulness**                | _Sati_         | Provides clear, non-forgetting awareness of what is present; grounds the other six factors            |
+| 1   | **Mindfulness**                | _Sati_         | Provides clear, non-forgetting awareness of what is present; grounds the other six factors   |
 | 2   | **Investigation of Phenomena** | _Dhammavicaya_ | The probing intelligence that penetrates the true nature of experience; the "active" element |
 | 3   | **Energy / Effort**            | _Viriya_       | The diligence that sustains the investigation without flagging                               |
 | 4   | **Rapture / Joy**              | _Pīti_         | The uplift that arises when the mind is engaged and the path is working                      |

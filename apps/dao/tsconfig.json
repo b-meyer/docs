@@ -1,5 +1,5 @@
 {
-  "extends": "@framework/core/tsconfig.base.json",
+  "extends": "qdocs/tsconfig.base.json",
   "compilerOptions": {
     "paths": { "@/*": ["./src/*"] }
   },

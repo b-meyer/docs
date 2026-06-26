@@ -17,7 +17,7 @@ catalog:
   '@vitejs/plugin-vue': ^6.0.3
   '@vue/test-utils': ^2.4
   '@vue/tsconfig': ^0.9.1
-  fuzzysort: ^3.1.0
+  minisearch: ^7.0.0
   markdown-it: ^14.1.0
   markdown-it-anchor: ^9.2.0
   markdown-it-container: ^4.0.0

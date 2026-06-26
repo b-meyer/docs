@@ -35,16 +35,16 @@ The function is also a **mental metaphor in classical teaching**. Just as the He
 
 ## Position in the wider system
 
-| Aspect             | Small Intestine                                            |
-| ------------------ | ---------------------------------------------------------- |
-| Wu Xing phase      | Fire (see [WuXing.md](WuXing.md))                          |
-| Paired Zang organ  | [Heart](Heart.md)                                          |
-| Sensory opening    | _(via paired [Heart](Heart.md): tongue)_                    |
-| Tissue             | _(via Heart: vessels)_                                     |
-| Associated emotion | _(via Heart: joy/agitation; discernment when imbalanced)_   |
-| Organ clock        | 1 PM - 3 PM, see [Jingmai.md](Jingmai.md)                  |
-| Season             | _(via Heart: summer)_                                      |
-| Flavor             | _(via Heart: bitter)_                                      |
+| Aspect             | Small Intestine                                           |
+| ------------------ | --------------------------------------------------------- |
+| Wu Xing phase      | Fire (see [WuXing.md](WuXing.md))                         |
+| Paired Zang organ  | [Heart](Heart.md)                                         |
+| Sensory opening    | _(via paired [Heart](Heart.md): tongue)_                  |
+| Tissue             | _(via Heart: vessels)_                                    |
+| Associated emotion | _(via Heart: joy/agitation; discernment when imbalanced)_ |
+| Organ clock        | 1 PM - 3 PM, see [Jingmai.md](Jingmai.md)                 |
+| Season             | _(via Heart: summer)_                                     |
+| Flavor             | _(via Heart: bitter)_                                     |
 
 Surface pathway: the Small Intestine channel (SI 1–19) runs from the little finger up the outer arm, across the shoulder and scapula, up the neck, and ends in front of the ear. This anatomical path explains why SI patterns are implicated in **shoulder, scapula, and posterior neck pain**, with locally relevant points including SI 3, SI 9, SI 11, and SI 14.
 

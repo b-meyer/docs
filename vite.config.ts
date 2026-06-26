@@ -8,6 +8,7 @@ const IGNORE_PATTERNS: string[] = [
   '**/dist-baseline/**',
   '**/node_modules/**',
   '**/.framework-ssg-temp/**',
+  '**/.claude/**',
   'pnpm-lock.yaml',
 ];
 

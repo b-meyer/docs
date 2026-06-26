@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vp dev",
-    "build": "framework-ssg",
+    "build": "qdocs-ssg",
     "preview": "vp preview"
   },
   "dependencies": {
-    "@framework/core": "workspace:*",
     "@unhead/vue": "catalog:",
+    "qdocs": "workspace:*",
     "vue": "catalog:",
     "vue-router": "catalog:"
   },

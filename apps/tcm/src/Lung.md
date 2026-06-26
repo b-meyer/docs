@@ -46,17 +46,17 @@ The Po is mortal: it lives in the body and returns to earth at death, unlike the
 
 ## Position in the Wider System
 
-| Aspect             | Lung                                                                      |
-| ------------------ | ------------------------------------------------------------------------- |
-| Wu Xing phase      | Metal (see [WuXing.md](WuXing.md))                                        |
-| Paired Fu organ    | [Large Intestine](LargeIntestine.md)                                      |
-| Sensory opening    | Nose                                                                      |
-| Tissue             | Skin and body hair                                                        |
-| Associated emotion | Grief / sadness (see [QiQing.md](QiQing.md))                              |
+| Aspect             | Lung                                                                     |
+| ------------------ | ------------------------------------------------------------------------ |
+| Wu Xing phase      | Metal (see [WuXing.md](WuXing.md))                                       |
+| Paired Fu organ    | [Large Intestine](LargeIntestine.md)                                     |
+| Sensory opening    | Nose                                                                     |
+| Tissue             | Skin and body hair                                                       |
+| Associated emotion | Grief / sadness (see [QiQing.md](QiQing.md))                             |
 | Organ clock        | 3 AM – 5 AM (Large Intestine: 5 AM – 7 AM); see [Jingmai.md](Jingmai.md) |
-| Season             | Autumn                                                                    |
-| Flavor             | Pungent                                                                   |
-| Housed spirit      | Po (魄, Corporeal Soul)                                                   |
+| Season             | Autumn                                                                   |
+| Flavor             | Pungent                                                                  |
+| Housed spirit      | Po (魄, Corporeal Soul)                                                  |
 
 **The Lung-Kidney axis.** A foundational teaching in TCM: the Lung sends Qi down; the Kidney grasps and holds it. Healthy breathing requires both organs. In chronic asthma or in the elderly, Kidney Yang or Jing has often faltered, so Qi floats upward and cannot be anchored (a pattern called "Lung-Kidney failing to grasp Qi," described in [ZangFu.md](ZangFu.md)). The Lung is the "mother" of the Kidney in one clinical interpretation; Metal (Lung) generates Water (Kidney) in the [Wu Xing](WuXing.md) generating cycle.
 

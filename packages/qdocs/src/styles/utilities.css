@@ -1,0 +1,97 @@
+@utility prose {
+  & .table-wrap {
+    @apply max-w-full overflow-hidden rounded-lg border border-gray-200;
+  }
+  & .table-wrap table {
+    @apply m-0 w-full border-collapse text-sm;
+  }
+  & .table-wrap thead tr {
+    @apply bg-gray-800 dark:bg-gray-200;
+  }
+  & .table-wrap thead th {
+    @apply border-none px-4 py-3 text-left text-sm font-semibold text-white;
+  }
+  & .table-wrap tbody tr {
+    @apply border-gray-150 border-b;
+    &:last-child {
+      @apply border-b-0;
+    }
+    &:nth-child(even) {
+      @apply dark:bg-gray-75 bg-gray-100;
+    }
+  }
+  & .table-wrap tbody td {
+    @apply border-none px-4 py-3 align-top text-sm text-gray-800 dark:text-gray-700;
+  }
+}
+@utility nav-link {
+  @apply hover:bg-primary-50 block rounded border border-transparent p-1 text-gray-900 dark:text-gray-700;
+  &.active {
+    @apply bg-primary-50 text-primary-800 border-primary-150;
+  }
+}
+@utility outline-link {
+  @apply -ml-px block border-l border-transparent py-0.5 pl-1.5 text-gray-800 hover:text-gray-900 dark:text-gray-700;
+  &.active {
+    @apply border-primary-500 font-medium text-gray-900;
+  }
+}
+@utility eyebrow {
+  @apply text-xs font-semibold tracking-wider text-gray-700 uppercase;
+}
+@utility scrollbar {
+  &::-webkit-scrollbar {
+    @apply h-[6px] w-[6px] rounded-[3px];
+  }
+  &::-webkit-scrollbar-track {
+    @apply rounded-[3px];
+  }
+  &::-webkit-scrollbar-thumb {
+    @apply h-[6px] rounded-[3px] bg-gray-400/75;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    @apply cursor-pointer;
+  }
+}
+@utility link {
+  @apply text-primary-500 hover:text-primary-700 underline;
+}
+@utility required {
+  @apply before:text-primary-500! -ml-8! before:pr-1! before:content-['*']!;
+}
+@utility card {
+  @apply bg-gray-25 overflow-hidden rounded border border-gray-200 text-gray-900 shadow;
+}
+@utility tab {
+  @apply z-10 -mb-1 -ml-1 flex h-30 items-center rounded-t-sm border border-gray-200 px-10 first:ml-0;
+  &.active {
+    @apply bg-gray-25 border-b-0 pb-1;
+  }
+  &:not(.active) {
+    @apply cursor-pointer bg-gray-50;
+  }
+}
+@utility btn {
+  @apply bg-gray-75 rounded border border-gray-300 text-gray-900 shadow-sm not-disabled:cursor-pointer hover:not-disabled:bg-gray-100 hover:not-disabled:text-black disabled:border-gray-100 disabled:text-gray-500;
+  &.btn-outline {
+    @apply bg-inherit hover:not-disabled:border-gray-400;
+  }
+  &.btn-primary {
+    @apply bg-primary-400 hover:not-disabled:bg-primary-500 border-primary-550 disabled:border-primary-450;
+  }
+}
+@utility btn-group {
+  @apply flex;
+  & > * + * {
+    @apply rounded-l-none! border-l-0! hover:border-l!;
+  }
+  & > *:has(+ *) {
+    @apply rounded-r-none!;
+  }
+  & > *:has(+ *:hover) {
+    @apply border-r-0!;
+  }
+}
+@utility border-input {
+  @apply focus-within:ring-primary-500/30! border! border-gray-300! shadow-sm! outline-none! focus-within:ring-1! hover:border-gray-400/75!;
+}

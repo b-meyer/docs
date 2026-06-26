@@ -35,16 +35,16 @@ Every Zang organ houses a specific aspect of the psyche (see [Shen.md](Shen.md))
 
 ## Position in the wider system
 
-| Aspect             | Kidney                                                          |
-| ------------------ | --------------------------------------------------------------- |
-| Wu Xing phase      | Water (see [WuXing.md](WuXing.md))                              |
-| Paired Fu organ    | [Bladder](Bladder.md)                                           |
-| Sensory opening    | Ears                                                            |
-| Tissue             | Bones (and marrow, which fills the brain, the "Sea of Marrow")  |
-| Associated emotion | Fear - see [QiQing.md](QiQing.md)                               |
-| Organ clock        | 5 PM – 7 PM - see [Jingmai.md](Jingmai.md)                      |
-| Season             | Winter                                                          |
-| Flavor             | Salty                                                           |
+| Aspect             | Kidney                                                         |
+| ------------------ | -------------------------------------------------------------- |
+| Wu Xing phase      | Water (see [WuXing.md](WuXing.md))                             |
+| Paired Fu organ    | [Bladder](Bladder.md)                                          |
+| Sensory opening    | Ears                                                           |
+| Tissue             | Bones (and marrow, which fills the brain, the "Sea of Marrow") |
+| Associated emotion | Fear - see [QiQing.md](QiQing.md)                              |
+| Organ clock        | 5 PM – 7 PM - see [Jingmai.md](Jingmai.md)                     |
+| Season             | Winter                                                         |
+| Flavor             | Salty                                                          |
 
 Surface pathway: the Kidney channel (足少陰腎經) runs from the sole of the foot up the inner leg and abdomen to the chest, explaining why foot-level acupoints (KD 1, KD 3) have such a wide systemic reach.
 

@@ -37,16 +37,16 @@ When the Liver is healthy and well-nourished by Yin and Blood, the Hun is rooted
 
 ## Position in the wider system
 
-| Aspect             | Liver                                                                  |
-| ------------------ | ---------------------------------------------------------------------- |
-| Wu Xing phase      | Wood (see [WuXing.md](WuXing.md))                                      |
-| Paired Fu organ    | [Gallbladder](Gallbladder.md)                                          |
-| Sensory opening    | Eyes                                                                   |
-| Tissue             | Tendons                                                                |
-| Associated emotion | Anger / frustration (see [QiQing.md](QiQing.md))                       |
+| Aspect             | Liver                                                                 |
+| ------------------ | --------------------------------------------------------------------- |
+| Wu Xing phase      | Wood (see [WuXing.md](WuXing.md))                                     |
+| Paired Fu organ    | [Gallbladder](Gallbladder.md)                                         |
+| Sensory opening    | Eyes                                                                  |
+| Tissue             | Tendons                                                               |
+| Associated emotion | Anger / frustration (see [QiQing.md](QiQing.md))                      |
 | Organ clock        | 1 AM – 3 AM (Gallbladder: 11 PM – 1 AM); see [Jingmai.md](Jingmai.md) |
-| Season             | Spring                                                                 |
-| Flavor             | Sour                                                                   |
+| Season             | Spring                                                                |
+| Flavor             | Sour                                                                  |
 
 **The Liver-Kidney axis.** A foundational TCM teaching is that _"the Liver and Kidneys share the same root."_ The [Kidneys](Kidney.md) store [Jing (Essence)](Jing.md); the Liver stores Blood; and Jing can transform into Blood (and vice versa). As a result, the Liver and Kidneys are functionally interdependent: a chronic depletion of one will eventually drag down the other.
 
@@ -130,25 +130,25 @@ Because the Liver is the root of the imbalance, recovery protocols focus on soot
 
 **The NADA Protocol.** Developed in the 1970s at Lincoln Hospital in New York, the NADA (National Acupuncture Detoxification Association) protocol is a standardized 5-point ear acupuncture treatment used worldwide in addiction clinics, behavioral health, prison systems, and disaster relief. The five points each target a specific dimension of addiction:
 
-| Point       | Function in recovery                                                                                  |
-| ----------- | ----------------------------------------------------------------------------------------------------- |
-| Sympathetic | Calms the nervous system, pulling the patient out of the agitated "fight-or-flight" of withdrawal.    |
+| Point       | Function in recovery                                                                                 |
+| ----------- | ---------------------------------------------------------------------------------------------------- |
+| Sympathetic | Calms the nervous system, pulling the patient out of the agitated "fight-or-flight" of withdrawal.   |
 | Shen Men    | "Spirit Gate"; calms the mind, alleviates anxiety, grounds the Master Shen to reduce acute cravings. |
-| Kidney      | Supports the root of willpower (Zhi), heals the core Jing, relieves the primal fear of withdrawal.    |
-| Liver       | Aids physical detoxification, smooths Liver Qi, eases anger and frustration.                          |
-| Lung        | Helps the body "let go" and addresses the grief and sadness often underlying addiction.               |
+| Kidney      | Supports the root of willpower (Zhi), heals the core Jing, relieves the primal fear of withdrawal.   |
+| Liver       | Aids physical detoxification, smooths Liver Qi, eases anger and frustration.                         |
+| Lung        | Helps the body "let go" and addresses the grief and sadness often underlying addiction.              |
 
 **Key body acupoints.** Beyond the ear protocol, a small set of body points carries most of the clinical load across the phases of recovery:
 
-| Point                | Function in recovery                                                                                                                                                       |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| LV 3 (Taichong)      | Source point of the Liver meridian, on the dorsum of the foot. The premier point for melting stress, smoothing Liver Qi, and quieting the physical tension of cravings.    |
-| LV 14 (Qimen)        | Front-Mu point of the Liver, below the nipple. Releases acute Liver Qi stagnation in the chest, such as the "lump in the throat" and tight-chest sensations of early withdrawal.  |
-| LV 8 (Ququan)        | He-sea point of the Liver, at the knee crease. The principal point for nourishing Liver Blood and Yin, especially once depletion patterns set in during late-stage recovery. |
-| GB 34 (Yanglingquan) | Influential point for sinews and tendons. Relieves the muscle tension of withdrawal and the chronic neck/shoulder bracing of suppressed anger.                             |
-| KD 3 (Taixi)         | Source point of the Kidney meridian. Strongly tonifies Kidney Yin and Yang, restoring the depleted reserves that long-term addiction has drained.                          |
-| Du 4 (Mingmen)       | "Gate of Life," on the spine between the kidneys. Rekindles the constitutional fire when Yang has been exhausted by years of substance use.                                |
-| Ren 4 (Guanyuan)     | "Gate of Origin," on the lower abdomen; pairs with Ren 6 (Qihai) to access the Dantian and fortify Original Qi and Essence.                                                |
+| Point                | Function in recovery                                                                                                                                                             |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| LV 3 (Taichong)      | Source point of the Liver meridian, on the dorsum of the foot. The premier point for melting stress, smoothing Liver Qi, and quieting the physical tension of cravings.          |
+| LV 14 (Qimen)        | Front-Mu point of the Liver, below the nipple. Releases acute Liver Qi stagnation in the chest, such as the "lump in the throat" and tight-chest sensations of early withdrawal. |
+| LV 8 (Ququan)        | He-sea point of the Liver, at the knee crease. The principal point for nourishing Liver Blood and Yin, especially once depletion patterns set in during late-stage recovery.     |
+| GB 34 (Yanglingquan) | Influential point for sinews and tendons. Relieves the muscle tension of withdrawal and the chronic neck/shoulder bracing of suppressed anger.                                   |
+| KD 3 (Taixi)         | Source point of the Kidney meridian. Strongly tonifies Kidney Yin and Yang, restoring the depleted reserves that long-term addiction has drained.                                |
+| Du 4 (Mingmen)       | "Gate of Life," on the spine between the kidneys. Rekindles the constitutional fire when Yang has been exhausted by years of substance use.                                      |
+| Ren 4 (Guanyuan)     | "Gate of Origin," on the lower abdomen; pairs with Ren 6 (Qihai) to access the Dantian and fortify Original Qi and Essence.                                                      |
 
 ### Herbal medicine
 

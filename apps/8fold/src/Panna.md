@@ -132,13 +132,13 @@ Keeping this in mind prevents both overconfidence ("I've had deep experiences, t
 
 The transition from **Stage 4 (A&P)** to **Stages 5 to 10 (the Knowledges of Suffering)** is the most critical and most misunderstood transition in the entire map.
 
-| The A&P Peak (Stage 4)                            | The Dark Night Entry (Stages 5 to 10)                                          |
-| :------------------------------------------------ | :----------------------------------------------------------------------------- |
-| Point of no-return once crossed                   | Must complete the cycle to find resolution                                     |
-| High energy: fireworks, rapture, bright lights    | Spiritual crisis: a profound feeling of being caught in the mind's machinery    |
-| Often occurs outside formal meditation            | Pervasive sense of dissatisfactoriness and fear                                |
-| A feeling of power and success                    | Cognitive restructuring cannot solve the issue                                  |
-| Natural: may happen in adolescence or life events | Requires handling difficult states with kindness, not suppression              |
+| The A&P Peak (Stage 4)                            | The Dark Night Entry (Stages 5 to 10)                                        |
+| :------------------------------------------------ | :--------------------------------------------------------------------------- |
+| Point of no-return once crossed                   | Must complete the cycle to find resolution                                   |
+| High energy: fireworks, rapture, bright lights    | Spiritual crisis: a profound feeling of being caught in the mind's machinery |
+| Often occurs outside formal meditation            | Pervasive sense of dissatisfactoriness and fear                              |
+| A feeling of power and success                    | Cognitive restructuring cannot solve the issue                               |
+| Natural: may happen in adolescence or life events | Requires handling difficult states with kindness, not suppression            |
 
 ### The Dark Night in Plain Language
 

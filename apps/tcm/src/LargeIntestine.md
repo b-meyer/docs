@@ -29,16 +29,16 @@ The Large Intestine is an underappreciated player in [Jin Ye (body fluid)](JinYe
 
 ## Position in the wider system
 
-| Aspect             | Large Intestine                                                  |
-| ------------------ | ---------------------------------------------------------------- |
-| Wu Xing phase      | Metal (see [WuXing.md](WuXing.md))                               |
-| Paired Zang organ  | [Lung](Lung.md)                                                  |
-| Sensory opening    | _(via paired [Lung](Lung.md): nose)_                             |
-| Tissue             | _(via Lung: skin and body hair)_                                 |
-| Associated emotion | Grief / sadness; theme: letting go (see [QiQing.md](QiQing.md))     |
-| Organ clock        | 5 AM – 7 AM (see [Jingmai.md](Jingmai.md))                       |
-| Season             | Autumn (via Lung)                                                |
-| Flavor             | Pungent (via Lung)                                               |
+| Aspect             | Large Intestine                                                 |
+| ------------------ | --------------------------------------------------------------- |
+| Wu Xing phase      | Metal (see [WuXing.md](WuXing.md))                              |
+| Paired Zang organ  | [Lung](Lung.md)                                                 |
+| Sensory opening    | _(via paired [Lung](Lung.md): nose)_                            |
+| Tissue             | _(via Lung: skin and body hair)_                                |
+| Associated emotion | Grief / sadness; theme: letting go (see [QiQing.md](QiQing.md)) |
+| Organ clock        | 5 AM – 7 AM (see [Jingmai.md](Jingmai.md))                      |
+| Season             | Autumn (via Lung)                                               |
+| Flavor             | Pungent (via Lung)                                              |
 
 Surface pathway: the Large Intestine channel runs from the index finger up the outer arm and shoulder, across the neck, to the side of the nose (LI 20, _Ying Xiang_). This explains why LI 4 (Hegu), located between thumb and index finger, can address both bowel function and facial-sinus conditions because the same channel links them.
 

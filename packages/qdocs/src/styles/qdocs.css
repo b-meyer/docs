@@ -1,0 +1,9 @@
+/* QDocs styles WITHOUT the `@import 'tailwindcss'` line — the consumer owns
+   that import (so Tailwind's content detection roots in the consumer app).
+   `tokens.css` carries the `@theme` color tokens + `@custom-variant dark`, so it
+   must be imported after the consumer's `@import 'tailwindcss'`.
+   `@source` tells Tailwind to scan this package even though it's in node_modules. */
+@source '..';
+@import './tokens.css';
+@import './components.css' layer(components);
+@import './utilities.css';

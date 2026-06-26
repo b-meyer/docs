@@ -64,14 +64,14 @@ Practically: in northern winters, solar noon may fall at 11:30 AM; in summer, at
 
 ### Six solar windows in practice
 
-| Window                   | Solar position             | Organ focus                      | Orientation                                                                                                                             |
-| ------------------------ | -------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Pre-sunrise              | Yin-to-Yang pivot          | Lung, Large Intestine            | Wake with the light; prioritize elimination and warm hydration; maintain the overnight fast                                             |
-| Sunrise to solar noon    | Yang ascending             | Stomach, Spleen                  | Largest, most nutrient-dense meal; builds Post-Natal Jing, offsets constitutional draw                                                  |
-| Solar noon               | Yang peak                  | Heart                            | Close the eating window; the Shen is most available for focused work and connection                                                     |
-| Noon to sunset           | Yang declining, Yin rising | Small Intestine, Bladder, Kidney | Fasting window; hydration supports Bladder regulation; this gap allows Insubstantial Phlegm to clear                                    |
+| Window                   | Solar position             | Organ focus                      | Orientation                                                                                                                                     |
+| ------------------------ | -------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pre-sunrise              | Yin-to-Yang pivot          | Lung, Large Intestine            | Wake with the light; prioritize elimination and warm hydration; maintain the overnight fast                                                     |
+| Sunrise to solar noon    | Yang ascending             | Stomach, Spleen                  | Largest, most nutrient-dense meal; builds Post-Natal Jing, offsets constitutional draw                                                          |
+| Solar noon               | Yang peak                  | Heart                            | Close the eating window; the Shen is most available for focused work and connection                                                             |
+| Noon to sunset           | Yang declining, Yin rising | Small Intestine, Bladder, Kidney | Fasting window; hydration supports Bladder regulation; this gap allows Insubstantial Phlegm to clear                                            |
 | Sunset to solar midnight | Yin rising                 | Pericardium, San Jiao            | Grounding, slow Qigong; fasting essential. Eating during this window competes with thermal and fluid coordination, a primary cause of insomnia. |
-| Solar midnight           | Yin peak                   | Gallbladder, Liver               | Deep sleep; having fasted since midday, the Shen can retreat into Blood for full restoration                                            |
+| Solar midnight           | Yin peak                   | Gallbladder, Liver               | Deep sleep; having fasted since midday, the Shen can retreat into Blood for full restoration                                                    |
 
 _Insubstantial Phlegm (noon-to-sunset window) is defined in [JinYe.md](JinYe.md). For Qigong practices matched to each window, see [Qigong.md](Qigong.md)._
 

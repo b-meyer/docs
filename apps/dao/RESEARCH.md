@@ -6,7 +6,7 @@ This is the content blueprint for the Dao primer app (`apps/dao/`). It enumerate
 
 This is a reference file, not a published page. It is exempt from the AGENTS.md content-writing rules (§1–§40) — those apply to the `src/*.md` pages it describes.
 
-The subject is **Daoism (Taoism)**: its core concepts, foundational texts, key figures, organized schools, cosmology, practices, ethics, and history. The primer targets curious newcomers and general educated adults — philosophy-first, with practices framed conceptually (what neidan *is*, not a how-to).
+The subject is **Daoism (Taoism)**: its core concepts, foundational texts, key figures, organized schools, cosmology, practices, ethics, and history. The primer targets curious newcomers and general educated adults — philosophy-first, with practices framed conceptually (what neidan _is_, not a how-to).
 
 The inventory is split into two tiers. **Core** is the primer's main path — the philosophical material a newcomer actually came for. **Additional Reading** is optional depth on organized religion, the pantheon, practice, and history. The split follows the Daojia (philosophy) / Daojiao (religion) line the primer itself teaches. The sidebar lists every Core group first, then the Additional Reading groups, so the intended reading order falls out of the ordering. Detail pages have been merged into their nearest neighbour to keep the set near ~37 rather than ~50.
 
@@ -32,42 +32,42 @@ The primer's main path — read top to bottom.
 
 ### Foundation
 
-| Filename          | Page Title           | Type     | Scope                                                                            |
-| ----------------- | -------------------- | -------- | -------------------------------------------------------------------------------- |
+| Filename           | Page Title           | Type     | Scope                                                                                                                                                                    |
+| ------------------ | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `DaojiaDaojiao.md` | Daojia and Daojiao   | Overview | The philosophical/religious distinction at the center of Daoism studies; why modern scholarship blurs the line and why that matters for reading every page that follows. |
-| `Cosmogony.md`    | The Dao and Creation | Overview | Dao → One → Two → Three → ten thousand things; Wuji and Taiji as the ground of manifestation. |
+| `Cosmogony.md`     | The Dao and Creation | Overview | Dao → One → Two → Three → ten thousand things; Wuji and Taiji as the ground of manifestation.                                                                            |
 
 ### Core Concepts
 
-| Filename            | Page Title          | Type     | Scope                                                                    |
-| ------------------- | ------------------- | -------- | ------------------------------------------------------------------------ |
-| `Dao.md`            | The Dao             | Overview | The Way: the ineffable source and pattern underlying all reality.        |
-| `De.md`             | De                  | Overview | Virtue/power: the capacity to embody and express the Dao.                |
-| `WuWei.md`          | Wu Wei              | Overview | Effortless, non-coercive action in harmony with natural flow.            |
-| `Ziran.md`          | Ziran               | Detail   | Naturalness; the self-so spontaneity of things being as they are.        |
-| `Pu.md`             | Pu                  | Detail   | The uncarved block; original, undifferentiated simplicity.               |
+| Filename            | Page Title          | Type     | Scope                                                                           |
+| ------------------- | ------------------- | -------- | ------------------------------------------------------------------------------- |
+| `Dao.md`            | The Dao             | Overview | The Way: the ineffable source and pattern underlying all reality.               |
+| `De.md`             | De                  | Overview | Virtue/power: the capacity to embody and express the Dao.                       |
+| `WuWei.md`          | Wu Wei              | Overview | Effortless, non-coercive action in harmony with natural flow.                   |
+| `Ziran.md`          | Ziran               | Detail   | Naturalness; the self-so spontaneity of things being as they are.               |
+| `Pu.md`             | Pu                  | Detail   | The uncarved block; original, undifferentiated simplicity.                      |
 | `YinYang.md`        | Yin and Yang        | Overview | Complementary, interdependent polarities; includes Taiji, the Supreme Ultimate. |
-| `Qi.md`             | Qi                  | Overview | Vital energy animating and connecting all things.                        |
-| `WuXing.md`         | Wu Xing             | Detail   | The five phases (wood, fire, earth, metal, water) and their cycles.      |
-| `ThreeTreasures.md` | The Three Treasures | Detail   | The ethical treasures of the Daodejing: compassion, frugality, humility. |
-| `JingQiShen.md`     | Jing, Qi, Shen      | Detail   | The energetic triad — essence, energy, spirit — cultivated in practice.  |
+| `Qi.md`             | Qi                  | Overview | Vital energy animating and connecting all things.                               |
+| `WuXing.md`         | Wu Xing             | Detail   | The five phases (wood, fire, earth, metal, water) and their cycles.             |
+| `ThreeTreasures.md` | The Three Treasures | Detail   | The ethical treasures of the Daodejing: compassion, frugality, humility.        |
+| `JingQiShen.md`     | Jing, Qi, Shen      | Detail   | The energetic triad — essence, energy, spirit — cultivated in practice.         |
 
 ### Texts & Teachers
 
-| Filename        | Page Title       | Type     | Scope                                                                       |
-| --------------- | ---------------- | -------- | --------------------------------------------------------------------------- |
-| `Daodejing.md`  | The Daodejing    | Overview | The 81-chapter classic; Dao, De, and governance.                            |
-| `Laozi.md`      | Laozi            | Overview | The legendary "Old Master"; attributed author of the Daodejing, later deified. |
-| `Zhuangzi.md`   | The Zhuangzi     | Overview | The book and its author Zhuang Zhou; relativism, transformation, freedom.    |
-| `Liezi.md`      | The Liezi        | Detail   | The book and Lie Yukou; unity with the Dao, perception, transcendence.      |
-| `EarlyTexts.md` | Other Early Texts | Detail  | The Neiye ("Inner Cultivation," in the Guanzi) and the Huainanzi (Han cosmology and statecraft). |
+| Filename        | Page Title        | Type     | Scope                                                                                            |
+| --------------- | ----------------- | -------- | ------------------------------------------------------------------------------------------------ |
+| `Daodejing.md`  | The Daodejing     | Overview | The 81-chapter classic; Dao, De, and governance.                                                 |
+| `Laozi.md`      | Laozi             | Overview | The legendary "Old Master"; attributed author of the Daodejing, later deified.                   |
+| `Zhuangzi.md`   | The Zhuangzi      | Overview | The book and its author Zhuang Zhou; relativism, transformation, freedom.                        |
+| `Liezi.md`      | The Liezi         | Detail   | The book and Lie Yukou; unity with the Dao, perception, transcendence.                           |
+| `EarlyTexts.md` | Other Early Texts | Detail   | The Neiye ("Inner Cultivation," in the Guanzi) and the Huainanzi (Han cosmology and statecraft). |
 
 ### Ethics & Society
 
-| Filename        | Page Title          | Type     | Scope                                                                |
-| --------------- | ------------------- | -------- | -------------------------------------------------------------------- |
-| `Ethics.md`     | Daoist Ethics       | Overview | Virtue cultivated through alignment with the Dao, not imposed rules. |
-| `Governance.md` | Governing by Wu Wei | Detail   | Rule through minimal intervention; letting natural order prevail.    |
+| Filename        | Page Title          | Type     | Scope                                                                    |
+| --------------- | ------------------- | -------- | ------------------------------------------------------------------------ |
+| `Ethics.md`     | Daoist Ethics       | Overview | Virtue cultivated through alignment with the Dao, not imposed rules.     |
+| `Governance.md` | Governing by Wu Wei | Detail   | Rule through minimal intervention; letting natural order prevail.        |
 | `SanJiao.md`    | The Three Teachings | Overview | San Jiao; Daoism alongside Confucianism and Buddhism in Chinese culture. |
 
 ## Additional Reading
@@ -76,39 +76,39 @@ Optional depth on organized religion, the pantheon, practice, and history. In th
 
 ### Schools & Movements
 
-| Filename               | Page Title             | Type     | Scope                                                                |
-| ---------------------- | ---------------------- | -------- | -------------------------------------------------------------------- |
-| `HuangLao.md`          | Huang-Lao              | Detail   | The Han-era synthesis of Laozi statecraft; folds in the Yellow Emperor (Huangdi) as figurehead. |
-| `CelestialMasters.md`  | The Celestial Masters  | Detail   | Tianshi Dao, the first organized movement; folds in its founder Zhang Daoling. |
-| `ShangqingLingbao.md`  | Shangqing and Lingbao  | Detail   | The medieval revelation schools: Highest Clarity (visualization, the body as sacred space) and Numinous Treasure (communal liturgy, talismans). |
-| `Zhengyi.md`           | Zhengyi                | Detail   | Orthodox Unity; non-monastic ritual specialists.                     |
-| `Quanzhen.md`          | Quanzhen               | Detail   | Complete Perfection; the monastic, internal-alchemy reform.          |
-| `Daozang.md`           | The Daozang            | Detail   | The Daoist Canon and the Three Caverns scheme that organizes it.     |
+| Filename              | Page Title            | Type   | Scope                                                                                                                                           |
+| --------------------- | --------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `HuangLao.md`         | Huang-Lao             | Detail | The Han-era synthesis of Laozi statecraft; folds in the Yellow Emperor (Huangdi) as figurehead.                                                 |
+| `CelestialMasters.md` | The Celestial Masters | Detail | Tianshi Dao, the first organized movement; folds in its founder Zhang Daoling.                                                                  |
+| `ShangqingLingbao.md` | Shangqing and Lingbao | Detail | The medieval revelation schools: Highest Clarity (visualization, the body as sacred space) and Numinous Treasure (communal liturgy, talismans). |
+| `Zhengyi.md`          | Zhengyi               | Detail | Orthodox Unity; non-monastic ritual specialists.                                                                                                |
+| `Quanzhen.md`         | Quanzhen              | Detail | Complete Perfection; the monastic, internal-alchemy reform.                                                                                     |
+| `Daozang.md`          | The Daozang           | Detail | The Daoist Canon and the Three Caverns scheme that organizes it.                                                                                |
 
 ### Cosmology & Pantheon
 
-| Filename         | Page Title          | Type     | Scope                                                                    |
-| ---------------- | ------------------- | -------- | ------------------------------------------------------------------------ |
-| `SanQing.md`     | The Three Pure Ones | Overview | Sanqing; the supreme trinity embodying aspects of the Dao.               |
-| `JadeEmperor.md` | The Jade Emperor    | Detail   | Yu Huang and the celestial bureaucracy he administers.                   |
+| Filename         | Page Title          | Type     | Scope                                                                                       |
+| ---------------- | ------------------- | -------- | ------------------------------------------------------------------------------------------- |
+| `SanQing.md`     | The Three Pure Ones | Overview | Sanqing; the supreme trinity embodying aspects of the Dao.                                  |
+| `JadeEmperor.md` | The Jade Emperor    | Detail   | Yu Huang and the celestial bureaucracy he administers.                                      |
 | `Xian.md`        | Immortals (Xian)    | Overview | Transcendence as goal, physical vs spiritual readings, and the Eight Immortals of folklore. |
 
 ### Practice & Cultivation
 
-| Filename           | Page Title              | Type     | Scope                                                              |
-| ------------------ | ----------------------- | -------- | ------------------------------------------------------------------ |
-| `Meditation.md`    | Daoist Meditation       | Overview | Cultivating stillness, clarity, and union with the Dao.            |
-| `Neidan.md`        | Alchemy: Neidan & Waidan | Overview | Internal alchemy (refining jing, qi, shen) and the earlier external/laboratory alchemy. |
-| `Qigong.md`        | Qigong                  | Overview | Breath, movement, and intent to circulate and strengthen qi.       |
-| `Taijiquan.md`     | Taijiquan               | Detail   | Tai chi as embodied yin-yang principle and qi cultivation.         |
-| `OtherPractices.md`| Daoyin, Bigu, and More  | Detail   | Daoyin (guiding-and-stretching gymnastics) and Bigu (grain-avoidance fasting). |
-| `FengShui.md`      | Feng Shui               | Detail   | Geomancy; aligning buildings and landscape with qi flow.           |
-| `Ritual.md`        | Ritual and Liturgy      | Detail   | Ceremony, offerings, and ordination in organized Daoism.           |
+| Filename            | Page Title               | Type     | Scope                                                                                   |
+| ------------------- | ------------------------ | -------- | --------------------------------------------------------------------------------------- |
+| `Meditation.md`     | Daoist Meditation        | Overview | Cultivating stillness, clarity, and union with the Dao.                                 |
+| `Neidan.md`         | Alchemy: Neidan & Waidan | Overview | Internal alchemy (refining jing, qi, shen) and the earlier external/laboratory alchemy. |
+| `Qigong.md`         | Qigong                   | Overview | Breath, movement, and intent to circulate and strengthen qi.                            |
+| `Taijiquan.md`      | Taijiquan                | Detail   | Tai chi as embodied yin-yang principle and qi cultivation.                              |
+| `OtherPractices.md` | Daoyin, Bigu, and More   | Detail   | Daoyin (guiding-and-stretching gymnastics) and Bigu (grain-avoidance fasting).          |
+| `FengShui.md`       | Feng Shui                | Detail   | Geomancy; aligning buildings and landscape with qi flow.                                |
+| `Ritual.md`         | Ritual and Liturgy       | Detail   | Ceremony, offerings, and ordination in organized Daoism.                                |
 
 ### History
 
-| Filename     | Page Title          | Type     | Scope                                                                |
-| ------------ | ------------------- | -------- | -------------------------------------------------------------------- |
+| Filename     | Page Title          | Type     | Scope                                                                                                                          |
+| ------------ | ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `History.md` | A History of Daoism | Overview | Warring States origins through Han statecraft, the medieval schools, and into the modern revival in China, Taiwan, and beyond. |
 
 > **Naming note:** `Zhuangzi.md` and `Liezi.md` each cover both the text and its author, so they sit in **Texts & Teachers** beside `Laozi.md`. Merged pages keep the lead topic's filename — `YinYang` absorbs Taiji, `HuangLao` absorbs Huangdi, `CelestialMasters` absorbs Zhang Daoling, `Xian` absorbs immortality and the Eight Immortals, `JadeEmperor` absorbs the celestial bureaucracy, `Neidan` absorbs Waidan, `OtherPractices` absorbs Daoyin and Bigu, `History` absorbs modern Daoism, `EarlyTexts` covers Neiye and Huainanzi. Every filename is unique.
@@ -224,7 +224,7 @@ Mirror `apps/8fold/src/index.md`. Sections in order:
 
 ## Sources
 
-Scholarly references only — every URL below was checked and loads real content (Britannica blocks automated fetches but the pages are live for readers). The division is deliberate: **SEP and IEP** have peer-reviewed entries for the *philosophical* concepts, texts, and thinkers; the *religious* schools, pantheon, and practices have no dedicated SEP/IEP entry, so those lean on **Britannica** topic pages, **Pregadio's Golden Elixir** (the standard scholarly site for Daoist alchemy), and the print **Encyclopedia of Taoism**. Prefer these over Wikipedia when authoring; use them to anchor claims, not to copy.
+Scholarly references only — every URL below was checked and loads real content (Britannica blocks automated fetches but the pages are live for readers). The division is deliberate: **SEP and IEP** have peer-reviewed entries for the _philosophical_ concepts, texts, and thinkers; the _religious_ schools, pantheon, and practices have no dedicated SEP/IEP entry, so those lean on **Britannica** topic pages, **Pregadio's Golden Elixir** (the standard scholarly site for Daoist alchemy), and the print **Encyclopedia of Taoism**. Prefer these over Wikipedia when authoring; use them to anchor claims, not to copy.
 
 ### Stanford Encyclopedia of Philosophy (peer-reviewed)
 

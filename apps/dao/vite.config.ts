@@ -1,4 +1,4 @@
-import { defineConfig } from '@framework/core/vite';
+import { defineConfig } from 'qdocs/vite';
 
 export default defineConfig({
   title: 'Dao Primer',

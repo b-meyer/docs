@@ -23,7 +23,7 @@ Existing apps sit at two different grains, and the grain matters:
 - **Tradition-level** (`tcm`, `dao`) — a whole domain with a conceptual core and a long tail of specialist material. These earn a core / `extra: true` sidebar split because the tail is real and would otherwise bury the core.
 - **Framework-level** (`8fold`) — a single bounded framework inside a tradition. The structure is fixed by the subject (eight factors, four truths, three trainings), so there is no long tail to demote and no `extra` tier.
 
-A new idea is its own app when it has a distinct audience and a self-contained body of content. It is instead a *section of an existing app* when it only deepens material that app already owns. When two apps would cover overlapping ground, prefer **hub-and-spoke**: a broad hub app owns breadth and gives each deep topic a single overview page that cross-links into the focused spoke app, rather than re-authoring it.
+A new idea is its own app when it has a distinct audience and a self-contained body of content. It is instead a _section of an existing app_ when it only deepens material that app already owns. When two apps would cover overlapping ground, prefer **hub-and-spoke**: a broad hub app owns breadth and gives each deep topic a single overview page that cross-links into the focused spoke app, rather than re-authoring it.
 
 ## Candidates
 
