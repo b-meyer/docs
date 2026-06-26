@@ -9,7 +9,7 @@ description: 'Heart (Xin): the Emperor of the body. Governs Blood circulation an
 
 The Heart in Traditional Chinese Medicine is not the muscular pump of Western physiology. Capitalized to distinguish it from its biological counterpart, the **Heart** is the **Emperor** (Huáng Dì) of the body. The supreme organ-system's stability dictates the stability of the whole. It governs the circulation of [Xue (Blood)](Xue.md) and houses the [Shen (Spirit/mind)](Shen.md). When the Emperor is settled, the kingdom is orderly; when the Emperor is agitated, the kingdom descends into chaos.
 
-This document covers the Heart as a TCM organ system first, then turns to one of its most consequential clinical applications: the TCM framing of anxiety, insomnia, and Shen disturbance. Western medicine locates these problems in the brain's chemistry: neurotransmitters, sleep architecture, the amygdala. TCM locates them in the Heart: its Blood, its Yin, its Fire, and its communication with the [Kidney](Kidney.md) below.
+The Heart as a TCM organ system governs circulation and houses the Shen, but its most consequential application is the TCM framing of anxiety, insomnia, and Shen disturbance. Western medicine locates these problems in the brain's chemistry: neurotransmitters, sleep architecture, the amygdala. TCM locates them in the Heart: its Blood, its Yin, its Fire, and its communication with the [Kidney](Kidney.md) below.
 
 ## Primary function
 
@@ -25,7 +25,7 @@ Because [JinYe (Body Fluids)](JinYe.md) and Blood share a common origin and can 
 
 Every Zang organ houses a specific aspect of the psyche (see [Shen.md](Shen.md) for the full Five Shen framework). The Heart houses **Shen** proper: supreme consciousness, cognition, emotional tone, and the quality of sleep. During the day, Shen guides thought and action; at night it retreats into the Blood and Yin of the Heart to rest and consolidate. This is why the Heart's condition is inseparable from sleep: when Heart-Blood or Heart-Yin is rich, the Shen is anchored and sleep is deep; when either runs thin, the Shen becomes homeless and sleep becomes restless, dream-disturbed, or impossible.
 
-The Emperor analogy is clinical, not decorative. If the Emperor is unstable, agitated by Fire, starved of Blood, or unmoored by Yin deficiency, then every subordinate organ minister suffers. No pattern in TCM is more central than a disturbed Shen, and every treatment ultimately asks: is the Emperor settled?
+The Emperor analogy is clinical. If the Emperor is unstable, agitated by Fire, starved of Blood, or unmoored by Yin deficiency, then every subordinate organ minister suffers. No pattern in TCM is more central than a disturbed Shen, and every treatment ultimately asks whether the Emperor is settled.
 
 ## Position in the wider system
 
@@ -42,7 +42,7 @@ The Emperor analogy is clinical, not decorative. If the Emperor is unstable, agi
 
 Surface pathway: the Heart channel runs from the chest, down the inner arm, to the little finger. This is why HT 7 at the wrist crease is the primary Shen-calming point.
 
-**The Heart-Kidney axis.** A foundational TCM teaching holds that Heart (Fire) and [Kidney](Kidney.md) (Water) must communicate continuously. In health, Kidney Yin rises to cool and moisten the Heart; Heart Yang descends to warm the Kidneys. This dialogue is called _xīn shèn xiāng jiāo_ ("Heart-Kidney mutual interaction"). When Kidney Yin is too depleted to ascend, Heart Fire runs unchecked: the classic presentation is insomnia, palpitations, low-grade restlessness, night sweats, and anxiety that worsens after midnight. The two-organ axis is documented fully in [ZangFu.md](ZangFu.md#the-heart-kidney-axis).
+**The Heart-Kidney axis.** Heart (Fire) and [Kidney](Kidney.md) (Water) must communicate continuously. In health, Kidney Yin rises to cool and moisten the Heart; Heart Yang descends to warm the Kidneys. This dialogue is called _xīn shèn xiāng jiāo_ ("Heart-Kidney mutual interaction"). When Kidney Yin is too depleted to ascend, Heart Fire runs unchecked: the classic presentation is insomnia, palpitations, low-grade restlessness, night sweats, and anxiety that worsens after midnight. The two-organ axis is documented fully in [ZangFu.md](ZangFu.md#the-heart-kidney-axis).
 
 ## Common patterns
 

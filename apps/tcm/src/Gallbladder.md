@@ -7,9 +7,9 @@ description: 'Gallbladder (Dan) - the decision-maker, paired with the Liver in W
 
 ## Overview
 
-The Gallbladder in Traditional Chinese Medicine is far more than a bile sac. Capitalized as a TCM organ system, the **Gallbladder** is the **decision-maker**: the Fu organ paired with the [Liver](Liver.md) in the Wood phase of the [Five Phases](WuXing.md). Its partner plans; it acts. Without the Gallbladder's ability to translate assessment into decision, the [Liver's](Liver.md) careful strategy never leaves the drawing board.
+The Gallbladder in Traditional Chinese Medicine is far more than a bile sac. Capitalized as a TCM organ system, the **Gallbladder** is the **decision-maker**, the Fu organ paired with the [Liver](Liver.md) in the Wood phase of the [Five Phases](WuXing.md). The Liver plans and the Gallbladder acts. Without the Gallbladder's ability to translate assessment into decision, the [Liver's](Liver.md) careful strategy never leaves the drawing board.
 
-One classical text states that **"all eleven organs depend on the Gallbladder"**, meaning that every organ in the body relies on the Gallbladder's quality of decisive, courageous action to carry out its function. The Gallbladder does not merely support digestion; it is the hinge on which purposeful living turns.
+In TCM, the aphorism "all eleven organs depend on the Gallbladder" reflects that every organ relies on the Gallbladder's quality of decisive, courageous action to carry out its function. The Gallbladder is the hinge on which purposeful living turns, not simply a supporting actor in digestion.
 
 This page covers the Gallbladder as a TCM organ system first, then focuses on one of its most clinically visible signatures: the constellation of **chronic indecision, temporal migraines, and 11 PM – 1 AM insomnia**. These three symptoms are collectively understood as Gallbladder Qi disturbance along its organ-clock window.
 

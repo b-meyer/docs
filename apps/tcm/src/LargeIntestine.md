@@ -13,7 +13,7 @@ This document covers the Large Intestine as a TCM organ system first, then turns
 
 ## Primary function
 
-The Large Intestine's central job is to **receive, transform, and transmit**: to take what the digestive process has finished with and expel it cleanly. When function is healthy, stools form easily, pass once daily without strain, and the body is free of the burden of its own waste. When function fails, one of two failure modes emerges: retention (constipation, bloating, stagnation) or excessive loss (diarrhea, prolapse, fluid depletion).
+The Large Intestine's central job is to **receive, transform, and transmit** what the digestive process has finished with, expelling it cleanly. When function is healthy, stools form easily, pass once daily without strain, and the body is free of the burden of its own waste. When function fails, one of two failure modes emerges: retention (constipation, bloating, stagnation) or excessive loss (diarrhea, prolapse, fluid depletion).
 
 ### Receiving turbid from the Small Intestine and forming waste
 
@@ -44,7 +44,7 @@ Surface pathway: the Large Intestine channel runs from the index finger up the o
 
 #### The Lung-Large Intestine Axis
 
-This pairing is one of the most clinically consequential interior-exterior relationships in [Zang-Fu](ZangFu.md) medicine. The Lung descends Qi downward; without that descending force, the Large Intestine has no propulsion. Chronic Lung Qi deficiency is therefore a root cause of atonic constipation. Conversely, a bowel impacted with Heat generates rising turbid Qi that can worsen Lung symptoms. Practitioners have long observed that chronic constipation correlates with skin problems, sinusitis, and susceptibility to respiratory infection, conditions rooted in the Metal organ pair. Grief (Bei, see [QiQing.md](QiQing.md)) consumes Lung Qi; depleted Lung Qi fails to descend; the Large Intestine stagnates. The entire letting-go arc (exhale the breath, release the grief, pass the stool) is Metal's single teaching on three levels.
+This pairing is one of the most clinically consequential interior-exterior relationships in [Zang-Fu](ZangFu.md) medicine. The Lung descends Qi downward; without that descending force, the Large Intestine has no propulsion. Chronic Lung Qi deficiency is therefore a root cause of atonic constipation. Conversely, a bowel impacted with Heat generates rising turbid Qi that can worsen Lung symptoms. Chronic constipation correlates with skin problems, sinusitis, and susceptibility to respiratory infection, conditions rooted in the Metal organ pair. Grief (Bei, see [QiQing.md](QiQing.md)) consumes Lung Qi; depleted Lung Qi fails to descend; the Large Intestine stagnates. The entire letting-go arc (exhale the breath, release the grief, pass the stool) is Metal's single teaching on three levels.
 
 ## Common patterns
 

@@ -19,8 +19,6 @@ The San Jiao **coordinates Qi and fluid metabolism across all three body cavitie
 
 ### The Three Burners (Upper, Middle, Lower)
 
-Each Burner has a classical image that encapsulates its physiology:
-
 **Upper Burner - "like a mist."** The [Lung](Lung.md) and [Heart](Heart.md) reside here, above the diaphragm. The Lung disperses [Qi](Qi.md) and [Jin Ye (body fluids)](JinYe.md) outward and downward like a fine mist, while the Heart circulates [Xue (Blood)](Xue.md). This is where Zong Qi (Gathering Qi) is refined and distributed. Upper Burner dysfunction manifests first as respiratory and circulatory congestion. Fluid backs up above the diaphragm.
 
 **Middle Burner - "like a fermenting jar."** The [Spleen](Spleen.md) and [Stomach](Stomach.md) occupy the zone between the diaphragm and the navel. Here food is "ripened and rotted," Gu Qi is extracted, and the pure fraction is lifted upward for transformation into Qi and Blood. The Middle Burner is the central engine of acquired vitality; when it stalls, the other two jiaos starve.

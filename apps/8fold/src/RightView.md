@@ -1,6 +1,6 @@
 ---
 title: 'Right View - Seeing Clearly'
-description: 'A deep exploration of Right View - the foundational understanding of kamma, reality, and the chain of dependent origination.'
+description: 'Right View - the understanding of kamma, reality, and the chain of dependent origination.'
 ---
 
 # Right View - Samma Ditthi
@@ -11,7 +11,7 @@ Right View is the foundational fold of the Eightfold Path. It is the "map" that 
 
 Right View begins not with beliefs but with a method of inquiry. The Buddha told the Kalamas:
 
-> Do not accept teachings on the basis of hearsay, tradition, scripture, logical inference, appearances, teacher prestige, or even because the teacher is the Buddha himself. Only when you know for yourself — "these things are wholesome, these things lead to well-being and happiness" — should you accept them.
+> Do not accept teachings on the basis of hearsay, tradition, scripture, logical inference, appearances, teacher prestige, or even because the teacher is the Buddha himself. Accept them only when you know for yourself that "these things are wholesome, these things lead to well-being and happiness."
 
 This means Right View is perpetually **evidence-based**. It begins as a working hypothesis: "let me proceed as though kamma and the Three Marks are real and see what happens." Through practice, this hypothesis matures into a direct, non-inferential knowing.
 
@@ -29,7 +29,7 @@ Mundane Right View provides the moral framework for a harmonious life. It is the
 
 ## 2. Supramundane Right View (_Lokuttara_)
 
-Supramundane Right View is the "Noble" view that leads directly to liberation. It is not an intellectual conviction but a **penetrative, direct realization** of how reality functions. It is defined specifically as the penetrative understanding of the **Four Noble Truths**: the nature of suffering, its origin, its cessation, and the path leading to its cessation.
+Supramundane Right View is the "Noble" view that leads directly to liberation. It is not an intellectual conviction but a direct realization of how reality functions. It is defined as penetrative understanding of the **Four Noble Truths**: the nature of suffering, its origin, its cessation, and the path leading to its cessation.
 
 This realization involves seeing through the three fundamental characteristics of all existence:
 
@@ -39,7 +39,7 @@ This realization involves seeing through the three fundamental characteristics o
 - **Unsatisfactoriness (_Dukkha_)** - Realizing that because things change, clinging to them inevitably leads to stress.
 - **Non-Self (_Anatta_)** - Understanding that there is no permanent, unchanging "self" or "soul" at the core of our being. We are a dynamic process, not a solid object.
 
-**Right View as Forerunner and Culmination:** Within the Noble Eightfold Path, Right View serves a formally recognized dual function. As **forerunner**, it provides the initial orientation. The conceptual map it offers makes all subsequent practice intelligible. Without some working understanding of the Three Marks, the reason for ethical conduct and meditation would be opaque. As **culmination**, Right View is the final realization. This is the moment when the Four Noble Truths are no longer understood intellectually (_anubodha_, knowing accordingly) but are **penetrated directly** (_pativedha_, seeing things as they are). Right View is both the beginning compass and the destination itself.
+**Right View as Forerunner and Culmination:** Within the Noble Eightfold Path, Right View serves a dual function. At the beginning, it provides the initial orientation, a conceptual map that makes all subsequent practice intelligible. Without some working understanding of the Three Marks, the reason for ethical conduct and meditation remains unclear. At the end, Right View reaches its culmination when the Four Noble Truths shift from intellectual understanding (_anubodha_, knowing accordingly) to direct penetration (_pativedha_, seeing things as they are).
 
 ---
 
@@ -90,7 +90,7 @@ Understanding this distinction is what allows the Buddha to teach about "beings"
 
 When the wanderer Vacchagotta asked the Buddha directly, "Does a self exist?" the Buddha said nothing. After Vacchagotta left, the Buddha explained his silence to Ānanda:
 
-Answering "yes" would confirm Eternalism (the idea of a fixed, permanent soul). Answering "no" would confirm Annihilationism (the idea that a self previously existed and is being destroyed). Both answers would have pushed Vacchagotta deeper into conceptual confusion rather than toward direct seeing. Right View is not a philosophical position on the existence or non-existence of the self; it is an orientation toward **direct investigation** of experience as it arises.
+Answering "yes" would confirm Eternalism (the idea of a fixed, permanent soul). Answering "no" would confirm Annihilationism (the idea that a self previously existed and is being destroyed). Both answers would have pushed Vacchagotta deeper into conceptual confusion rather than toward direct seeing. Right View is an orientation toward direct investigation of experience as it arises, not a philosophical stance on the existence or non-existence of the self.
 
 ---
 

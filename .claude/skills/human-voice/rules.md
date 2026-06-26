@@ -9,10 +9,12 @@ Each row is a pattern category. The quoted strings are common examples, not a co
                               interplay, fostering, garner, landscape (abstract), enduring, crucial
 §8  Copula avoidance          "serves as" / "stands as" / "marks a" / "represents a"                               →  is / are / has
 §9  Negative parallelism      "not merely X; it is Y" / "not just X, but Y"                                        →  state Y directly
-§14 Em dashes                 — or – in prose                                                                       →  REWRITE sentence; never swap to : , - ;
-    Exceptions (leave as —):  ✓/— table absence markers | fenced code blocks | blockquote citations (line starts >)
+§14 Structural punctuation    — – : ; in prose                                                                     →  rewrite naturally; do not swap one for another
+    Leave unchanged:          ✓/— table absence markers | fenced code blocks | blockquote citations (line starts >)
     Convert to - (hyphen):    headings (# ## ### etc.) | frontmatter title: and description: values
-    All other contexts:       REWRITE as two natural clauses or a subordinate construction — never swap punctuation
+    All other contexts:       rewrite as natural prose — do not substitute punctuation
+    Acceptable rewrites:      split into two sentences (always valid) | participial phrase ("treating it as…") | subordinate clause ("since / because / where / when…")
+    Never do:                 swap — for : or ; or , in the same structural slot — all four marks are equally forbidden in prose
 §15 Boldface overuse          bold on non-essential phrases                                                         →  remove bold
 §16 Inline-header lists       **Term:** or **Term.** in any list item (ul or ol)                                  →  **Term** - desc  (never colon, never period inside bold)
 §17 Title-case headings       H2+ not in title case                                                                 →  capitalize every significant word
@@ -25,6 +27,11 @@ Each row is a pattern category. The quoted strings are common examples, not a co
 §29 Fragmented headers        generic warm-up sentence after a heading that only restates it                        →  cut
 §31 Staccato drama            3+ short declarative fragments in a row for emphasis                                  →  rewrite as varied prose
 §34 Temporal framing          "In today's rapidly evolving X" / "In a world where"                                  →  state the claim directly
+§35 Vague attribution         "experts argue" / "some critics contend" / "research suggests" / "industry reports show"  →  name the source, or state the claim directly
+§36 Additive transitions      "Additionally," / "Furthermore," / "Moreover," / "In addition,"                          →  connect ideas through sentence structure; cut the connector
+§37 Triadic padding           adj, adj, and adj  stacked purely for completeness ("warm, accessible, and grounding")   →  state what is specific; cut the list
+§38 Elegant variation         synonym-swapping to avoid repeating a word ("constraints / norms / confines")            →  repeat the right word
+§39 Challenges boilerplate    "Despite its X, [subject] faces challenges including Y" + speculative positive outlook   →  state challenges directly, no setup formula
 
 ## Preserve
 

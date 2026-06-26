@@ -12,9 +12,7 @@ Right Action operates through two complementary modes:
 - **Avoidance** (_Vāritta_) - Restraining the faculties and abstaining from specific harmful acts.
 - **Performance** (_Cāritta_) - Actively cultivating the positive counterpart: generosity, protection, and respect.
 
-True ethical practice requires both. Avoidance without its positive counterpart is merely passive restraint; performance without avoidance perpetuates harm. The three abstentions below each have a named positive practice.
-
-Right Action is traditionally defined by three primary abstentions, each paired with a proactive, positive counterpart.
+Avoidance without performance is passive restraint; performance without avoidance perpetuates harm. Each of the three primary abstentions below pairs with a positive practice.
 
 ---
 
@@ -22,7 +20,7 @@ Right Action is traditionally defined by three primary abstentions, each paired 
 
 - **The Abstention** - Refraining from taking the life of any sentient being. This includes avoiding physical violence, support for war, and the indirect harm caused by ecological destruction.
 - **The Positive Counterpart** - Compassion and Protection.
-- **In Practice** - Active effort to nurture and protect life. This can manifest as environmental conservation, caring for the sick, or simply choosing a path that reduces the "footprint" of harm one leaves on the planet. All beings value their lives as much as we value our own.
+- **In Practice** - Active effort to nurture and protect life. This can manifest as environmental conservation, caring for the sick, or choosing a path that reduces the "footprint" of harm one leaves on the planet.
 
 ---
 
@@ -33,7 +31,7 @@ Right Action is traditionally defined by three primary abstentions, each paired 
 
 ### Modern Context: Beyond Simple Theft
 
-In an interconnected world, "taking what is not given" includes subtle forms of exploitation:
+"Taking what is not given" includes subtle forms of exploitation:
 
 - **Time Theft** - Failing to provide the presence and effort agreed upon in a professional contract, or "stealing" the attention of others through deception.
 - **Intellectual Property** - Using the creative output, research, or ideas of others without attribution or compensation.

@@ -11,7 +11,7 @@ The Lung in Traditional Chinese Medicine is not limited to gas exchange. Capital
 
 The Lung as a TCM organ system is explored first, followed by the relationship between grief, unresolved loss, and chronic respiratory illness. Where Western medicine frames asthma and recurrent colds as physiological dysfunction, TCM frames them as the body's record of emotion. Grief that was never fully released inhabits the Lung, the organ whose entire purpose is to release it.
 
-## Primary function
+## Primary Function
 
 The Lung's central role is governing the body's Qi and respiration. All [Qi](Qi.md) passes through the Lung; every inhale draws in fresh Qi from heaven, every exhale releases the spent. When the Lung functions well:
 
@@ -44,7 +44,7 @@ Every Zang organ houses a specific aspect of the psyche (see [Shen.md](Shen.md))
 
 The Po is mortal: it lives in the body and returns to earth at death, unlike the [Liver](Liver.md)'s Hun (Ethereal Soul), which can survive the body. When the Lung is depleted or congested by unresolved grief, the Po becomes unanchored. The person loses sensory pleasure, feels disconnected from their physical self, and experiences a kind of deadness or numbness that is distinct from mere sadness.
 
-## Position in the wider system
+## Position in the Wider System
 
 | Aspect             | Lung                                                                      |
 | ------------------ | ------------------------------------------------------------------------- |
@@ -62,15 +62,15 @@ The Po is mortal: it lives in the body and returns to earth at death, unlike the
 
 **The Spleen-Lung phlegm axis.** The [Spleen](Spleen.md) is the source of Phlegm production; the Lung is where Phlegm is stored. When Spleen Qi fails to metabolize [JinYe (Body Fluids)](JinYe.md), Damp congeals into Phlegm, which rises into the Lung and obstructs its function. The classical phrase: _"the Spleen is the source of Phlegm; the Lung is the vessel that holds it."_ Treating chronic Phlegm in the Lung always requires strengthening the Spleen simultaneously.
 
-## Common patterns
+## Common Patterns
 
 These patterns represent the core Lung pathologies a practitioner screens for first. They are not limited to respiratory complaints; the Lung's reach extends to the skin, the emotional terrain of grief, and immunity.
 
-### Lung Qi deficiency
+### Lung Qi Deficiency
 
 The most common Lung pattern. Insufficient Qi to disperse Wei Qi and hold the pores. Signs: weak or soft voice, spontaneous daytime sweating (pores uncontrolled), frequent colds and susceptibility to Wind, shortness of breath on mild exertion, fatigue, pale tongue with thin white coat. Chronic grief is a primary cause; so is prolonged illness, overwork, or constitutional weakness.
 
-### Lung Yin deficiency
+### Lung Yin Deficiency
 
 The Lung's cooling, moistening substance is exhausted. Signs: dry unproductive cough, dry sore throat especially in the evening, hoarse voice, night sweats, red-edged tongue with little or no coating. Typical after chronic smoking, prolonged exposure to Dryness, or febrile illness that burned fluids. The Lung is described as the "tender organ" (娇脏, jiāo zàng): it is the only Zang organ directly exposed to the outside world via the nose, making it uniquely vulnerable to both Heat and Dryness depleting its Yin.
 
@@ -90,17 +90,17 @@ The Lung's surface exposure makes Wind the most common invader. Both present as 
 
 Both resolve at the Lung-surface level if treated promptly; if they penetrate deeper, they can transform into Heat patterns or injure Lung Yin.
 
-### Dryness invading the Lung
+### Dryness Invading the Lung
 
 Autumn's dominant pathogen matches the Lung's vulnerability. Dryness, often arriving with cold or heat depending on the season, attacks the Lung's moisture. Signs: dry cough with scanty or no sputum, dry nose and throat, dry cracked lips, thirst. Distinct from Lung Yin deficiency in that it is externally caused and shorter in duration.
 
-## The TCM view of grief and chronic respiratory illness
+## The TCM View of Grief and Chronic Respiratory Illness
 
 Whether the precipitating loss is a death, a divorce, a severance from identity, or a prolonged accumulation of smaller griefs, TCM tracks the path from emotion to physiology with unusual precision. The Lung is the body's organ of release; the exhale is its defining act. Unresolved grief is precisely what happens when release fails.
 
-### Why the Lung is "ground zero"
+### Why the Lung Is "Ground Zero"
 
-Grief (悲, bēi) is the emotion of the Lung. In the [Seven Emotions framework](QiQing.md), grief **consumes and dissolves Qi**, not merely disrupting it but actively depleting it. Acute grief produces the signature: a tight constricted chest, involuntary sighing (a semi-automatic attempt to move Qi that has become stuck), shallow breathing, and an overwhelming heaviness. This is not metaphor; it is TCM physiology. The Lung's dispersing function collapses inward; the pores close; Wei Qi retreats from the surface. The body becomes vulnerable.
+Grief (悲, bēi) is the emotion of the Lung. In the [Seven Emotions framework](QiQing.md), grief actively depletes Qi through consumption and dissolution. Acute grief produces the signature: a tight constricted chest, involuntary sighing (a semi-automatic attempt to move Qi that has become stuck), shallow breathing, and an overwhelming heaviness. This is not metaphor; it is TCM physiology. The Lung's dispersing function collapses inward; the pores close; Wei Qi retreats from the surface. The body becomes vulnerable.
 
 Prolonged grief, whether unfelt, bypassed, or simply never given enough space, does not dissolve on its own. It settles in the Lung, where it continues to consume Qi and, over time, depletes Lung Yin. The clinical picture shifts from acute to chronic: recurrent colds, a cough that never quite resolves, shallow habitual breathing, and eventually asthma or other chronic respiratory illness.
 
@@ -128,7 +128,7 @@ If the grief is processed (wept fully, spoken aloud, moved through the body), Lu
 
 Qi deficiency eventually depletes the Yin that supports it. The dry unproductive cough at night, the throat that is always slightly raw, the wasting quality that appears in long-term illness mark the transition from Qi deficiency to Yin deficiency. The 3–5 AM Organ Clock window (the Lung's peak hour) begins producing pre-dawn coughing fits or wakefulness.
 
-### Cross-organ consequences
+### Cross-Organ Consequences
 
 Because [Wu Xing](WuXing.md) cycles propagate dysfunction, a compromised Lung touches every other organ system.
 
@@ -140,13 +140,13 @@ Because [Wu Xing](WuXing.md) cycles propagate dysfunction, a compromised Lung to
 
 **Lung → Liver (Metal controls Wood).** The Lung controls the [Liver](Liver.md) through the controlling cycle, wherein Metal restrains Wood. A depleted Lung fails in this restraining function; Liver Qi can then become unruly, rising unchecked. The clinical picture shows chronic grief combined with irritability, rib-side tension, and sighing, indicating that the Lung is so depleted it can no longer hold the Liver's Wood energy in check.
 
-### The chronic griever's pattern
+### The Chronic Griever's Pattern
 
 Years of unprocessed loss accumulate a recognizable picture: pale sunken complexion; a voice that softens and breaks; posture that collapses the chest; a low-grade cough every autumn; a heaviness the patient often cannot name as grief. The Po is present but muted; sensory experience has dimmed, pleasure in the body has retreated. Many of these patients say they cried at the time and thought they were finished.
 
 TCM recognizes that grief has a time-course the surrounding culture rarely allows. The Lung's Autumn correspondence (the season when things fall) is the most natural window for grief to surface and move. Working with grief in Autumn, felt fully and supported by Lung Qigong and appropriate herbs, often produces significant respiratory improvement even from patterns years in the making.
 
-## TCM treatment of grief and chronic respiratory illness
+## TCM Treatment of Grief and Chronic Respiratory Illness
 
 Because the Lung is both the organ depleted by grief and the medium through which release happens, treatment protocols work simultaneously to restore Lung Qi, clear accumulated Phlegm, and create the conditions for the Po to become present again.
 
@@ -162,7 +162,7 @@ Key points in a Lung-grief protocol (see [Acupuncture.md](Acupuncture.md) for po
 - **PC 6 (Neiguan)** - Opens the chest, calms the Shen; addresses chest-tightness and grief-carried palpitations.
 - **KD 3 (Taixi)** - Source point of the Kidney; tonifies Yin and the grasping function; essential in Lung-Kidney axis patterns.
 
-### Herbal medicine
+### Herbal Medicine
 
 Different formulas target different stages of the Lung-grief trajectory:
 
@@ -184,6 +184,6 @@ Recovery from a Lung-grief pattern is not solely a clinical matter. The Lung req
 - **Dietary support.** White and pungent foods nourish the Lung in the Wu Xing flavor scheme: daikon radish, pears (especially for Lung Yin dryness), white fungus (tremella), almonds, lily bulb, and ginger (warm-pungent for dispersing). Dairy and cold raw foods can increase Phlegm and are typically reduced. See [Dietary.md](Dietary.md).
 - **Protecting the exterior.** Patients with Lung Qi deficiency must guard against Wind exposure by covering the back of the neck in windy or cold weather and dressing in layers in autumn. This is not superstition; it is recognition that a weakened Wei Qi surface makes Wind invasion almost inevitable.
 
-### The holistic perspective
+### The Holistic Perspective
 
 From a TCM standpoint, a person suffering from chronic respiratory illness is not merely dealing with bronchial hyperreactivity or impaired mucus clearance. They may be living in a body that has accumulated the physical record of grief that was never fully exhaled. The Lung is the organ of release: of breath, of skin-surface exchange, of the Po's direct encounter with being alive. Treating it means creating the conditions for release to happen: through needles that open the chest and restore Qi flow, through formulas that moisten what grief has dried out, through movement that teaches the body again how to let go. When the Lung is restored, patients frequently report not just easier breathing but a sense of lightness they hadn't realized they were missing.

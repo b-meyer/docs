@@ -12,7 +12,7 @@ The argument is a filter string (e.g. `8fold`, `tcm`). Use it to target only the
 
 1. Glob pattern: `apps/<arg>/src/**/*.md` — only files under the matching app's `src/`. Exclude `node_modules`, `dist`.
 2. Check `git status`. If files have uncommitted changes, **stop and require a commit or stash first** — this is correctness-critical for the audit step. A dirty tree inflates the diff with unrelated changes and corrupts substitution detection.
-3. Read `rules.md` in this skill directory (same folder as this file). Then call Workflow, passing the rules content as part of args:
+3. Read `rules.md` in this skill directory (same folder as this file). Then call Workflow using `scriptPath` only — **never the `script:` parameter**. The workflow is already written; writing a new inline script is always wrong here.
    ```
    Workflow({
      scriptPath: '<absolute path to workflow.js>',

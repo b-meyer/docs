@@ -21,7 +21,7 @@ The _Taijitu_ ("diagram of the supreme ultimate") is the familiar swirling circl
 - **Interpenetration** - Each half holds a small circle of the opposite color. Pure absolute Yin or Yang does not exist. Every Yang organ contains a Yin seed, and every Yin fluid carries the potential for Yang activation. This is the most clinically significant element.
 - **Dynamic equilibrium** - As the symbol rotates, the areas remain equal, a balance that shifts constantly. The Taijitu is a diagram of process, not a snapshot.
 
-## Infinite divisibility
+## Infinite Divisibility
 
 Any Yin or Yang category can itself be subdivided into a Yin and a Yang aspect, without limit. The upper body is Yang relative to the lower; the head is Yang within that upper half. A day is Yang relative to night; noon is Yang within the day, dawn is Yin within that Yang.
 

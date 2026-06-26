@@ -11,11 +11,11 @@ description: "The Seven Emotions - Joy, Anger, Pensiveness, Worry, Grief, Fear, 
 
 The seven are: **Joy (Xi), Anger (Nu), Pensiveness (Si), Worry (You), Grief (Bei), Fear (Kong), and Fright (Jing)**. Their physiological effects are codified in the _Huangdi Neijing_: each one **moves Qi in a characteristic direction**, and that movement is what makes an emotion pathogenic when it goes wrong.
 
-The framework predates modern psychosomatic medicine by two millennia and remains one of TCM's most distinctive contributions. Illness arises from the body, but emotional life can damage the body just as surely as cold weather or bad food.
+The framework predates modern psychosomatic medicine by two millennia. TCM has always treated illness as arising from the body, and emotional damage alongside external pathogenic factors as equally capable of creating disease.
 
 ## The seven emotions and their Qi-direction effects
 
-The Neijing's defining table shows what each emotion _does_ to Qi:
+Each emotion moves Qi in a characteristic direction, as codified in the _Huangdi Neijing_:
 
 | Emotion              | Organ          | Qi-direction effect       | Excess produces                                          |
 | -------------------- | -------------- | ------------------------- | -------------------------------------------------------- |
@@ -37,7 +37,7 @@ Emotions become pathogens through three mechanisms:
 2. **Qi-direction disruption.** When the Qi-direction effect becomes severe or chronic, normal Qi flow throughout the body breaks down. Anger driving Qi upward produces hypertension and headache; fear driving it downward produces incontinence. Disordered Qi then begets disordered Blood, fluids, and organ function downstream.
 3. **Shen disturbance.** The Heart houses Shen (see [Shen.md](Shen.md)); strong emotion of any kind perturbs Shen, and unsettled Shen disrupts every other organ. Long-standing emotional disturbance always presents with some degree of Shen disharmony.
 
-A crucial TCM principle: suppressed and expressed emotions are both pathological in different ways. Unexpressed anger doesn't dissolve but transforms into Liver Qi stagnation, which over time becomes Liver Fire or attacks the Spleen (the classic stress-and-IBS pattern, see [ZangFu.md](ZangFu.md)). Catharsis is not the answer either; explosively expressed anger still drives Qi upward and damages the Liver. The middle path is _appropriate_ emotion: feeling, processing, and letting go.
+TCM treats both suppressed and expressed emotions as pathological in different ways. Unexpressed anger doesn't dissolve but transforms into Liver Qi stagnation, which over time becomes Liver Fire or attacks the Spleen (the classic stress-and-IBS pattern, see [ZangFu.md](ZangFu.md)). Catharsis is not the answer either, since explosively expressed anger still drives Qi upward and damages the Liver. Appropriate emotion means feeling, processing, and letting go.
 
 ## The Five Phases overlay
 
@@ -51,13 +51,13 @@ The Seven Emotions map onto five of the [Five Phases](WuXing.md) (Worry and Pens
 | Metal | Grief / Sadness       | Lung   |
 | Water | Fear / Fright         | Kidney |
 
-The same five organ-emotion pairings carry the Five Shen (sub-spirits) framework: Heart-Shen, Liver-Hun, Spleen-Yi, Lung-Po, Kidney-Zhi. This is covered in depth in [Shen.md](Shen.md). Where this file traces _how_ emotions damage organs, Shen.md traces _which aspect of consciousness_ each organ houses.
+The same five organ-emotion pairings carry the Five Shen (sub-spirits) framework: Heart-Shen, Liver-Hun, Spleen-Yi, Lung-Po, Kidney-Zhi. This is covered in depth in [Shen.md](Shen.md). This file examines how emotions damage organs; Shen.md covers which aspect of consciousness each organ houses.
 
-This puts emotions into the generating and controlling cycles. Clinically the controlling cycle of emotions is a treatment principle: one emotion can be deliberately invoked to counteract another excess. Anger (Wood) controls Pensiveness (Earth); Joy (Fire) controls Grief (Metal); Pensiveness (Earth) controls Fear (Water); Sadness (Metal) controls Anger (Wood); Fear (Water) controls Joy (Fire). The classical _qing zhi xiang sheng_ (counter-emotion therapy) was used by physicians to break stuck patterns. A patient frozen in grief might be carefully provoked into anger to mobilize stuck Qi.
+This puts emotions into the generating and controlling cycles. In clinical practice, the controlling cycle of emotions is a treatment principle: one emotion can be invoked to counteract another excess. Anger (Wood) controls Pensiveness (Earth); Joy (Fire) controls Grief (Metal); Pensiveness (Earth) controls Fear (Water); Sadness (Metal) controls Anger (Wood); Fear (Water) controls Joy (Fire). The classical _qing zhi xiang sheng_ (counter-emotion therapy) was used by physicians to break stuck patterns. A patient frozen in grief might be carefully provoked into anger to mobilize stuck Qi.
 
 ## Suppression vs expression
 
-TCM is unusual in framing both suppression _and_ unchecked expression as pathological. The healthy stance is closer to Aristotelian moderation than to Western therapeutic catharsis:
+TCM treats both suppression and unchecked expression as pathological. The healthy stance is closer to Aristotelian moderation than to Western therapeutic catharsis:
 
 - **Suppressed emotion** causes stagnation. Suppressed anger leads to Liver Qi stagnation and headache, PMS, or IBS. Suppressed grief leads to Lung Qi deficiency and susceptibility to colds or shallow breath.
 - **Expressed but uncontained emotion** causes damage. Explosive anger drives Liver Yang rising and produces stroke or hypertension. Excessive joy (mania) generates Heart Fire and produces insomnia or palpitations.
@@ -93,7 +93,7 @@ Emotional patterns rarely yield to herbs alone; treatment is multimodal:
 
 ## Modern parallels
 
-The Qi Qing framework anticipates several modern concepts:
+The Qi Qing framework parallels several modern concepts:
 
 - **Psychosomatic medicine** maps directly: emotional states cause demonstrable physiological change. The TCM framework names _which_ states cause _which_ changes with surprising specificity.
 - **Gut-brain axis** parallels the Spleen-Heart connection. Chronic anxiety and digestive dysfunction co-occurring is exactly what TCM predicts when worry damages Spleen and Shen simultaneously.
@@ -101,4 +101,4 @@ The Qi Qing framework anticipates several modern concepts:
 - **Polyvagal theory** echoes the TCM observation that fright scatters Qi while chronic fear sinks it, showing different stress responses producing different physiology.
 - **Affect-organ specificity research** in psychoneuroimmunology has begun to support what TCM has long claimed: specific emotions correlate with specific organ-system effects, not merely generic "stress."
 
-The framework's enduring usefulness is that it gives the physician a vocabulary for the emotional cause without reducing the patient to a psychiatric label. A patient with Liver Qi stagnation is not a "depressed person" but someone whose system is bottling up movement that needs to flow. The treatment addresses the body, and the body's release supports the mind's.
+The framework's value for clinicians is that it provides a specific vocabulary for the emotional cause without reducing the patient to a psychiatric label. A patient with Liver Qi stagnation is not a "depressed person" but someone whose system is bottling up movement that needs to flow. The treatment addresses the body, and the body's release supports the mind's.

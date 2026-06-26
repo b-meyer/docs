@@ -1,6 +1,6 @@
 ---
 title: 'Right Intention - The Heart’s Motivation'
-description: 'A deep exploration of Right Intention - the emotional fuel of the path, transforming greed and ill-will into renunciation, love, and compassion.'
+description: 'Right Intention - the emotional fuel of the path - replaces greed and ill-will with renunciation, love, and compassion.'
 ---
 
 # Right Intention - Samma Sankappa
@@ -20,8 +20,13 @@ Right Intention is the practice of replacing three **unwholesome** patterns with
 
 In the Buddhist primer, renunciation is not "giving up" life, but "going out" from a burning house. It is the realization that sensual pleasures are "borrowed" happiness. They depend on external conditions that are unstable, known as _Anicca_ (impermanence).
 
-- **The Shift** - Moving from "Happiness through sensory input" to "Happiness through mental autonomy."
-- **Practically** - Noticing the "itch" of a craving (for food, status, or digital distraction) and choosing to let the itch be without scratching it. This builds the internal muscle of freedom.
+#### The Shift
+
+Moving from "Happiness through sensory input" to "Happiness through mental autonomy."
+
+#### Practically
+
+Noticing the "itch" of a craving (for food, status, or digital distraction) and choosing to let the itch be without scratching it. This builds the internal muscle of freedom.
 
 ---
 
@@ -34,8 +39,13 @@ In the Buddhist primer, renunciation is not "giving up" life, but "going out" fr
 
 _Metta_ is compared to the love a mother has for her only child: a steady radiation of friendliness toward all beings.
 
-- **The Function** - It is the specific antidote to anger. You cannot hold anger and _Metta_ in the mind at the same time.
-- **Practically** - Actively wishing for the well-being of others, including "difficult people." People who are truly happy and at peace do not cause harm.
+#### The Function
+
+It is the specific antidote to anger. You cannot hold anger and _Metta_ in the mind at the same time.
+
+#### Practically
+
+Actively wishing for the well-being of others, including "difficult people." People who are truly happy and at peace do not cause harm.
 
 ---
 
@@ -46,8 +56,8 @@ _Metta_ is compared to the love a mother has for her only child: a steady radiat
 
 ### The Comparison: Metta vs. Karuna
 
-- **Metta (Loving-Kindness)** - The general field of goodwill. It focuses on the happiness of beings.
-- **Karuna (Compassion)** - The specific response of the heart when it encounters suffering. It is the wish for that suffering to cease.
+- **Metta (Loving-Kindness)** - general field of goodwill, focused on the happiness of beings
+- **Karuna (Compassion)** - specific response when encountering suffering, wishing for that suffering to cease
 
 | State      | Trigger         | Internal Response         |
 | :--------- | :-------------- | :------------------------ |

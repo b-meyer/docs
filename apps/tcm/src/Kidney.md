@@ -11,7 +11,7 @@ The Kidney in Traditional Chinese Medicine is the **Root of Life**: the constitu
 
 _Note: "Shen" here is the Kidney organ (腎); a different Chinese character with the same pinyin spelling refers to Spirit-Shen (神), covered in [Shen.md](Shen.md). See the [pinyin glossary](index.md#pinyin-disambiguation)._
 
-This page covers the Kidney as a TCM organ system first, then turns to one of its most consequential clinical domains: the TCM view of aging, Jing depletion, and constitutional decline. This framework reframes chronic fatigue, infertility, low back pain, premature gray hair, hearing loss, and existential fear as facets of one underlying process.
+The TCM view of aging reframes chronic fatigue, infertility, low back pain, premature gray hair, hearing loss, and existential fear as facets of Jing depletion and constitutional decline. These symptoms are a single underlying process rather than separate complaints.
 
 ## Primary function
 
@@ -48,7 +48,7 @@ Every Zang organ houses a specific aspect of the psyche (see [Shen.md](Shen.md))
 
 Surface pathway: the Kidney channel (足少陰腎經) runs from the sole of the foot up the inner leg and abdomen to the chest, explaining why foot-level acupoints (KD 1, KD 3) have such a wide systemic reach.
 
-**The Liver-Kidney shared root.** TCM teaches that _"Liver and Kidney share the same root"_ (肝腎同源). The Kidney stores [Jing](Jing.md); the [Liver](Liver.md) stores [Xue (Blood)](Xue.md). These two substances inter-convert: sufficient Jing generates Blood, and sufficient Blood protects Jing from over-spend. Chronic Liver Blood deficiency drags down Kidney Jing; Kidney Yin deficiency fails to nourish Liver Yin, freeing Liver Yang to rise unanchored.
+**The Liver-Kidney shared root.** TCM teaches that _"Liver and Kidney share the same root"_ (肝腎同源). The Kidney stores [Jing](Jing.md); the [Liver](Liver.md) stores [Xue (Blood)](Xue.md). These substances inter-convert bidirectionally: sufficient Jing generates Blood, and adequate Blood protects Jing from depletion. Chronic Liver Blood deficiency drags down Kidney Jing; conversely, Kidney Yin deficiency fails to nourish Liver Yin, freeing Liver Yang to rise unanchored.
 
 **The Heart-Kidney axis.** Heart is Fire; Kidney is Water. In health, Kidney Yin rises to cool the Heart and Heart Yang descends to warm the Kidneys. This mutual descent and ascent is _xīn shèn xiāng jiāo_ (心腎相交). When Kidney Yin is too depleted to ascend, Heart Fire runs unchecked: insomnia, palpitations, night sweats, and anxiety that worsens after midnight. Explored from the Heart side in [Heart.md](Heart.md); synthesized at [ZangFu.md](ZangFu.md#the-heart-kidney-axis).
 
@@ -82,7 +82,7 @@ Kidney Yang or Jing cannot anchor Lung inhalation. Symptoms: chronic breathlessn
 
 ## The TCM view of aging and Jing depletion
 
-Aging in TCM is not a mystery but the foreseeable result of a finite resource being spent. The Kidney's Pre-Natal Jing is the body's constitutional trust fund; the question is not whether it will eventually empty, but how quickly, and whether Post-Natal Jing deposits can slow the draw.
+Aging in TCM is the foreseeable result of a finite resource being spent. The Kidney's Pre-Natal Jing is the body's constitutional trust fund; the question is not whether it will eventually empty, but how quickly, and whether Post-Natal Jing deposits can slow the draw.
 
 ### Why the Kidney is "ground zero"
 
@@ -165,4 +165,4 @@ Without reducing the rate of spend, no herb or needle can outpace the drain. Lif
 
 ### The holistic perspective
 
-Aging in TCM is not a failure but a finite endowment moving through phases of life. The goal is not to reverse it but to traverse it with vitality. A person who conserves Jing wisely, nourishes Post-Natal Qi through digestion and breath, and maintains equanimity against chronic fear can remain sharp, mobile, and clear-minded well beyond the calendar's prediction. The Kidney is the anchor of this project: the deep reservoir whose health sets the ceiling for everything above it.
+Aging in TCM is not a failure but a finite endowment moving through phases of life. The goal is not to reverse it but to traverse it with vitality. A person who conserves Jing wisely, nourishes Post-Natal Qi through digestion and breath, and maintains equanimity against chronic fear can remain sharp, mobile, and cognitively clear into advanced age. The Kidney is the anchor of this project: the deep reservoir whose health sets the ceiling for everything above it.

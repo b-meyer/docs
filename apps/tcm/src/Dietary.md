@@ -7,13 +7,13 @@ description: 'Dietary therapy (食療 - Shí Liáo) - the fourth branch of TCM t
 
 ## Overview
 
-**Dietary therapy** (_Shí Liáo_, 食療) is the **fourth branch** of the Five Branches of TCM Treatment. Food is prescribed by constitution and pattern. In TCM the line between food and medicine is deliberately blurred: ginger (_shēng jiāng_), jujube (_dà zǎo_), goji (_gǒu qǐ_), cinnamon bark (_ròu guì_), and walnut (_hé táo rén_) all appear in both kitchen and pharmacy, classified along exactly the same axes. Every food has a temperature nature, a flavor, a channel affinity, and a functional action. Every meal is, in microcosm, a prescription.
+**Dietary therapy** (_Shí Liáo_, 食療) is the fourth branch of the Five Branches of TCM Treatment. Food is prescribed by constitution and pattern. In TCM the line between food and medicine is deliberately blurred: ginger (_shēng jiāng_), jujube (_dà zǎo_), goji (_gǒu qǐ_), cinnamon bark (_ròu guì_), and walnut (_hé táo rén_) all appear in both kitchen and pharmacy, classified along exactly the same axes. Every food has a temperature nature, a flavor, a channel affinity, and a functional action. Every meal is, in microcosm, a prescription.
 
 What distinguishes dietary therapy from the other branches is frequency and agency. Acupuncture, herbal medicine, and Tui Na are applied by a practitioner, occasionally. Dietary therapy is applied by the patient, three times a day, for life. A cold, raw, dairy-heavy diet erodes Spleen Qi more reliably than any single pathogen; thirty years of warming congee and cooked vegetables rebuilds it just as steadily.
 
 ## Dietary therapy as a pillar of TCM
 
-Dietary therapy stands among the **[Five Branches of TCM Treatment](index.md#the-five-branches-of-tcm-treatment)** alongside:
+Dietary therapy is one of the **[Five Branches of TCM Treatment](index.md#the-five-branches-of-tcm-treatment)**, alongside:
 
 1. **[Acupuncture & Moxibustion](Acupuncture.md)** - needles and warmth at acupoints along the [meridian network](Jingmai.md).
 2. **[Herbal Medicine](Herbs.md)** - formulas built from substances classified by temperature, flavor, and channel.

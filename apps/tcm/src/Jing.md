@@ -9,7 +9,7 @@ description: 'Essence (Jing) - the first of the Three Treasures, stored in the K
 
 In Chinese philosophy and Traditional Chinese Medicine, **Jing** is a foundational concept most commonly translated as "Essence." It is the first of the **Three Treasures** (_San Bao_), functioning as the candle's wax and wick to Qi's flame and Shen's light. For the full Treasures framing and how the three interrelate, see the [Three Treasures framing](index.md#the-three-treasures-san-bao).
 
-Where Qi is dynamic and Shen is ethereal, Jing is dense, material, and slow-changing; it is the structural blueprint that the other two animate. One downstream consequence of this density is that Jing problems manifest slowly and resolve slowly; they rarely respond to a single acupuncture session the way acute Qi stagnation might.
+Where Qi is dynamic and Shen is ethereal, Jing is dense, material, and slow-changing; it is the structural blueprint that the other two animate. Because of this density, Jing problems manifest slowly and resolve slowly; they rarely respond to a single acupuncture session the way acute Qi stagnation might.
 
 ## The two types of Jing
 
@@ -21,7 +21,7 @@ The genetic and energetic blueprint inherited from one's parents at the moment o
 
 ### Post-Natal (Acquired) Jing
 
-The essence cultivated after birth. It is refined from two streams: the nutrients extracted from food and water (a process TCM assigns to the Spleen and Stomach as the "Root of Post-Heaven") and the clean air drawn into the Lungs. These two streams combine to form the Qi and refined substances that continuously top off the body's working reserves. Post-Natal Jing acts like a checking account; daily deposits made through a healthy lifestyle help protect and preserve the deeper "trust fund" of Pre-Natal Jing. The practical upshot is that supporting digestion and breathing quality directly translates to reduced wear on constitutional reserves. See [ZangFu.md](ZangFu.md) for the full Spleen/Stomach and Lung functional systems.
+The essence cultivated after birth. It is refined from two streams: the nutrients extracted from food and water (a process TCM assigns to the Spleen and Stomach as the "Root of Post-Heaven") and the clean air drawn into the Lungs. These two streams combine to form the Qi and refined substances that continuously top off the body's working reserves. Post-Natal Jing acts like a checking account; daily deposits made through a healthy lifestyle help protect and preserve the deeper "trust fund" of Pre-Natal Jing. Supporting digestion and breathing quality directly reduces wear on constitutional reserves. See [ZangFu.md](ZangFu.md) for the full Spleen/Stomach and Lung functional systems.
 
 The peak window for this extraction, when Spleen and Stomach Qi is strongest, falls in the morning hours described in the Organ Clock on [Jingmai.md](Jingmai.md). Eating the largest, most nutrient-dense meal during this window maximizes Gu Qi production and directly protects Pre-Natal Jing reserves from being consumed.
 
@@ -38,7 +38,7 @@ Jing is primarily stored in the **Kidneys** (which, in TCM, represent a wider fu
 - **Reproduction.** Deeply intertwined with fertility. In men, governs the quality of sperm; in women, governs menstruation, egg quality, and the ability to carry a pregnancy.
 - **Aging and longevity.** The rate at which Jing depletes directly corresponds to how fast we age. Graying hair, weakening bones, memory loss, and a decline in vitality are all traditional signs of Jing depletion.
 
-**A modern analogy.** Many modern integrative practitioners compare Jing to a mix of DNA/genetics, stem cells, and the endocrine (hormonal) system; they regard it as the primal root of cellular regeneration and physical resilience. The Marrow-to-brain pathway, in particular, resonates with the modern understanding of the central nervous system as the master regulatory network, though the TCM framing is energetic and functional rather than anatomical.
+**A modern analogy.** Many modern integrative practitioners compare Jing to a mix of DNA/genetics, stem cells, and the endocrine (hormonal) system, treating it as the primal root of cellular regeneration and physical resilience. The Marrow-to-brain pathway, in particular, resonates with the modern understanding of the central nervous system as the master regulatory network, though the TCM framing is energetic and functional rather than anatomical.
 
 ## Preservation and depletion
 
@@ -72,7 +72,7 @@ While Pre-Natal Jing cannot easily be added to, robust Post-Natal Jing can take 
 
 ## Jing as the basis for TCM practice
 
-In TCM, Jing is the literal, material foundation for clinical diagnosis, pathology, and treatment, not merely an abstract concept. If Qi is the functional animation of the body, Jing is the physical substrate that allows that animation to happen.
+In TCM, Jing is the literal, material foundation for clinical diagnosis, pathology, and treatment. If Qi is the functional animation of the body, Jing is the physical substrate that allows that animation to happen.
 
 ### The root of the Kidneys and the "Gate of Life"
 

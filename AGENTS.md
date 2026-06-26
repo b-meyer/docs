@@ -67,26 +67,35 @@ All commands from the **repo root**.
 
 SCOPE: these rules apply only to `apps/*/src/*.md` content files. Instruction files (AGENTS.md, CLAUDE.md, skill files, docs/) are exempt.
 
-When writing or generating markdown content for any app (TCM, 8fold, showcase, docs), write like a person describing a subject — not like a chatbot summarizing one.
+Write like a person describing a subject, not like a chatbot summarizing one.
 
-**State claims directly.** Never inflate the significance of what you're describing.
-
-- Wrong: "The Liver plays a vital role, underscoring its significance in TCM."
-- Right: "The Liver stores blood and regulates the free flow of Qi."
-
-**Skip promotional adjectives.** Avoid "remarkable," "sophisticated," "profound," "holistic," "vibrant" when describing subject matter. Just say what it does.
-
-**No inline-header bullet lists.** Don't write `**Term:** explanation of term` (colon after bold). For reference lists where a separator is needed, use `**Term** - explanation` (ASCII hyphen). Prefer plain prose or plain bullets where possible.
-
-**No "not merely X; it is Y" constructions.** Make the positive claim directly.
-
-**No diff-anchored docs.** Write to describe what currently exists, not what was recently changed. (Changelogs and migration guides are the exception.)
-
-**No em dashes.** The em dash character `—` is banned. Never substitute it with any other punctuation (`:`, `,`, `-`, `;`). Rewrite the sentence: identify the two ideas and connect them naturally as separate clauses or a subordinate construction. ASCII hyphens `-` are acceptable only in title/subtitle separators, annotation separators `(Pali - English)` or `Term - expansion`, and reference-list separators `**Term** - description`. Never use `-` as a parenthetical marker inside a prose sentence.
-
-**Title-case headings.** All headings at every level use title case. Applies equally to generated markdown content.
-
-If generated content picks up AI patterns anyway, run the `human-voice` skill on the affected files.
+§1  Significance inflation    "vital role" / "underscores its significance" / "pivotal" / "stands as a testament"  →  state what it does; drop the significance claim
+§3  Participial padding       trailing "symbolizing…" / "reflecting…" / "contributing to…"                        →  cut; stop at the fact
+§4  Promotional adjectives    remarkable, sophisticated, profound, holistic, vibrant                                →  cut or reword; just say what it does
+§7  AI vocabulary             delve, tapestry (abstract), testament, showcase (v), pivotal, intricacies,           →  replace with plain verbs and nouns
+                              interplay, fostering, garner, landscape (abstract), enduring, crucial
+§8  Copula avoidance          "serves as" / "stands as" / "marks a" / "represents a"                              →  is / are / has
+§9  Negative parallelism      "not merely X; it is Y" / "not just X, but Y"                                       →  state Y directly
+§14 Structural punctuation    — – : ; in prose                                                                    →  rewrite naturally; do not swap one for another
+    ascii - only for:         title/subtitle separators | annotation (Pali - English) | **Term** - desc
+§15 Boldface overuse          bold on non-essential phrases                                                         →  remove; bold belongs on reference-list terms only
+§16 Inline-header lists       **Term:** or **Term.** in any list item                                             →  **Term** - desc  (never colon or period inside bold)
+§17 Title-case headings       H2+ not in title case                                                                →  capitalize every significant word
+    lowercase:                a an the and but or for nor of in to at by (unless first or last word)
+§23 Filler phrases            "In order to" / "Due to the fact that" / "It is important to note that"             →  cut or compress
+§24 Excessive hedging         "could potentially possibly be argued"                                               →  direct claim or "may"
+§25 Generic conclusions       "The future looks bright" / "Exciting times lie ahead"                               →  end on a specific fact
+§27 Authority tropes          "at its core" / "what really matters" / "fundamentally"                             →  cut
+§28 Signposting               "Let's dive in" / "Let's explore" / "Here's what you need to know"                 →  cut
+§29 Fragmented headers        warm-up sentence after heading that only restates it                                 →  cut
+§31 Staccato drama            3+ short declarative fragments in a row for emphasis                                 →  rewrite as varied prose
+§34 Temporal framing          "In today's rapidly evolving X" / "In a world where"                                →  state the claim directly
+§35 Vague attribution         "experts argue" / "some critics contend" / "research suggests"                      →  name the source, or state the claim directly
+§36 Additive transitions      "Additionally," / "Furthermore," / "Moreover," / "In addition,"                    →  connect through sentence structure; cut the connector
+§37 Triadic padding           adj, adj, and adj stacked for completeness ("warm, accessible, and grounding")       →  state what is specific; cut the list
+§38 Elegant variation         synonym-swapping to avoid repeating a word ("constraints / norms / confines")        →  repeat the right word
+§39 Challenges boilerplate    "Despite its X, [subject] faces challenges including Y"                             →  state challenges directly; no setup formula
+§40 Diff-anchored docs        describing what changed rather than what currently exists                            →  write to current state; changelogs excepted
 
 ## New file placement
 

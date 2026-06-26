@@ -19,15 +19,15 @@ The Stomach's defining charge is to **receive and ripen** (_shou na_, _fu shu_) 
 
 ### Receiving and ripening (the "Sea of Grain and Water")
 
-The Stomach is sometimes called the **Minister of the Granaries**, an organ-official responsible for taking in raw supplies and making them available to the realm. Food and drink are "rotted and ripened" (fermented and pre-digested in a functional sense) so that the Spleen can extract the pure _Gu Qi_ (grain Qi) and distribute it upward to the Lungs and Heart, where it combines with air to form the Qi and Blood that sustain life.
+The Stomach is sometimes called the **Minister of the Granaries**, an organ-official responsible for taking in raw supplies and making them available to the realm. Food and drink are "rotted and ripened" (fermented and pre-digested in a functional sense) so that the Spleen can extract the pure _Gu Qi_ (grain Qi) and distribute it upward to the Lungs and Heart.
 
-When the Stomach is healthy, appetite is good, food is tolerated easily, and digestion proceeds without discomfort. Stomach _Yin_ (cool, moistening fluids) keeps the rotting-and-ripening process gentle: not too hot, not too dry. When Stomach Yin runs low, the process becomes harsh and overheated, producing the hallmark signs of Stomach dryness and Fire.
+When the Stomach is healthy, appetite is good, food is tolerated easily, and digestion proceeds without discomfort. Stomach _Yin_ (cool, moistening fluids) regulates the rotting-and-ripening process by maintaining moderate warmth and moisture. When Stomach Yin runs low, the process becomes harsh and overheated, producing the hallmark signs of Stomach dryness and Fire.
 
 ### Descending of Stomach Qi
 
-The Stomach's directional movement is **downward descent**, the complement and opposite of the Spleen's upward ascent. After ripening, the Stomach sends its contents downward through the pylorus toward the Small Intestine. This descent is the structural engine of digestion: without it, food sits, ferments pathologically, and turns back on itself.
+The Stomach's directional movement is **downward descent**, the complement and opposite of the Spleen's upward ascent. After ripening, the Stomach sends its contents downward through the pylorus toward the Small Intestine. This descent drives digestion: without it, food sits, ferments pathologically, and turns back on itself.
 
-When Stomach Qi **rebels upward** instead of descending, the canonical Stomach symptom cluster emerges: nausea, vomiting, hiccups, acid reflux, belching, and GERD. This "rebellious Stomach Qi" pattern (胃氣上逆, Wèi Qì shàng nì) appears across dozens of Western diagnoses, ranging from morning sickness to gastroparesis. Restoring the downward direction of Stomach Qi is the central therapeutic goal in nearly all Stomach pathology.
+When Stomach Qi **rebels upward** instead of descending, the canonical Stomach symptom cluster emerges: nausea, vomiting, hiccups, acid reflux, belching, and GERD. This "rebellious Stomach Qi" pattern (胃氣上逆, Wèi Qì shàng nì) appears across dozens of Western diagnoses, ranging from morning sickness to gastroparesis. TCM treatment focuses on restoring the downward direction of Stomach Qi.
 
 ## Position in the wider system
 
@@ -44,7 +44,7 @@ When Stomach Qi **rebels upward** instead of descending, the canonical Stomach s
 
 Surface pathway: the Stomach channel (Yangming, ST) runs from below the eye down the front of the face, across the clavicle, down through the abdomen (passing ST 25 at the navel level), and down the front of the leg to the second toe. It is the longest channel on the front of the body and a major source of Qi and Blood for the face and the entire anterior surface.
 
-**The Spleen-Stomach pivot.** In [Earth-phase](WuXing.md) physiology, the Spleen-Stomach pair is the **post-natal root**, the source of all Qi and Blood acquired after birth. This distinguishes it from the [Kidney's](Kidney.md) pre-natal Jing (inherited constitutional essence). In practical terms, every other organ depends on the Spleen-Stomach pair for its daily supply of nourishment: a weak Spleen-Stomach means every organ is slowly underfed. The Stomach's directional imperative (descend) and the Spleen's imperative (ascend) create a circular current at the body's center, forming the foundation of the [Zang-Fu](ZangFu.md) system. Disrupting either direction disturbs the whole.
+**The Spleen-Stomach pivot.** In [Earth-phase](WuXing.md) physiology, the Spleen-Stomach pair is the **post-natal root**, the source of all Qi and Blood acquired after birth. This distinguishes it from the [Kidney's](Kidney.md) pre-natal Jing (inherited constitutional essence). In practical terms, every other organ depends on the Spleen-Stomach pair for its daily supply of nourishment: a weak Spleen-Stomach means every organ is slowly underfed. The Stomach descends while the Spleen ascends, establishing the directional balance that underlies the [Zang-Fu](ZangFu.md) system. Disrupting either direction disturbs the whole.
 
 ## Common patterns
 

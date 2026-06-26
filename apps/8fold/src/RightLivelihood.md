@@ -1,6 +1,6 @@
 ---
 title: 'Right Livelihood - Ethical Work'
-description: 'A deep exploration of Right Livelihood - transforming work into a vocation of service and a site for spiritual practice.'
+description: 'Right Livelihood - Ethical Work and the basis for spiritual practice in the workplace.'
 ---
 
 # Right Livelihood - Samma Ajiva
@@ -56,17 +56,17 @@ The Buddhist tradition identifies three specific dimensions by which a livelihoo
 
 ### Work as a "Dojo"
 
-Right Livelihood means work is not "time off" from spiritual practice. It is the primary place to practice:
+Work is the primary place to practice:
 
 - **Right Speech** - With colleagues, customers, and competitors.
 - **Mindfulness** - Being fully present with tasks, rather than operating on "autopilot."
-- **Equanimity** - Staying balanced amidst the "Eight Worldly Winds" of gain and loss, praise and blame.
+- **Equanimity** - Staying balanced through gain and loss, praise and blame.
 
 ---
 
 ## The Goal: Integration
 
-The ideal of Right Livelihood is work that is **service-oriented** and **harmless**. It allows a practitioner to support their family and community while simultaneously deepening their own clarity. When our work aligns with our values, we experience a "blameless happiness" that provides the necessary stability for the next phase of the path: **Mental Discipline**.
+Right Livelihood is work that does no harm and aligns with one's values. It allows a practitioner to support their family and community while deepening their own clarity. When work and values align, a practitioner experiences the stability needed for the next phase: **Mental Discipline**.
 
 ---
 
@@ -78,7 +78,7 @@ The efficacy of ethical training is not theoretical. Three observable markers in
 - **Social Concord** - Trustworthiness strengthens communal bonds. Concordant speech and honest dealing create an environment in which others relax their guardedness.
 - **Stabilization of Attention** - Unwholesome impulses stop competing for cognitive resources. The practitioner finds that sustained attention becomes progressively easier.
 
-These are not aspirational goals. They are the measurable outputs of a livelihood genuinely aligned with the path.
+These are measurable outcomes of a livelihood aligned with the path.
 
 ---
 

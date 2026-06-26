@@ -1,6 +1,6 @@
 ---
 title: 'Right Speech - Communication with Integrity'
-description: 'A deep exploration of Right Speech - the art of truthful, harmonious, and beneficial communication in both the physical and digital worlds.'
+description: 'An exploration of Right Speech - the art of truthful, harmonious, and beneficial communication in both the physical and digital worlds.'
 ---
 
 # Right Speech - Samma Vaca
@@ -22,7 +22,7 @@ Traditionally, Right Speech is defined by abstaining from four types of harmful 
 
 ### The Deeper Significance: Alignment with Reality
 
-Strategically, truthful speech establishes a correspondence between one's inner being and the true nature of phenomena. By aligning communication with _Sacca_ (truth), the practitioner makes an **ontological commitment to reality as it is**. This commitment is foundational: it allows the faculty of wisdom (_Panna_) to eventually penetrate the ultimate nature of existence without the interference of subjective fantasies or self-deception. Honest speech is therefore a prerequisite for clear seeing, not merely an ethical nicety.
+Strategically, truthful speech establishes a correspondence between one's inner being and the true nature of phenomena. By aligning communication with _Sacca_ (truth), the practitioner makes an **ontological commitment to reality as it is**. This commitment is foundational: it allows the faculty of wisdom (_Panna_) to eventually penetrate the ultimate nature of existence without the interference of subjective fantasies or self-deception. Honest speech is therefore a prerequisite for clear seeing, not an ethical nicety.
 
 ---
 

@@ -11,9 +11,9 @@ Acupuncture and moxibustion form the **first branch** of the [Five Branches of T
 
 The WHO estimates practice in over 180 countries. Among the five branches, acupuncture is the most thoroughly studied and the most contested. It translates most readily into a clinical trial framework.
 
-## Acupuncture as a pillar of TCM
+## Acupuncture among the five branches of TCM
 
-Acupuncture sits first among the **[Five Branches of TCM Treatment](index.md#the-five-branches-of-tcm-treatment)**. The other four: **[Herbal Medicine](Herbs.md)**, **[Tui Na](TuiNa.md)**, **[Dietary Therapy](Dietary.md)**, **[Qigong](Qigong.md)**.
+Acupuncture ranks first among the **[Five Branches of TCM Treatment](index.md#the-five-branches-of-tcm-treatment)**. The other four are **[Herbal Medicine](Herbs.md)**, **[Tui Na](TuiNa.md)**, **[Dietary Therapy](Dietary.md)**, and **[Qigong](Qigong.md)**.
 
 ## Historical origins and lineages
 
@@ -130,7 +130,7 @@ Sham controls (Streitberger retractable needles, non-acupoint shallow needling, 
 
 **Fertility enhancement:** randomized trials of acupuncture as IVF adjunct show inconsistent results with no clear benefit in best-designed studies. **Weight loss** protocols have not demonstrated meaningful controlled-trial results. **Qi emission** (external qigong via acupoints) and **non-contact acupuncture** lack controlled evidence. **Auricular point detection** by electrical resistance has not replicated reliably.
 
-## Safety And Contraindications
+## Safety and Contraindications
 
 Acupuncture has an excellent safety record with trained clinicians and single-use sterile disposable needles. German prospective safety studies (GERAC and ART trials, >250,000 patient sessions) report serious adverse events at roughly 1 per 10,000–100,000 insertions; the GERAC data found 0.013 serious events per 1,000 patients across 2+ million sessions. Minor adverse events (bruising, needle pain, fainting) occur in 3–10% of treatments.
 

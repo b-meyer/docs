@@ -23,7 +23,7 @@ Tui Na is one of the **[Five Branches of TCM Treatment](index.md#the-five-branch
 4. **[Dietary Therapy](Dietary.md)** - food prescribed by constitution and pattern.
 5. **[Qigong](Qigong.md)** - self-cultivation of Qi through movement, breath, and intent.
 
-Tui Na is the most physically direct of the five: the practitioner's hands act on soft tissue, joints, and fascial planes simultaneously, making it particularly suited to conditions that are at once an energetic pattern and a mechanical one. Kidney Yang Deficiency presenting as chronic lumbar pain yields both to warming friction techniques and to joint mobilization, since the TCM and orthopedic accounts reinforce each other rather than competing.
+Tui Na is the most physically direct of the five: the practitioner's hands act on soft tissue, joints, and fascial planes simultaneously. This suits conditions where energetic pattern and mechanical dysfunction reinforce each other. Kidney Yang Deficiency presenting as chronic lumbar pain responds to warming friction techniques and joint mobilization because both TCM and orthopedic accounts address the same tissue.
 
 ## Historical origins
 
@@ -118,7 +118,7 @@ Tui Na has a smaller Western evidence base than acupuncture. Chinese-language tr
 
 **The blinding problem.** There is no credible sham Tui Na that provides the same sensory experience as skilled manual therapy without the proposed active mechanism. Pragmatic comparisons (Tui Na vs. usual care) are more informative than sham-controlled trials for most indications. Chinese vs. Western meta-analyses diverge in quality thresholds applied, which partly explains differing conclusions.
 
-The TCM-specific mechanism claims (direct Qi movement along channels, Zang-Fu tonification through surface work) have no agreed-upon measurement methodology in Western research. This is a methodological gap rather than a settled negative.
+The TCM-specific mechanism claims (direct Qi movement along channels, Zang-Fu tonification through surface work) have no agreed-upon measurement methodology in Western research. This reflects a measurement gap, not an absence of effect.
 
 ## Contraindications and safety
 

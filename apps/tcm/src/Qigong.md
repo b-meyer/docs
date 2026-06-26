@@ -7,11 +7,11 @@ description: 'Qigong is the self-cultivation branch of TCM. Origins, lineages (D
 
 ## Overview
 
-In Traditional Chinese Medicine, **Qigong** is one of the core branches of treatment and a pillar of preventative health. While acupuncture and herbal medicine are practitioner-applied, qigong is a self-care practice in which the patient actively regulates their own health.
+In Traditional Chinese Medicine, **Qigong** is one of the core branches of treatment and a foundational preventative health practice. While acupuncture and herbal medicine are practitioner-applied, qigong is a self-care practice in which the patient actively regulates their own health.
 
 The word combines **Qi** (vital energy; see [Qi.md](Qi.md)) and **Gong** (skill, work, cultivation through dedication). Qigong is the **skillful cultivation and manipulation of the body's vital energy**.
 
-## Qigong as a Pillar of TCM
+## Qigong in the Five Branches of TCM
 
 Qigong is one of the **[Five Branches of TCM Treatment](index.md#the-five-branches-of-tcm-treatment)**, the canonical toolkit a classical practitioner reaches for. The other four are all practitioner-applied, and each has its own page in Additional Reading:
 
@@ -21,16 +21,16 @@ Qigong is one of the **[Five Branches of TCM Treatment](index.md#the-five-branch
 4. **[Dietary Therapy](Dietary.md)** - food prescribed by constitution and pattern.
 5. **Qigong** - _this page_.
 
-Qigong is the only branch the patient practices directly, on themselves, daily, without a practitioner present. The other four treat what has already manifested; qigong prevents manifestation in the first place. The _Huangdi Neijing_ warns that treating disease after it arises is like digging a well when already thirsty. This places qigong at the center of TCM as a philosophy of daily life, not merely a clinical intervention.
+Qigong is the only branch the patient practices directly, on themselves, daily, without a practitioner present. The other four treat what has already manifested; qigong prevents manifestation in the first place. The _Huangdi Neijing_ warns that treating disease after it arises is like digging a well when already thirsty. Qigong is central to TCM philosophy as a daily life practice, not simply a clinical intervention.
 
 ## Origins and Lineages
 
 The term "qigong" was codified in the 20th century, but the practices are ancient. The _Mawangdui_ silk manuscripts (c. 168 BCE) catalogue Dao Yin exercises that are direct ancestors of modern forms like Ba Duan Jin. Four lineage streams shaped today's practice:
 
-- **Daoist (Dao Jia).** The most influential root. Yangsheng (nourishing life) and Neidan (inner alchemy) refine the Three Treasures (see [Jing.md](Jing.md), [Shen.md](Shen.md)) toward longevity and spiritual transcendence.
-- **Buddhist (Fo Jia).** Adapted through Chan (Zen) monasteries; prioritizes stillness. The Yi Jin Jing is popularly attributed to Bodhidharma teaching it to Shaolin monks, though this attribution is likely apocryphal.
-- **Medical (Yi Gong).** Clinical TCM; prescribed routines treat or prevent disease. Hua Tuo formalized this stream with the Wu Qin Xi; it dominates the modern research literature.
-- **Martial (Wu Gong).** Builds tendon resilience and explosive Qi release. Tai Chi Chuan, Xing Yi, and Bagua are wu gong as fighting systems.
+- **Daoist (Dao Jia)** - The most influential root. Yangsheng (nourishing life) and Neidan (inner alchemy) refine the Three Treasures (see [Jing.md](Jing.md), [Shen.md](Shen.md)) toward longevity and spiritual transcendence.
+- **Buddhist (Fo Jia)** - Adapted through Chan (Zen) monasteries; prioritizes stillness. The Yi Jin Jing is popularly attributed to Bodhidharma teaching it to Shaolin monks, though this attribution is likely apocryphal.
+- **Medical (Yi Gong)** - Clinical TCM; prescribed routines treat or prevent disease. Hua Tuo formalized this stream with the Wu Qin Xi; it dominates the modern research literature.
+- **Martial (Wu Gong)** - Builds tendon resilience and explosive Qi release. Tai Chi Chuan, Xing Yi, and Bagua are wu gong as fighting systems.
 
 Confucian self-cultivation and Shen Gong (pure spirit work) are smaller adjacent streams; most schools blend several lineages.
 
@@ -65,10 +65,10 @@ Traditional qigong has thousands of recorded branches, but they generally fall i
 
 A handful of standardized forms have become the canonical entry points to the tradition, and the Chinese Health Qigong Association formally codified several of them in the early 2000s for medical and educational use:
 
-- **Ba Duan Jin (Eight Brocades).** Dynamic. Eight repetitive movements that stretch the major meridians and strengthen the musculoskeletal system. Dates back over 1,000 years and is the most heavily researched form.
-- **Wu Qin Xi (Five Animal Frolics).** Dynamic. A set imitating the movement quality of the Tiger, Deer, Bear, Ape, and Bird; traditionally targeted at emotional balance and joint mobility.
-- **Yi Jin Jing (Muscle/Tendon Changing Classic).** Dynamic. A more strenuous form historically associated with Shaolin training, used to build tendon strength and deep Qi.
-- **Zhan Zhuang (Standing Meditation).** Static. Holding a single posture (most famously "holding a tree") to cultivate structural alignment and internal power.
+- **Ba Duan Jin (Eight Brocades)** - Dynamic. Eight repetitive movements that stretch the major meridians and strengthen the musculoskeletal system. Dates back over 1,000 years and is the most heavily researched form.
+- **Wu Qin Xi (Five Animal Frolics)** - Dynamic. A set imitating the movement quality of the Tiger, Deer, Bear, Ape, and Bird; traditionally targeted at emotional balance and joint mobility.
+- **Yi Jin Jing (Muscle/Tendon Changing Classic)** - Dynamic. A more strenuous form historically associated with Shaolin training, used to build tendon strength and deep Qi.
+- **Zhan Zhuang (Standing Meditation)** - Static. Holding a single posture (most famously "holding a tree") to cultivate structural alignment and internal power.
 
 ## Qigong vs. Tai Chi
 

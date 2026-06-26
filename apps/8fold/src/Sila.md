@@ -38,7 +38,7 @@ This dual structure mirrors the balance the path requires throughout: developing
 
 ## The Cultivation Practices - Heart Training for the Performance Dimension
 
-The performance modality (_cāritta_) requires active cultivation. Unlike avoidance, which operates through restraint, performance must be _grown_ through practices that develop the heart qualities that make ethical conduct natural rather than effortful.
+The performance modality (_cāritta_) requires active cultivation. Performance must be _grown_ through practices that develop the heart qualities that make ethical conduct natural rather than effortful, whereas avoidance operates through restraint.
 
 In formal Theravāda taxonomy (the Visuddhimagga's forty meditation subjects), the following practices are classified under **Samādhi**. They are introduced here because their _function_ is Sīla: they cultivate the mental counterparts to ethical conduct, directly countering the defilements that generate violations in speech and action.
 
@@ -57,13 +57,13 @@ The Brahmavihāras ("divine abodes" or "immeasurable qualities") are the primary
 
 > "As a mother would protect her only child with her own life, even so let one cultivate a boundless love toward all beings."
 
-The practical effect on Sīla is direct: a mind suffused with goodwill cannot simultaneously generate the ill-will required to produce harsh speech, harm, or exploitation. The Brahmavihāras are not an optional supplement to the ethical training. They are its interior engine. For the full meditation technique, development signs, and relationship to concentration, see **[Samadhi.md](Samadhi.md)**.
+The practical effect on Sīla is direct: a mind suffused with goodwill cannot simultaneously generate the ill-will required to produce harsh speech, harm, or exploitation. The Brahmavihāras form the interior engine of the ethical training, not an optional supplement. For the full meditation technique, development signs, and relationship to concentration, see **[Samadhi.md](Samadhi.md)**.
 
 ### Sense Restraint - The Bridge Practice
 
 **Indriyasaṃvara** (Sense Restraint) is the practice of maintaining mindful awareness at the six sense doors (sight, sound, smell, taste, touch, and mind) without grasping at pleasant sensations or recoiling from unpleasant ones. When the eye sees a form, the ear hears a sound, no secondary elaboration is allowed to arise that feeds the defilements.
 
-The Sāmaññaphala Sutta presents Indriyasaṃvara as the canonical step _following_ Sīla and _preceding_ Samādhi. It is the bridge between outer ethical conduct and inner concentration training:
+The Sāmaññaphala Sutta presents Indriyasaṃvara as the canonical step _following_ Sīla and _preceding_ Samādhi. It bridges outer ethical conduct and inner concentration training:
 
 > "Endowed with this noble aggregate of virtue, he guards the doors of his sense faculties... not grasping at the overall appearance or at the details of whatever he sees with his eyes... hears with his ears..."
 
@@ -77,7 +77,7 @@ Unlike ethical systems grounded in obedience to divine command, Buddhist ethics 
 
 #### Social Harmony
 
-Ethical conduct creates cohesive, conflict-reduced interpersonal relations. By refusing to engage in speech or action that exploits, harms, or deceives, the practitioner becomes a source of trust in their community. Right Speech alone, when practiced consistently, transforms the social field around the practitioner.
+Ethical conduct creates cohesive, conflict-reduced interpersonal relations. By refusing to engage in speech or action that exploits, harms, or deceives, the practitioner becomes a source of trust in their community. Practiced consistently, Right Speech transforms the social field around the practitioner.
 
 #### Psychological Harmony
 
@@ -152,7 +152,7 @@ Success in Right Livelihood is measured through a **three-tiered inquiry**:
 2. **Personal integrity** - within the field, are one's own actions conducted honestly?
 3. **Mental integrity** - does the work itself cultivate or erode the qualities needed for practice?
 
-Work, understood this way, becomes a "dojo." It is where ethical training is continuous and measurable.
+Work understood this way functions as a dojo, where ethical training is continuous and measurable.
 
 **→ [RightLivelihood.md](RightLivelihood.md)** - The full treatment: the five prohibited trades, modern extensions, and the three dimensions of rightness.
 
@@ -160,7 +160,7 @@ Work, understood this way, becomes a "dojo." It is where ethical training is con
 
 ## Behavioral Evidence of Practice
 
-The efficacy of Sīla is not self-reported. It produces three tangible, verifiable markers:
+Sīla produces three tangible, verifiable markers:
 
 **Absence of Remorse** (_avippaṭisāra_): The mind is free of the internal "split" caused by moral failure. There is no background static of guilt, no preoccupation with past speech or action that resurfaces during meditation. The mind is clean in the sense a cleared workspace is clean, ready for the next task.
 

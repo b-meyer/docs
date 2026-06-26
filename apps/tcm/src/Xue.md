@@ -79,28 +79,28 @@ Pathologies fall into four main categories.
 
 A lack of adequate nourishment rather than a literal drop in blood volume.
 
-- **Symptoms.** Pale complexion, dizziness, blurred vision, numbness in limbs, insomnia, scant menstruation.
-- **Common cause.** Spleen weakness (poor manufacturing) or excessive blood loss.
+- **Symptoms** - Pale complexion, dizziness, blurred vision, numbness in limbs, insomnia, scant menstruation.
+- **Common cause** - Spleen weakness (poor manufacturing) or excessive blood loss.
 
 ### Xue Stagnation (Blood Stasis)
 
 When Qi is too weak to move the Blood, or when Cold coagulates it, Xue stops flowing smoothly.
 
-- **Symptoms.** Sharp, stabbing pain in a fixed location, dark purple tongue, or tumors/masses.
-- **Common cause.** Qi stagnation, trauma, or internal Cold.
+- **Symptoms** - Sharp, stabbing pain in a fixed location, dark purple tongue, or tumors/masses.
+- **Common cause** - Qi stagnation, trauma, or internal Cold.
 
 ### Xue Heat (Blood Heat)
 
 Excess Heat enters the bloodstream, causing erratic movement.
 
-- **Symptoms.** Skin rashes that are red and burning, nosebleeds, heavy menstrual bleeding, high anxiety.
-- **Common cause.** Emotional stress turning into fire, or toxins.
+- **Symptoms** - Skin rashes that are red and burning, nosebleeds, heavy menstrual bleeding, high anxiety.
+- **Common cause** - Emotional stress turning into fire, or toxins.
 
 ### Xue Bleeding (Reckless Blood)
 
 If Qi is too weak to "hold" the blood inside the vessels, or if Heat forces it out, hemorrhaging occurs.
 
-- **Symptoms.** Easy bruising, blood in the stool or urine, chronic bleeding.
+- **Symptoms** - Easy bruising, blood in the stool or urine, chronic bleeding.
 
 ## Diagnostic signs of Xue patterns
 

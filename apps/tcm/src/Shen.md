@@ -9,7 +9,7 @@ description: "Spirit (Shen) - the third Treasure, housed in the Heart. Covers co
 
 In Traditional Chinese Medicine, **Shen** is one of the most foundational concepts. Often translated simply as "Spirit" or "Mind," it encompasses much more: consciousness, mental acuity, emotional health, and the overall vitality of a human being. To understand TCM practice, one must understand Shen: it is the ultimate diagnostic compass and the foundation of health assessment.
 
-> **A note on the name.** This file covers Shen meaning _Spirit_. A different Chinese character with the same pinyin (also written Shen) refers to the Kidney organ system and appears in [ZangFu.md](ZangFu.md). When in doubt, see the [pinyin glossary](index.md#pinyin-disambiguation).
+> **A note on the name.** This file covers Shen meaning _Spirit_. A different Chinese character with the same pinyin (also written Shen) refers to the Kidney organ system and appears in [ZangFu.md](ZangFu.md). The [pinyin glossary](index.md#pinyin-disambiguation) disambiguates when needed.
 
 ## Shen and the Three Treasures (San Bao)
 
@@ -29,7 +29,7 @@ Blood (Xue) is the material substance that anchors Shen; Xue is the vessel, Shen
 
 ## The Five Shen (Wu Shen)
 
-While the "Master" Shen resides in the Heart, TCM splits human consciousness into five distinct archetypes or "sub-spirits," each housed in a different organ system. A practitioner looks at how these five interact to assess psychological and spiritual balance. For the broader framework of emotions as causes of disease, see [QiQing.md](QiQing.md).
+While the "Master" Shen resides in the Heart, TCM splits human consciousness into five distinct archetypes or "sub-spirits," each housed in a different organ system. A practitioner looks at how these five interact to assess psychological and spiritual balance. Emotions as causes of disease appear in [QiQing.md](QiQing.md).
 
 | Organ   | Sub-spirit          | Domain / Function                          | Imbalance signs                         |
 | ------- | ------------------- | ------------------------------------------ | --------------------------------------- |
@@ -39,7 +39,7 @@ While the "Master" Shen resides in the Heart, TCM splits human consciousness int
 | Spleen  | Yi (Intellect)      | Logic, focus, studying, memorization       | Overthinking, worry, obsessive thoughts |
 | Kidneys | Zhi (Willpower)     | Determination, drive, survival instinct    | Fear, lack of motivation, burnout       |
 
-**Recognizing the sub-spirits in modern life.** Each imbalance has a behavioral signature a modern reader will recognize:
+**Recognizing the sub-spirits in modern life.** Each imbalance manifests in recognizable behavior:
 
 - **Shen (Heart):** Racing thought that won't stop at night; checking devices compulsively; inability to feel joy even when life is objectively stable.
 - **Hun (Liver):** Vague purposelessness, creative blocks, difficulty committing to plans; waking between 1–3 AM with frustration or unresolved ideas.
@@ -51,7 +51,7 @@ Each is a clinical entry point: the sub-spirit showing strain identifies which o
 
 ## Shen and dreams
 
-Classical TCM treats dreams as diagnostic data, not mental noise. The _Huangdi Neijing_ correlates dream content with the state of each sub-spirit. Vivid anxious dreams point to Heart Heat or Yin deficiency (disturbed Shen proper); dreams of conflict or pursuit suggest the unmoored Hun (Liver-Blood deficient); dreams of grief or descent reflect Po disturbance; circular task-rehearsal dreams are Spleen-Yi rumination; dark-water and formless-fear dreams trace to depleted Kidney-Zhi. Dreamless but unrefreshing sleep signals severe Shen depletion; the Shen lacks the vitality to generate imagery at all. See [ZangFu.md](ZangFu.md) for organ-pattern detail.
+Classical TCM treats dreams as diagnostic data, not mental noise. The _Huangdi Neijing_ correlates dream content with the state of each sub-spirit. Vivid anxious dreams point to Heart Heat or Yin deficiency (disturbed Shen proper); dreams of conflict or pursuit suggest the unmoored Hun (Liver-Blood deficient); dreams of grief or descent reflect Po disturbance; circular task-rehearsal dreams are Spleen-Yi rumination; dark-water and formless-fear dreams trace to depleted Kidney-Zhi. Dreamless but unrefreshing sleep signals severe Shen depletion; the Shen lacks the vitality to generate imagery at all. Organ-pattern detail appears in [ZangFu.md](ZangFu.md).
 
 ## The Hun and Po in depth
 
@@ -65,11 +65,11 @@ Shen proper is the conductor, integrating both: the Hun supplies vision, the Po 
 
 ## Shen as the basis for clinical practice
 
-A TCM doctor uses the state of a patient's Shen as the ultimate barometer for diagnosis, prognosis, and treatment strategy.
+A TCM doctor uses the state of a patient's Shen for diagnosis, prognosis, and treatment strategy.
 
 ### Diagnostic observation ("Looking" at Shen)
 
-A practitioner can instantly assess a patient's Shen the moment they walk into the room. The _Wang Zhen_ (Looking) examination (see [SiZhen.md](SiZhen.md)) reveals this. It manifests most clearly in the eyes (the "windows to the Shen"), the complexion, and the speech.
+A practitioner can instantly assess a patient's Shen the moment they walk into the room. The _Wang Zhen_ (Looking) examination from [SiZhen.md](SiZhen.md) reveals this. It manifests most clearly in the eyes (the "windows to the Shen"), the complexion, and the speech.
 
 - **Strong Shen (De Shen).** The eyes are bright, alert, and full of vitality; the mind is sharp; speech is coherent; the face has a healthy luster. Even if the patient is physically ill, their core life force is strong and they will likely recover quickly.
 - **Disturbed or Lost Shen (Shi Shen).** The eyes appear dull, clouded, or "vacant," as if the person is not fully present. Speech may be muddled, movements chaotic or lethargic. This signals a deeper, more severe disharmony.
@@ -103,7 +103,7 @@ These points are among the most frequently selected when a practitioner's primar
 
 Shen is cultivated daily; the classical ideal is a mind clear and present, not emptied of content but no longer driven by compulsive agitation.
 
-- **Meditation.** Sitting practice lets the Shen "descend" from the agitated surface into the deeper Heart. Any sustained non-reactive attention (breath, body-scan, mantra) nourishes Shen. See [Qigong.md](Qigong.md) for the moving-meditation counterpart.
+- **Meditation.** Sitting practice lets the Shen "descend" from the agitated surface into the deeper Heart. Any sustained non-reactive attention (breath, body-scan, mantra) nourishes Shen. The moving-meditation counterpart appears in [Qigong.md](Qigong.md).
 - **Five-tone music.** Classical TCM maps the pentatonic tones (Gong, Shang, Jue, Zhi, Yu) onto the Five Phases. The Zhi tone resonates with Heart-Fire and is used to harmonize Shen; chaotic sound is considered a pathogenic factor.
 - **Purposeful engagement.** The Hun thrives on meaningful creative work such as calligraphy, painting, and scholarship, which steadies the mind and prevents the drift toward anxiety. Excessive stimulation scatters Shen even when the activity is nominally pleasurable.
 - **Social connection.** The Heart governs joy (_xi_); genuine connection nourishes it directly. Isolation depletes Heart-Qi.

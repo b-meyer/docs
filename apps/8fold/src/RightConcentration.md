@@ -5,9 +5,9 @@ description: 'Right Concentration, the Eight Levels of Attainment, the unificati
 
 # Right Concentration - Samma Samadhi
 
-Right Concentration is the final fold and the peak of the Eightfold Path. While **Right Mindfulness** is a broad, inclusive awareness of all phenomena, Right Concentration is the narrowing of that focus into a single, unmoving point. This is **Samadhi**, the "unification of mind" (_cittass’ekaggata_).
+Right Concentration is the final fold of the Eightfold Path. **Right Mindfulness** is a broad, inclusive awareness of all phenomena. Right Concentration narrows that focus into a single, unmoving point. This is **Samadhi**, the "unification of mind" (_cittass’ekaggata_).
 
-The purpose of concentration is to create a "mental laboratory" where the mind is so still, bright, and malleable that it can see the true nature of reality without any flickering or distortion.
+The purpose of concentration is to create a "mental laboratory" where the mind is so still and malleable that it can see the true nature of reality without any flickering or distortion.
 
 ---
 
@@ -15,7 +15,7 @@ The purpose of concentration is to create a "mental laboratory" where the mind i
 
 Before the formal levels of jhāna are reached, the mind passes through a threshold state: **Access Concentration**. This is the point where the Five Hindrances have been sufficiently suppressed so the mind approaches but has not yet fully entered the First Jhāna.
 
-- **The experience** - A notable settling and brightness. Thoughts continue to arise but have lost their "stickiness." The meditation object becomes vivid and effortless to hold. There is often a sense of light or luminosity in the mind.
+- **The experience** - A notable settling of the mind. Thoughts continue to arise but have lost their "stickiness." The meditation object becomes vivid and effortless to hold. There is often a sense of light in the mind.
 - **Its value** - Access Concentration is already a powerful state for insight practice. Many practitioners work at this threshold without entering formal jhāna, using it as the stable, quiet platform for Vipassanā.
 - **The gateway** - When Access Concentration deepens and the mind "locks on" to the meditation object completely, the First Jhāna arises.
 
@@ -48,42 +48,42 @@ For a complete technical treatment of these factors, including the Four Formless
 The mind successfully suppresses the **Five Hindrances** (desire, anger, sloth, restlessness, doubt).
 
 - **Key Factors** - Applied thought, sustained focus, rapture (physical joy), happiness, and one-pointedness.
-- **The Experience** - A sense of powerful joy and energy born from leaving behind worldly distractions.
+- **The Experience** - A sense of joy and energy from leaving behind worldly distractions.
 
 #### 2. The Second Jhana: Internal Confidence
 
 The "work" of directing and sustaining thought is let go, as the mind is now naturally anchored.
 
 - **Key Factors** - Rapture, happiness, and one-pointedness.
-- **The Experience** - A more stable, pervasive joy that is "born of concentration" rather than effort.
+- **The Experience** - A stable, pervasive joy arising from concentration rather than effort.
 
 #### 3. The Third Jhana: Equanimous Happiness
 
-The physical excitement of rapture fades, replaced by a refined, "cool" mental pleasure.
+The physical excitement of rapture fades, replaced by a "cool" mental pleasure.
 
 - **Key Factors** - Happiness, one-pointedness, and the emergence of **Equanimity** and **Mindfulness**.
-- **The Experience** - A state of sublime calm and presence.
+- **The Experience** - A state of calm and clear presence.
 
 #### 4. The Fourth Jhana: Purity of Mindfulness
 
 Even the subtle "vibration" of happiness is abandoned, leading to perfect mental neutrality.
 
 - **Key Factors** - Equanimity and absolute one-pointedness.
-- **The Experience** - The mind becomes like a still, clear pool or a perfectly bright lamp. The Fourth Jhana provides the stable, impartial awareness that serves as the foundation for the deepest insight into the nature of reality.
+- **The Experience** - The mind becomes like a still, clear pool or a bright lamp. The Fourth Jhana provides the stable, impartial awareness that serves as the foundation for the deepest insight into the nature of reality.
 
 ### The Four Formless Realms (_Arupa-Jhanas_)
 
-Beyond the form-based jhanas lie four increasingly refined, "formless" states. These represent the absolute ceiling of mental refinement within conditioned existence. However, the Buddha emphasized that even these exalted states remain mind-made, impermanent, and ultimately insufficient for final liberation. They must be paired with insight to be transformative.
+Beyond the form-based jhanas lie four increasingly refined, "formless" states. These represent the most refined states within conditioned existence. However, the Buddha emphasized that even these states remain mind-made, impermanent, and ultimately insufficient for final liberation. They must be paired with insight to be transformative.
 
 #### 5. The Base of Infinite Space
 
 The practitioner transcends all perception of physical form and matter, attending only to the boundless nature of space itself.
 
-- **The Experience** - A state where the sense of limitation dissolves into the vastness of infinite space.
+- **The Experience** - A state where the sense of limitation dissolves into infinite space.
 
 #### 6. The Base of Infinite Consciousness
 
-The focus shifts from space to consciousness itself. The aware mind has an infinite, luminous nature.
+The focus shifts from space to consciousness itself. Consciousness is perceived as infinite and bright.
 
 - **The Experience** - A refined awareness of the perceiving consciousness without any fixed object.
 
@@ -103,12 +103,12 @@ The subtlest mundane state of consciousness, where perception is so refined that
 
 ## Serenity and Insight: The Indivisible Partnership
 
-Concentration practice, called **Samatha** (serenity), must work in concert with **Vipassana** (insight). The two form an indivisible partnership on the path to liberation.
+Concentration practice, called **Samatha** (serenity), must work in concert with **Vipassana** (insight). The two are inseparable on the path to liberation.
 
 - **Samatha (Serenity)** - provides the controlled, still environment by stabilizing the mind through the jhanas. Without it, insight is easily disrupted by emotional storms and mental agitation.
 - **Vipassana (Insight)** - uses the still mind to investigate the Three Characteristics: impermanence (anicca), unsatisfactoriness (dukkha), and non-self (anatta). Without insight, concentration is merely a temporary escape into pleasant mental states.
 
-A concentrated mind is like a still, unruffled lake. It is the only instrument capable of perceiving the truth directly. However, that clarity must be turned toward wisdom. The Fourth Jhana, in particular, provides the equanimous awareness that serves as the launchpad for insight. Final liberation occurs when serenity and insight become inseparable: the mind is still _because_ it sees the truth, and it sees the truth _because_ it is still.
+A concentrated mind is like a still, unruffled lake. It is the only instrument capable of perceiving the truth directly. However, that clarity must be turned toward wisdom. The Fourth Jhana provides the equanimous awareness that serves as the foundation for insight. Final liberation occurs when serenity and insight become inseparable: the mind is still _because_ it sees the truth, and it sees the truth _because_ it is still.
 
 ---
 
@@ -134,7 +134,7 @@ For the full map of how concentration states intersect with the stages of insigh
 
 ## The Goal: A "Wieldy" Mind
 
-The ultimate goal of Right Concentration is not to stay in a meditative trance forever. It is to develop a mind that is **wieldy, malleable, and bright**. When you emerge from deep concentration, your mind is exceptionally clear and capable of understanding the deepest truths of the Four Noble Truths.
+The ultimate goal of Right Concentration is not to stay in a meditative trance forever. It is to develop a mind that is **wieldy and malleable**. When you emerge from deep concentration, your mind is clear and capable of understanding the deepest truths of the Four Noble Truths.
 
 The Path that began with a glimpse of truth (**Right View**) ends with the unwavering, experiential realization of that truth through the power of **Right Concentration**.
 

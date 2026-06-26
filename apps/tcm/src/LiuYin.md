@@ -106,8 +106,6 @@ Treatment shifts dramatically by level. The same Wind-Heat that required mint an
 
 ## Modern parallels
 
-The Liu Yin framework anticipates several modern concepts at functional resolution:
-
 - **Infectious disease.** Before bacteriology, TCM categorized infections by their phenomenology: fevers with chills (Cold), fevers with thirst (Heat), illnesses with heavy fluid retention (Damp). The categories often map onto specific pathogen types (viral upper respiratory = typically Wind-Cold/Wind-Heat; gastrointestinal infections = typically Damp).
 - **Climate-related illness.** Seasonal asthma flares, winter joint pain, and summer heat exhaustion all fit TCM's external-evil framework, which anticipated chronotherapy and seasonal medicine.
 - **Autoimmune phenomena.** Some integrative practitioners read autoimmune flares as "internal Wind" because they are sudden, shifting, and multi-organ. However, TCM's Liu Yin framework was not built specifically to address autoimmunity.

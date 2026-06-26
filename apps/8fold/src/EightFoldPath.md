@@ -1,6 +1,6 @@
 ---
 title: 'The Noble Eightfold Path - The Prescription'
-description: 'A deep dive into the Noble Eightfold Path as a comprehensive, interdependent system for ethical and mental development.'
+description: 'An examination of the Noble Eightfold Path as a comprehensive, interdependent system for ethical and mental development.'
 ---
 
 # The Noble Eightfold Path - Ariya Atthangika Magga

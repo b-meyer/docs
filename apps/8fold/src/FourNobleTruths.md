@@ -5,11 +5,11 @@ description: 'An exploration of the Four Noble Truths as the medical diagnosis o
 
 # The Four Noble Truths (Cattari Ariyasaccani)
 
-The Four Noble Truths are the foundation of all Buddhist schools. They represent the Buddha's first sermon (_Dhammacakkappavattana Sutta_) and provide a systematic, diagnostic approach to human suffering. Rather than a set of beliefs, they are framed as a medical procedure: identifying a disease, its cause, the possibility of a cure, and the treatment.
+The Four Noble Truths are the foundation of all Buddhist schools. They are the Buddha's first sermon (_Dhammacakkappavattana Sutta_) and provide a systematic, diagnostic approach to human suffering. Rather than a set of beliefs, they are framed as a medical procedure: identifying a disease, its cause, the possibility of a cure, and the treatment.
 
 ## The Medical Analogy
 
-The Buddha is called the **Bhisakka** or "Great Physician." The Four Noble Truths follow the logic of a medical diagnosis and clinical consultation:
+The Buddha is called the **Bhisakka** or "Great Physician." The Four Noble Truths structure a medical diagnosis and clinical consultation:
 
 1. **Dukkha (The Disease)** - Identification of the symptoms and the nature of the illness.
 2. **Samudaya (The Cause)** - What caused the illness and what sustains it.
@@ -20,7 +20,7 @@ The Buddha is called the **Bhisakka** or "Great Physician." The Four Noble Truth
 
 ## 1. The Truth of Suffering (Dukkha)
 
-The first truth is the recognition of **Dukkha**. While often translated as "suffering," it more accurately refers to the inherent "off-kilter" or "unsatisfactory" nature of life. Dukkha is rooted in impermanence (_Anicca_), insubstantiality (_Suññatā_), and the absence of a permanent self (_Anatta_). To understand Dukkha, it is categorized into three levels of depth:
+The first truth is the recognition of **Dukkha**, the inherent "off-kilter" or "unsatisfactory" nature of life. It is often translated as "suffering," though that is too narrow. Dukkha is rooted in impermanence (_Anicca_), insubstantiality (_Suññatā_), and the absence of a permanent self (_Anatta_). To understand Dukkha, it is categorized into three levels of depth:
 
 ### The Three Types of Dukkha
 
@@ -40,7 +40,7 @@ The Buddha teaches that what we call a "being" is not a unified entity but a com
 - **Mental Formations (_Sankhara_)** - All volitional activities and mental processes, including intention (_Cetana_) and attention.
 - **Consciousness (_Vinnana_)** - The basic awareness responding to sensory and mental objects; not a permanent "spirit" but situational awareness.
 
-Because the Five Aggregates are in constant flux with no permanent core, there is no abiding "Self" within them. The realization that life is not a thing that moves but _movement itself_ is fundamental to understanding why Dukkha is inescapable.
+Because the Five Aggregates are in constant flux with no permanent core, there is no abiding "Self" within them. Life is not a thing that moves but _movement itself_. This recognition is fundamental to understanding why Dukkha is inescapable.
 
 **The Task:** The first truth is to be **fully understood**. We do not run from suffering, but investigate its nature until we see it clearly.
 
@@ -69,7 +69,7 @@ Suffering and the continuity of existence are sustained by four "nutriments" (no
 | **Consciousness**              | _Vinnanahara_     | The continuity of the cognitive stream               |
 | **Mental Volition**            | _Manosancetana_   | The "will to live" - the driving force of becoming   |
 
-The fourth nutriment, _Manosancetana_ (mental volition), is particularly significant. It functions like the "libido" of modern psychology. It is a fundamental forward-driving energy. This is what the Second Noble Truth is pointing to: not a single "moment of craving" but a deep volitional force that conditions existence moment to moment.
+The fourth nutriment, _Manosancetana_ (mental volition), is particularly significant. It is a fundamental forward-driving energy comparable to the "libido" of modern psychology. This is what the Second Noble Truth is pointing to: not a single "moment of craving" but a deep volitional force that conditions existence moment to moment.
 
 ### The Law of Kamma
 
@@ -91,7 +91,7 @@ Nibbana is not a place or a reward granted by an external power. Rather, it is t
 
 Nibbana is not "produced" by the path. If it were, it would be a conditioned phenomenon (and therefore, itself, a form of _dukkha_). The mountain is not the result of the path to the mountain; the path merely leads to the mountain. Nibbana is a realization. It is the "dustless Eye of Truth" opening, not an achievement manufactured by effort.
 
-This is why the third truth is not "create Nibbana" but "realize" it: to remove the obstructions that prevent seeing what is already there.
+The third truth is not "create Nibbana" but "realize" it. This means removing the obstructions that prevent seeing what is already there.
 
 ### The Strategic Silence
 
@@ -99,7 +99,7 @@ When the wanderer Vacchagotta asked the Buddha directly, "Does a self exist?", t
 
 Later, he explained: answering "yes" would align with the philosophical trap of **Eternalism** (_Sassata-vāda_) (the idea of a permanent, unchanging soul). Answering "no" would align with **Annihilationism** (_Uccheda-vāda_) (the idea that a self previously existed and is now being destroyed). Both views are distortions. The Buddha's silence was not evasion but precision: the purpose was to remove the "thirst" for "me" and "mine" that generates suffering, not to settle metaphysical debates about what the self ultimately is.
 
-**The Task:** The third truth is to be **realized**. It is not enough to believe in Nibbana; one must directly experience the cessation of craving for themselves.
+**The Task:** The third truth is to be **realized**. Belief in Nibbana is insufficient. Direct experience of the cessation of craving is required.
 
 ---
 

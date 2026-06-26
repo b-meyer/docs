@@ -1,6 +1,6 @@
 ---
 title: 'The Noble Eightfold Path - A Primer'
-description: 'A comprehensive, structured introduction to the Four Noble Truths and the Noble Eightfold Path, the Buddhist framework for mental clarity and liberation.'
+description: 'A structured introduction to the Four Noble Truths and the Noble Eightfold Path, the Buddhist framework for mental clarity and liberation.'
 ---
 
 # The Noble Eightfold Path - A Primer
@@ -49,7 +49,7 @@ The path is traditionally divided into three "Higher Trainings" (_Tisikkha_). Ea
 
 ## The Great Physician's Diagnosis
 
-The Four Noble Truths follow the rigorous logic of a clinical consultation. This collection uses this medical analogy to frame the teachings:
+This collection uses a medical analogy to frame the teachings:
 
 1. **The Disease (_Dukkha_)** - Identifying that life involves an inherent "off-kilter" quality, ranging from obvious pain to the subtle suffering of change.
 2. **The Cause (_Samudaya_)** - Identifying **Tanha** (craving) and **Avijja** (ignorance) as the root etiology.
@@ -83,7 +83,7 @@ The Eightfold Path is not a linear ladder but a **Dhamma Wheel** (_Dhammacakka_)
 - **The Spokes** - The eight factors share the load of spiritual life.
 - **The Rim** - Mindfulness and Concentration encircle and sustain the entire practice.
 
-Each fold begins with the word **Sammā**, meaning "Harmonious" or "Complete." The path is about bringing every aspect of our life (intellectual, emotional, social, and professional) into harmony with reality.
+Each fold begins with the word **Sammā**, meaning "Harmonious" or "Complete." The path brings every aspect of our life (intellectual, emotional, social, and professional) into harmony with reality.
 
 ---
 

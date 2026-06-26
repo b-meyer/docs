@@ -5,7 +5,7 @@ description: 'A structured introduction to Traditional Chinese Medicine (Yin/Yan
 
 # Traditional Chinese Medicine - A Primer
 
-A structured introduction to the foundational theory of Traditional Chinese Medicine (TCM). This collection views the body as a dynamic ecosystem of energies, substances, and functional organ systems, not as a collection of biochemical parts. It walks the reader from the most abstract principle (Yin/Yang) down to the most concrete daily practice (Qigong).
+A structured introduction to the foundational theory of Traditional Chinese Medicine (TCM). This collection treats the body as a dynamic ecosystem of energies, substances, and functional organ systems rather than as a collection of biochemical parts. Concepts proceed from the most abstract principle (Yin/Yang) to the most concrete daily practice (Qigong).
 
 Audience: the curious newcomer, the practitioner-adjacent student, or anyone who has met TCM through acupuncture, herbs, or Tai Chi and wants the underlying framework laid out plainly.
 
@@ -13,7 +13,7 @@ This is an educational primer, not a clinical manual, prescription guide, or dia
 
 ## How to Read This Collection
 
-Ten core topic files form the main progression. Read in order, they walk from abstract principle through substances and anatomy to daily practice:
+Ten core topic files form the main progression. Read in order; they proceed from abstract principle through substances and anatomy to daily practice:
 
 1. **[YinYang.md](YinYang.md)** - the foundational dualism every later concept inherits from.
 2. **[WuXing.md](WuXing.md)** - the Five Phases, extending Yin/Yang into an ecology of correspondences.
@@ -26,23 +26,23 @@ Ten core topic files form the main progression. Read in order, they walk from ab
 9. **[Jingmai.md](Jingmai.md)** (Meridians) - the pathway network connecting organs to the body's surface.
 10. **[Qigong.md](Qigong.md)** - self-cultivation; the bridge from theory to daily practice.
 
-**Why this order:** The sequence narrows from the universal to the personal: binary polarity (YinYang), ecology of five categories (WuXing), the specific substances animating the body (Qi through JinYe), the organ systems where substances operate (ZangFu), how energy reaches the body's surface (Jingmai), and tools to regulate the system yourself (Qigong). Each page assumes the vocabulary of the pages before it.
+**Why this order** - The sequence narrows from the universal to the personal: binary polarity (YinYang), ecology of five categories (WuXing), the specific substances animating the body (Qi through JinYe), the organ systems where substances operate (ZangFu), how energy reaches the body's surface (Jingmai), and tools to regulate the system yourself (Qigong). Each page assumes the vocabulary of the pages before it.
 
-**Quick Start: The Golden Path** - For a practical entry in three pages, read **YinYang → Qi → ZangFu**. These three give the foundational polarity, the primary substance, and the organ synthesis. Together they provide enough context to make sense of any other page in the collection.
+**Quick Start - The Golden Path** - For a practical entry in three pages, read **YinYang → Qi → ZangFu**. These three give the foundational polarity, the primary substance, and the organ synthesis. Together they provide enough context to make sense of any other page in the collection.
 
 ### Additional Reading
 
 These files sit alongside the core progression. They are cross-linked from it but outside the linear sequence. Read them when the core text references them, or as standalone reference once the foundation is in place.
 
-**Causes of disease:**
+**Causes of Disease:**
 
-- **[LiuYin.md](LiuYin.md)** (Six External Pathogens) - Wind, Cold, Heat, Damp, Dryness, Summer-Heat; exogenous causes.
-- **[QiQing.md](QiQing.md)** (Seven Emotions) - Joy, Anger, Pensiveness, Worry, Grief, Fear, Fright; endogenous causes.
+- **[LiuYin.md](LiuYin.md)** - Six External Pathogens (Wind, Cold, Heat, Damp, Dryness, Summer-Heat); exogenous causes.
+- **[QiQing.md](QiQing.md)** - Seven Emotions (Joy, Anger, Pensiveness, Worry, Grief, Fear, Fright); endogenous causes.
 
-**Diagnostic apparatus:**
+**Diagnostic Apparatus:**
 
-- **[BaGang.md](BaGang.md)** (Eight Principles) - the foundational diagnostic framework: Yin/Yang, Interior/Exterior, Cold/Heat, Excess/Deficiency.
-- **[SiZhen.md](SiZhen.md)** (Four Examinations) - Looking, Listening/Smelling, Asking, Palpation; the diagnostic method.
+- **[BaGang.md](BaGang.md)** - Eight Principles (Yin/Yang, Interior/Exterior, Cold/Heat, Excess/Deficiency); the foundational diagnostic framework.
+- **[SiZhen.md](SiZhen.md)** - Four Examinations (Looking, Listening/Smelling, Asking, Palpation); the diagnostic method.
 
 **Treatment** - Four of the Five Branches of TCM Treatment appear as standalone pages (the fifth, [Qigong.md](Qigong.md), is part of the core chain):
 
@@ -75,7 +75,7 @@ Each layer assumes the ones above it:
 
 ## The Three Treasures (San Bao)
 
-TCM holds that human life is sustained by three intertwined energies, each more refined than the last:
+TCM holds that human life rests on three intertwined energies, arranged from coarse to refined:
 
 - **[Jing (Essence)](Jing.md)** - the physical foundation. Inherited at conception, stored in the Kidneys, slowly depleted across a lifetime; the dense material substrate.
 - **[Qi (Vital Energy)](Qi.md)** - the active force. Generated from food, water, and breath; circulates through the meridians; powers every bodily function.
@@ -97,13 +97,13 @@ Classical TCM organizes its therapeutic toolkit into five branches:
 4. **Dietary Therapy** - food prescribed by constitution and pattern; cooked vs raw, warm vs cold, the five flavors (see [WuXing.md](WuXing.md)).
 5. **Qigong / Tai Chi** - self-cultivated exercise therapy; see [Qigong.md](Qigong.md).
 
-The first four are practitioner-applied; the fifth is the patient's own daily work. This split is what makes TCM as much a preventative philosophy as a curative one.
+The first four are practitioner-applied; the fifth is the patient's own daily work. This structure makes TCM a preventative as well as a curative philosophy.
 
-## Working vocabulary
+## Working Vocabulary
 
-Terms that recur across files. Each links to its canonical home.
+Key terms across all files, with links to their canonical homes.
 
-**Substances (the things that flow):**
+**Substances** - the things that flow:
 
 - **[Qi](Qi.md)** - vital energy, the active animating force.
 - **[Xue](Xue.md)** - Blood, the dense material partner to Qi.
@@ -111,24 +111,24 @@ Terms that recur across files. Each links to its canonical home.
 - **[Shen](Shen.md)** - Spirit, consciousness; the most refined.
 - **[Jin Ye](JinYe.md)** - Body Fluids; thinner (_jin_) and thicker (_ye_), regulated by Lung, Spleen, and Kidney.
 
-**Frameworks (the maps):**
+**Frameworks** - the maps:
 
 - **[Yin / Yang](YinYang.md)** - the foundational polarity.
 - **[Wu Xing](WuXing.md)** - the Five Phases (Wood, Fire, Earth, Metal, Water).
 - **[Zang-Fu](ZangFu.md)** - the organ-system synthesis.
 - **[Jingmai](Jingmai.md)** - the meridian channel network.
 
-**Causes of disease:**
+**Causes of Disease:**
 
 - **[Liu Yin](LiuYin.md)** - the Six External Pathogens: Wind, Cold, Heat, Damp, Dryness, Summer-Heat.
 - **[Qi Qing](QiQing.md)** - the Seven Emotions: Joy, Anger, Pensiveness, Worry, Grief, Fear, Fright.
 
-**Diagnostic apparatus:**
+**Diagnostic Apparatus:**
 
 - **[Ba Gang](BaGang.md)** - the Eight Principles: Yin/Yang, Interior/Exterior, Cold/Heat, Excess/Deficiency.
 - **[Si Zhen](SiZhen.md)** - the Four Examinations: Looking, Listening/Smelling, Asking, Palpation.
 
-**Recurring concepts:**
+**Recurring Concepts:**
 
 - **Dantian** - three energy reservoirs (lower/middle/upper) along the body's central axis; see [Jingmai](Jingmai.md#the-dantians).
 - **Wei Qi / Ying Qi** - Defensive Qi (skin-level immunity) vs Nutritive Qi (flows with the Blood); see [Qi.md](Qi.md).
@@ -137,9 +137,9 @@ Terms that recur across files. Each links to its canonical home.
 - **San Jiao (Triple Burner)** - invisible thermal-regulation pathway; the sixth Fu organ in the meridian system.
 - **Phlegm / Dampness (Tan / Shi)** - pathological fluid patterns; see [JinYe.md](JinYe.md).
 
-## Pinyin disambiguation
+## Pinyin Disambiguation
 
-Romanization collapses distinct Chinese characters onto the same English spelling. The most important collisions in this collection:
+Multiple distinct Chinese characters romanize to the same English spelling. The most common collisions in this collection:
 
 | Romanization | Meaning                                                                          | Where used                                   |
 | ------------ | -------------------------------------------------------------------------------- | -------------------------------------------- |
@@ -150,20 +150,20 @@ Romanization collapses distinct Chinese characters onto the same English spellin
 
 Each pair shares its pinyin spelling but is written with a different Chinese character; they are distinguishable only by context. When this collection says **Shen**, the surrounding section makes clear whether it means Spirit or Kidney.
 
-## The 5-vs-6 Zang reconciliation
+## The 5-vs-6 Zang Reconciliation
 
-Different TCM frameworks count organs differently. This is the single most-asked clarification across the collection:
+Different TCM frameworks count organs differently. Both coexist and apply to different anatomical models:
 
 - **The Five Phases framework** ([WuXing.md](WuXing.md)) uses **5 Zang organs**, one per phase: Heart (Fire), Liver (Wood), Spleen (Earth), Lung (Metal), Kidney (Water).
 - **The meridian framework** ([Jingmai.md](Jingmai.md)) uses **6 Zang organs**, adding the **Pericardium** as a sixth Yin organ paired with the **San Jiao** as a sixth Fu organ. This produces the 12 symmetrical channels that define the primary meridian system.
 
-Both are valid; they emphasize different aspects of physiology. When in doubt about which framework a passage is operating in, ask whether the topic is elemental correspondence (5) or channel anatomy (6).
+Both are valid and emphasize different aspects of physiology. To determine which applies, check whether the topic is elemental correspondence (5) or channel anatomy (6).
 
-## Primary classical source
+## Primary Classical Source
 
 The _Huangdi Neijing_ (_Yellow Emperor's Inner Classic_) is the canonical text behind nearly every concept in this collection. Compiled across the late Warring States period and Han Dynasty (~300 BCE - 200 CE), it is the oldest surviving systematic articulation of TCM theory. Yin/Yang, Wu Xing, Zang-Fu, meridians, and the 7/8-year human life cycles all trace to it. Where individual files reference the Neijing for a specific claim (life-cycle timing in `Jing.md`, the "digging a well when already thirsty" parable in `Qigong.md`), they are pointing to the same source.
 
-## Style and conventions
+## Style and Conventions
 
 - **Hedged framing.** Every claim is "in TCM…" rather than biomedical assertion. Overlap with biomedicine is noted; divergence too.
 - **Western analogies.** Abstract concepts are anchored in familiar imagery: candle/flame/light, rivers/lakes, engine/pump. This approach avoids overclaiming equivalence.

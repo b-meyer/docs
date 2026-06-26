@@ -7,7 +7,7 @@ description: 'Herbal medicine in TCM uses roughly two thousand substances classi
 
 ## Overview
 
-Herbal medicine is the **second branch** of the Five Branches of TCM Treatment and the broadest, most systematically documented body of knowledge in the tradition. Where acupuncture manipulates Qi through the needle, herbal medicine works internally. Substances carrying specific energetic qualities enter the body, travel to the channels they are affined with, and shift the body's thermal, fluid, and functional balance from within.
+Herbal medicine is the **second branch** of the Five Branches of TCM Treatment and the broadest, most systematically documented body of knowledge in the tradition. Where acupuncture manipulates Qi through the needle, herbal medicine works internally. Substances carrying specific energetic qualities enter the channels they have affinity with and shift the body's thermal and fluid balance from within.
 
 The modern materia medica (_bĕn căo_) lists roughly 2,000 substances in clinical use. Most are plant-derived; others include mineral materials (gypsum, magnetite, oyster shell) and animal materials (earthworm, scorpion, cicada molt). They are almost never used alone. The fundamental unit is the **formula** (_fāng jì_), a precision blend in which every ingredient carries a defined role and the aggregate action addresses a diagnosed [Zang-Fu](ZangFu.md) pattern more accurately than any single herb could. A practitioner reaches for a formula because a [Ba Gang](BaGang.md) diagnosis has identified the pattern; the formula is the conclusion of a clinical argument, not an empirical remedy for a symptom.
 

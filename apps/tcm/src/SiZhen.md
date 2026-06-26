@@ -3,11 +3,11 @@ title: 'Si Zhen (Four Examinations)'
 description: "The Four Examinations - TCM's canonical diagnostic method: Looking, Listening/Smelling, Asking, and Palpation. Includes tongue and pulse fundamentals."
 ---
 
-# Si Zhen - The Four Examinations
+# Si Zhen - the Four Examinations
 
 ## Overview
 
-**Si Zhen**, the Four Examinations, is the canonical diagnostic _method_ of TCM. Where the [Eight Principles](BaGang.md) provide the _framework_ into which a pattern is sorted, the Four Examinations describe _how the data is gathered_. The four methods are:
+The four methods are:
 
 1. **Wang Zhen** - Looking (observation)
 2. **Wen Zhen (listening)** - Listening and Smelling

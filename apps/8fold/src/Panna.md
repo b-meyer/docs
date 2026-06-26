@@ -5,7 +5,7 @@ description: 'The Wisdom training of the Eightfold Path: from Right View through
 
 # Paññā - Wisdom
 
-**Paññā** is the third and terminal training (the _Paññākkhandha_, or Wisdom Group) and the final surgical instrument of the path. It is a faculty of **seeing** that directly counters ignorance (_avijjā_), the root cause of the entire cycle of suffering and rebirth. It is not an accumulation of philosophical data or mastery of abstract formulas, but a capacity to perceive reality as it is.
+**Paññā** is the third and terminal training (the _Paññākkhandha_, or Wisdom Group) and the final surgical instrument of the path. It is a faculty of **seeing** that directly counters ignorance (_avijjā_), the root cause of the entire cycle of suffering and rebirth. Paññā is a capacity to perceive reality as it is. It is not an accumulation of philosophical data or mastery of abstract formulas.
 
 The three trainings address three layers of defilement in sequence:
 
@@ -49,7 +49,7 @@ Within the Noble Eightfold Path, the Wisdom training comprises two factors:
 - **Mundane Right View** (_kammassakatā sammādiṭṭhi_) - correct grasp of the law of kamma, recognizing that beings are the owners and heirs of their actions. This provides the rationale for moral conduct and spiritual effort within the round of existence.
 - **Supramundane Right View** - penetrative understanding of the Four Noble Truths: suffering, its origin, its cessation, and the path to its cessation. This is the view that leads directly to liberation.
 
-**Right Intention** (_Sammā Saṅkappa_) comprises thoughts of renunciation, love, and non-violence. These are classified as Wisdom rather than Ethics because they are the _cognitive result_ of realizing Anattā: when one sees that there is no permanent self to protect or aggrandize, selfish desire and ill-will become recognized as irrational. Right Intention is therefore the manifest proof of awakening intelligence, not merely a moral aspiration.
+**Right Intention** (_Sammā Saṅkappa_) comprises thoughts of renunciation, love, and non-violence. These are classified as Wisdom rather than Ethics because they are the _cognitive result_ of realizing Anattā: when one sees that there is no permanent self to protect or aggrandize, selfish desire and ill-will become recognized as irrational. Right Intention is the proof of awakening intelligence, not merely a moral aspiration.
 
 ---
 
@@ -130,9 +130,9 @@ Keeping this in mind prevents both overconfidence ("I've had deep experiences, t
 
 ## The Critical Juncture: The A&P and the Dark Night
 
-The transition from **Stage 4 (A&P)** to **Stages 5–10 (the Knowledges of Suffering)** is the most critical and most misunderstood transition in the entire map.
+The transition from **Stage 4 (A&P)** to **Stages 5 to 10 (the Knowledges of Suffering)** is the most critical and most misunderstood transition in the entire map.
 
-| The A&P Peak (Stage 4)                            | The Dark Night Entry (Stages 5–10)                                             |
+| The A&P Peak (Stage 4)                            | The Dark Night Entry (Stages 5 to 10)                                          |
 | :------------------------------------------------ | :----------------------------------------------------------------------------- |
 | Point of no-return once crossed                   | Must complete the cycle to find resolution                                     |
 | High energy: fireworks, rapture, bright lights    | Spiritual crisis: a profound feeling of being caught in the mind's machinery    |
@@ -142,7 +142,7 @@ The transition from **Stage 4 (A&P)** to **Stages 5–10 (the Knowledges of Suff
 
 ### The Dark Night in Plain Language
 
-The Knowledges of Suffering (Stages 5–10) are often encountered as a general background sense of unease, fragmentation, or dissatisfaction, not necessarily as dramatic psychological crisis. They can manifest as a pervasive flatness, a sense that familiar pleasures have lost their shine, or an unnamed urgency.
+The Knowledges of Suffering (Stages 5 to 10) are often encountered as a general background sense of unease, fragmentation, or dissatisfaction, not necessarily as dramatic psychological crisis. They can manifest as a pervasive flatness, a sense that familiar pleasures have lost their shine, or an unnamed urgency.
 
 The critical insight is that **thinking about it will not solve it**. The mind is in a phase where its usual cognitive tools (reasoning, reframing, philosophizing) run into a wall. The resolution is not intellectual; it is the continued practice of noting arising and passing phenomena with as much equanimity as can be mustered, until the progression continues naturally.
 
@@ -150,7 +150,7 @@ The practitioner who understands this map does not panic during the Dark Night. 
 
 ---
 
-## Equanimity and Conformity (Stages 11–12)
+## Equanimity and Conformity (Stages 11-12)
 
 Stage 11, **Equanimity**, marks the exit from the Dark Night. The practitioner is no longer fighting the machinery of experience but riding it with composure. The Pali quality **_Danta_** describes this maturity as tamed, poised, dignified, and comfortable in one's own skin. This means the capacity to hold difficulty without self-oppression.
 
@@ -160,7 +160,7 @@ Practitioners who complete a full 16-stage cycle and continue often encounter qu
 
 ---
 
-## Path, Fruition, and Review (Stages 13–16)
+## Path, Fruition, and Review (Stages 13-16)
 
 These are the supramundane stages:
 

@@ -58,13 +58,11 @@ _For the nature of Qi itself and its distinct types (Wei Qi, Ying Qi, Yuan Qi), 
 
 ## Solar alignment - Reading the Organ Clock in Real Time
 
-The Organ Clock windows are anchored to the actual **solar arc**, not fixed clock time. This is the principle of _Ziran_ (natural attunement) applied to daily physiology. Solar noon, the moment of maximum Yang, is the pivot around which all other windows rotate. As the sun rises earlier or later through the seasons, the windows shift with it. Living by fixed clock time while the solar arc moves means body and schedule drift apart, a chronic misalignment TCM considers a low-grade stressor that depletes reserves faster than normal aging.
+The Organ Clock windows are anchored to the actual **solar arc**, not fixed clock time. This is the principle of _Ziran_ (natural attunement) applied to daily physiology. Solar noon, the moment of maximum Yang, is the pivot around which all other windows rotate. As the sun rises earlier or later through the seasons, the windows shift with it. When the body follows the solar arc but the schedule remains fixed by clock time, the mismatch creates chronic low-grade stress. TCM considers this misalignment a stressor that depletes constitutional reserves faster than normal aging alone.
 
 Practically: in northern winters, solar noon may fall at 11:30 AM; in summer, at 1 PM. As the Stomach/Spleen peak (7–11 AM in the table) shifts with the solar arc, breakfast becomes optimal not at a fixed clock hour, but during the ascending Yang phase.
 
 ### Six solar windows in practice
-
-The 12 Organ Clock slots group into six experiential windows:
 
 | Window                   | Solar position             | Organ focus                      | Orientation                                                                                                                             |
 | ------------------------ | -------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -79,7 +77,7 @@ _Insubstantial Phlegm (noon-to-sunset window) is defined in [JinYe.md](JinYe.md)
 
 ### Modern rationale
 
-Three practical outcomes reinforce why solar alignment matters:
+Solar alignment supports three outcomes:
 
 - **Burnout prevention:** Front-loading nutrition in the ascending Yang phase builds robust Post-Natal Jing reserves, reducing the draw on constitutional Pre-Natal reserves during high-stress periods.
 - **Cognitive longevity:** The midday eating close and afternoon fasting gap prevent Spleen Damp from congealing into Insubstantial Phlegm, which TCM identifies as a precursor to chronic muddled thinking and cognitive decline.
@@ -87,7 +85,7 @@ Three practical outcomes reinforce why solar alignment matters:
 
 ## Extraordinary Vessels
 
-Beyond the 12 primary meridians, TCM recognizes **8 Extraordinary Vessels**. They act like reservoirs or "lakes" that store excess Qi and supplement the primary meridians when they are deficient. The two most prominent:
+Beyond the 12 primary meridians, TCM recognizes **8 Extraordinary Vessels**. These reservoirs, or "lakes," store excess Qi and supplement the primary meridians when they are deficient. The two most prominent:
 
 - **Conception Vessel (Ren Mai)** - Runs up the exact midline of the front of the body. Directs Yin energy and regulates reproduction.
 - **Governing Vessel (Du Mai)** - Runs up the exact midline of the spine and head. Directs Yang energy and strengthens the nervous system.

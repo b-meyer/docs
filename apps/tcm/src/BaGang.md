@@ -7,7 +7,7 @@ description: "The Eight Principles - TCM's foundational diagnostic framework. Yi
 
 ## Overview
 
-**Ba Gang**, the Eight Principles, is the **foundational diagnostic framework** of TCM. Every pattern, no matter how detailed, is first sorted through four polarities that yield eight categories. The Eight Principles do not name diseases; they classify the _quality_ of an illness so the practitioner knows what kind of intervention is needed.
+**Ba Gang**, the Eight Principles, classifies illnesses in TCM according to four pairs of opposites. Every pattern, no matter how detailed, is first sorted through four polarities that yield eight categories. The Eight Principles do not name diseases; they classify the _quality_ of an illness so the practitioner knows what kind of intervention is needed.
 
 The four pairs are:
 
@@ -16,7 +16,7 @@ The four pairs are:
 3. **Cold (Han) / Heat (Re)** - thermal nature
 4. **Excess (Shi) / Deficiency (Xu)** - the strength of pathogen relative to upright Qi
 
-The framework was systematized by the Ming-dynasty physician Zhang Jingyue (1563–1640) drawing on earlier texts, and remains the first lens any TCM diagnosis runs through. Other frameworks fill in the specific _what_: [Zang-Fu pattern diagnosis](ZangFu.md), [Liu Yin external pathogens](LiuYin.md), and Qi-Xue-Jin Ye substance patterns. The Eight Principles establish the _kind_.
+The framework was systematized by the Ming-dynasty physician Zhang Jingyue (1563–1640) drawing on earlier texts. Every TCM diagnosis begins with the Eight Principles. Other frameworks name the specific _what_ through [Zang-Fu pattern diagnosis](ZangFu.md), [Liu Yin external pathogens](LiuYin.md), and Qi-Xue-Jin Ye substance patterns. The Eight Principles establish the _kind_.
 
 The clinical value is that an Eight Principles signature **maps directly to a treatment principle**. Identify "Interior Excess Heat" and the treatment is _clear heat and drain fire_. Identify "Exterior Excess Wind-Cold" and the treatment is _warm and release the exterior_. Identify "Interior Deficient Yin with empty Heat" and the treatment is _nourish Yin and clear empty-Heat_. The eight categories produce a small, finite vocabulary of treatment directions that herbs, acupoints, and formulas are then organized around.
 
@@ -86,7 +86,7 @@ The Neijing principle: _Heat patterns can look cold, and Cold patterns can look 
 
 ## Relationship to the other frameworks
 
-The Eight Principles is the **lens**; the other frameworks fill in the **detail**:
+The Eight Principles supplies the classification structure. The other frameworks supply specific detail:
 
 - **Zang-Fu pattern diagnosis** ([ZangFu.md](ZangFu.md)) - which organ is involved. Heart Fire is Interior Excess Heat at Heart; Spleen Qi deficiency is Interior Deficient Cold at Spleen.
 - **Liu Yin** ([LiuYin.md](LiuYin.md)) - which external pathogen, if any. Wind-Cold is Exterior Excess Cold at Wei level.

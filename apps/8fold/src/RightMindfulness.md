@@ -1,11 +1,11 @@
 ---
 title: 'Right Mindfulness - Clear Awareness'
-description: 'A deep exploration of Right Mindfulness: the Four Foundations of Satipatthana and the practice of seeing reality without distortion.'
+description: 'An exploration of Right Mindfulness: the Four Foundations of Satipatthana and the practice of seeing reality without distortion.'
 ---
 
 # Right Mindfulness - Samma Sati
 
-Right Mindfulness is the quality of clear, non-judgmental awareness. It is the practice of seeing things as they are, without the distortion of our biases, memories, or projections. While **Right Effort** is the energy of the path, Right Mindfulness is the "steering wheel" that ensures that energy is directed toward clarity.
+Right Mindfulness is the quality of clear, non-judgmental awareness. It is the practice of seeing things as they are. While **Right Effort** is the energy of the path, Right Mindfulness is the "steering wheel" that ensures that energy is directed toward clarity.
 
 Mindfulness is traditionally practiced through the **Four Foundations of Mindfulness** (_Satipaṭṭhāna_), systematically described in the _Satipaṭṭhāna Sutta_, one of the most important suttas in the entire Pali Canon. The sutta's opening declares that this "is the direct path for the purification of beings, for the surmounting of sorrow and lamentation, for the disappearance of pain and grief, for the attainment of the true way, for the realization of Nibbāna."
 
@@ -56,8 +56,6 @@ Simply noting "anger is present" or "distraction is present" without judging you
 ---
 
 ## 4. Mindfulness of Mental Objects (_Dhamma_)
-
-This is observing experience through the lens of the teachings.
 
 ### The Five Hindrances (_Nivarana_)
 
