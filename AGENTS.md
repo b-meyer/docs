@@ -14,6 +14,19 @@ docs/                        ← repo root (pnpm workspace)
 
 Stack: Vite + Vue 3 + framework-ssg (custom SSG, not SPA) + unplugin-vue-markdown + Tailwind 4. NOT VitePress.
 
+## App scope
+
+Each `apps/<app>/` is a self-contained primer at one of two grains:
+
+- **Broad (tradition-level)** — a whole domain with a conceptual core and a long tail of specialist material (`tcm`, `dao`). The sidebar splits into core groups plus supplementary groups flagged `extra: true`.
+- **Focused (framework-level)** — one bounded framework whose structure is fixed by the subject (`8fold`: eight factors, four truths, three trainings). No long tail, so no `extra` tier.
+
+Use **hub-and-spoke** only when the relationship is **containment**: the spoke is a specific framework *within* the hub's tradition, and the hub would have to re-author the same material at real depth — or leave a meaningful gap — without it. The hub gives the shared topic one overview page that links out to the spoke rather than re-authoring it (apps deploy as separate sites, so this is a cross-site link, not the intra-app `[Display](Other.md)` form).
+
+Do **not** cross-link apps whose relationship is **parallel** — shared structural analogies or historical influence where each system's treatment of the overlapping concepts is self-contained within its own doctrine. Those apps are standalone; each owns its own foundational material. Buddhism → 8fold is containment (the Eightfold Path is a Buddhist framework). Dao and TCM are parallel (both discuss Yin-Yang, but from independent starting points for independent purposes).
+
+Candidate apps and their scoping rationale live in `docs/ROADMAP.md`. While an app is being authored, a temporary `apps/<app>/RESEARCH.md` holds its full page inventory; it is removed once the `src/*.md` pages and sidebar exist.
+
 ## Before finishing any task
 
 1. `vp check` — format, lint, type-check the whole workspace
@@ -62,6 +75,7 @@ All commands from the **repo root**.
 - Dependency versions live in `pnpm-workspace.yaml` catalog — never edit individual `package.json` versions directly.
 - `vue-router@~5.0.7` is intentional (in-dev next major). Do not upgrade to v4.
 - Cross-links in markdown: `[Display](Other.md)` — resolves to `/Other`. Never hardcode `/Other`.
+- Sidebar groups of supplementary pages carry `extra: true` (between `group` and `items`) to render de-emphasized. See **App scope** for when an app needs the tier.
 
 ## Content writing
 
@@ -136,3 +150,4 @@ Tests colocate next to source (`useFoo.ts` + `useFoo.test.ts`), all in `packages
 | CI/CD pipeline and deploy stages                 | `docs/PIPELINE.md`        |
 | Security posture, CSP, and secrets inventory     | `docs/SECURITY.md`        |
 | Contributing workflow and pre-PR gate            | `docs/CONTRIBUTING.md`    |
+| Prospective apps and how to scope them           | `docs/ROADMAP.md`         |

@@ -6,10 +6,10 @@
   "scripts": {
     "dev:tcm": "vp run tcm#dev",
     "dev:8fold": "vp run 8fold#dev",
-    "dev:showcase": "vp run showcase#dev",
+    "dev:dao": "vp run dao#dev",
     "preview:tcm": "vp run tcm#preview",
     "preview:8fold": "vp run 8fold#preview",
-    "preview:showcase": "vp run showcase#preview",
+    "preview:dao": "vp run dao#preview",
     "build": "vp run -r build",
     "check": "vp check",
     "fix": "vp check --fix",
