@@ -42,6 +42,7 @@ overrides:
   vite: 'catalog:'
   vitest: 'catalog:'
   ws: '>=8.21.0'
+  linkify-it: '>=5.0.1'
 peerDependencyRules:
   allowAny:
     - vite
