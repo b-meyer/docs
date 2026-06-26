@@ -1,5 +1,5 @@
 ---
-name: human-voice
+name: app-humanizer
 ---
 
 # Human Voice: Remove AI Writing Patterns

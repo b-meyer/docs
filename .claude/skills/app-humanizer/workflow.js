@@ -1,5 +1,5 @@
 export const meta = {
-  name: 'human-voice',
+  name: 'app-humanizer',
   description: 'Remove AI writing patterns from markdown files',
   phases: [{ title: 'Rewrite' }],
 }

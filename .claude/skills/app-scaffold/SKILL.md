@@ -1,5 +1,5 @@
 ---
-name: scaffold-app
+name: app-scaffold
 ---
 
 # Scaffold a primer app
@@ -143,4 +143,4 @@ Then present `RESEARCH.md` to the author for review. Key things for them to chec
 - All source URLs resolve and are authoritative
 - Grain (broad/focused) and `extra: true` tier are correct
 
-Once they approve, `research-app` can take over and write all the pages.
+Once they approve, `app-research` can take over and write all the pages.

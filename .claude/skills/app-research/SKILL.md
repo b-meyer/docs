@@ -1,5 +1,5 @@
 ---
-name: research-app
+name: app-research
 ---
 
 # Write Primer Content
@@ -121,4 +121,4 @@ If you see violations in the output, the workflow prompt is the place to fix the
 1. Run `vp check` — fix all lint/type errors.
 2. Run `vp run test` — fix any test failures.
 3. If routing changed: `vp run build`.
-4. Consider running `/human-voice` over pages that feel dense or pattern-heavy.
+4. Consider running `/app-humanizer` over pages that feel dense or pattern-heavy.
