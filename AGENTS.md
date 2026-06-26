@@ -27,11 +27,12 @@ Candidate apps and their scoping rationale live in `docs/ROADMAP.md`. While an a
 
 ## Before finishing any task
 
-1. `vp check` — format, lint, type-check the whole workspace
-2. `vp run test` — run all tests
-3. If the task touched a build artifact or routing: `vp run build`
+1. `vp run fix` — autofix formatting and lint issues
+2. `vp check` — verify no remaining format, lint, or type errors
+3. `vp run test` — run all tests
+4. If the task touched a build artifact or routing: `vp run build`
 
-Fix all failures before handing back. Do not leave lint errors, type errors, or failing tests for a human to clean up.
+Always run `vp run fix` before `vp check` — `vp check` will fail on formatting issues that `vp run fix` would have caught automatically. Do not hand back with lint errors, type errors, or failing tests.
 
 ## Toolchain — `vp` is the sole entry point
 
