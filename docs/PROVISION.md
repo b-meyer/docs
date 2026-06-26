@@ -2,7 +2,7 @@
 purpose: 'Documents how to provision, configure, and tear down Azure Static Web Apps resources for this project.'
 scope: 'Azure SWA resource provisioning only — CI pipeline in PIPELINE, runtime hosting model in RUNTIME. No Functions, App Service, or database resources in scope (project is pure-SWA).'
 audience: 'Maintainers provisioning new environments or rotating tokens (primary); agents reasoning about infrastructure setup (secondary).'
-summary: 'One Azure SWA resource per app under rg-docs-prod; provisioned via infra/main.bicep (subscription-scoped, single command); deployment token retrieved with az CLI and stored as GitHub Actions secret; staticwebapp.config.json is committed (no pipeline substitution); teardown via resource group deletion + token revocation.'
+summary: 'One Azure SWA resource per app under rg-docs-prod; naming convention swa-<slug>-prod; provisioned via infra/main.bicep (subscription-scoped, single command); deployment token retrieved with az CLI and stored as a GitHub Actions secret named AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG>_PROD; staticwebapp.config.json is committed (no pipeline substitution); teardown via resource group deletion + token revocation.'
 ---
 
 # Provision
@@ -20,19 +20,24 @@ Before running the provisioning runbook, confirm you have:
 
 Each app has its own Azure Static Web Apps resource under a shared resource group. Resources are independent — no shared backends, no Functions, no databases.
 
-| App          | Resource name    | Resource group | Secret name                                |
-| ------------ | ---------------- | -------------- | ------------------------------------------ |
-| `apps/tcm`   | `swa-tcm-prod`   | `rg-docs-prod` | `AZURE_STATIC_WEB_APPS_API_TOKEN_TCM_PROD` |
-| `apps/8fold` | `swa-8fold-prod` | `rg-docs-prod` | `AZURE_STATIC_WEB_APPS_API_TOKEN_8FOLD`    |
+**Naming conventions:**
+
+| Token | Pattern | Example (`dao`) |
+| ----- | ------- | --------------- |
+| Azure resource | `swa-<slug>-prod` | `swa-dao-prod` |
+| Resource group | `rg-docs-prod` | — |
+| GitHub secret | `AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG>_PROD` | `AZURE_STATIC_WEB_APPS_API_TOKEN_DAO_PROD` |
+
+The current app list lives in `infra/main.bicep` — one `module` block per app.
 
 ## Infrastructure as code
 
 All Azure resources are defined in `infra/`:
 
-| File               | Scope          | Purpose                                                 |
-| ------------------ | -------------- | ------------------------------------------------------- |
-| `infra/main.bicep` | Subscription   | Creates the resource group and deploys both SWA modules |
-| `infra/swa.bicep`  | Resource group | Parameterized SWA resource (reused as a module)         |
+| File               | Scope          | Purpose                                                     |
+| ------------------ | -------------- | ----------------------------------------------------------- |
+| `infra/main.bicep` | Subscription   | Creates the resource group and deploys all app SWA modules  |
+| `infra/swa.bicep`  | Resource group | Parameterized SWA resource (reused as a module per app)     |
 
 ## Provisioning runbook
 
@@ -46,35 +51,32 @@ az deployment sub create \
   --template-file infra/main.bicep
 ```
 
-This creates `rg-docs-prod`, `swa-tcm-prod`, and `swa-8fold-prod` in a single deployment.
+This creates `rg-docs-prod` and one `swa-<slug>-prod` resource for each app module defined in `infra/main.bicep`. Idempotent — existing resources are left unchanged.
 
 **Phase 2 — GitHub wiring** _(one command per app)_
 
-```bash
-gh secret set AZURE_STATIC_WEB_APPS_API_TOKEN_TCM_PROD --body \
-  "$(az staticwebapp secrets list \
-    --name swa-tcm-prod \
-    --resource-group rg-docs-prod \
-    --query "properties.apiKey" -o tsv)"
+Run once for each app, substituting its slug:
 
-gh secret set AZURE_STATIC_WEB_APPS_API_TOKEN_8FOLD --body \
+```bash
+# Replace <slug> with the app directory name (e.g. dao) and <SLUG> with its uppercase form (e.g. DAO)
+gh secret set AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG>_PROD --body \
   "$(az staticwebapp secrets list \
-    --name swa-8fold-prod \
+    --name swa-<slug>-prod \
     --resource-group rg-docs-prod \
     --query "properties.apiKey" -o tsv)"
 ```
 
+The `deploy-app` skill generates the filled-in commands for a specific app.
+
 Partial-failure recovery: if Phase 2 fails after Phase 1 completes, the Azure resources already exist — skip Phase 1 and re-run only the failing `gh secret set` command.
 
-## Custom domain migration (TCM)
+## Custom domain
 
-After the first successful TCM deploy, migrate the custom domain from the old SWA resource:
+After the first successful deploy, a custom domain can be attached to the SWA resource:
 
-1. **Azure Portal** → `swa-tcm-prod` → Custom domains → Add → enter your domain. Azure provides a CNAME or TXT record for validation; add it at your DNS provider to complete TLS provisioning.
-2. **At your DNS provider:** update the CNAME (subdomain) or alias/ANAME (apex) to `swa-tcm-prod.azurestaticapps.net`. Wait for propagation and confirm HTTPS is live on the custom domain.
-3. **Decommission the old resource** only after the custom domain resolves on the new SWA:
-   - Azure Portal → old SWA resource → Delete
-   - `gh secret delete AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_RIVER_0E1FD7A10`
+1. **Azure Portal** → `swa-<slug>-prod` → Custom domains → Add → enter your domain. Azure provides a CNAME or TXT record for validation; add it at your DNS provider to complete TLS provisioning.
+2. **At your DNS provider:** update the CNAME (subdomain) or alias/ANAME (apex) to `swa-<slug>-prod.azurestaticapps.net`. Wait for propagation and confirm HTTPS is live.
+3. **Decommission the old resource** only after the custom domain resolves on the new SWA — delete the old SWA resource from the Azure Portal and remove its corresponding GitHub secret.
 
 ## IAM model
 
@@ -99,12 +101,12 @@ Each app's `public/staticwebapp.config.json` is committed to the repo and upload
 
 ## Teardown
 
-1. In the Azure portal, delete `rg-docs-prod` (removes all resources including both SWA instances).
-2. Delete the corresponding GitHub Actions secrets:
+1. In the Azure portal, delete `rg-docs-prod` (removes all SWA resources in the group).
+2. Delete each app's GitHub Actions secret — name follows the pattern `AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG>_PROD`:
    ```bash
-   gh secret delete AZURE_STATIC_WEB_APPS_API_TOKEN_TCM_PROD
-   gh secret delete AZURE_STATIC_WEB_APPS_API_TOKEN_8FOLD
+   gh secret delete AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG>_PROD
    ```
+   Run once per app. The current set of secrets matches the apps in `infra/main.bicep`.
 
 ## Industry References
 

@@ -28,3 +28,12 @@ module eightfold 'swa.bicep' = {
     location: location
   }
 }
+
+module dao 'swa.bicep' = {
+  name: 'swa-dao'
+  scope: rg
+  params: {
+    appName: 'dao'
+    location: location
+  }
+}

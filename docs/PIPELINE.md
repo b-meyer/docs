@@ -1,24 +1,21 @@
 ---
-purpose: 'Documents the GitHub Actions CI/CD pipelines that build and deploy TCM and 8fold to Azure Static Web Apps.'
+purpose: 'Documents the GitHub Actions CI/CD pipelines that build and deploy apps to Azure Static Web Apps.'
 scope: 'Pipeline stages and deployment only — Azure resource setup in PROVISION, runtime hosting model in RUNTIME, toolchain commands in TOOLCHAIN.'
 audience: 'Contributors debugging CI failures (primary); maintainers modifying the pipeline (secondary); agents reasoning about the deploy contract (tertiary).'
-summary: 'Two manual workflow_dispatch pipelines — deploy-tcm.yml and deploy-8fold.yml — each running check → test → audit → build → SBOM → SWA deploy. TCM token in AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_RIVER_0E1FD7A10; 8fold token in AZURE_STATIC_WEB_APPS_API_TOKEN_8FOLD (set after provisioning). PUBLIC_SITE_URL sets sitemap base URL.'
+summary: 'One manual workflow_dispatch pipeline per app (deploy-<slug>.yml in .github/workflows/), each running check → test → audit → build → SBOM → SWA deploy. Token secrets follow the pattern AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG>_PROD. PUBLIC_SITE_URL sets sitemap base URL.'
 ---
 
 # Pipeline
 
 ## Workflows
 
-| File                                 | App          | Trigger                      |
-| ------------------------------------ | ------------ | ---------------------------- |
-| `.github/workflows/deploy-tcm.yml`   | `apps/tcm`   | Manual (`workflow_dispatch`) |
-| `.github/workflows/deploy-8fold.yml` | `apps/8fold` | Manual (`workflow_dispatch`) |
+One workflow file per app: `.github/workflows/deploy-<slug>.yml`. All are triggered manually — there is no automatic trigger on push. See `.github/workflows/` for the current list.
 
-Both workflows are triggered manually from the GitHub Actions UI (Actions tab → select workflow → Run workflow). There is no automatic trigger on push.
+To trigger: GitHub Actions tab → select the workflow → Run workflow.
 
 ## Stages
 
-Both pipelines run the same stages in order:
+All pipelines run the same stages in order:
 
 | Stage            | Command                                                 | Purpose                                                                                                      |
 | ---------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -56,14 +53,9 @@ No advisory (non-blocking) checks exist today — every CI step is blocking.
 
 **Action:** `Azure/static-web-apps-deploy` pinned to a commit SHA (v1).
 
-**Token secrets:**
+**Token secrets:** Each app uses a secret named `AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG>_PROD`, stored as a GitHub Actions repo secret. See [PROVISION.md](PROVISION.md) for the provisioning runbook and rotation procedure.
 
-| App          | Secret name                                                                                         |
-| ------------ | --------------------------------------------------------------------------------------------------- |
-| `apps/tcm`   | `AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_RIVER_0E1FD7A10`                                              |
-| `apps/8fold` | `AZURE_STATIC_WEB_APPS_API_TOKEN_8FOLD` (set after provisioning — see [PROVISION.md](PROVISION.md)) |
-
-Both secrets are stored as GitHub Actions repo secrets. See [PROVISION.md](PROVISION.md) for rotation procedure. Note: `Azure/static-web-apps-deploy` authenticates via deployment token only — no native OIDC flow exists for this action. An OIDC path would require switching to a different deployment mechanism (e.g., SWA CLI with `azure/login` federated identity).
+Note: `Azure/static-web-apps-deploy` authenticates via deployment token only — no native OIDC flow exists for this action. An OIDC path would require switching to a different deployment mechanism (e.g., SWA CLI with `azure/login` federated identity).
 
 **Upload mode:** `skip_app_build: true` with `app_location: 'apps/<app>/dist'` and `output_location: ''`. This uploads the pre-built artifact directly, bypassing the SWA builder. Without this, the action attempts to build from source and either fails or uploads `node_modules` (exceeding the SWA Free 250 MB limit). Note: the build task must output `staticwebapp.config.json` to `apps/<app>/dist` before the deploy step; Microsoft requires the file at the `output_location` root when `skip_app_build: true`.
 

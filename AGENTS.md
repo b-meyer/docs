@@ -4,9 +4,7 @@
 
 ```
 docs/                        ← repo root (pnpm workspace)
-├── apps/tcm/                TCM Primer — deployed to Azure SWA
-├── apps/8fold/              Eightfold Path — not yet deployed
-├── apps/showcase/           Framework feature showcase — not yet deployed
+├── apps/                    primer apps — one directory per app (run `ls apps/` for current list)
 ├── packages/qdocs/          qdocs — shared framework library
 ├── docs/                    topical docs (ARCHITECTURE, CONVENTIONS, etc.)
 └── vite.config.ts           canonical lint + format config (whole workspace)
@@ -45,10 +43,8 @@ Fix all failures before handing back. Do not leave lint errors, type errors, or 
 | `vp run build`        | Build all apps (`qdocs-ssg` → static HTML per route) |
 | `vp run test`         | Run all tests (Vitest)                               |
 | `vp run ready`        | `vp check && vp run build` — pre-push gate           |
-| `vp run dev:tcm`      | Dev server for TCM app                               |
-| `vp run dev:8fold`    | Dev server for 8fold app                             |
-| `vp run dev:showcase` | Dev server for showcase app                          |
-| `vp run tcm#build`    | Build one app only                                   |
+| `vp run dev:<app>`    | Dev server for one app (HMR on `.md` changes)        |
+| `vp run <app>#build`  | Build one app only                                   |
 
 **`vp build` ≠ `vp run build`** — `vp build` invokes Vite's SPA path, skipping qdocs-ssg. Always use `vp run build`.
 **`vp test` ≠ `vp run test`** — `vp test` runs current package only. Always use `vp run test`.
@@ -135,6 +131,16 @@ Tests colocate next to source (`useFoo.ts` + `useFoo.test.ts`), all in `packages
 **Runtime conditionals don't tree-shake dynamic imports** — use the `__QDOCS_MERMAID__` Vite define flag pattern for optional-feature chunks.
 
 **`ERR_UNSUPPORTED_DIR_IMPORT`** — add explicit `.ts` extension to any import reachable from `vite.config.ts`.
+
+## Documentation policy
+
+Keep docs **evergreen**: write conventions and patterns, not enumerations of current state.
+
+- Do not list specific app names, secret names, resource names, or workflow files in documentation. Use `<slug>` placeholders and patterns instead, and point to the authoritative source (e.g. `ls apps/`, `infra/main.bicep`, `.github/workflows/`).
+- Do not embed per-app runbook commands. Describe the pattern once; the `app-deploy` skill generates the concrete commands.
+- A doc that requires edits every time an app is added or removed is a doc written at the wrong level of abstraction.
+
+This applies to all files under `docs/`, `AGENTS.md`, and `CLAUDE.md`. Content files (`apps/*/src/*.md`) are exempt — they are the content, not the documentation of it.
 
 ## Links
 

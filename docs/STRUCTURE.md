@@ -12,9 +12,7 @@ summary: 'vp-mono layout with apps/ (deployable surfaces) and packages/ (shared 
 ```
 docs/                     ← repo root (pnpm workspace)
 ├── apps/
-│   ├── tcm/              TCM Primer — deployed to Azure SWA
-│   ├── 8fold/            Eightfold Path — not yet deployed
-│   └── showcase/         Framework feature showcase — not yet deployed
+│   └── <app>/            one directory per deployable primer (run `ls apps/` for current list)
 ├── packages/
 │   └── core/             @framework/core — shared framework library
 ├── docs/                 Branches (topical docs/<TOPIC>.md files)

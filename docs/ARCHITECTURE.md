@@ -61,7 +61,7 @@ Whether mermaid is included in the bundle is decided at **build time** via a Vit
 
 ## Azure deployment topology
 
-Each app (`apps/tcm`, `apps/8fold`, `apps/showcase`) is a separate Azure Static Web Apps resource with no shared backends, Functions, or databases. Route config lives in each app's `public/staticwebapp.config.json`. See [PROVISION.md](PROVISION.md) for resource setup and [RUNTIME.md](RUNTIME.md) for the CDN hosting model.
+Each app under `apps/` is a separate Azure Static Web Apps resource with no shared backends, Functions, or databases. Route config lives in each app's `public/staticwebapp.config.json`. See [PROVISION.md](PROVISION.md) for resource setup and [RUNTIME.md](RUNTIME.md) for the CDN hosting model.
 
 ## Consumer model
 
@@ -80,7 +80,6 @@ The framework generates `index.html`, the virtual app entry, and all CSS. No `ma
 - **Multi-region active/active** — each app is pinned to one Azure region. Cross-region failover is a recovery story (RPO/RTO target), not a steady-state load-balancing strategy. Trigger to invest: a stated SLA requirement that single-region availability can't meet.
 - **Shiki syntax highlighting** — no consumer ships code blocks; the pipeline has a seam for it (see `TODO.md`).
 - **Backend / persistence** — content is static markdown; only `localStorage` prefs persist.
-- **8fold CI deploy** — needs its own SWA resource and token (see `TODO.md`).
 - **Monitoring / analytics** — not wired (see `TODO.md`); CSP allows `'unsafe-inline'` for the theme script and mermaid (see [SECURITY.md](SECURITY.md)).
 
 ## Industry References
