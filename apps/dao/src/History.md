@@ -5,7 +5,7 @@ description: 'Warring States origins through Han statecraft, the medieval school
 
 # A History of Daoism
 
-Daoism spans more than two millennia, but it did not begin as a unified movement. Classical texts, organized religion, meditation lineages, and liturgical institutions each developed under different circumstances and then folded into one another over time. Understanding that history helps explain why Daoism can look so different from one context to the next.
+Daoism spans more than two millennia, but it did not begin as a unified movement. Classical texts, organized religion, meditation lineages, and liturgical institutions each developed under different circumstances and then folded into one another over time. This history explains why Daoism appears so distinct across different contexts.
 
 ```mermaid
 graph LR
@@ -32,7 +32,7 @@ The second development was institutional religion. In 142 CE, according to Celes
 
 ## Wei-Jin Xuanxue
 
-When the Han collapsed, a generation of scholar-officials developed _xuanxue_ ("dark learning" or "mysterious learning"), a philosophical movement that read the classical Daoist texts alongside the _Yijing_. Wang Bi (226-249 CE) and Guo Xiang (d. 312 CE) wrote commentaries on the _Daodejing_ and _Zhuangzi_ respectively that defined how those texts were read for centuries. They were not religious Daoists in the institutional sense; their project was to reconcile classical Daoist ideas with Confucian governance under the slogan "sage within, king without." [Governance](Governance.md) questions remained central throughout this period.
+When the Han collapsed, a generation of scholar-officials developed _xuanxue_ ("dark learning" or "mysterious learning"), a philosophical movement that read the classical Daoist texts alongside the _Yijing_. Wang Bi (226-249 CE) and Guo Xiang (d. 312 CE) wrote commentaries on the _Daodejing_ and _Zhuangzi_ respectively that defined how those texts were read for centuries. They were not religious Daoists in the institutional sense. Their project was to reconcile classical Daoist ideas with Confucian governance under the slogan "sage within, king without." [Governance](Governance.md) questions remained central throughout this period.
 
 ## Medieval Revelations: Shangqing and Lingbao
 
@@ -48,7 +48,7 @@ The Tang dynasty (618-907 CE) brought Daoism closer to the state than at any oth
 
 ## Song-Ming Consolidation: Quanzhen and Zhengyi
 
-Between the tenth and thirteenth centuries, new lineages emerged and the two forms of Daoism that persist to the present crystallized. Wang Zhe (1113-1170 CE) founded [Quanzhen](Quanzhen.md) ("Complete Perfection") in the 1160s, establishing a celibate monastic order that synthesized Daoist inner alchemy with Chan Buddhist meditation and Confucian ethics. His disciples spread the movement northward; the Longmen branch eventually became the dominant monastic lineage under Qing patronage.
+Between the tenth and thirteenth centuries, new lineages emerged and the two forms of Daoism that persist to the present crystallized. Wang Zhe (1113-1170 CE) founded [Quanzhen](Quanzhen.md) ("Complete Perfection") in the 1160s, establishing a celibate monastic order that synthesized Daoist inner alchemy with Chan Buddhist meditation and Confucian ethics. His disciples spread the movement northward. The Longmen branch eventually became the dominant monastic lineage under Qing patronage.
 
 The southern tradition consolidated around [Zhengyi](Zhengyi.md) ("Orthodox Unity"), a hereditary lineage descending from Zhang Daoling and the Celestial Masters. Zhengyi priests could marry, lived among laypeople, and performed communal ritual rather than pursuing individual monastic cultivation. The first complete printed _Daozang_ was assembled between 1408 and 1445 under Ming patronage, running to 5,305 volumes across 1,120 titles and drawing on the full range of Daoist scriptural traditions. The [Three Teachings](SanJiao.md) synthesis of this era treated Daoism, Buddhism, and Confucianism as complementary approaches to the same underlying reality.
 

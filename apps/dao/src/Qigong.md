@@ -1,11 +1,11 @@
 ---
 title: 'Qigong'
-description: 'An overview of qigong as a system of breath regulation, movement, and focused intent rooted in ancient daoyin gymnastics and shaped into a recognized practice in 20th-century China.'
+description: 'An overview of qigong as a system of breath regulation, movement, and focused intent rooted in ancient daoyin gymnastics and developed as a recognized practice in 20th-century China.'
 ---
 
 # Qigong
 
-Qigong is a family of practices that coordinate physical posture, breathing, and mental focus to cultivate and circulate [qi](Qi.md). The word itself is a 20th-century coinage, assembled from _qi_ (vital energy) and _gong_ (skill or work achieved through practice), but the techniques it names are far older. It appears in this primer because Daoist lineages developed many of its foundational forms, and its conceptual vocabulary runs directly through the [Three Treasures](ThreeTreasures.md) and the [jing, qi, and shen](JingQiShen.md) framework.
+Qigong is a family of practices that coordinate physical posture, breathing, and mental focus to cultivate and circulate [qi](Qi.md). The word itself is a 20th-century coinage, assembled from _qi_ (vital energy) and _gong_ (skill or work achieved through practice), but the techniques it names are far older. Daoist lineages developed many of its foundational forms, and its conceptual vocabulary runs directly through the [Three Treasures](ThreeTreasures.md) and the [jing, qi, and shen](JingQiShen.md) framework.
 
 ## The Three Regulations
 
@@ -17,7 +17,7 @@ Classical instruction organizes qigong around three coordinated adjustments:
 | Breath regulation | 調息 tiao xi   | Rate, depth, and pattern of breathing       |
 | Mind regulation   | 調心 tiao xin  | Directed attention and intent               |
 
-The three are trained together rather than sequentially. Holding correct posture while breathing in a prescribed pattern, with attention placed on a specific region of the body, produces effects that none of the three achieves alone. Daoist practitioners localized this directed attention on the three cinnabar fields (dantian), treating the lower abdomen, chest, and head as reservoirs where qi could be gathered and then circulated through the meridian pathways also mapped in Chinese medicine.
+The three are trained together rather than sequentially. Holding correct posture while breathing in a prescribed pattern, with attention placed on a specific region of the body, produces effects that none of the three achieves alone. Daoist practitioners localized this directed attention on the three cinnabar fields (dantian), regarding the lower abdomen, chest, and head as reservoirs for gathering and circulating qi through the meridian pathways also mapped in Chinese medicine.
 
 ## Roots in Daoyin
 

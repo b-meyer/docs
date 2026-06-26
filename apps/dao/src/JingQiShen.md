@@ -9,7 +9,7 @@ Daoist cosmology describes the world's generation as [Qi](Qi.md) condensing from
 
 ## The Triad as Cosmic Descent
 
-The three substances emerge in descending order from the Dao's self-manifestation as described in [Cosmogony](Cosmogony.md): shen first, as the most subtle; qi from shen; jing as the densest, the final coagulation that generates the ten thousand things. In this sequence, jing is the furthest from the Dao, shen the closest. Each substance has two aspects:
+The three substances emerge in descending order from the Dao's self-manifestation as described in [Cosmogony](Cosmogony.md). Shen is the most subtle and comes first, qi arises from it, and jing is the densest, the final coagulation that generates the ten thousand things. In this sequence, jing is the furthest from the Dao, shen the closest. Each substance has two aspects:
 
 | Treasure       | Postcelestial form                    | Precelestial form           |
 | -------------- | ------------------------------------- | --------------------------- |
@@ -27,12 +27,12 @@ Neidan practice reverses the direction of cosmic descent. Unlike earlier Daoist 
 2. **Lian qi hua shen** - refine breath and transform it into spirit
 3. **Lian shen huan xu** - refine spirit and return it to emptiness
 
-Each stage dissolves a denser substance into its subtler origin. The first stage is preparatory work with the body's physical resources; the second involves the circulation and refinement of breath through meditation; the third dissolves the practitioner's individual consciousness back toward the original emptiness from which shen emerged.
+Each stage dissolves a denser substance into its subtler origin. The first stage is preparatory work with the body's physical resources. The second involves the circulation and refinement of breath through meditation. The third dissolves the practitioner's individual consciousness back toward the original emptiness from which shen emerged.
 
 The Cantong qi ("Seal of the Unity of the Three"), compiled around the second century CE, became the foundational text for understanding this process within the alchemical tradition. Its title refers directly to the unity that neidan practice aims to recover.
 
 ## Integration with Daoist Meditation
 
-Beyond alchemical refinement, the three substances feature in meditation practice. The Shangqing and Lingbao schools, described in [ShangqingLingbao.md](ShangqingLingbao.md), used visualization of inner gods associated with shen as a distinct meditation path. [Quanzhen](Quanzhen.md) monasticism grounded its entire contemplative curriculum in the sequential cultivation of jing, qi, and shen.
+The three substances also appear in meditation practice. The Shangqing and Lingbao schools, described in [ShangqingLingbao.md](ShangqingLingbao.md), used visualization of inner gods associated with shen as a distinct meditation path. [Quanzhen](Quanzhen.md) monasticism grounded its entire contemplative curriculum in the sequential cultivation of jing, qi, and shen.
 
 The final stage of neidan, returning shen to emptiness, produces no object. What the practitioner reaches is not a substance but the Dao's original stillness.

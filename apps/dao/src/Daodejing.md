@@ -5,13 +5,13 @@ description: 'The 81-chapter classic attributed to Laozi, examining how it is st
 
 # The Daodejing
 
-The Daodejing is the foundational text of the Daoist tradition, consisting of 81 short chapters attributed to [Laozi](Laozi.md). It addresses the nature of [Dao](Dao.md), the virtue called [De](De.md), and the art of governing without force. No other text in the tradition receives more translations or commentary, and it remains the primary reference point for understanding classical Daoist philosophy.
+The Daodejing is the foundational text of the Daoist tradition, consisting of 81 short chapters attributed to [Laozi](Laozi.md). It addresses the nature of [Dao](Dao.md), the virtue called [De](De.md), and the art of governing without force. Most translations and commentaries in the tradition derive from this text, which is the primary source for understanding classical Daoist philosophy.
 
 ## Two Parts, One Text
 
 The received text divides into two sections. The first 37 chapters form the Dao jing - the Classic of the Way. Chapters 38 through 81 form the De jing - the Classic of Virtue. This ordering gives the text its full name, and Dao and De each open their respective section.
 
-The division is partly conventional. Thematic overlap runs throughout, and the same ideas appear in both halves. The split probably rests on little more than the fact that the word "dao" opens chapter 1. What the division does accomplish is a loose structural emphasis: the first half addresses the nature and operation of the Dao at a cosmic level, while the second half turns more directly toward the human domain, including political rule, [ethics](Ethics.md), and the cultivated person.
+The division is partly conventional. Thematic overlap runs throughout, and the same ideas appear in both halves. The split probably rests on little more than the fact that the word "dao" opens chapter 1. What the division does accomplish is a loose structural emphasis. The first half addresses the nature and operation of the Dao at a cosmic level, while the second half turns more directly toward the human domain, including political rule, [ethics](Ethics.md), and the cultivated person.
 
 ## Manuscript Traditions
 
@@ -29,17 +29,17 @@ The received text that most readers encounter today descends from the commentary
 
 ## Authorship and Dating
 
-The Shiji, the first-century BCE historical record by Sima Qian, attributes the text to Lao Dan, a royal archivist of the Zhou court said to have lived in the sixth or fifth century BCE. Modern scholarship largely treats this account as legendary. The Stanford Encyclopedia of Philosophy notes that the text shows signs of having grown from different collections of sayings, compiled across the fourth and third centuries BCE rather than composed by a single hand. Passages that circulated orally were gathered, edited, and shaped into the text that survives.
+The Shiji, the first-century BCE historical record by Sima Qian, attributes the text to Lao Dan, a royal archivist of the Zhou court said to have lived in the sixth or fifth century BCE. Modern scholarship treats this account as legendary. The text shows signs of having grown from different collections of sayings, compiled across the fourth and third centuries BCE rather than composed by a single hand. Passages that circulated orally were gathered, edited, and shaped into the text that survives.
 
-This does not make the traditional attribution meaningless. "Laozi" functioned as both author and authority, grounding the text's claims within a recognizable lineage. The question of whether a historical figure stood behind that name matters differently to scholars than to practitioners.
+The name "Laozi" functioned as both author and authority, grounding the text's claims within a recognizable lineage. Scholars debate whether a historical figure stood behind it. Practitioners treat it as the voice of the tradition itself.
 
 ## Dao, De, and Wu Wei
 
 The Daodejing treats [Dao](Dao.md) as the source and pattern underlying everything, prior to heaven and earth and impossible to name adequately. Chapter 25 acknowledges this directly: "I do not know its name; I style it Dao." The text approaches the Dao through negation and paradox rather than definition, returning repeatedly to the idea that the Dao "does nothing, yet leaves nothing undone."
 
-[De](De.md) is what a thing obtains from the Dao: the power, capacity, or virtue that expresses the Dao's presence in a particular being. Where the Dao is universal, De is its local manifestation in a person, an animal, or a natural process. The two concepts are inseparable, which is why the text carries both in its title.
+[De](De.md) is what a thing obtains from the Dao, the power, capacity, or virtue that expresses the Dao's presence in a particular being. Where the Dao is universal, De is its local manifestation in a person, an animal, or a natural process. The two concepts are inseparable, which is why the text carries both in its title.
 
-[Wu wei](WuWei.md) - non-forced action - is the practical implication of both. The sage ruler and the cultivated person act in alignment with the natural movement of things rather than imposing effort or desire on them. [Ziran](Ziran.md) - naturalness, "self-so" - names the standard that wu wei aims to meet: things acting according to their own nature without external compulsion.
+[Wu wei](WuWei.md) - non-forced action - is the practical implication of both. The sage ruler and the cultivated person act in alignment with the natural movement of things rather than imposing effort or desire on them. [Ziran](Ziran.md) - naturalness, "self-so" - names the standard that wu wei aims to meet, where things act according to their own nature without external compulsion.
 
 ## Governance
 

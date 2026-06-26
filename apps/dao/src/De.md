@@ -5,11 +5,11 @@ description: 'The power or virtue by which the Dao takes particular form in each
 
 # De
 
-De (德) is the character paired with [Dao](Dao.md) in the title of the [Daodejing](Daodejing.md). Where the Dao names the undifferentiated source and pattern of all things, De names what each thing receives from it: the particular endowment that makes it what it is and enables it to flourish. The concept carries two related senses, metaphysical and ethical, and classical Daoist thought works both simultaneously.
+De (德) is the character paired with [Dao](Dao.md) in the title of the [Daodejing](Daodejing.md). Where the Dao names the undifferentiated source and pattern of all things, De names what each thing receives from it, the particular endowment that makes it what it is and enables it to flourish. The concept carries two related senses, metaphysical and ethical, and classical Daoist thought works both simultaneously.
 
 ## De as the Dao in Particular Things
 
-Chapter 51 of the Daodejing gives the clearest statement: "Dao bears them, De nurtures them, matter shapes them, circumstance completes them." De is the Dao as it takes up residence in each particular thing. A tree's De is the pattern of growth that expresses the Dao through that tree; a river's De is the particular way it finds and follows a channel. This sense of De connects it etymologically to the Latin _virtus_ (power, potency) rather than to moral goodness.
+Chapter 51 of the Daodejing gives the clearest statement: "Dao bears them, De nurtures them, matter shapes them, circumstance completes them." De is the Dao as it takes up residence in each particular thing. A tree's De is the pattern of growth that expresses the Dao through that tree. A river's De is the particular way it finds and follows a channel. This sense of De connects it etymologically to the Latin _virtus_ (power, potency) rather than to moral goodness.
 
 The glyph itself combines elements for road or movement, a straight-looking stroke, and the heart, suggesting directed inner movement aligned with a path. A thing possesses De when its inner nature is aligned with the Dao rather than working against it.
 
@@ -19,9 +19,9 @@ From this metaphysical sense flow several consequences the Daodejing draws out. 
 
 The second sense develops from the first. If each thing has a natural endowment, then humans have a specific form of De that can be cultivated or degraded. The Daodejing and the [Zhuangzi](Zhuangzi.md) describe this cultivation less as moral improvement than as returning to what was already present before social training overlaid it.
 
-The Zhuangzi illustrates De through skilled practitioners: the cook who butchers an ox without force by following the natural lines of the animal, the wheelwright who cannot put his craft into words but whose hands know what to do. These figures are not morally exemplary in any conventional sense. They have cultivated a responsiveness to the structure of their particular task that lets them act without resistance. This responsiveness is the practical expression of De aligning with Dao.
+The Zhuangzi illustrates De through skilled practitioners such as the cook who butchers an ox without force by following the natural lines of the animal, and the wheelwright who cannot put his craft into words but whose hands know what to do. These figures are not morally exemplary in any conventional sense. They have cultivated a responsiveness to the structure of their particular task that lets them act without resistance. This responsiveness is the practical expression of De aligning with Dao.
 
-This connects De to [Wu Wei](WuWei.md): the sage's action is effortless because it flows from De rather than from effort against resistance. [Ziran](Ziran.md) (naturalness, self-so-ness) names the same quality from a different angle. When a thing does what is natural to it, it expresses its De.
+De connects directly to [Wu Wei](WuWei.md). The sage's action is effortless because it flows from De rather than from effort against resistance. [Ziran](Ziran.md) (naturalness, self-so-ness) names the same quality from a different angle. When a thing does what is natural to it, it expresses its De.
 
 ## De and Conventional Virtue
 
@@ -29,7 +29,7 @@ Early Chinese thought used De in a more general sense to mean virtue or moral ex
 
 The target is not virtue as such but the performance of virtue: the person who insists on benevolence rather than embodying it, who follows propriety as an imposed rule rather than as something that flows naturally from their nature. The Daoist sage has De in the original potency sense, and appropriate conduct follows from it without being commanded.
 
-[Pu](Pu.md) (uncarved wood) is a related image for the state from which De naturally operates: before it has been shaped, divided, or named, the block retains the full potential of the wood. Cultivation, for the Daodejing, means preserving or recovering that wholeness rather than adding to it.
+[Pu](Pu.md) (uncarved wood) is a related image for the state from which De naturally operates. Before it has been shaped, divided, or named, the block retains the full potential of the wood. Cultivation, for the Daodejing, means preserving or recovering that wholeness rather than adding to it.
 
 ## De in the Daoist Tradition
 

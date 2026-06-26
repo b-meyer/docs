@@ -5,7 +5,7 @@ description: 'Geomancy that reads the flow of qi through landscape and built env
 
 # Feng Shui
 
-Feng shui (風水) means "wind and water," the two forces that govern how [qi](Qi.md) moves through the environment. Wind scatters qi; water retains it. A well-chosen site concentrates qi where people live and where the dead are buried, linking the fortunes of the living to the conditions of the land. The practice developed within Chinese cosmological thought and drew on [yin and yang](YinYang.md), the [five phases](WuXing.md), and directional symbolism to produce a systematic approach to reading place.
+Feng shui (風水) means "wind and water," the two forces that govern how [qi](Qi.md) moves through the environment. Wind scatters qi. Water retains it. A well-chosen site concentrates qi where people live and where the dead are buried, linking the fortunes of the living to the conditions of the land. The practice developed within Chinese cosmological thought and drew on [yin and yang](YinYang.md), the [five phases](WuXing.md), and directional symbolism to produce a systematic approach to reading place.
 
 ## Form School
 
@@ -25,6 +25,6 @@ The eight trigrams used in compass feng shui come from the I Ching. Each trigram
 
 Feng shui applies to two distinct domains. Yang dwellings are the residences of the living. Yin dwellings are graves. Grave siting received particular attention in early texts, including the fourth-century work attributed to Guo Pu, which laid out formal principles for choosing burial ground. Because Chinese thought connected the welfare of descendants to the condition of ancestral remains, selecting a grave site with strong, well-retained qi was a practical concern for family continuity.
 
-A grave placed on a dragon vein, with the armchair configuration intact and water curving past the front of the site, was thought to allow the qi of the landscape to nourish the ancestor's remains and, through that connection, benefit living descendants. The same logic of accumulating and protecting qi applies to both dwelling types; the difference is that a family would move house but rarely move a grave once set.
+A grave placed on a dragon vein, with the armchair configuration intact and water curving past the front of the site, was thought to allow the qi of the landscape to nourish the ancestor's remains and, through that connection, benefit living descendants. The same logic of accumulating and protecting qi applies to both dwelling types. A family would move house but rarely move a grave once set.
 
 Compass-school practitioners developed specific formulas for calculating auspicious burial orientations based on the deceased's birth year and the magnetic heading of the grave entrance.

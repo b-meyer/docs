@@ -9,7 +9,7 @@ The classical canon of Daoist literature centers on the [Daodejing](Daodejing.md
 
 ## The Neiye - Inner Cultivation
 
-The Neiye - Inner Cultivation - is a short verse text preserved as three chapters inside the Guanzi, a 76-chapter miscellany associated with the Qi state official Guan Zhong. The Guanzi was compiled and edited over several centuries, but the Neiye chapters are generally dated to the fourth or early third century BCE, placing them before or contemporary with the earliest layers of the Daodejing. Scholars including Harold Roth treat the Neiye as the oldest surviving text focused on meditation as a discipline.
+The Neiye - Inner Cultivation - is a short verse text preserved as three chapters inside the Guanzi, a 76-chapter miscellany associated with the Qi state official Guan Zhong. The Guanzi was compiled and edited over several centuries, but the Neiye chapters are generally dated to the fourth or early third century BCE, placing them before or contemporary with the earliest layers of the Daodejing. The Neiye is the oldest surviving text focused on meditation as a discipline, according to scholars including Harold Roth.
 
 The text centers on [Qi](Qi.md) as the animating substance that fills the body when a practitioner achieves mental stillness. Scattered or turbulent states of mind disperse Qi. A quieted, receptive mind allows it to settle and accumulate. The Neiye describes this as aligning with a subtle inner power that the text sometimes calls _jing_ (refined essence) and sometimes treats as synonymous with the [Dao](Dao.md) itself entering the practitioner. The practical instructions emphasize posture, breathing, and the stilling of desires and emotional agitation.
 

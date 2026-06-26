@@ -5,11 +5,11 @@ description: 'Orthodox Unity: the non-monastic ritual tradition descended from t
 
 # Zhengyi
 
-Zhengyi - Orthodox Unity - is the organized continuation of the [Celestial Masters](CelestialMasters.md) tradition. Where the Celestial Masters emerged in the second century as a covenant community in Sichuan, Zhengyi is the form that tradition took after centuries of dispersal, consolidation, and official recognition. It is the main vehicle for communal Daoist ritual in Chinese religious life.
+Zhengyi - Orthodox Unity - is the organized continuation of the [Celestial Masters](CelestialMasters.md) tradition. Where the Celestial Masters emerged in the second century as a covenant community in Sichuan, Zhengyi is the form that tradition took after centuries of dispersal, consolidation, and official recognition. It provides the primary structure for communal Daoist ritual in Chinese religious life.
 
 ## From Celestial Masters to Orthodox Unity
 
-The Han-era Celestial Masters community broke apart when the dynasty collapsed in the early third century. Priests and followers scattered across China, carrying the tradition's ritual texts, ordination registers, and liturgical practices into new regions. This dispersal spread the tradition widely, but the institutional center at Longhu Shan - Dragon-Tiger Mountain, in present-day Jiangxi province - maintained continuity with the founding Zhang lineage.
+When the Han dynasty collapsed in the early third century, the Celestial Masters community broke apart. Priests and followers scattered across China, carrying the tradition's ritual texts, ordination registers, and liturgical practices into new regions. This dispersal spread the tradition widely, but the institutional center at Longhu Shan - Dragon-Tiger Mountain, in present-day Jiangxi province - maintained continuity with the founding Zhang lineage.
 
 By the Song dynasty, the court assigned Longhu Shan formal authority over Daoist ordination, and the name Zhengyi - Correct Unity or Orthodox Unity - consolidated several related talismanic and liturgical lineages under one umbrella. In the Yuan period this consolidation extended further, with the Celestial Master at Longhu Shan given oversight of traditions including those associated with [Shangqing and Lingbao](ShangqingLingbao.md). The Zhang family holding the title "Celestial Master" continued without interruption from dynasty to dynasty.
 

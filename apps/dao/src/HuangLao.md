@@ -5,11 +5,11 @@ description: 'The Han-era political philosophy that paired the Yellow Emperor wi
 
 # Huang-Lao
 
-Huang-Lao names the tradition built around two figures: Huangdi, the Yellow Emperor of Chinese antiquity, and [Laozi](Laozi.md), the author attributed to the [Daodejing](Daodejing.md). Their pairing produced a philosophy of government that dominated the early Han court for roughly six decades before Emperor Wu replaced it with Confucian orthodoxy. The name is a contraction, Huang from Huangdi and Lao from Laozi.
+Huang-Lao names the tradition built around two figures, Huangdi (the Yellow Emperor of Chinese antiquity) and [Laozi](Laozi.md), the author attributed to the [Daodejing](Daodejing.md). Their pairing produced a philosophy of government that dominated the early Han court for roughly six decades before Emperor Wu replaced it with Confucian orthodoxy. The name is a contraction, Huang from Huangdi and Lao from Laozi.
 
 ## Two Sages, One Program
 
-The division of roles between the two figures was specific. Laozi set forth the principles of government in the Daodejing. Huangdi was the ideal ruler who first applied those principles in practice. Later tradition fused them into a single divine figure, Huanglao jun, the Yellow Old Lord, but the original Han-era teaching kept them distinct: one as theorist, one as exemplar.
+The division of roles between the two figures was specific. Laozi set forth the principles of government in the Daodejing. Huangdi was the ideal ruler who first applied those principles in practice. Later tradition fused them into a single divine figure, Huanglao jun, the Yellow Old Lord, but the original Han-era teaching kept them distinct, one as theorist and one as exemplar.
 
 Huang-Lao thought grew mainly in the state of Qi, in what is now Shandong, where ruling families claimed descent from Huangdi. That genealogical claim gave the tradition political backing during the Warring States period, and it carried that momentum into the Han founding.
 

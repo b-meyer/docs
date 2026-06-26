@@ -5,7 +5,7 @@ description: 'How two opposed but mutually dependent modes arise from the Dao an
 
 # Yin and Yang
 
-Yin and yang are the two modes that [Dao](Dao.md) generates when it differentiates into the world. They are not independent forces that happen to conflict; each is defined relative to the other, each contains the seed of the other, and neither can exist without the other to give it meaning. That relational logic runs through Daoist cosmology, [Qi](Qi.md) theory, and practices like [Taijiquan](Taijiquan.md) and [Neidan](Neidan.md).
+Yin and yang are the two modes that [Dao](Dao.md) generates when it differentiates into the world. They are not independent forces that happen to conflict. Each is defined relative to the other, each contains the seed of the other, and neither can exist without the other to give it meaning. That relational logic runs through Daoist cosmology, [Qi](Qi.md) theory, and practices like [Taijiquan](Taijiquan.md) and [Neidan](Neidan.md).
 
 ## Two Modes, Not Two Substances
 

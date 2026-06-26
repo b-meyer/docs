@@ -20,11 +20,11 @@ Heaven in Chinese popular religion is organized on the model of the imperial cou
 | Kitchen God (_Zao Shen_)    | Household inspector     |
 | Ten Kings of Hell           | Judicial courts         |
 
-The Stanford Encyclopedia of Philosophy notes that the term for each divine department (_bu_) is the same word used for an imperial government ministry, making the structural parallel explicit rather than metaphorical. Gods were appointed, promoted, demoted, or dismissed based on their performance, and mortals who died could be posted to divine administrative roles. The Kitchen God's annual report to Yu Huang on a household's behavior is a working instance of this system: a subordinate official filing upward to a superior.
+The Stanford Encyclopedia of Philosophy notes that the term for each divine department (_bu_) is the same word used for an imperial government ministry, making the structural parallel explicit rather than metaphorical. Gods were appointed, promoted, demoted, or dismissed based on their performance, and mortals who died could be posted to divine administrative roles. The Kitchen God's annual report to Yu Huang on a household's behavior is a working instance of this system, a subordinate official filing upward to a superior.
 
 ## Origins and Entry into the Daoist Pantheon
 
-Yu Huang began as the supreme god of Chinese popular religion, not as a Daoist deity. His absorption into the organized [Daoist](DaojiaDaojiao.md) pantheon occurred during the Song dynasty, when the emperor Zhenzong formally elevated the Jade Emperor's cult and incorporated him into the Daoist theological hierarchy. Before that moment, Daoist priests had maintained a separate pantheon centered on the Three Pure Ones; popular religion ran its own system with Yu Huang at the top.
+Yu Huang began as the supreme god of Chinese popular religion, not as a Daoist deity. His absorption into the organized [Daoist](DaojiaDaojiao.md) pantheon occurred during the Song dynasty, when the emperor Zhenzong formally elevated the Jade Emperor's cult and incorporated him into the Daoist theological hierarchy. Before that moment, Daoist priests had maintained a separate pantheon centered on the Three Pure Ones. Popular religion ran its own system with Yu Huang at the top.
 
 The Song-period merger did not flatten the difference between the two systems. Daoist theology placed Yu Huang within the bureaucratic tier of heaven, acknowledging the Three Pure Ones as ontologically prior. Popular practice, less concerned with that distinction, continued treating him as the highest divine authority. The tension between these two framings has persisted across later dynasties.
 

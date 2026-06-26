@@ -24,7 +24,7 @@ _Daojiao_ developed as a distinct label later, when organized communities with l
 
 The sharp philosophical/religious divide entered Western scholarship largely through nineteenth- and early twentieth-century translators. Wing-Tsit Chan and James Legge both framed religious Daoism as a corruption of an earlier, purer philosophical tradition. On their reading, the [Daodejing](Daodejing.md) and Zhuangzi represented the authentic core, while ritual, cosmology, and priesthood were later accretions.
 
-As the IEP notes, this framing imposed categories foreign to the tradition itself. Daoist masters and practitioners did not compartmentalize their work into philosophy and religion. The result was a distorted picture of a pristine philosophical Daoism followed by a degraded religious one.
+This framing imposed categories foreign to the tradition itself. Daoist masters and practitioners did not compartmentalize their work into philosophy and religion. The result was a distorted picture. The framing placed an earlier philosophical Daoism against a later religious form, treating the second as decline rather than continuity.
 
 ## Where Scholarship Stands Now
 
@@ -34,10 +34,10 @@ The current consensus among specialists is that _daojia_ and _daojiao_ identify 
 
 ## Why the Pairing of Laozi and Zhuangzi Is Itself a Construction
 
-Even the philosophical half of the distinction was assembled after the fact. During the Han dynasty, it was [Huang-Lao](HuangLao.md) thought, not a Laozi-Zhuangzi pairing, that dominated Daoist-inflected statecraft. The canonical pairing of the two texts as _laozhuang_ was largely the work of third-century CE thinkers Wang Bi and Guo Xiang, who edited and commented on the texts and shaped how later readers understood their relationship. The "philosophical Daoism" category was constructed centuries after its supposed founders lived.
+The philosophical half of the distinction itself took shape after the fact. During the Han dynasty, [Huang-Lao](HuangLao.md) thought, not a Laozi-Zhuangzi pairing, dominated Daoist-inflected statecraft. The canonical pairing of the two texts as _laozhuang_ was largely the work of third-century CE thinkers Wang Bi and Guo Xiang, who edited and commented on the texts and shaped how later readers understood their relationship. The "philosophical Daoism" category was constructed centuries after its supposed founders lived.
 
 ## Reading This Primer with the Distinction in Mind
 
-Pages in this primer follow neither a strict philosophical/religious split nor a chronological one. Concepts from the classical texts appear alongside practices developed in religious communities because the tradition itself drew on both. Where a page covers material that scholars have historically assigned to one category or the other, that context is noted. The goal is to present each topic on its own terms rather than through a frame the sources do not support.
+Concepts from the classical texts appear alongside practices developed in religious communities because the tradition itself drew on both. Where a page covers material that scholars have historically assigned to one category or the other, that context is noted. The goal is to present each topic on its own terms rather than through a frame the sources do not support.
 
 The [Daozang](Daozang.md), the Daoist canon compiled under the Ming dynasty, contains philosophical commentaries, ritual manuals, hagiographies, and technical treatises on inner alchemy within the same collection, with no editorial distinction between _daojia_ and _daojiao_ material.

@@ -5,7 +5,7 @@ description: 'How Daoist tradition conceives of xian - transcendents who exceed 
 
 # Immortals (Xian)
 
-Xian are persons who have transcended the limits of ordinary human existence. Historical, semi-historical, and entirely legendary figures populate this category, and their powers include shape-shifting, bodies that show no aging, mastery of [qi](Qi.md) manipulation, healing, and lifespans extended far beyond the human norm. The concept runs from folk religion to the most refined currents of [Daoist inner cultivation](Neidan.md), with the two ends of that spectrum carrying very different ideas about what immortality actually means.
+Xian are persons who have transcended the limits of ordinary human existence. Historical, semi-historical, and entirely legendary figures populate this category, and their powers include shape-shifting, ageless bodies, mastery of [qi](Qi.md) manipulation, healing, and lifespans far exceeding the human norm. The concept runs from folk religion to the most refined currents of [Daoist inner cultivation](Neidan.md), with the two ends of that spectrum carrying very different ideas about what immortality actually means.
 
 ## Physical and Spiritual Interpretations
 
@@ -23,7 +23,7 @@ The [Celestial Masters](CelestialMasters.md) tradition describes a process calle
 
 ### Inner Embryo Cultivation
 
-Shangqing practice centered on generating an immortal self through sustained [meditation](Meditation.md). The scriptures describe visualizing divine figures inhabiting the body's interior spaces and feeding inner light and divine essence through these visualizations over years of practice. The imagery of embryonic development runs throughout: the practitioner is growing a new self that the mortal body carries but cannot contain permanently.
+Shangqing practice centered on generating an immortal self through sustained [meditation](Meditation.md). The scriptures describe sustained visualizations of divine figures inhabiting the body's interior spaces, channeling inner light and divine essence over years of practice. The imagery of embryonic development runs throughout: the practitioner is growing a new self that the mortal body carries but cannot contain permanently.
 
 [Neidan](Neidan.md) formalized this into a step-by-step alchemical process conducted entirely within the body, refining the [three treasures](ThreeTreasures.md) through breath regulation, stillness, and directed intention until the immortal embryo matures.
 

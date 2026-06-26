@@ -5,7 +5,7 @@ description: 'A Chinese martial art whose slow, continuous movements apply yin-y
 
 # Taijiquan
 
-Taijiquan (太極拳) is a Chinese martial art built on the logic of [Yin and Yang](YinYang.md). Its name combines _taiji_ (the Supreme Ultimate, the undivided whole from which yin and yang arise) with _quan_ (fist, meaning unarmed combat). The art trains the practitioner to embody that alternation physically, yielding where an opponent applies force and then redirecting that force without opposition. Because sustained, conscious movement also circulates [Qi](Qi.md), taijiquan appears in the primer alongside [Qigong](Qigong.md) as a body-based cultivation practice.
+Taijiquan (太極拳) is a Chinese martial art built on the logic of [Yin and Yang](YinYang.md). Its name combines _taiji_ (the Supreme Ultimate, the undivided whole from which yin and yang arise) with _quan_ (fist, meaning unarmed combat). The art trains the practitioner to embody that alternation physically, yielding where an opponent applies force and then redirecting that force without opposition. Sustained, conscious movement also circulates [Qi](Qi.md), so taijiquan appears in the primer alongside [Qigong](Qigong.md) as a body-based cultivation practice.
 
 ## Yin-Yang As Martial Principle
 
