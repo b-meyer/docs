@@ -19,13 +19,13 @@ Chapter 28 pairs pu with return: "return to the uncarved block" (復歸於樸). 
 
 The major pu passages divide into two uses, personal cultivation and governance.
 
-| Chapter | Key phrase     | What it says                                                                                                          |
-| ------- | -------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Chapter | Key phrase     | What it says                                                                                                              |
+| ------- | -------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | 19      | 見素抱樸       | "Manifest plainness, embrace the uncarved block," paired with _su_ (raw silk), linked to reduced self-interest and desire |
-| 28      | 復歸於樸       | Return to the uncarved block; great carving does not cut                                                              |
-| 32      | 樸雖小         | The nameless block none can subjugate; carving introduces names                                                       |
-| 37      | 無名之樸       | Quieting with the nameless block; desire stilled, the world settles                                                   |
-| 57      | 我無欲而民自樸 | "I am without desire and the people of themselves become pu"                                                          |
+| 28      | 復歸於樸       | Return to the uncarved block; great carving does not cut                                                                  |
+| 32      | 樸雖小         | The nameless block none can subjugate; carving introduces names                                                           |
+| 37      | 無名之樸       | Quieting with the nameless block; desire stilled, the world settles                                                       |
+| 57      | 我無欲而民自樸 | "I am without desire and the people of themselves become pu"                                                              |
 
 Chapter 19's pairing of pu with reduced desire connects the image directly to the [Three Treasures](ThreeTreasures.md) discourse and the critique of learned wants that runs through [Laozi](Laozi.md)'s thought.
 

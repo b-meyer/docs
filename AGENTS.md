@@ -35,16 +35,16 @@ Fix all failures before handing back. Do not leave lint errors, type errors, or 
 
 ## Toolchain — `vp` is the sole entry point
 
-| Command               | Does                                                 |
-| --------------------- | ---------------------------------------------------- |
-| `vp install`          | Install/refresh all deps                             |
-| `vp check`            | Format + lint + type-check (whole workspace)         |
-| `vp run fix`          | Autofix format/lint issues                           |
-| `vp run build`        | Build all apps (`qdocs-ssg` → static HTML per route) |
-| `vp run test`         | Run all tests (Vitest)                               |
-| `vp run ready`        | `vp check && vp run build` — pre-push gate           |
-| `vp run dev:<app>`    | Dev server for one app (HMR on `.md` changes)        |
-| `vp run <app>#build`  | Build one app only                                   |
+| Command              | Does                                                 |
+| -------------------- | ---------------------------------------------------- |
+| `vp install`         | Install/refresh all deps                             |
+| `vp check`           | Format + lint + type-check (whole workspace)         |
+| `vp run fix`         | Autofix format/lint issues                           |
+| `vp run build`       | Build all apps (`qdocs-ssg` → static HTML per route) |
+| `vp run test`        | Run all tests (Vitest)                               |
+| `vp run ready`       | `vp check && vp run build` — pre-push gate           |
+| `vp run dev:<app>`   | Dev server for one app (HMR on `.md` changes)        |
+| `vp run <app>#build` | Build one app only                                   |
 
 **`vp build` ≠ `vp run build`** — `vp build` invokes Vite's SPA path, skipping qdocs-ssg. Always use `vp run build`.
 **`vp test` ≠ `vp run test`** — `vp test` runs current package only. Always use `vp run test`.

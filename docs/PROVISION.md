@@ -22,11 +22,11 @@ Each app has its own Azure Static Web Apps resource under a shared resource grou
 
 **Naming conventions:**
 
-| Token | Pattern | Example (`dao`) |
-| ----- | ------- | --------------- |
-| Azure resource | `swa-<slug>-prod` | `swa-dao-prod` |
-| Resource group | `rg-docs-prod` | — |
-| GitHub secret | `AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG>_PROD` | `AZURE_STATIC_WEB_APPS_API_TOKEN_DAO_PROD` |
+| Token          | Pattern                                       | Example (`dao`)                            |
+| -------------- | --------------------------------------------- | ------------------------------------------ |
+| Azure resource | `swa-<slug>-prod`                             | `swa-dao-prod`                             |
+| Resource group | `rg-docs-prod`                                | —                                          |
+| GitHub secret  | `AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG>_PROD` | `AZURE_STATIC_WEB_APPS_API_TOKEN_DAO_PROD` |
 
 The current app list lives in `infra/main.bicep` — one `module` block per app.
 
@@ -34,10 +34,10 @@ The current app list lives in `infra/main.bicep` — one `module` block per app.
 
 All Azure resources are defined in `infra/`:
 
-| File               | Scope          | Purpose                                                     |
-| ------------------ | -------------- | ----------------------------------------------------------- |
-| `infra/main.bicep` | Subscription   | Creates the resource group and deploys all app SWA modules  |
-| `infra/swa.bicep`  | Resource group | Parameterized SWA resource (reused as a module per app)     |
+| File               | Scope          | Purpose                                                    |
+| ------------------ | -------------- | ---------------------------------------------------------- |
+| `infra/main.bicep` | Subscription   | Creates the resource group and deploys all app SWA modules |
+| `infra/swa.bicep`  | Resource group | Parameterized SWA resource (reused as a module per app)    |
 
 ## Provisioning runbook
 
