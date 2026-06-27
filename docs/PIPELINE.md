@@ -9,9 +9,11 @@ summary: 'One manual workflow_dispatch pipeline per app (deploy-<slug>.yml in .g
 
 ## Workflows
 
-One workflow file per app: `.github/workflows/deploy-<slug>.yml`. All are triggered manually — there is no automatic trigger on push. See `.github/workflows/` for the current list.
+One workflow file per app: `.github/workflows/deploy-<slug>.yml`. A composite workflow `.github/workflows/deploy-all.yml` builds and deploys every app in a single run. All are triggered manually — there is no automatic trigger on push. See `.github/workflows/` for the current list.
 
 To trigger: GitHub Actions tab → select the workflow → Run workflow.
+
+**deploy-all** runs check → test → audit once, then builds all apps before deploying any of them. A build failure exits before any deployment runs. Deploy steps run sequentially; a failure on one does not cancel the others.
 
 ## Stages
 
