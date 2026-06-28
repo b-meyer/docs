@@ -1,6 +1,4 @@
-.framework-ssg-temp
 dist
-dist-baseline
 node_modules
 .env*
 .playwright*

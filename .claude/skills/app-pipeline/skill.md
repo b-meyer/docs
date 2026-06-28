@@ -1,5 +1,5 @@
 ---
-name: app-deploy
+name: app-pipeline
 description: >
   Wire a new or existing app into the Azure SWA deployment pipeline. Adds the
   Bicep module, creates the GitHub Actions workflow, updates PROVISION.md and
@@ -13,7 +13,7 @@ description: >
 # Wire an App into the Deployment Pipeline
 
 This skill covers the third phase of the app lifecycle in this repo:
-`app-scaffold` → `app-research` → **app-deploy**.
+`app-scaffold` → `app-research` → **app-pipeline**.
 
 It adds everything needed to build and deploy an `apps/<slug>/` to its own
 Azure Static Web App — Bicep resource, GitHub Actions workflow, and updated
@@ -83,7 +83,34 @@ Find the most recently modified `.github/workflows/deploy-*.yml`. Read it in ful
 
 Everything else — pinned SHAs, `--frozen-lockfile`, check/test/audit steps, SBOM steps, `skip_app_build: true`, `output_location: ''` — carries over unchanged.
 
-## Step 3 — Update PROVISION.md
+## Step 3 — Update deploy-all.yml
+
+`.github/workflows/deploy-all.yml` builds and deploys every app in one run. New apps must be added explicitly — GitHub Actions does not support dynamic secret access, so each deploy step must name its secret at authoring time.
+
+Read `.github/workflows/deploy-all.yml`. Add two steps in the correct positions:
+
+**Build step** — insert after the last existing `Build <App>` step, before `Generate SBOM`:
+```yaml
+      - name: Build <displayName>
+        run: pnpm exec vp run -t <slug>#build
+```
+
+**Deploy step** — insert after the last existing `Deploy <App> to Azure Static Web Apps` step:
+```yaml
+      - name: Deploy <displayName> to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@<same-pinned-SHA-as-other-deploy-steps>
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG_UPPER>_PROD }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: upload
+          app_location: 'apps/<slug>/dist'
+          output_location: ''
+          skip_app_build: true
+```
+
+Copy the `Azure/static-web-apps-deploy` SHA from the other deploy steps in the file — do not guess or look it up separately.
+
+## Step 4 — Update PROVISION.md
 
 In `docs/PROVISION.md`, make three edits:
 
@@ -105,7 +132,7 @@ gh secret set AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG_UPPER>_PROD --body \
 
 **Teardown** — add `gh secret delete AZURE_STATIC_WEB_APPS_API_TOKEN_<SLUG_UPPER>_PROD` to the teardown command list.
 
-## Step 4 — Update PIPELINE.md
+## Step 5 — Update PIPELINE.md
 
 In `docs/PIPELINE.md`, make two edits:
 
@@ -121,7 +148,7 @@ In `docs/PIPELINE.md`, make two edits:
 
 Also update the frontmatter `purpose` and `summary` fields to include the new app name — keep the summary's description of the secret naming pattern accurate.
 
-## Step 5 — Update workspace docs
+## Step 6 — Update workspace docs
 
 These files list deployed apps; add the new app where missing:
 
@@ -135,6 +162,7 @@ Grep to confirm nothing was missed:
 
 ```bash
 grep -rn "<slug>" infra/ .github/workflows/ docs/PROVISION.md docs/PIPELINE.md AGENTS.md docs/STRUCTURE.md docs/ARCHITECTURE.md
+grep -n "<slug>" .github/workflows/deploy-all.yml
 ```
 
 Every file in that list should have at least one hit.

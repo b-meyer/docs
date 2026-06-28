@@ -138,7 +138,7 @@ Tests colocate next to source (`useFoo.ts` + `useFoo.test.ts`), all in `packages
 Keep docs **evergreen**: write conventions and patterns, not enumerations of current state.
 
 - Do not list specific app names, secret names, resource names, or workflow files in documentation. Use `<slug>` placeholders and patterns instead, and point to the authoritative source (e.g. `ls apps/`, `infra/main.bicep`, `.github/workflows/`).
-- Do not embed per-app runbook commands. Describe the pattern once; the `app-deploy` skill generates the concrete commands.
+- Do not embed per-app runbook commands. Describe the pattern once; the `app-pipeline` skill generates the concrete commands.
 - A doc that requires edits every time an app is added or removed is a doc written at the wrong level of abstraction.
 
 This applies to all files under `docs/`, `AGENTS.md`, and `CLAUDE.md`. Content files (`apps/*/src/*.md`) are exempt — they are the content, not the documentation of it.
