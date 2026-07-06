@@ -39,7 +39,7 @@ Each jhāna is defined by the precise presence or absence of specific mental fac
 | _Upekkhā_ (Equanimity)           |  —  |  —  |  ✓  |  ✓  |
 | _Sati_ (Mindfulness / Awareness) |  —  |  —  |  ✓  |  ✓  |
 
-For a complete technical treatment of these factors, including the Four Formless Realms and the Shamatha/Vipassanā relationship, see **[Samadhi.md](Samadhi.md)**.
+For a complete technical treatment of these factors, including the Four Formless Realms, see **[SamadhiAttainments.md](SamadhiAttainments.md)**.
 
 ### The Four Form Jhanas (_Rūpa-Jhānā_)
 
@@ -128,7 +128,7 @@ Even the most refined jhāna state, the Base of Neither-Perception-nor-Non-Perce
 
 Jhāna is the **laboratory**. It is the still, bright, malleable mind from which insight can operate. But the insight itself must be turned toward the Three Characteristics. Concentration and Wisdom are indivisible partners; neither alone produces liberation.
 
-For the full map of how concentration states intersect with the stages of insight, see **[Panna.md](Panna.md)**.
+For the full map of how concentration states intersect with the stages of insight, see **[PannaAttainments.md](PannaAttainments.md)**.
 
 ---
 

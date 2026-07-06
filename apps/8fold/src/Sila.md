@@ -36,38 +36,9 @@ This dual structure mirrors the balance the path requires throughout: developing
 
 ---
 
-## The Cultivation Practices - Heart Training for the Performance Dimension
+The performance modality (_cāritta_) is not automatic. The heart qualities that make ethical conduct natural rather than effortful have to be grown through deliberate practice: the four Brahmavihāras (loving-kindness, compassion, sympathetic joy, equanimity) and sense restraint at the six doors. These are the interior engine of the ethical training, not an optional supplement. A mind suffused with goodwill cannot simultaneously generate the ill-will that produces harsh speech, harm, or exploitation.
 
-The performance modality (_cāritta_) requires active cultivation. Performance must be _grown_ through practices that develop the heart qualities that make ethical conduct natural rather than effortful, whereas avoidance operates through restraint.
-
-In formal Theravāda taxonomy (the Visuddhimagga's forty meditation subjects), the following practices are classified under **Samādhi**. They are introduced here because their _function_ is Sīla: they cultivate the mental counterparts to ethical conduct, directly countering the defilements that generate violations in speech and action.
-
-### The Four Brahmavihāras - The Divine Abodes
-
-The Brahmavihāras ("divine abodes" or "immeasurable qualities") are the primary heart-cultivation practices of the path:
-
-| Practice            | Pali            | What It Cultivates                                     | Sīla Function                                                        |
-| :------------------ | :-------------- | :----------------------------------------------------- | :------------------------------------------------------------------- |
-| **Loving-Kindness** | Mettā Bhāvanā   | Boundless goodwill toward all beings without exception | Counters ill-will - the root of harsh speech, harm, and divisiveness |
-| **Compassion**      | Karuṇā Bhāvanā  | The active wish to relieve suffering                   | Supports protection of life and resistance to exploitation           |
-| **Sympathetic Joy** | Muditā Bhāvanā  | Genuine delight in the wellbeing of others             | Counters envy and resentment, which erode Right Livelihood           |
-| **Equanimity**      | Upekkhā Bhāvanā | Impartial, non-reactive awareness toward all beings    | Supports composed, fair conduct under pressure                       |
-
-**Mettā Bhāvanā** is the standard entry point. The formal practice systematically extends goodwill outward from oneself to loved ones, to neutral persons, to difficult persons, and finally to all beings without limit. The Karaṇīya Mettā Sutta defines the scope:
-
-> "As a mother would protect her only child with her own life, even so let one cultivate a boundless love toward all beings."
-
-The practical effect on Sīla is direct: a mind suffused with goodwill cannot simultaneously generate the ill-will required to produce harsh speech, harm, or exploitation. The Brahmavihāras form the interior engine of the ethical training, not an optional supplement. For the full meditation technique, development signs, and relationship to concentration, see **[Samadhi.md](Samadhi.md)**.
-
-### Sense Restraint - The Bridge Practice
-
-**Indriyasaṃvara** (Sense Restraint) is the practice of maintaining mindful awareness at the six sense doors (sight, sound, smell, taste, touch, and mind) without grasping at pleasant sensations or recoiling from unpleasant ones. When the eye sees a form, the ear hears a sound, no secondary elaboration is allowed to arise that feeds the defilements.
-
-The Sāmaññaphala Sutta presents Indriyasaṃvara as the canonical step _following_ Sīla and _preceding_ Samādhi. It bridges outer ethical conduct and inner concentration training:
-
-> "Endowed with this noble aggregate of virtue, he guards the doors of his sense faculties... not grasping at the overall appearance or at the details of whatever he sees with his eyes... hears with his ears..."
-
-What Sīla accomplishes in speech and action, Indriyasaṃvara accomplishes at the point of sensory contact, intercepting defilements before they can cascade into intention and outward expression.
+**→ [SilaTechniques.md](SilaTechniques.md)** - The heart-cultivation manual: each Brahmavihāra with its method, near and far enemies, and signs of development; sense restraint as a daily-life practice; and recollection of virtue.
 
 ---
 
@@ -158,17 +129,11 @@ Work understood this way functions as a dojo, where ethical training is continuo
 
 ---
 
-## Behavioral Evidence of Practice
+## What Sīla Produces
 
-Sīla produces three tangible, verifiable markers:
+Sīla is not its own reward. It sets off a chain of consequences that carries the practitioner into the next training. The first links are three verifiable markers - absence of remorse, social concord, and the stabilization of attention - and these open into a longer causal sequence that ends in concentration and the beginning of insight.
 
-**Absence of Remorse** (_avippaṭisāra_): The mind is free of the internal "split" caused by moral failure. There is no background static of guilt, no preoccupation with past speech or action that resurfaces during meditation. The mind is clean in the sense a cleared workspace is clean, ready for the next task.
-
-**Social Concord**: Trust is created through consistent, concordant speech and action. The practitioner's relationships are characterized by the absence of hidden agendas, unexploded conflicts, and the accumulated residue of broken integrity. This is not a soft benefit. It is a structural support for practice, since practitioners embedded in healthy relationships have fewer internal disturbances to manage.
-
-**Stabilization of Attention**: The capacity to remain focused without the interference of unwholesome impulses is the direct downstream effect of Sīla. A mind not generating new remorse has nothing pulling it backward; a mind not seeking new stimulation has nothing pulling it outward. The field for concentration is clear.
-
-These three markers are prerequisites for entry into the Samādhi training, not optional benefits.
+**→ [SilaAttainments.md](SilaAttainments.md)** - The fruits: the three behavioral markers, the fruit-chain from non-remorse to concentration, purity of virtue as the first of the seven purifications, and the ascending grades of undertaking.
 
 ---
 
@@ -186,6 +151,8 @@ The only requirements for reaching the goal are to start and to continue. Sīla 
 
 **Related pages:**
 
+- **[SilaTechniques.md](SilaTechniques.md)** - The heart-cultivation manual: the four Brahmavihāras, sense restraint, and recollection of virtue.
+- **[SilaAttainments.md](SilaAttainments.md)** - The fruits: the fruit-chain, purity of virtue, and the grades of undertaking.
 - **[RightSpeech.md](RightSpeech.md)** - Verbal discipline: the four abstentions, the five factors of well-spoken speech, and Noble Silence.
 - **[RightAction.md](RightAction.md)** - Physical discipline: non-harming, generosity, and integrity as responsible energy use.
 - **[RightLivelihood.md](RightLivelihood.md)** - Economic discipline: vocation as practice, the three-tiered inquiry, and modern extensions.

@@ -41,9 +41,9 @@ The path is traditionally divided into three "Higher Trainings" (_Tisikkha_). Ea
 
 **The Three Trainings** - Each training as an integrated system.
 
-- **[Sila.md](Sila.md)** - Sīla: ethical conduct as mental purification, social harmony, and the foundation for deeper training.
-- **[Samadhi.md](Samadhi.md)** - Samādhi: the Concentration Group as a unified system, covering the five hindrances and the eight levels of absorption.
-- **[Panna.md](Panna.md)** - Paññā: the wisdom training, covering Right View, deconstruction of self, and the sixteen stages of insight.
+- **[Sila.md](Sila.md)** - Sīla: ethical conduct as the foundation, with dedicated pages for its cultivation practices and its fruits.
+- **[Samadhi.md](Samadhi.md)** - Samādhi: the Concentration Group as a unified system, with dedicated pages for concentration technique and the ladder of jhāna attainments.
+- **[Panna.md](Panna.md)** - Paññā: the wisdom training, with dedicated pages for insight practice and the stages of insight.
 
 ---
 
@@ -71,7 +71,7 @@ The path does not end with understanding the Eight Folds intellectually. It culm
 | **Non-returner**   | _Anāgāmi_    | Sensual desire and ill will permanently eradicated                              | Reborn in a pure realm; attains Nibbāna there          |
 | **Arahat**         | _Arahant_    | Desire for fine-material/immaterial existence, conceit, restlessness, ignorance | Full liberation - "what had to be done has been done"  |
 
-The technical map of how practice leads through these stages is in **[Panna.md](Panna.md)**.
+The technical map of how practice leads through these stages is in **[PannaAttainments.md](PannaAttainments.md)**.
 
 ---
 

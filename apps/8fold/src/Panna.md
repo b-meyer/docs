@@ -1,6 +1,6 @@
 ---
 title: 'Paññā - Wisdom'
-description: 'The Wisdom training of the Eightfold Path: from Right View through the deconstruction of the self to the sixteen stages of insight and the four stages of realization.'
+description: 'The Wisdom training of the Eightfold Path: how insight counters ignorance, the two factors of the Wisdom Aggregate, and the two analytical methods that dismantle the delusion of self.'
 ---
 
 # Paññā - Wisdom
@@ -18,6 +18,10 @@ The three trainings address three layers of defilement in sequence:
 Sīla restrains the outward expression of defilements. Samādhi suppresses their manifestation in the mind. Only Paññā reaches the latent level (the dormant root) and eradicates the tendencies at their source by correcting the cognitive lens through which reality is perceived.
 
 In practice, Paññā is cultivated through **Vipassanā** (Insight meditation). This is the systematic investigation of arising and passing phenomena to directly perceive the Three Characteristics. Where Shamatha stabilizes and unifies the mind, Vipassanā uses that stability to penetrate and uproot the latent tendencies Samādhi cannot reach.
+
+**→ [PannaTechniques.md](PannaTechniques.md)** - How to practice insight: the empirical approach, the noting method, navigating the difficult stages, and the prerequisites for safe intensive practice.
+
+**→ [PannaAttainments.md](PannaAttainments.md)** - Where insight leads: the sixteen stages of insight, the critical juncture of the dark night, and the four stages of realization.
 
 ---
 
@@ -81,140 +85,12 @@ By applying both methods simultaneously, Wisdom sees that experience is not owne
 
 ---
 
-## The Sixteen Stages of Insight - The Mapped Territory
-
-The Progress of Insight (_Vipassanā-ñāṇa_) is the technical map of the Wisdom training in practice. Of the three trainings, Wisdom is unique in having a defined endpoint within the Theravāda framework: it can be fully traversed and completed. Morality has no upper limit of mastery; Concentration can be deepened indefinitely. But Wisdom, navigated correctly, leads to a specific and verifiable destination.
-
-This map describes that journey through sixteen stages called **ñāṇas** (knowledges), each with characteristic experiences, psychological tendencies, and pitfalls.
-
----
-
-## The Pragmatic Approach
-
-Before examining the stages, a key orientation: the path is an **empirical experiment**, not a belief system.
-
-The "cookbook approach" applies: follow the recipe (the instructions), verify the results yourself, and adjust based on direct experience, not tradition, teacher authority, or philosophical preference alone.
-
-### Axes of Development
-
-Progress in meditation is not a "package model." A practitioner who achieves high states of concentration or insight has not automatically achieved equivalent mastery in interpersonal ethics, emotional regulation, or social wisdom. Think of it as a character sheet:
-
-> A practitioner may have an "Intelligence of 18" (technical knowledge) but a "Wisdom of 9" (real-world application).
-
-Keeping this in mind prevents both overconfidence ("I've had deep experiences, therefore I've arrived") and unnecessary self-criticism ("My ethics are imperfect, therefore my meditation is worthless"). Each axis develops on its own timeline.
-
----
-
-## The Sixteen Ñāṇas
-
-| #   | Stage (English)                    | Pali Name              | Hallmarks                                                                               | Psychological Tendency                                                                                                  |
-| :-- | :--------------------------------- | :--------------------- | :-------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
-| 1   | Mind and Body                      | _Nāma-rūpa-pariccheda_ | Initial distinction between mental phenomena and physical sensations                    | Beginning of parsing experience into constituent parts                                                                  |
-| 2   | Cause and Effect                   | _Paccaya-pariggaha_    | Direct perception of causal links between mental intentions and physical actions        | Recognition that intentions have consequences in subsequent moments                                                     |
-| 3   | Three Characteristics              | _Sammasana_            | Beginning perception of impermanence, unsatisfactoriness, and non-self                  | Shift toward seeing the nature of reality beyond personal content                                                       |
-| 4   | **Arising and Passing Away (A&P)** | _Udayabbaya_           | Bright lights, whole-body rapture, strange dreams, the world exploding like "fireworks" | A sense of crossing a threshold, accompanied by a feeling of success and heightened power                               |
-| 5   | Dissolution                        | _Bhaṅga_               | The clarity of the A&P fragments and fades                                              | Entrance into the "ugly side." The Knowledges of Suffering begin.                                                       |
-| 6   | Fear                               | _Bhaya_                | Perceptual shifts triggering deep-seated apprehension                                   | A sense of being "caught" in a process that cannot be escaped                                                           |
-| 7   | Misery                             | _Ādīnava_              | Inherent dissatisfactoriness pervades experience                                        | Weariness with the conditional world                                                                                    |
-| 8   | Disgust                            | _Nibbidā_              | Technical revulsion toward the repetitive nature of phenomena                           | Waning interest in the "vapid idealism" of spiritual consolation                                                        |
-| 9   | Desire for Deliverance             | _Muñcitukamyatā_       | Urgent crisis-driven need for liberation                                                | Realizing that philosophizing frantically cannot solve this                                                             |
-| 10  | Re-observation                     | _Paṭisaṅkhā_           | Peak of spiritual crisis; "logic failure"                                               | Cognitive restructuring cannot solve the issue; practitioner may feel like an "alien wearing a trench coat of normalcy" |
-| 11  | **Equanimity**                     | _Saṅkhārupekkhā_       | High-level clarity, stability, and composure                                            | Handling difficult mind states with "kindness and aplomb"; quality of _Danta_ (tamed, poised, comfortable)              |
-| 12  | Conformity                         | _Anuloma_              | The mind aligns perfectly with the Three Characteristics                                | High-level preparation for a shift in consciousness                                                                     |
-| 13  | Change of Lineage                  | _Gotrabhū_             | Momentary transition toward the Unconditioned                                           | The bridge between conditioned and unconditioned experience                                                             |
-| 14  | Path                               | _Magga_                | Direct experience of the goal (e.g., Stream Entry)                                      | The supramundane path moment itself                                                                                     |
-| 15  | Fruition                           | _Phala_                | The result of the path moment; temporary cessation of conditioned experience            | Stillness; the "blinking out" of the constructed world                                                                  |
-| 16  | Review                             | _Paccavekkhaṇā_        | Looking back over the crossed territory                                                 | Integration; potential beginning of a new, deeper cycle                                                                 |
-
----
-
-## The Critical Juncture: The A&P and the Dark Night
-
-The transition from **Stage 4 (A&P)** to **Stages 5 to 10 (the Knowledges of Suffering)** is the most critical and most misunderstood transition in the entire map.
-
-| The A&P Peak (Stage 4)                            | The Dark Night Entry (Stages 5 to 10)                                        |
-| :------------------------------------------------ | :--------------------------------------------------------------------------- |
-| Point of no-return once crossed                   | Must complete the cycle to find resolution                                   |
-| High energy: fireworks, rapture, bright lights    | Spiritual crisis: a profound feeling of being caught in the mind's machinery |
-| Often occurs outside formal meditation            | Pervasive sense of dissatisfactoriness and fear                              |
-| A feeling of power and success                    | Cognitive restructuring cannot solve the issue                               |
-| Natural: may happen in adolescence or life events | Requires handling difficult states with kindness, not suppression            |
-
-### The Dark Night in Plain Language
-
-The Knowledges of Suffering (Stages 5 to 10) are often encountered as a general background sense of unease, fragmentation, or dissatisfaction, not necessarily as dramatic psychological crisis. They can manifest as a pervasive flatness, a sense that familiar pleasures have lost their shine, or an unnamed urgency.
-
-The critical insight is that **thinking about it will not solve it**. The mind is in a phase where its usual cognitive tools (reasoning, reframing, philosophizing) run into a wall. The resolution is not intellectual; it is the continued practice of noting arising and passing phenomena with as much equanimity as can be mustered, until the progression continues naturally.
-
-The practitioner who understands this map does not panic during the Dark Night. They recognize the territory and continue.
-
----
-
-## Equanimity and Conformity (Stages 11-12)
-
-Stage 11, **Equanimity**, marks the exit from the Dark Night. The practitioner is no longer fighting the machinery of experience but riding it with composure. The Pali quality **_Danta_** describes this maturity as tamed, poised, dignified, and comfortable in one's own skin. This means the capacity to hold difficulty without self-oppression.
-
-Stage 12, **Conformity**, is the high-level alignment of the mind with the Three Characteristics that immediately precedes the breakthrough. It is a state of readiness rather than attainment.
-
-Practitioners who complete a full 16-stage cycle and continue often encounter qualitatively different terrain in subsequent cycles. Two characteristics commonly reported at deeper levels are **Luminosity** (a quality of aware brightness that pervades experience, distinct from visual light) and **Agencylessness** (the growing clarity that actions occur without a "doer" initiating them). These are not separate attainments but natural results of repeated fractal cycles at finer resolution.
-
----
-
-## Path, Fruition, and Review (Stages 13-16)
-
-These are the supramundane stages:
-
-- **Change of Lineage (13)** - The mind crosses from the conditioned to the Unconditioned in a single moment of transition.
-- **Path (14)** - The direct experience of the goal (e.g., Stream Entry, the first of the Four Stages of Realization). This is a momentary but permanent shift in the structure of the mind.
-- **Fruition (15)** - The result. Conditioned experience temporarily stops in a period of rest in cessation.
-- **Review (16)** - Looking back. The practitioner "reviews" the path and the fetters that were eliminated. This often triggers the beginning of a new, deeper cycle of the same 16-stage progression at a finer level of resolution.
-
-Progress is not a linear climb to a summit. It is a **fractal spiral**: the 16 stages repeat at higher and higher levels of penetration.
-
-Teachers including Bill Hamilton and Sayadaw U Pandita have mapped the 16 stages to four **Vipassanā Jhānas**, a framework where each stage of insight corresponds to a depth of concentration. This correspondence is a practitioner's tool for triangulating position on the map, not a rigid classification.
-
----
-
-## The Four Stages of Realization
-
-The Path moment (Stage 14) corresponds to one of four supramundane stages of awakening. Each permanently eliminates specific **fetters** (_saṃyojana_) that bind the mind to the cycle of rebirth (_saṃsāra_). This is not gradual weakening. It is permanent eradication.
-
-| Stage              | Pali Name    | Fetters Permanently Eliminated                                                  | Outcome                                                           |
-| :----------------- | :----------- | :------------------------------------------------------------------------------ | :---------------------------------------------------------------- |
-| **Stream-enterer** | _Sotāpanna_  | Personality view, doubt, clinging to rites/rituals                              | Guaranteed liberation within 7 lives; cannot fall back below this |
-| **Once-returner**  | _Sakadāgāmi_ | Attenuates (but does not eliminate) greed, aversion, and delusion               | Returns to the human world only once more                         |
-| **Non-returner**   | _Anāgāmi_    | Sensual desire and ill will permanently eradicated                              | Reborn in a high celestial plane to attain Nibbāna there          |
-| **Arahat**         | _Arahant_    | Desire for fine-material/immaterial existence, conceit, restlessness, ignorance | Full liberation. "What had to be done has been done."             |
-
-Each crossing of the full 16-stage cycle corresponds to one of these four stages. Each subsequent cycle is navigated at a higher level of refinement and penetrates deeper layers of conditioning.
-
----
-
-## Safety and Integration
-
-Intensive insight practice is the mental equivalent of high-level athletic training. Without proper technique and the right foundation, it can strain the system.
-
-### Prerequisites Before Intensive Practice
-
-- **Baseline stability** - Ethically acquired basic needs: safe, stable shelter and adequate food. Practice on a completely insecure foundation is not recommended.
-- **Mental health platform** - Intensive practice is not appropriate during acute mental health crises. The goal is to "rewrite the operating system while it is running." This requires a system that is basically stable.
-- **_Danta_ (Poise):** The ability to remain composed during intense energetic and psychological disturbances. This is cultivated through [RightEffort.md](RightEffort.md) and [RightMindfulness.md](RightMindfulness.md).
-
-### The Primary Skill Set: Kindness and Aplomb
-
-The primary skill for navigating the Dark Night is not technical virtuosity but the ability to identify difficult mind states (guilt, resentment, judgment, fear) and meet them **without self-oppression**. This means actively cultivating equanimity in the face of what the mind produces, not passively accepting it.
-
-### The "Mushroom Factor"
-
-A known hazard in traditional dhamma communities is the lack of disclosure about the technical terrain. Practitioners are sometimes kept in the dark about what the Dark Night actually is, why it arises, and how to navigate it. This map exists precisely to counter that hazard. Understanding the map before entering prevents unnecessary confusion and unnecessary crisis.
-
----
-
 **Related pages:**
 
+- **[PannaTechniques.md](PannaTechniques.md)** - The practice of insight and how to navigate it safely.
+- **[PannaAttainments.md](PannaAttainments.md)** - The sixteen stages of insight and the four stages of realization.
 - **[RightView.md](RightView.md)** - The forerunner of the path: Right View as the cognitive orientation for all training.
 - **[RightIntention.md](RightIntention.md)** - Right Intention as the cognitive result of seeing Anattā clearly.
 - **[RightMindfulness.md](RightMindfulness.md)** - The Four Foundations of Satipaṭṭhāna that sustain insight practice.
 - **[Samadhi.md](Samadhi.md)** - The concentration states that serve as the platform for insight.
-- **[RightConcentration.md](RightConcentration.md)** - How to develop the stable platform these stages require.
 - **[EightFoldPath.md](EightFoldPath.md)** - The complete framework within which insight unfolds.

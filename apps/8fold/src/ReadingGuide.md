@@ -35,7 +35,7 @@ Accounts from advanced practitioners (monastics and laypeople across traditions)
 Leigh Brasington is a lay teacher in the Theravāda tradition, authorized by Bhante Gunaratana, and one of the most technically precise teachers of jhāna practice in the West. The primary texts describe the jhānas but do not teach them. The commentarial tradition (Buddhaghosa's _Visuddhimagga_) describes them in great depth but is not accessible as a practice guide. Brasington's work bridges this gap.
 
 **_Right Concentration: A Practical Guide to the Jhānas_**
-The definitive contemporary companion to the concentration teachings. Covers access concentration, all eight levels of absorption, and their integration with insight practice. It prioritizes the sutta descriptions over the later commentarial tradition, which Brasington argues are more attainable for lay practitioners. Essential reading alongside [Samadhi.md](Samadhi.md) for anyone working with these states directly.
+The definitive contemporary companion to the concentration teachings. Covers access concentration, all eight levels of absorption, and their integration with insight practice. It prioritizes the sutta descriptions over the later commentarial tradition, which Brasington argues are more attainable for lay practitioners. Essential reading alongside [SamadhiTechniques.md](SamadhiTechniques.md) for anyone working with these states directly.
 
 ---
 
@@ -44,7 +44,7 @@ The definitive contemporary companion to the concentration teachings. Covers acc
 Daniel Ingram is a physician and Theravāda practitioner whose book _Mastering the Core Teachings of the Buddha_ (MCTB) openly maps the stages of insight, describes attainments in technical detail, and speaks plainly about what practitioners can realistically expect. This directness was uncommon in Western dhamma communities when the book was published.
 
 **_Mastering the Core Teachings of the Buddha: An Unusually Hardcore Dharma Book_**
-A technical, empirical, and deliberately irreverent guide to the Three Trainings with particular depth on the Progress of Insight, the map of 16 ñāṇas that structures [Panna.md](Panna.md). Ingram frames practice as systematic investigation rather than a religious mystery. This pragmatic approach is the primary conceptual source for the method taken in this primer. Available in print and free online at mctb.org.
+A technical, empirical, and deliberately irreverent guide to the Three Trainings with particular depth on the Progress of Insight, the map of 16 ñāṇas that structures [PannaAttainments.md](PannaAttainments.md). Ingram frames practice as systematic investigation rather than a religious mystery. This pragmatic approach is the primary conceptual source for the method taken in this primer. Available in print and free online at mctb.org.
 
 ---
 

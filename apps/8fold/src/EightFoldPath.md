@@ -167,6 +167,6 @@ This is the "perfect mental health" described in the teachings: not a miraculous
 
 **The Three Trainings:**
 
-- **[Sila.md](Sila.md)** - Sīla as a unified system: ethical conduct as mental purification, social harmony, and the foundation for deeper training.
-- **[Samadhi.md](Samadhi.md)** - Samādhi as a unified training system: the Concentration Group, the five hindrances, and the eight levels of absorption.
-- **[Panna.md](Panna.md)** - Paññā as the wisdom training: Right View, deconstruction of self, and the sixteen stages of insight.
+- **[Sila.md](Sila.md)** - Sīla as a unified system: ethical conduct as the foundation, with dedicated pages for its cultivation practices and its fruits.
+- **[Samadhi.md](Samadhi.md)** - Samādhi as a unified training system: the Concentration Group, with dedicated pages for technique and the ladder of jhāna attainments.
+- **[Panna.md](Panna.md)** - Paññā as the wisdom training: with dedicated pages for insight practice and the stages of insight.

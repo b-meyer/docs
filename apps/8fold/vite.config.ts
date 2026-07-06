@@ -37,11 +37,27 @@ export default defineConfig({
       ],
     },
     {
-      group: 'Three Trainings',
+      group: 'Ethical Conduct',
       items: [
         { path: 'Sila', title: 'Sīla' },
+        { path: 'SilaTechniques', title: 'Sīla Techniques' },
+        { path: 'SilaAttainments', title: 'Sīla Attainments' },
+      ],
+    },
+    {
+      group: 'Concentration',
+      items: [
         { path: 'Samadhi', title: 'Samādhi' },
+        { path: 'SamadhiTechniques', title: 'Samādhi Techniques' },
+        { path: 'SamadhiAttainments', title: 'Samādhi Attainments' },
+      ],
+    },
+    {
+      group: 'Wisdom',
+      items: [
         { path: 'Panna', title: 'Paññā' },
+        { path: 'PannaTechniques', title: 'Paññā Techniques' },
+        { path: 'PannaAttainments', title: 'Paññā Attainments' },
       ],
     },
     {

@@ -101,4 +101,4 @@ The "Right" in mindfulness means observing both the **arising** and the **vanish
 
 **The Fruit of Sustained Satipaṭṭhāna:**
 
-- **[Panna.md](Panna.md)** - Sustained Mindfulness of Feelings and Mind progressively reveals the 16 stages of insight. This is the technical map of where the Satipaṭṭhāna practice leads.
+- **[PannaAttainments.md](PannaAttainments.md)** - Sustained Mindfulness of Feelings and Mind progressively reveals the 16 stages of insight. This is the technical map of where the Satipaṭṭhāna practice leads.
