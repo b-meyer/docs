@@ -31,8 +31,6 @@ Avoidance without performance is passive restraint; performance without avoidanc
 
 ### Modern Context: Beyond Simple Theft
 
-"Taking what is not given" includes subtle forms of exploitation:
-
 - **Time Theft** - Failing to provide the presence and effort agreed upon in a professional contract, or "stealing" the attention of others through deception.
 - **Intellectual Property** - Using the creative output, research, or ideas of others without attribution or compensation.
 - **Environmental Theft** - Taking more than one's "fair share" of finite resources (water, clean air, biodiversity). This effectively steals from future generations.
@@ -46,8 +44,6 @@ Avoidance without performance is passive restraint; performance without avoidanc
 - **The Positive Counterpart** - Responsibility and Respect.
 
 ### Sexual Conduct as "Responsible Energy Use"
-
-In a modern primer, this fold is often viewed as the ethical management of **Sexual Energy** (_Jing/Tinh_).
 
 - **The Principle** - Sexuality is a creative force. If used casually, lovelessy, or deceptively, it dissipates mental energy and causes emotional harm.
 - **Integrity** - Use sexual energy to build trust and deep connection rather than to consume or objectify another.

@@ -61,7 +61,7 @@ Even the subtle vibration of happiness is relinquished. The mind arrives at perf
 
 ## The Four Formless Realms (_Arūpa-Jhānā_)
 
-Beyond the Form Jhānas lie four progressively refined states that transcend the perception of matter entirely. They represent the ceiling of mental refinement within _conditioned_ existence.
+Beyond the Form Jhānas lie four progressively refined states that transcend the perception of matter entirely. They are the ceiling of mental refinement within _conditioned_ existence.
 
 A technical note governs all four: these states remain mind-made (_saṅkhata_), impermanent, conditioned phenomena. Even the loftiest formless absorption is not the Unconditioned. Without the turn of insight, they fall, in technical terms, under _dukkha_. Because they arise, they pass.
 
@@ -93,7 +93,7 @@ The subtlest mundane state of consciousness. Perception is so refined it cannot 
 
 ## Why the Ladder Is Not the Destination
 
-The distinction that governs the whole ladder is between two modes of practice:
+The ladder rests on a distinction between two modes of practice:
 
 **Shamatha (Serenity)** - The jhānas themselves, states of deep one-pointedness. They give mental stability and temporary freedom from defilements, but they suppress rather than uproot the latent tendencies. When concentration fades, the defilements can return.
 

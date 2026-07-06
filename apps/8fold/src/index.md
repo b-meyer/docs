@@ -13,8 +13,6 @@ This is an educational primer. It is intended to lay out the conceptual framewor
 
 ## How to Read This Collection
 
-The collection is organized into a diagnostic phase (The Four Noble Truths) followed by a treatment phase (The Eight Folds).
-
 1. **[FourNobleTruths.md](FourNobleTruths.md)** - The Diagnosis: Understanding the three types of _Dukkha_ and the 12 aspects of the truths.
 2. **[EightFoldPath.md](EightFoldPath.md)** - The Prescription: An overview of the "Middle Way" and the interdependent **Dhamma Wheel**.
 

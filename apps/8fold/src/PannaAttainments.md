@@ -5,7 +5,7 @@ description: 'The mapped territory of wisdom: the sixteen knowledges of insight,
 
 # Paññā - The Stages of Insight
 
-Of the three trainings, Wisdom is the only one with a defined endpoint inside the Theravāda framework. Morality has no upper limit of mastery and concentration can be deepened indefinitely, but insight, navigated correctly, leads to a specific and verifiable destination. The **Progress of Insight** (_Vipassanā-ñāṇa_) is the technical map of that journey, sixteen stages called _ñāṇas_ (knowledges), each with characteristic experiences, tendencies, and pitfalls.
+Of the three trainings, only Wisdom has a defined endpoint inside the Theravāda framework. Morality has no upper limit of mastery and concentration can be deepened indefinitely, but insight, navigated correctly, leads to a specific and verifiable destination. The **Progress of Insight** (_Vipassanā-ñāṇa_) maps that journey through sixteen stages called _ñāṇas_ (knowledges), each with characteristic experiences, tendencies, and pitfalls.
 
 For how to walk this terrain, and how to meet its hardest stretch, see **[PannaTechniques.md](PannaTechniques.md)**.
 
@@ -52,9 +52,9 @@ The Knowledges of Suffering are often felt as a general background unease rather
 
 ## Equanimity and Conformity (Stages 11-12)
 
-Stage 11, **Equanimity**, marks the exit from the dark night. The practitioner is no longer fighting the machinery of experience but riding it with composure. The Pali quality _Danta_ describes this maturity as tamed, poised, dignified, and comfortable in one's own skin, the capacity to hold difficulty without self-oppression.
+Stage 11, **Equanimity**, marks the exit from the dark night. The practitioner no longer fights the machinery of experience but rides it with composure. The Pali quality _Danta_ describes this maturity as tamed, poised, dignified, and comfortable in one's own skin. It is the capacity to hold difficulty without self-oppression.
 
-Stage 12, **Conformity**, is the high-level alignment of the mind with the Three Characteristics that immediately precedes the breakthrough. It is a state of readiness rather than attainment.
+Stage 12, **Conformity**, aligns the mind with the Three Characteristics at a high level, immediately preceding the breakthrough. This stage readies the mind rather than constituting final attainment.
 
 Practitioners who complete a full cycle and continue often encounter qualitatively different terrain in later cycles. Two features commonly reported at deeper levels are **Luminosity** (a quality of aware brightness that pervades experience, distinct from visual light) and **Agencylessness** (the growing clarity that actions occur without a "doer" initiating them). These are natural results of repeated cycles at finer resolution rather than separate attainments.
 
@@ -69,7 +69,7 @@ These are the supramundane stages:
 - **Fruition (15)** - The result. Conditioned experience temporarily stops in a period of rest in cessation.
 - **Review (16)** - Looking back. The practitioner reviews the path and the fetters that were eliminated. This often triggers a new, deeper cycle of the same progression at a finer resolution.
 
-Progress is not a linear climb to a summit. It is a **fractal spiral**: the sixteen stages repeat at higher and higher levels of penetration. Teachers including Bill Hamilton and Sayadaw U Pandita have mapped the stages to four **Vipassanā Jhānas**, a framework in which each stage of insight corresponds to a depth of concentration. This correspondence is a tool for triangulating position on the map, not a rigid classification.
+Progress does not climb linearly to a summit but spirals fractally: the sixteen stages repeat at higher and higher levels of penetration. Teachers including Bill Hamilton and Sayadaw U Pandita have mapped the stages to four **Vipassanā Jhānas**, a framework in which each stage of insight corresponds to a depth of concentration. This correspondence is a tool for triangulating position on the map, not a rigid classification.
 
 ---
 

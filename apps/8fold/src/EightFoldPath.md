@@ -5,7 +5,7 @@ description: 'An examination of the Noble Eightfold Path as a comprehensive, int
 
 # The Noble Eightfold Path - Ariya Atthangika Magga
 
-The Noble Eightfold Path is the practical application of the Four Noble Truths. It is the "Treatment Plan" prescribed by the Buddha to end the cycle of suffering. The Buddha approaches this teaching like a physician (_Bhisakka_, the "Great Doctor"): he diagnoses the illness (Dukkha), identifies its cause (Samudaya), establishes that a cure exists (Nirodha), and prescribes the treatment (Magga, the Eightfold Path). Far from a linear checklist, it is an integrated lifestyle in which each element reinforces the others, cultivating clarity, ethical conduct, and mental stability.
+The Noble Eightfold Path is the practical application of the Four Noble Truths. It is the "Treatment Plan" prescribed by the Buddha to end the cycle of suffering. The Buddha approaches this teaching like a physician (_Bhisakka_, the "Great Doctor"): he diagnoses the illness (Dukkha), identifies its cause (Samudaya), establishes that a cure exists (Nirodha), and prescribes the treatment (Magga, the Eightfold Path). Each element reinforces the others, cultivating clarity, ethical conduct, and mental stability.
 
 ## The Foundational Attitude: Personal Verification
 

@@ -19,9 +19,9 @@ Sīla restrains the outward expression of defilements. Samādhi suppresses their
 
 In practice, Paññā is cultivated through **Vipassanā** (Insight meditation). This is the systematic investigation of arising and passing phenomena to directly perceive the Three Characteristics. Where Shamatha stabilizes and unifies the mind, Vipassanā uses that stability to penetrate and uproot the latent tendencies Samādhi cannot reach.
 
-**→ [PannaTechniques.md](PannaTechniques.md)** - How to practice insight: the empirical approach, the noting method, navigating the difficult stages, and the prerequisites for safe intensive practice.
+→ [PannaTechniques.md](PannaTechniques.md) - How to practice insight: the empirical approach, the noting method, navigating the difficult stages, and the prerequisites for safe intensive practice.
 
-**→ [PannaAttainments.md](PannaAttainments.md)** - Where insight leads: the sixteen stages of insight, the critical juncture of the dark night, and the four stages of realization.
+→ [PannaAttainments.md](PannaAttainments.md) - Where insight leads: the sixteen stages of insight, the critical juncture of the dark night, and the four stages of realization.
 
 ---
 
@@ -50,10 +50,17 @@ Within the Noble Eightfold Path, the Wisdom training comprises two factors:
 
 **Right View** (_Sammā Diṭṭhi_) is the "forerunner and guide" of the entire path. Without a correct cognitive orientation, spiritual effort risks becoming undirected movement. Right View operates at two levels:
 
-- **Mundane Right View** (_kammassakatā sammādiṭṭhi_) - correct grasp of the law of kamma, recognizing that beings are the owners and heirs of their actions. This provides the rationale for moral conduct and spiritual effort within the round of existence.
-- **Supramundane Right View** - penetrative understanding of the Four Noble Truths: suffering, its origin, its cessation, and the path to its cessation. This is the view that leads directly to liberation.
+#### Mundane Right View (_kammassakatā sammādiṭṭhi_)
 
-**Right Intention** (_Sammā Saṅkappa_) comprises thoughts of renunciation, love, and non-violence. These are classified as Wisdom rather than Ethics because they are the _cognitive result_ of realizing Anattā: when one sees that there is no permanent self to protect or aggrandize, selfish desire and ill-will become recognized as irrational. Right Intention is the proof of awakening intelligence, not merely a moral aspiration.
+Correct grasp of the law of kamma, recognizing that beings are the owners and heirs of their actions. This provides the rationale for moral conduct and spiritual effort within the round of existence.
+
+#### Supramundane Right View
+
+Penetrative understanding of the Four Noble Truths: suffering, its origin, its cessation, and the path to its cessation. This is the view that leads directly to liberation.
+
+#### Right Intention (_Sammā Saṅkappa_)
+
+Thoughts of renunciation, love, and non-violence. These are classified as Wisdom rather than Ethics because they are the _cognitive result_ of realizing Anattā: when one sees that there is no permanent self to protect or aggrandize, selfish desire and ill-will become recognized as irrational. Right Intention is the proof of awakening intelligence, not merely a moral aspiration.
 
 ---
 

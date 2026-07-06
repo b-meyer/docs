@@ -5,7 +5,7 @@ description: 'A structured reading curriculum moving from a concise foundational
 
 # Reading Guide
 
-The Nikāyas are the primary collections of the Buddha's discourses. This curriculum begins with a concise foundational overview, moves through contemporary teachers who have made specific areas of practice more technically accessible, and then into Bhikkhu Bodhi's translations of the primary source texts.
+The Nikāyas are the primary collections of the Buddha's discourses. The curriculum moves in three stages: a foundational overview, contemporary teachers who address specific areas of practice with technical depth, and Bhikkhu Bodhi's translations of the primary source texts.
 
 ---
 
@@ -23,7 +23,7 @@ A compact and precise exposition of the core teachings: the Four Noble Truths, t
 Jack Kornfield trained in the Thai Forest tradition under Ajahn Chah and was among the first teachers to bring Theravāda vipassanā practice to a Western lay audience. His books address practice within emotions, relationships, and everyday life. These dimensions often remain background in canonical texts.
 
 **_A Path With Heart: A Guide Through the Perils and Promises of Spiritual Life_**
-The most accessible and comprehensive introduction to Buddhist meditation for Western practitioners. It covers the psychological and emotional dimensions of practice that classical texts often leave implicit: grief, love, forgiveness, trauma, and community. A good first book for anyone who finds the canonical texts emotionally austere.
+The most accessible and comprehensive introduction to Buddhist meditation for Western practitioners. It covers the psychological and emotional dimensions of practice that classical texts often leave implicit: grief, forgiveness, trauma, and relationships. A good first book for anyone who finds the canonical texts emotionally sparse.
 
 **_After the Ecstasy, the Laundry: How the Heart Grows Wise on the Spiritual Path_**
 Accounts from advanced practitioners (monastics and laypeople across traditions) on what happens after significant insight: the ordinariness that follows, the integration required, and the compassion that genuine practice cultivates. A useful counterpoint to the technical maps of insight stages.
@@ -32,7 +32,7 @@ Accounts from advanced practitioners (monastics and laypeople across traditions)
 
 ## Leigh Brasington - Jhāna and Concentration
 
-Leigh Brasington is a lay teacher in the Theravāda tradition, authorized by Bhante Gunaratana, and one of the most technically precise teachers of jhāna practice in the West. The primary texts describe the jhānas but do not teach them. The commentarial tradition (Buddhaghosa's _Visuddhimagga_) describes them in great depth but is not accessible as a practice guide. Brasington's work bridges this gap.
+Leigh Brasington is a lay teacher in the Theravāda tradition, authorized by Bhante Gunaratana, and one of the most technically precise teachers of jhāna practice in the West. The primary texts describe the jhānas but do not teach them, and Buddhaghosa's _Visuddhimagga_, while detailed, is not structured as a practice guide.
 
 **_Right Concentration: A Practical Guide to the Jhānas_**
 The definitive contemporary companion to the concentration teachings. Covers access concentration, all eight levels of absorption, and their integration with insight practice. It prioritizes the sutta descriptions over the later commentarial tradition, which Brasington argues are more attainable for lay practitioners. Essential reading alongside [SamadhiTechniques.md](SamadhiTechniques.md) for anyone working with these states directly.
@@ -44,7 +44,7 @@ The definitive contemporary companion to the concentration teachings. Covers acc
 Daniel Ingram is a physician and Theravāda practitioner whose book _Mastering the Core Teachings of the Buddha_ (MCTB) openly maps the stages of insight, describes attainments in technical detail, and speaks plainly about what practitioners can realistically expect. This directness was uncommon in Western dhamma communities when the book was published.
 
 **_Mastering the Core Teachings of the Buddha: An Unusually Hardcore Dharma Book_**
-A technical, empirical, and deliberately irreverent guide to the Three Trainings with particular depth on the Progress of Insight, the map of 16 ñāṇas that structures [PannaAttainments.md](PannaAttainments.md). Ingram frames practice as systematic investigation rather than a religious mystery. This pragmatic approach is the primary conceptual source for the method taken in this primer. Available in print and free online at mctb.org.
+A technical, empirical, and deliberately irreverent guide to the Three Trainings with particular depth on the Progress of Insight, the map of 16 ñāṇas that structures [PannaAttainments.md](PannaAttainments.md). Ingram frames practice as systematic investigation rather than a religious mystery. This investigative approach shapes the method taken in this primer. Available in print and free online at mctb.org.
 
 ---
 
@@ -73,19 +73,19 @@ Focuses on the Four Noble Truths, which structure the entire range of the Buddha
 ### The Primary Scriptures
 
 **_The Middle Length Discourses of the Buddha: A Translation of the Majjhima Nikāya_ - translated by Bhikkhu Ñāṇamoli and Bhikkhu Bodhi**
-Characterized by the richest variety of contextual settings, it contains the deepest and most comprehensive assortment of teachings. Historically used to acquaint newly ordained monastics with the doctrines and practices of the community. The natural first Nikāya to read in full.
+This collection offers the widest variety of contextual settings and the most comprehensive range of teachings. Historically used to teach newly ordained monastics the doctrines and practices of the community, it is the natural first Nikāya to read in full.
 
 **_The Long Discourses of the Buddha: A Translation of the Dīgha Nikāya_ - translated by Maurice Walshe**
-These suttas are often aimed at a popular audience and intended to demonstrate the supremacy of the Dhamma over competing philosophical and religious systems of the time.
+These suttas address a popular audience and present arguments for the Dhamma's standing against competing philosophical and religious systems of the time.
 
 **_The Connected Discourses of the Buddha: A Translation of the Saṃyutta Nikāya_**
-The repository for radical insights into reality. Organized by theme (the Five Aggregates, Dependent Origination, the Five Faculties), it is most useful for doctrinal specialists and those focused on meditation.
+The repository for direct insights into reality. Organized by theme (the Five Aggregates, Dependent Origination, the Five Faculties), it is most useful for doctrinal specialists and those focused on meditation.
 
 **_The Numerical Discourses of the Buddha: A Translation of the Aṅguttara Nikāya_**
 Intensive focus on practical training, with the highest proportion of discourses addressed specifically to laypeople. Uses numerical sets for easy retention of the teachings.
 
 **_The Suttanipāta: An Ancient Collection of the Buddha's Discourses Together with Its Commentaries_**
-One of the oldest strata of the Pāli Canon. Primarily verse. The _Aṭṭhakavagga_ chapter in particular advocates a critical attitude toward dogmatic attachment to views. This provides a corrective for anyone who has become over-identified with the frameworks learned in the earlier stages of this curriculum. Five suttas within it are among the most widely memorized texts in the Theravāda tradition and form the practical ethical core of lay practice: the _Maṅgala_ (on blessings as virtues), _Metta_ (on loving-kindness), _Parābhava_ (on causes of moral downfall), _Vasala_ (on conduct rather than birth as the mark of an outcast), and _Dhammika_ (on the five precepts for householders).
+One of the oldest strata of the Pāli Canon, written primarily in verse. The _Aṭṭhakavagga_ chapter advocates a critical attitude toward dogmatic attachment to views, balancing the frameworks introduced earlier in this curriculum. Five suttas are foundational in the Theravāda tradition and anchor lay ethics: the _Maṅgala_ (virtues and blessings), _Metta_ (loving-kindness), _Parābhava_ (causes of moral downfall), _Vasala_ (conduct as the mark of character), and _Dhammika_ (the five precepts for householders).
 
 ### Abhidhamma
 

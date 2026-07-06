@@ -29,7 +29,7 @@ Vipassanā observes both the **arising** and the **vanishing** of every phenomen
 
 A practical form is **noting**. The mind rests on a primary object, most often the rising and falling of the breath or the abdomen. Whatever pulls attention away is met with a light mental label, "hearing," "thinking," "pressure," "wanting," held just long enough to see the thing clearly, and then attention returns to the primary object. The label is a tool for staying with bare experience instead of spinning a story about it; it is dropped once the noticing is steady.
 
-Applied to the four foundations of mindfulness (see **[RightMindfulness.md](RightMindfulness.md)**), the same noting reveals more with practice. Feelings are caught at the moment of contact, before they trigger craving or aversion. States of mind are seen as passing weather rather than as a self. Across all of them, the mind stops identifying with the process it is watching. What seemed to be a "someone" seeing, hearing, and feeling shows up as a presupposition with no referent behind it.
+Applied to the four foundations of mindfulness (see **[RightMindfulness.md](RightMindfulness.md)**), the same noting reveals more with practice. Feelings are caught at the moment of contact, before they trigger craving or aversion. States of mind are seen as passing weather rather than as a self. In watching all four foundations, the mind stops identifying with the process itself. What seemed to be a "someone" seeing, hearing, and feeling shows up as a presupposition with no referent behind it.
 
 ---
 

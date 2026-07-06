@@ -20,13 +20,7 @@ Right Intention is the practice of replacing three **unwholesome** patterns with
 
 In the Buddhist primer, renunciation is not "giving up" life, but "going out" from a burning house. It is the realization that sensual pleasures are "borrowed" happiness. They depend on external conditions that are unstable, known as _Anicca_ (impermanence).
 
-#### The Shift
-
-Moving from "Happiness through sensory input" to "Happiness through mental autonomy."
-
-#### Practically
-
-Noticing the "itch" of a craving (for food, status, or digital distraction) and choosing to let the itch be without scratching it. This builds the internal muscle of freedom.
+The shift is from seeking happiness through sensory input to finding it through mental autonomy. In practice, this means noticing the "itch" of a craving (for food, status, or digital distraction) and choosing to let the itch be without scratching it. This builds the internal muscle of freedom.
 
 ---
 
@@ -41,11 +35,7 @@ _Metta_ is compared to the love a mother has for her only child: a steady radiat
 
 #### The Function
 
-It is the specific antidote to anger. You cannot hold anger and _Metta_ in the mind at the same time.
-
-#### Practically
-
-Actively wishing for the well-being of others, including "difficult people." People who are truly happy and at peace do not cause harm.
+It is the specific antidote to anger. You cannot hold anger and _Metta_ in the mind at the same time. In practice, this means actively wishing for the well-being of others, including those who are difficult. People who are truly happy and at peace do not cause harm.
 
 ---
 

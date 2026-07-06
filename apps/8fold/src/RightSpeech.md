@@ -5,7 +5,7 @@ description: 'An exploration of Right Speech - the art of truthful, harmonious, 
 
 # Right Speech - Samma Vaca
 
-Right Speech is the first of the ethical folds (_Sila_). It recognizes that our words are not just "empty air" but powerful forces that shape our relationships and our own mental state. Speech can connect people through truth and kindness or divide them through lies and malice. In the Buddhist framework, this dual capacity establishes speech as a bridge between inner integrity and outer consequence.
+Right Speech is the first of the ethical folds (_Sila_). It recognizes that our words shape our relationships and our own mental state. Speech can connect people through truth and kindness or divide them through lies and malice.
 
 To practice Right Speech, one must understand both what to avoid and the criteria for what is "well-spoken."
 
@@ -22,7 +22,7 @@ Traditionally, Right Speech is defined by abstaining from four types of harmful 
 
 ### The Deeper Significance: Alignment with Reality
 
-Strategically, truthful speech establishes a correspondence between one's inner being and the true nature of phenomena. By aligning communication with _Sacca_ (truth), the practitioner makes an **ontological commitment to reality as it is**. This commitment is foundational: it allows the faculty of wisdom (_Panna_) to eventually penetrate the ultimate nature of existence without the interference of subjective fantasies or self-deception. Honest speech is therefore a prerequisite for clear seeing, not an ethical nicety.
+Truthful speech aligns with reality. By communicating according to _Sacca_ (truth), the practitioner abandons subjective fantasies and self-deception. This removes the mental interference that clouds perception. Honest speech is a prerequisite for clear seeing.
 
 ---
 
@@ -38,13 +38,13 @@ In the _Vācā Sutta_, the Buddha provides a checklist for "Well-Spoken Speech" 
 
 ### The Power of "Noble Silence"
 
-Sometimes, the most "Well-Spoken Speech" is silence. **Noble Silence** (_Ariya-tuṇhībhāva_) is the practice of remaining quiet when speech would be unskillful. It is not a cold withdrawal, but a mindful presence that prevents the "leaking" of mental energy through idle talk.
+Sometimes, the most "Well-Spoken Speech" is silence. **Noble Silence** (_Ariya-tuṇhībhāva_) is silence when speech would be unskillful. It is a mindful presence that conserves mental energy by avoiding idle talk.
 
 ---
 
 ## Right Speech in the Digital Age
 
-The digital world has amplified both the power and the danger of speech. A comment today is permanent, searchable, and can reach thousands instantly.
+Digital platforms make speech more powerful and more dangerous. A comment today is permanent, searchable, and can reach thousands instantly.
 
 ### Digital Mindfulness Checklist (T.H.I.N.K.)
 
@@ -58,13 +58,13 @@ Before posting, commenting, or sharing, run the content through this modern adap
 
 ### The "Three-Breath Rule"
 
-Digital platforms are designed to trigger "reactivity." When you see a post that sparks anger, take three deep breaths before responding. This creates a "gap" where **Right View** (understanding the other person is also suffering) can override the impulse for **Harsh Speech**.
+Digital platforms are designed to trigger reactivity. When you see a post that sparks anger, take three deep breaths before responding. This pause allows **Right View** to override the impulse for **Harsh Speech** by recognizing that the other person is also suffering.
 
 ---
 
 ## The Goal of Right Speech
 
-The goal is not just "politeness," but **Integrity**. When our words are truthful and kind, our mind becomes quiet and unified. We no longer have to manage a "web of lies" or the fallout of conflict. This "blameless happiness" is the essential foundation for the deep meditation found in the later folds of the path.
+The goal is **Integrity**. When our words are truthful and kind, our mind becomes quiet and unified. We no longer have to manage lies or the fallout of conflict. This clarity of mind supports the meditation practices that follow in the later folds.
 
 ---
 

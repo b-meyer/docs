@@ -5,7 +5,7 @@ description: 'Right Livelihood - Ethical Work and the basis for spiritual practi
 
 # Right Livelihood - Samma Ajiva
 
-Right Livelihood brings the practice of the Eightfold Path into the arena where we spend the majority of our waking hours: our professional lives. It is the final fold of the **Ethical Conduct** (_Sila_) training. Since our livelihood is our primary interface with society and the environment, it is the most significant site for our "collective kamma" to manifest.
+Right Livelihood brings the practice of the Eightfold Path into the arena where we spend the majority of our waking hours: our professional lives. It is the final fold of the **Ethical Conduct** (_Sila_) training. As our primary interface with society and the environment, livelihood is where our "collective kamma" manifests most directly.
 
 Right Livelihood is defined by _what_ we do for money, _why_ we do it, and _how_ we do it.
 
@@ -36,7 +36,7 @@ In an interconnected 21st-century economy, the traditional prohibitions extend i
 
 ## Work as Vocation and Service
 
-Beyond avoiding harm, Right Livelihood is about the proactive cultivation of **Interbeing**. In modern Engaged Buddhism, work is reframed as a **vocation**, an expression of one's deepest values.
+Right Livelihood cultivates **Interbeing** actively: work becomes a **vocation**, an expression of one's deepest values, rather than merely a means to avoid harm. In modern Engaged Buddhism, this reframing is central to the path.
 
 ### The Three-Tiered Inquiry
 
@@ -56,7 +56,7 @@ The Buddhist tradition identifies three specific dimensions by which a livelihoo
 
 ### Work as a "Dojo"
 
-Work is the primary place to practice:
+The workplace becomes a practice ground where the Eightfold Path is tested and refined:
 
 - **Right Speech** - With colleagues, customers, and competitors.
 - **Mindfulness** - Being fully present with tasks, rather than operating on "autopilot."

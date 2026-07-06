@@ -5,9 +5,9 @@ description: 'The heart-cultivation practices of the ethical training: the four 
 
 # Sīla - Cultivating the Heart
 
-Ethical conduct has two modalities. Avoidance (_vāritta_) restrains unwholesome deeds, and it works through discipline. Performance (_cāritta_) commits to wholesome conduct, and it cannot be forced the same way. Goodwill, compassion, and patience become reliable only when the mind that produces them has been trained. This page is the training.
+Ethical conduct has two modalities. Avoidance (_vāritta_) restrains unwholesome deeds, and it works through discipline. Performance (_cāritta_) commits to wholesome conduct, and it cannot be forced the same way. Goodwill, compassion, and patience become reliable only when the mind that produces them has been trained.
 
-In the Visuddhimagga's list of forty meditation subjects (_kammaṭṭhāna_), these practices are classified under **Samādhi**, because sustained on a single object each one leads into concentration. Their _function_ here is ethical: they build the interior states that make right speech, right action, and right livelihood arise on their own rather than against resistance. A mind steeped in goodwill has nothing left over to fuel harsh speech or exploitation. For how these same objects carry the mind into the jhānas, see **[SamadhiTechniques.md](SamadhiTechniques.md)**.
+In the Visuddhimagga's list of forty meditation subjects (_kammaṭṭhāna_), these practices are classified under **Samādhi**, because sustained on a single object each one leads into concentration. Their _function_ here is ethical: they build the interior states that make right speech, right action, and right livelihood arise on their own rather than against resistance. A mind steeped in goodwill has nothing left over to fuel harsh speech or exploitation. See **[SamadhiTechniques.md](SamadhiTechniques.md)** for how these same objects carry the mind into the jhānas.
 
 ---
 
@@ -24,7 +24,7 @@ The Brahmavihāras (_divine abodes_) are four boundless qualities, each the dire
 
 ### Loving-Kindness (_Mettā Bhāvanā_)
 
-Mettā is boundless goodwill, the wish that beings be well. It is the entry point and the foundation for the other three. The formal method extends that wish outward in stages, dissolving the mind's habit of sorting beings into those it favors and those it does not.
+The entry point and foundation for the other three, mettā is cultivated through a formal method that extends goodwill outward in stages, dissolving the mind's habit of sorting beings into those it favors and those it does not.
 
 1. **Oneself.** Begin here. A common phrasing is "May I be free from danger. May I be well. May I be peaceful and at ease." The point is not to manufacture emotion but to establish a genuine current of goodwill that can then be directed outward.
 2. **A respected, beloved person.** A teacher or benefactor, someone for whom goodwill arises easily. Sexual attraction and grief disqualify a person as the object at this stage, because they pull toward the near enemy.

@@ -5,11 +5,11 @@ description: 'The Concentration Group of the Eightfold Path: Right Effort, Right
 
 # Samādhi - Mental Discipline
 
-**Samādhi** is the second of the three trainings: the _Samādhikkhandha_, or Concentration Group. It is the technical core of the Eightfold Path's practice architecture. The Pali term is precisely defined not as "meditation" or "focus" in the ordinary sense, but as _citt'ekaggatā_: the deliberate centering of consciousness and its mental factors on a single object. This is **wholesome one-pointedness of mind**.
+**Samādhi** is the second of the three trainings: the _Samādhikkhandha_, or Concentration Group. It forms the technical core of the Eightfold Path's practice architecture. The Pali term is precisely defined not as "meditation" or "focus" in the ordinary sense, but as _citt'ekaggatā_: the deliberate centering of consciousness and its mental factors on a single object. This is **wholesome one-pointedness of mind**.
 
-The functional aim: Samādhi is not an escape from life or a withdrawal into a trance, but a systematic cultivation of the mind to handle reality with precision. It transforms a mind dispersed through conceptual proliferation (_papañca_) into a potent instrument of discovery.
+The functional aim: Samādhi is not an escape from life or a withdrawal into a trance, but a systematic cultivation of the mind to handle reality with precision. It converts the scattered, conceptually overextended mind (_papañca_) into a precise instrument of discovery.
 
-This training provides the bridge between ethical conduct (_Sīla_) and wisdom (_Paññā_). Without the stability it generates, wisdom remains _anubodha_. It is mere intellectual knowing rather than the penetrative realization that uproots suffering. With it, the mind becomes capable of _pativedha_: penetrative realization that uproots suffering at the root.
+This training provides the bridge between ethical conduct (_Sīla_) and wisdom (_Paññā_). Without the stability it generates, wisdom remains _anubodha_: mere intellectual knowing rather than penetrative realization. With it, the mind becomes capable of _pativedha_: the direct seeing that uproots suffering at the root.
 
 ---
 
@@ -34,7 +34,7 @@ Right Effort (_Sammā Vāyāma_) is not generalized willpower. It is structured 
 | **Arouse**  | Arouse wholesome states that have not yet arisen                 |
 | **Perfect** | Maintain and perfect wholesome states that have already arisen   |
 
-This structure ensures that effort is proactive, not reactive. It clears the ground for concentration while simultaneously building the positive qualities that sustain it.
+This structure makes effort proactive: it clears the ground for concentration while building the positive qualities that sustain it.
 
 The concrete work of concentration, choosing an object, settling the breath, clearing the five hindrances, and recognizing the signs that mark deepening, is laid out on its own page.
 
@@ -48,7 +48,7 @@ The concrete work of concentration, choosing an object, settling the breath, cle
 
 Jhāna is not accessible without a foundation in [RightSpeech.md](RightSpeech.md), [RightAction.md](RightAction.md), and [RightLivelihood.md](RightLivelihood.md). This is not a moral rule but a technical requirement.
 
-Without _Sīla_, the mind carries the weight of remorse and agitation. These are not minor inconveniences. They are structural barriers to the _ekaggata_ (one-pointedness) that jhāna requires. A mind clouded by guilt, the fallout of harsh speech, or the anxiety of dishonest conduct cannot achieve the unified stillness jhāna demands.
+Without _Sīla_, the mind carries the weight of remorse and agitation, which create structural barriers to the _ekaggata_ (one-pointedness) that jhāna requires. A mind clouded by guilt, the fallout of harsh speech, or the anxiety of dishonest conduct cannot achieve the unified stillness jhāna demands.
 
 > "Ethical conduct is the indispensable foundation. Without moral stabilization, the mind is subject to remorse and agitation, which are technical barriers to one-pointedness."
 
@@ -60,9 +60,9 @@ The Niddesa identifies three dimensions of seclusion (_viveka_) that structure t
 
 The Buddhist technical discipline draws a sharp distinction between two approaches:
 
-**Shamatha (Serenity/Stability):** The practice of jhāna, leading to states of concentration characterized by high degrees of one-pointedness. These states provide mental stability and temporary freedom from defilements, but they suppress rather than uproot the latent tendencies. When the concentration fades, the defilements can return.
+**Shamatha (Serenity/Stability):** The practice of jhāna, leading to states of concentration characterized by high degrees of one-pointedness. These states provide mental stability and temporary freedom from defilements, but they suppress the latent tendencies rather than uproot them. Once concentration fades, the defilements return.
 
-**Vipassanā (Insight):** The investigation of the Three Characteristics (impermanence (_anicca_), unsatisfactoriness (_dukkha_), and non-self (_anattā_)). This uses the stability of concentration as the platform. Insight does not merely suppress defilements; it cuts off the latent tendencies by destroying ignorance (_avijjā_) at the root.
+**Vipassanā (Insight):** The investigation of the Three Characteristics (impermanence (_anicca_), unsatisfactoriness (_dukkha_), and non-self (_anattā_)). This uses the stability of concentration as the platform. Insight cuts off the latent tendencies by destroying ignorance (_avijjā_) at the root.
 
 Concentration deep enough to serve insight can be reached two ways: through the form jhānas, or through momentary concentration (_khaṇika-samādhi_) for practitioners who take the insight path directly. Both give the mind the stillness and clarity that vipassanā requires. The Fourth Jhāna in particular provides the pure equanimity and awareness (_upekkhā_ and _sati_) needed to observe the Five Aggregates without bias, the still depth from which one penetrates beyond knowing about the Three Characteristics (_anubodha_) to directly _seeing_ them (_pativedha_). Both routes are laid out in **[SamadhiTechniques.md](SamadhiTechniques.md)**.
 

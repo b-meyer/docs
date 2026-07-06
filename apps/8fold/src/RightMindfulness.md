@@ -5,7 +5,7 @@ description: 'An exploration of Right Mindfulness: the Four Foundations of Satip
 
 # Right Mindfulness - Samma Sati
 
-Right Mindfulness is the quality of clear, non-judgmental awareness. It is the practice of seeing things as they are. While **Right Effort** is the energy of the path, Right Mindfulness is the "steering wheel" that ensures that energy is directed toward clarity.
+Right Mindfulness is the quality of clear, non-judgmental awareness. It is the practice of seeing things as they are. While **Right Effort** is the energy of the path, Right Mindfulness directs that energy toward clarity.
 
 Mindfulness is traditionally practiced through the **Four Foundations of Mindfulness** (_Satipaṭṭhāna_), systematically described in the _Satipaṭṭhāna Sutta_, one of the most important suttas in the entire Pali Canon. The sutta's opening declares that this "is the direct path for the purification of beings, for the surmounting of sorrow and lamentation, for the disappearance of pain and grief, for the attainment of the true way, for the realization of Nibbāna."
 
@@ -13,7 +13,7 @@ Mindfulness is traditionally practiced through the **Four Foundations of Mindful
 
 ## The Two Faculties: Sati and Sampajanna
 
-Right Mindfulness is not just "being present." It requires the interaction of two specific mental faculties:
+Right Mindfulness requires the interaction of two specific mental faculties:
 
 - **Sati** - The ability to "remember" or "hold" the object of attention without drifting.
 - **Sampajanna** - Clear comprehension or situational wisdom. It is the part of the mind that knows _why_ you are being mindful and whether your current state is wholesome or unwholesome.
@@ -37,7 +37,7 @@ In this context, "feeling" refers to the **affective tone** of an experience. It
 - **Worldly vs. Spiritual** - Distinguishing between feelings born of sensory desire (e.g., the pleasure of a meal) and those born of practice (e.g., the peace of a quiet mind).
 - **The Goal** - To catch the feeling at the "contact" stage, preventing it from triggering the "second arrow" of craving or anger.
 
-A deeper technical insight: the **fetters** (_saṃyojana_) (the mental bonds that perpetuate the cycle of rebirth) do not reside in the sense organ or in the external object. They arise in the space of contact between them. By noting how a fetter arises and vanishes during sensory contact, the practitioner ceases to identify with the process itself. The "self" that seemed to be seeing, hearing, or feeling is revealed as a presupposition without a real referent. It is a label applied to a process, not a thing that exists independently.
+A deeper technical insight: the **fetters** (_saṃyojana_) (the mental bonds that perpetuate the cycle of rebirth) do not reside in the sense organ or in the external object. They arise in the space of contact between them. By noting how a fetter arises and vanishes during sensory contact, the practitioner ceases to identify with the process itself. The "self" that appears to be seeing, hearing, or feeling is revealed as a presupposition without a real referent. It is a label applied to a process, not a thing that exists independently.
 
 ---
 
@@ -85,13 +85,13 @@ The practitioner cultivates the **Seven Factors of Enlightenment**, a progressiv
 | 6   | **Concentration**              | _Samādhi_      | The unification of mind that makes sustained investigation possible                          |
 | 7   | **Equanimity**                 | _Upekkhā_      | The balanced, non-reactive stability that holds all experience without pushing or pulling    |
 
-The sequence matters: Mindfulness → Investigation → Energy → Joy → Tranquility → Concentration → Equanimity. Each factor supports the next. When the mind is sluggish, the antidotes are Investigation, Energy, and Joy (arousing). When the mind is agitated, the antidotes are Tranquility, Concentration, and Equanimity (calming). Mindfulness is the constant throughout.
+The sequence matters: Mindfulness → Investigation → Energy → Joy → Tranquility → Concentration → Equanimity. As each factor supports the next, when the mind is sluggish, the antidotes are Investigation, Energy, and Joy (arousing), and when the mind is agitated, the antidotes are Tranquility, Concentration, and Equanimity (calming). Mindfulness is the constant throughout.
 
 ---
 
 ## The Method: Arising and Vanishing
 
-The "Right" in mindfulness means observing both the **arising** and the **vanishing** of every phenomenon. By watching a feeling or thought begin and end, we gain the direct, non-intellectual insight into **Impermanence** (_Anicca_). When we stop clinging to these passing clouds, the mind becomes "independent, not clinging to anything in the world."
+The "Right" in mindfulness means observing both the **arising** and the **vanishing** of every phenomenon. By watching a feeling or thought begin and end, we gain direct, non-intellectual insight into **Impermanence** (_Anicca_). When we stop clinging to these passing clouds, the mind is no longer bound by reactivity.
 
 ---
 
