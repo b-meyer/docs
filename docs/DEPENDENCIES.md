@@ -23,11 +23,11 @@ All dependency versions are declared once in the `catalog:` block of `pnpm-works
 | ------------------ | ---------------------- | ------------------------ | -------------------------------------------------------------------------------------------- |
 | Host               | Node ≥ 22              | JavaScript runtime       | Azure SWA Free tier + `vp` engine requirement                                                |
 | Host               | Azure SWA Free         | Static hosting + CDN     | Zero-cost tier; route config via `staticwebapp.config.json`                                  |
-| Runtime (consumer) | `vue` `^3.5.32`        | SPA framework            | Composition API + `<script setup>` SFC model                                                 |
+| Runtime (consumer) | `vue` `^3.5.42`        | SPA framework            | Composition API + `<script setup>` SFC model                                                 |
 | Runtime (consumer) | `vue-router` `~5.0.7`  | SPA routing              | In-development next major aligned with Vite+; `~` pin is **intentional** — do not bump to v4 |
 | Runtime (consumer) | `reka-ui` `^2.9.0`     | Accessible UI primitives | Unstyled headless components for `AppHeader`                                                 |
-| Runtime (consumer) | `mermaid` `^11.15.0`   | Diagram rendering        | Build-time tree-shaken when `markdown.mermaid: false`                                        |
-| Build-only         | `vite-plus` `0.1.24`   | Toolchain CLI            | Exact pin; `vp` API surface in active development                                            |
+| Runtime (consumer) | `mermaid` `^11.17.2`   | Diagram rendering        | Build-time tree-shaken when `markdown.mermaid: false`                                        |
+| Build-only         | `vite-plus` `1.6.0`    | Toolchain CLI            | Exact pin; `vp` API surface in active development                                            |
 | Build-only         | `typescript` `~6.0.2`  | Type-checking            | Patch-range pin; TypeScript 6 in active development                                          |
 | Build-only         | `tailwindcss` `^4.2.2` | CSS utilities            | CSS-first `@theme` model; v3 APIs absent by design                                           |
 | Build-only         | `@tailwindcss/vite`    | Tailwind Vite plugin     | Required for Tailwind 4 integration                                                          |
