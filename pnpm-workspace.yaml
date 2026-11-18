@@ -13,26 +13,26 @@ catalog:
   '@types/node': ^22
   '@unhead/dom': ^2.1.15
   '@unhead/vue': ^2.1.15
-  '@vue/server-renderer': ^3.5
+  '@vue/server-renderer': ^3.5.42
   '@vitejs/plugin-vue': ^6.0.3
   '@vue/test-utils': ^2.4
   '@vue/tsconfig': ^0.9.1
   minisearch: ^7.0.0
-  markdown-it: ^14.1.0
+  markdown-it: ^14.3.3
   markdown-it-anchor: ^9.2.0
   markdown-it-container: ^4.0.0
-  mermaid: ^11.15.0
+  mermaid: ^11.17.2
   reka-ui: ^2.9.0
   shiki: ^1.0.0
   '@shikijs/transformers': ^1.0.0
   tailwindcss: ^4.2.2
   typescript: ~6.0.2
   unplugin-vue-markdown: ^28.3.1
-  vite: 'npm:@voidzero-dev/vite-plus-core@0.1.24'
-  vite-plus: 0.1.24
+  vite: 'npm:@voidzero-dev/vite-plus-core@1.6.0'
+  vite-plus: 1.6.0
   jsdom: ^28.1.0
-  vitest: 'npm:@voidzero-dev/vite-plus-test@0.1.24'
-  vue: ^3.5.32
+  vitest: 5.1.0
+  vue: ^3.5.42
   vue-router: ~5.0.7
   vue-tsc: ^3.2.6
 
@@ -42,7 +42,16 @@ overrides:
   vite: 'catalog:'
   vitest: 'catalog:'
   ws: '>=8.21.0'
-  linkify-it: '>=5.0.1'
+  linkify-it@^5: ^5.0.2
+  '@vue/server-renderer': ^3.5.42
+  brace-expansion@^2: ^2.1.6
+  dompurify: ^3.4.17
+  js-yaml@^3: ^3.15.2
+  markdown-it@^14: ^14.3.3
+  nanoid@^3: ^3.3.18
+  postcss: ^8.5.18
+  source-map-js: ^1.2.2
+  undici@^7: ^7.30.1
 peerDependencyRules:
   allowAny:
     - vite
@@ -64,3 +73,8 @@ minimumReleaseAgeExclude:
   - '@voidzero-dev/vite-plus-win32-arm64-msvc@0.2.1'
   - '@voidzero-dev/vite-plus-win32-x64-msvc@0.2.1'
   - vite-plus@0.2.1
+auditConfig:
+  ignoreGhsas:
+    # picomatch ReDoS (GHSA-fc5q-39xc-vjpf): no fixed release yet, and picomatch is only
+    # used by build and test tooling. Remove once a patched picomatch ships.
+    - GHSA-fc5q-39xc-vjpf

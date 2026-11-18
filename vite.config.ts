@@ -44,6 +44,8 @@ export default defineConfig({
       'unicorn/no-null': 'off',
       'no-inline-comments': 'off',
       'no-warning-comments': 'off',
+      // Its fix turns parseFloat into Number(), which returns NaN for CSS lengths like '64px'.
+      'unicorn/prefer-number-coercion': 'off',
       'import/no-unassigned-import': ['error', { allow: ['**/*.css', '**/*.scss'] }],
     },
     overrides: [

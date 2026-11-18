@@ -34,7 +34,7 @@ const EXT_TO_LANG: Record<string, string> = {
  * reload or saving the importing markdown file.
  */
 export function processSnippets(code: string, id: string): string {
-  return code.replace(SNIPPET_RE, (_, spec: string) => {
+  return code.replaceAll(SNIPPET_RE, (_, spec: string) => {
     const hashIdx = spec.lastIndexOf('#');
     const hasRegion = hashIdx > 0;
     const filePart = hasRegion ? spec.slice(0, hashIdx).trim() : spec.trim();
