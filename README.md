@@ -11,22 +11,22 @@ route and hydrated as a SPA). Each site is **config + content**.
 
 ## Stack
 
-| Property        | Value                            |
-| --------------- | -------------------------------- |
-| Host            | Azure Static Web Apps            |
-| Runtime         | Node ≥ 22                        |
-| Package manager | pnpm (catalog-pinned versions)   |
-| Framework       | Vite + Vue 3 + framework-ssg     |
-| Apps            | `tcm` (deployed), `8fold` (stub) |
+| Property        | Value                                              |
+| --------------- | -------------------------------------------------- |
+| Host            | Azure Static Web Apps                              |
+| Runtime         | Node ≥ 22                                          |
+| Package manager | pnpm (catalog-pinned versions)                     |
+| Framework       | Vite + Vue 3 + framework-ssg                       |
+| Apps            | `8fold` (deployed), `tcm` and `dao` (not deployed) |
 
 ## Workspace
 
-| Path                                       | Name              | What                                                                                                  |
-| ------------------------------------------ | ----------------- | ----------------------------------------------------------------------------------------------------- |
-| [`packages/core`](packages/core/README.md) | `@framework/core` | The meta-framework (routing, layout, search, theme, markdown). Consumed by the apps.                  |
-| [`apps/tcm`](apps/tcm/)                    | `tcm`             | Traditional Chinese Medicine Primer — the rich consumer (mermaid diagrams, theme controls). Deployed. |
-| [`apps/8fold`](apps/8fold/)                | `8fold`           | Noble Eightfold Path primer — a minimal stock-prose consumer (no mermaid). Not deployed.              |
-| [`apps/showcase`](apps/showcase/)          | `showcase`        | Framework feature showcase — component and API demos. Not deployed.                                   |
+| Path                                       | Name              | What                                                                                                             |
+| ------------------------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [`packages/core`](packages/core/README.md) | `@framework/core` | The meta-framework (routing, layout, search, theme, markdown). Consumed by the apps.                             |
+| [`apps/tcm`](apps/tcm/)                    | `tcm`             | Traditional Chinese Medicine Primer — the rich consumer (mermaid diagrams, theme controls). Not deployed.        |
+| [`apps/8fold`](apps/8fold/)                | `8fold`           | Noble Eightfold Path primer — a minimal stock-prose consumer (no mermaid). Deployed at https://8fold.bmeyer.xyz. |
+| [`apps/showcase`](apps/showcase/)          | `showcase`        | Framework feature showcase — component and API demos. Not deployed.                                              |
 
 `@framework/core` is a placeholder name (rename with one find-and-replace when ready).
 
@@ -101,10 +101,16 @@ single source.
 
 ## Deployment
 
-Only **`apps/tcm`** is deployed today, to Azure Static Web Apps via
-[`.github/workflows/azure-static-web-apps.yml`](.github/workflows/azure-static-web-apps.yml)
-on push to `release` (uploads `apps/tcm/dist`). `apps/8fold` has no deploy yet —
-see [`TODO.md`](TODO.md) for what wiring it up entails.
+Only `apps/8fold` is deployed. It runs on the Azure Static Web App `swa-8fold-prod`
+in `rg-docs-prod` (Free tier, Central US) and is served at https://8fold.bmeyer.xyz,
+a CNAME to the site's Azure-assigned `*.azurestaticapps.net` hostname. Deploys are run
+by hand with [`.github/workflows/deploy-8fold.yml`](.github/workflows/deploy-8fold.yml)
+from `feat/content`.
+
+`tcm` and `dao` are not deployed. Their Static Web Apps went away with the Azure
+subscription they were on, so `deploy-tcm.yml`, `deploy-dao.yml` and `deploy-all.yml`
+fail at the deploy step until those apps are provisioned again and their token secrets
+replaced. See [`docs/PROVISION.md`](docs/PROVISION.md).
 
 ## AI-assisted content
 

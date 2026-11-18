@@ -53,6 +53,18 @@ az deployment sub create \
 
 This creates `rg-docs-prod` and one `swa-<slug>-prod` resource for each app module defined in `infra/main.bicep`. Idempotent — existing resources are left unchanged.
 
+To provision a single app, create the resource group and deploy `infra/swa.bicep` into it:
+
+```bash
+az group create --name rg-docs-prod --location centralus
+az deployment group create \
+  --resource-group rg-docs-prod \
+  --template-file infra/swa.bicep \
+  --parameters appName=<slug>
+```
+
+A new subscription may need the `Microsoft.Web` resource provider registered first: `az provider register --namespace Microsoft.Web --wait`.
+
 **Phase 2 — GitHub wiring** _(one command per app)_
 
 Run once for each app, substituting its slug:
@@ -75,7 +87,7 @@ Partial-failure recovery: if Phase 2 fails after Phase 1 completes, the Azure re
 After the first successful deploy, a custom domain can be attached to the SWA resource:
 
 1. **Azure Portal** → `swa-<slug>-prod` → Custom domains → Add → enter your domain. Azure provides a CNAME or TXT record for validation; add it at your DNS provider to complete TLS provisioning.
-2. **At your DNS provider:** update the CNAME (subdomain) or alias/ANAME (apex) to `swa-<slug>-prod.azurestaticapps.net`. Wait for propagation and confirm HTTPS is live.
+2. **At your DNS provider:** update the CNAME (subdomain) or alias/ANAME (apex) to the resource's Azure-assigned hostname, which is generated and does not follow the resource name (`az staticwebapp show --name swa-<slug>-prod --resource-group rg-docs-prod --query defaultHostname -o tsv`). Wait for propagation and confirm HTTPS is live.
 3. **Decommission the old resource** only after the custom domain resolves on the new SWA — delete the old SWA resource from the Azure Portal and remove its corresponding GitHub secret.
 
 ## IAM model
